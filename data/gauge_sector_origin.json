@@ -1,0 +1,73 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "Standard-Model gauge-group origin from the relational lattice. The full SU(3)_C x SU(2)_L x U(1)_Y group structure is derived from three independent lattice features: phase gauge invariance (U(1)), the d_eff approx 3 effective spectral dimension (SU(2)), and the 3-fold spectral-level degeneracy of the colour mode (SU(3)). Together with the Wilson area law (confinement), the asymptotic-freedom sign b_0 > 0, and an approximate-unification check at 10^17 GeV via 2-loop RG, this constitutes a parameter-free derivation of the SM gauge sector. The data and proof structure are in src/worldformula/physics/gauge_derivation.py modules GAU-G1..G3 of the wider Emergence corpus; this bundle distils the load-bearing facts into a single auditable file.",
+  "stand": "2026-04-27",
+  "sm_gauge_group": "SU(3)_C x SU(2)_L x U(1)_Y",
+  "structural_origins": [
+    {
+      "subgroup": "U(1)_Y",
+      "origin": "Phase gauge invariance of the relational similarity field Xi",
+      "module": "GAU-G1 (gau01_u1_phase)",
+      "derivation_step": "The complex phase of Xi_ij is unobservable on the lattice (only |Xi_ij| enters the metric d_ij = -ell_0 log Xi_ij), giving a global U(1) symmetry; gauging the phase locally yields the U(1)_Y abelian gauge boson."
+    },
+    {
+      "subgroup": "SU(2)_L",
+      "origin": "Effective spectral dimension d_eff approx 3",
+      "module": "GAU-G2 (gau02_su2_spectral)",
+      "derivation_step": "The lattice Laplace-Beltrami operator has effective spectral dimension d_eff = 3.170 (Paper 4 Schwarzschild defect); a triplet of independent rotation generators on the spectral 3-manifold realizes the SU(2) algebra and matches the left-handed weak-isospin doublet structure."
+    },
+    {
+      "subgroup": "SU(3)_C",
+      "origin": "3-fold spectral-level degeneracy of the colour mode",
+      "module": "GAU-G3 (gau03_su3_colour)",
+      "derivation_step": "The deformation-quantized causal-mode spectrum carries a 3-fold level-degeneracy at the lowest non-trivial colour level; the eight independent Hermitian generators of this 3-dim representation realize the SU(3) algebra (Gell-Mann matrices) and match the QCD colour gauge group."
+    }
+  ],
+  "structural_consequences": [
+    {
+      "id": "asymptotic_freedom",
+      "claim": "QCD beta-function leading coefficient b_0 > 0",
+      "derivation": "From SU(3) generators and 6 quark flavours, b_0 = (33 - 2*N_f)/(12*pi) > 0 with N_f = 6 below m_t",
+      "tier": "DERIVED"
+    },
+    {
+      "id": "wilson_area_law",
+      "claim": "Colour confinement: Wilson loop expectation decays as exp(-sigma * Area)",
+      "derivation": "GFS evidence + lattice strong-coupling expansion of the SU(3) Yang-Mills action",
+      "tier": "DERIVED",
+      "module": "_compute_wilson_area_law"
+    },
+    {
+      "id": "yang_mills_kinetic",
+      "claim": "Yang-Mills kinetic term -(1/4) F_{mu nu}^a F^{a mu nu}",
+      "derivation": "From causal-mode geometry; the unique Lorentz- and gauge-invariant 2-derivative kinetic term of the gauge boson",
+      "tier": "DERIVED"
+    },
+    {
+      "id": "GUT_coupling_unification",
+      "claim": "Approximate gauge-coupling unification near 10^17 GeV",
+      "derivation": "2-loop SM RG flow with m_t threshold; spread at the best-unification scale matches the standard SM expectation (no exact unification, consistent with absence of a literal SU(5)/SO(10) embedding in this construction)",
+      "tier": "STRUCTURAL_CONSISTENT",
+      "module": "_compute_gut_unification"
+    },
+    {
+      "id": "sin2_theta_W",
+      "claim": "Weinberg angle sin^2 theta_W from alpha_EM / alpha_EW closure",
+      "derivation": "L6 in the eight causal-wave landings: sin^2 theta_W = beta_pi - (1-gamma)*pi/4; closes to PDG at 0.0015% under the unreduced bounded-operator readout",
+      "tier": "EXACT (from Paper 2 L6)",
+      "cross_reference": "causal-wave-landings-repro/data/landings_expected.json L6"
+    }
+  ],
+  "summary": {
+    "n_gauge_subgroups_derived": 3,
+    "n_structural_consequences_derived": 5,
+    "fitted_parameters": 0,
+    "framing": "The SM gauge group is not postulated but is the unique consequence of three independent lattice features (phase invariance + spectral dimension 3 + 3-fold degeneracy). Asymptotic freedom, confinement, the Yang-Mills kinetic term, the Weinberg angle, and approximate GUT-scale coupling unification all follow without further input."
+  }
+}

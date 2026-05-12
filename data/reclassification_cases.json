@@ -1,0 +1,53 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "Documented reclassification cases. Reclassification of an observable from sigma_alt to sigma_new is allowed under rules R1-R5 (Section 3.5 of the paper); more than two reclassifications per observable, or violation of any of R1-R5, falsifies the theorem under triggers F1-F3.",
+  "rules": {
+    "R1": "Falsification trigger: sigma_alt was falsified by pipeline data (discrepancy > 100 x the program's PG tolerance = 100 x 2.5%).",
+    "R2": "Algorithm consistency: sigma_new follows from the deterministic mapping algorithm under an explicit re-identification of (n, g, s). The re-identification must be physically motivated.",
+    "R3": "Finiteness: at most TWO reclassifications per observable. More than two falsifies the loop-class completeness theorem (theorem-fall).",
+    "R4": "Cross-sector pre-specification: the new class sigma_new must already appear independently as a closure in at least ONE other sector cluster. No ad-hoc reclassification.",
+    "R5": "Own falsification bound: sigma_new must define its own falsification bound that is checked in the pipeline."
+  },
+  "theorem_falsification_triggers": {
+    "F1": "An observable in G_claim^auth cannot be assigned to any L_sigma in the library, even after the R3-bounded reclassification budget, that is consistent with the pipeline target. (R3 violations are captured here.)",
+    "F2": "A negative-control observable is assigned a closing class in the library whose post-loop value lies within the PRECISE_2.5 cut of its experimental target. The algorithm has then over-claimed and the scope-discipline guarantee fails.",
+    "F3": "Cross-sector consistency breaks: a class L_sigma that is verified in one sector falsifies in another, and the two sectors cannot be discriminated by their (n_sigma, g_sigma, s_sigma) topology factors.",
+    "_input_validation_note": "The case 'mapping returns more than one valid loop class for the same (n,g,s)' is an INPUT-VALIDATION error (the topology triple was malformed, the binary discriminator flags w (double-Wick) and r (resummed) were not read) \u2014 it is NOT a theorem-falsification trigger and is handled by classify_observable.py's ValueError path."
+  },
+  "documented_cases": [
+    {
+      "id": "RC01",
+      "observable": "SN_distance_sidearm",
+      "sigma_alt": {
+        "lemma": 8,
+        "name": "Cosmological-Density",
+        "loop_class": "1+/-gamma/2"
+      },
+      "sigma_new": {
+        "lemma": 4,
+        "name": "Resummed-Propagator",
+        "loop_class": "(1+/-2*gamma^2) or 1/(1+/-2*gamma^2)"
+      },
+      "trigger": "support_preserving_release_microkernel_score = 1.5e-5 vs predicted 0.025 (factor 1700 discrepancy)",
+      "R1_satisfied": true,
+      "R1_reason": "Pipeline discrepancy >> 100 x sigma_PG = 250%; clearly falsified.",
+      "R2_satisfied": true,
+      "R2_reason": "Re-identification of (n, g, s): SN distance dominates by propagator resummation on cosmological scales -> n=4 (full spinor-trace), corresponding to Lemma 4.",
+      "R3_satisfied": true,
+      "R3_count": 1,
+      "R4_satisfied": true,
+      "R4_reason": "Lemma-4 class already used independently for T_RH; not ad-hoc.",
+      "R5_satisfied": true,
+      "R5_bound": "Lemma-4 prediction is sin^2(pi*gamma^3) ~ 1e-5; would falsify if pipeline reports >> 1e-4.",
+      "status": "ACCEPTED under R1-R5",
+      "reclassification_count": 1,
+      "two_loop_compound": false
+    }
+  ]
+}

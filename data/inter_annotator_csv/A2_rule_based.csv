@@ -1,0 +1,30 @@
+id,n_spinor_trace,g_generation,s_sync_coupling,loop_class,lemma
+O01,1,0,0,1+gamma/4,1
+O02,1,1/(2*N_gen),0,1-gamma/(2*N_gen),6
+O03,1,0,0,1+gamma/4,1
+O04,1,1/(2*N_gen),0,1-gamma/(2*N_gen),6
+O05,1,1/(2*N_gen),0,1+gamma/(2*N_gen),6
+O06,1,0,0,1 (tree),None
+O07,1,0,0,1 (tree),None
+O08,1,0,0,1 (tree),None
+O09,1,0,0,1-gamma^2/4,2
+O10,1,0,0,1-gamma^2/4,2
+O11,1,1/(2*N_gen),0,(1-gamma/(2*N_gen))*(1-gamma/2),6+8
+O12,1,0,0,(1+gamma/4)*(1-gamma^2/4),1+2
+O13,1,1/(2*N_gen),0,1-gamma/(2*N_gen),6
+O14,1,1/(2*N_gen),0,1+gamma/(2*N_gen),6
+O15,1,0,0,1+gamma/4,1
+O16,1,0,eps^2,1+gamma*eps_sync2,7
+O17,1,0,eps^2,1+gamma*eps_sync2,7
+O18,1,0,eps^2,1+gamma*eps_sync2,7
+O19,1,0,eps^2,1+gamma*eps_sync2,7
+O20,1,0,0,1+gamma/4,1
+O21,4,0,0,1/(1-2*gamma^2),4
+O22,1,0,eps^2,1-gamma*eps_sync2,7
+O23,1,1/N_gen,0,(1-gamma/4)*(1-gamma/N_gen),1+5
+O24,1,1/N_gen,0,(1-gamma/4)*(1-gamma/N_gen),1+5
+O25,0,0,eps^2 + gamma*eps^2,(1+eps_sync2)*(1+gamma*eps_sync2),pure-eps2 + 7
+O26,2,0,0,(1-gamma/2)*(1-gamma^2),8+3
+O27,2,0,0,alpha_xi**2,1+1
+O28,0,0,eps^2*gamma,-gamma**2 / 2,5+5
+O29,1,0,0,1+gamma/4,1

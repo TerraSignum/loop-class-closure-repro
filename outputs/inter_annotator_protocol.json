@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.1.0",
+  "release": "v0.2.0",
+  "stand": "2026-05-10",
+  "protocol": "Inter-annotator consistency for the topology-labeled mapping protocol of sec:algorithm. Each annotator independently assigns the (n, g, s, w, r) tuple per observable using the rules of sec:algorithm. The bundled observable_registry.json is treated as the first annotator (A1_bundled, the manuscript's working classification). Additional annotators contribute CSV files in data/inter_annotator_csv/<name>.csv with columns id, n_spinor_trace, g_generation, s_sync_coupling, loop_class, lemma.",
+  "tuple_fields": [
+    "n_spinor_trace",
+    "g_generation",
+    "s_sync_coupling",
+    "loop_class",
+    "lemma"
+  ],
+  "n_observables": 29,
+  "n_annotators": 2,
+  "annotator_names": [
+    "A1_bundled",
+    "A2_rule_based"
+  ],
+  "fleiss_kappa_per_coordinate": {
+    "n_spinor_trace": 1.0,
+    "g_generation": 1.0,
+    "s_sync_coupling": 1.0,
+    "loop_class": 1.0,
+    "lemma": 0.883456128600134
+  },
+  "fleiss_kappa_landis_koch_interpretation": {
+    "n_spinor_trace": "almost-perfect (>=0.81)",
+    "g_generation": "almost-perfect (>=0.81)",
+    "s_sync_coupling": "almost-perfect (>=0.81)",
+    "loop_class": "almost-perfect (>=0.81)",
+    "lemma": "almost-perfect (>=0.81)"
+  },
+  "exact_tuple_agreement_rate": 0.896551724137931,
+  "agreement_thresholds": {
+    "almost_perfect_kappa_geq_0p81": true,
+    "substantial_kappa_geq_0p61": true,
+    "moderate_kappa_geq_0p41": true
+  },
+  "current_state": "MULTI_ANNOTATOR: 2 annotators",
+  "purpose": "Hardens the topology-labeled mapping protocol from 'reading-off rules' to 'measured inter-annotator consistency'. With a single annotator (A1_bundled), the script reports the bundled tuple as the seed dataset; Fleiss kappa is undefined for N=1 and the structural reading is acknowledged in sec:algorithm as conditional on the diagrammatic-structure reading of each observable. The protocol is operational and ready to consume additional annotators via the CSV drop-in mechanism."
+}

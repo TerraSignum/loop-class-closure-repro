@@ -1,0 +1,12 @@
+{
+  "criterion": "Fermion-mass closure recompute",
+  "nine_dressed_passed_FACTOR2": true,
+  "F05_charged_lepton_PRECISE": true,
+  "F05_best_predicted_residual_pct": 3.14,
+  "F05_best_predicted_regime": "p5n64",
+  "F05_best_predicted": 0.004685,
+  "stop_rule_A_verified": true,
+  "open_channels": 1,
+  "fitted_parameters": 0,
+  "verdict": "PASS"
+}

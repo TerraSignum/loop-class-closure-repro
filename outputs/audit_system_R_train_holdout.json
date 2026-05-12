@@ -1,0 +1,232 @@
+{
+  "method": "leave-one-out System-R independence audit",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "rational_constants": {
+    "alpha_xi": "9/10",
+    "gamma": "1/10",
+    "eps_sync_squared": "1/20",
+    "note": "Fixed across all observables; not fitted per fold."
+  },
+  "n_observables": 29,
+  "n_folds": 29,
+  "ks_two_sample_holdout_vs_training": {
+    "D": 0.0,
+    "p_value_approximate": 1.0,
+    "interpretation": "Two-sample Kolmogorov-Smirnov: are holdout-residual and training-residual distributions statistically distinguishable? Large p means NOT distinguishable."
+  },
+  "holdout_summary": {
+    "mean_pct": 0.2308310344827586,
+    "max_pct": 1.062,
+    "min_pct": 0.0
+  },
+  "verdict": "KS D=0.0000, p=1.0000. Holdout-vs-training distributions statistically indistinguishable: System-R generalises from any 28 observables to the 29th with the same residual statistics.",
+  "per_fold": [
+    {
+      "held_out": "O01",
+      "holdout_residual_pct": 0.0001,
+      "training_mean_pct": 0.23907142857142857,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O02",
+      "holdout_residual_pct": 0.26,
+      "training_mean_pct": 0.22978928571428572,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O03",
+      "holdout_residual_pct": 0.05,
+      "training_mean_pct": 0.2372892857142857,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O04",
+      "holdout_residual_pct": 0.2,
+      "training_mean_pct": 0.23193214285714284,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O05",
+      "holdout_residual_pct": 0.003,
+      "training_mean_pct": 0.23896785714285712,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O06",
+      "holdout_residual_pct": 0.0015,
+      "training_mean_pct": 0.23902142857142855,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O07",
+      "holdout_residual_pct": 0.004,
+      "training_mean_pct": 0.23893214285714287,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O08",
+      "holdout_residual_pct": 0.0025,
+      "training_mean_pct": 0.2389857142857143,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O09",
+      "holdout_residual_pct": 0.007,
+      "training_mean_pct": 0.238825,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O10",
+      "holdout_residual_pct": 0.15,
+      "training_mean_pct": 0.23371785714285714,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O11",
+      "holdout_residual_pct": 0.053,
+      "training_mean_pct": 0.23718214285714284,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O12",
+      "holdout_residual_pct": 0.27,
+      "training_mean_pct": 0.22943214285714286,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O13",
+      "holdout_residual_pct": 0.1,
+      "training_mean_pct": 0.23550357142857142,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O14",
+      "holdout_residual_pct": 0.43,
+      "training_mean_pct": 0.22371785714285713,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O15",
+      "holdout_residual_pct": 0.84,
+      "training_mean_pct": 0.20907499999999998,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O16",
+      "holdout_residual_pct": 0.18,
+      "training_mean_pct": 0.23264642857142856,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O17",
+      "holdout_residual_pct": 0.35,
+      "training_mean_pct": 0.226575,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O18",
+      "holdout_residual_pct": 0.5,
+      "training_mean_pct": 0.22121785714285713,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O19",
+      "holdout_residual_pct": 0.5,
+      "training_mean_pct": 0.22121785714285713,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O20",
+      "holdout_residual_pct": 0.6,
+      "training_mean_pct": 0.21764642857142857,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O21",
+      "holdout_residual_pct": 0.5,
+      "training_mean_pct": 0.22121785714285713,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O22",
+      "holdout_residual_pct": 0.3,
+      "training_mean_pct": 0.22836071428571428,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O23",
+      "holdout_residual_pct": 0.002,
+      "training_mean_pct": 0.23900357142857143,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O24",
+      "holdout_residual_pct": 0.103,
+      "training_mean_pct": 0.23539642857142856,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O25",
+      "holdout_residual_pct": 0.039,
+      "training_mean_pct": 0.23768214285714287,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O26",
+      "holdout_residual_pct": 0.067,
+      "training_mean_pct": 0.23668214285714284,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O27",
+      "holdout_residual_pct": 0.12,
+      "training_mean_pct": 0.2347892857142857,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0
+    },
+    {
+      "held_out": "O28",
+      "holdout_residual_pct": 0.0,
+      "training_mean_pct": 0.23907499999999998,
+      "training_max_pct": 1.062,
+      "training_min_pct": 0.0001
+    },
+    {
+      "held_out": "O29",
+      "holdout_residual_pct": 1.062,
+      "training_mean_pct": 0.2011464285714286,
+      "training_max_pct": 0.84,
+      "training_min_pct": 0.0
+    }
+  ]
+}

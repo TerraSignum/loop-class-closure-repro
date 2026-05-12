@@ -1,0 +1,112 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "MD-47/48/50 paper-internal integration recomputation",
+  "stand": "2026-05-05",
+  "MD_47_seed": {
+    "theta_SN_rad_predicted": 0.15707963267948966,
+    "theta_SN_deg_predicted": 9.0,
+    "theta_SN_rational_form": "pi * gamma / 2 = pi / 20",
+    "F_realised_full_seed": 0.024471741852423214,
+    "F_realised_half_seed": 0.0061558297024311365,
+    "structural_origin": "Lemma-8 Cosmological-Density-Klasse Sektor-Topologie-Faktor 1/2; chirality-restriction picks up gamma/2 = 1/20 prefactor on the universal pi-rotation that gives theta_em = pi for the unrestricted EMT-04b case. theta_SN / theta_em = gamma/2 = 1/20 EXACT.",
+    "consistency_with_internal_claim": "Internal Beweissammlung 04 quotes F_realised = 0.02447 (= sin^2(pi/20) = 0.02447); recomputation here matches at machine precision."
+  },
+  "MD_48_persistence": {
+    "lambda_pipeline_predicted": 0.6,
+    "lambda_rational_form": "N_gen / 5 = 3/5 = 0.6",
+    "alpha_xi_predicted_fixpoint": 0.9,
+    "alpha_xi_rational_form": "9/10",
+    "iteration_rows": [
+      {
+        "b_initial": 0.5,
+        "b_converged": 0.899999271343969,
+        "n_steps_to_fixpoint": 60,
+        "residual_at_convergence": 7.286560310681978e-07,
+        "converged_to_alpha_xi": true
+      },
+      {
+        "b_initial": 0.6,
+        "b_converged": 0.8999994808359844,
+        "n_steps_to_fixpoint": 60,
+        "residual_at_convergence": 5.1916401566654e-07,
+        "converged_to_alpha_xi": true
+      },
+      {
+        "b_initial": 0.8,
+        "b_converged": 0.8999998410740682,
+        "n_steps_to_fixpoint": 60,
+        "residual_at_convergence": 1.5892593185906634e-07,
+        "converged_to_alpha_xi": true
+      },
+      {
+        "b_initial": 0.95,
+        "b_converged": 0.9000000753340729,
+        "n_steps_to_fixpoint": 60,
+        "residual_at_convergence": 7.533407286874905e-08,
+        "converged_to_alpha_xi": true
+      },
+      {
+        "b_initial": 1.0,
+        "b_converged": 0.9000001482341828,
+        "n_steps_to_fixpoint": 60,
+        "residual_at_convergence": 1.482341828173972e-07,
+        "converged_to_alpha_xi": true
+      }
+    ],
+    "structural_origin": "Persistence-feedback F(b) = lambda b + (1-lambda) sqrt(b alpha_xi) is a 2-loop Yukawa-Damping resummation (Lemma 1) with generation factor (Lemma 5). The fixpoint b* = alpha_xi is unique and globally attractive for b_0 in (0, 1] under lambda in (0, 1). Both lambda and alpha_xi are first-principles System-R rationals; zero free parameters in the persistence dynamics."
+  },
+  "MD_50_strict_form": {
+    "theta_em_EMT_04b_rad": 3.141592653589793,
+    "theta_em_EMT_04b_deg": 180.0,
+    "theta_SN_strict_form_rad": 0.15707963267948966,
+    "theta_SN_strict_form_deg": 9.0,
+    "ratio_theta_SN_over_theta_em": 0.05,
+    "ratio_rational_form": "gamma / 2 = 1/20",
+    "eta_T_full_chirality_EMT_04b": -1,
+    "eta_T_c_Time_Forward_SN": 1,
+    "structural_form_theorem_chain": [
+      "Definition: H_def = H_T-forward + H_T-backward (2 of 4 Dirac components)",
+      "Theorem 1: SN-defect operator acts only on H_T-forward",
+      "Definition: Xi_SN = xi_0 * u_T-forward",
+      "Corollary: eta_T_c(Xi_SN) = +1 on restricted subgroup",
+      "Theorem 2: theta_SN = pi * c_SN = pi * gamma/2 (Lemma 8 Cosmological-Density)",
+      "Corollary: F_realised = sin^2(theta_SN) = 0.02447",
+      "Coleman-analog: bounce-saddle has exactly 1 negative mode in chirality-half subspace"
+    ],
+    "verification_status": "Numerical chain consistent at machine precision; structural parallel to EMT-04b theta_em = pi via the explicit ratio theta_SN/theta_em = gamma/2 = 1/20. The half-chirality-pair restriction is the Lemma-8 Sektor-Topologie-Faktor that distinguishes the SN-class from the unrestricted electromagnetic class."
+  },
+  "closure_table_extension_O30_O31_O32": {
+    "O30_theta_SN": {
+      "name": "theta_SN topological seed angle",
+      "predicted_rad": 0.15707963267948966,
+      "predicted_deg": 9.0,
+      "structural_form": "pi * gamma / 2 = pi/20",
+      "derivation": "Lemma-8 Cosmological-Density chirality-half-restriction",
+      "fitted_parameters": 0,
+      "tier": "EXACT (algebraic identity in Q with structural origin)",
+      "external_anchor_note": "The Type Ia supernova distance-modulus residual from a synchronisation-class topological seed F_realised = sin^2(theta_SN) = 0.02447 is a structural prediction of the framework; comparison to observed SN distance scatter (Pantheon+ Brout 2022) requires regime-mapping not bundled here. Reported as parameter-free structural identity pending external observable promotion."
+    },
+    "O31_K_Omega_microkernel": {
+      "name": "K_Omega persistence microkernel fixpoint",
+      "predicted": 0.9,
+      "structural_form": "K_Omega^min = alpha_xi = 9/10",
+      "lambda_pipeline": 0.6,
+      "lambda_form": "N_gen/5 = 3/5",
+      "fitted_parameters": 0,
+      "tier": "EXACT (algebraic identity)"
+    },
+    "O32_SN_DEFEKT_strict_form": {
+      "name": "SN-defect topology strict-form theorem",
+      "predicted_theta_SN_rad": 0.15707963267948966,
+      "structural_parallel": "theta_em = pi (EMT-04b) <-> theta_SN = pi * gamma/2",
+      "eta_T_c": 1,
+      "fitted_parameters": 0,
+      "tier": "DERIVED (Coleman-analog one-negative-mode theorem in chirality-half subspace)"
+    }
+  },
+  "verdict": "The three internal claims (MD-47 theta_SN topological seed, MD-48 K_Omega = alpha_xi microkernel, MD-50 SN-defect strict-form theorem) are recomputed paper-internally from the System-R rationals (alpha_xi=9/10, gamma=1/10, N_gen=3) without any fitted parameter. All three reproduce the original Beweissammlung-04 numerical claims at machine precision and admit a closure-table extension O30 / O31 / O32 suitable for external-paper promotion. The structural parallel theta_SN/theta_em = gamma/2 = 1/20 ties the SN-class to the EMT-04b electromagnetic class via the half-chirality-pair restriction."
+}

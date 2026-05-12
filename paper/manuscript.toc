@@ -1,0 +1,49 @@
+\contentsline {section}{\numberline {1}Why loop classes are needed}{2}{section.1}%
+\contentsline {paragraph}{Notation cross-reference.}{2}{section*.2}%
+\contentsline {paragraph}{Non-claims.}{3}{section*.3}%
+\contentsline {section}{\numberline {2}Loop-factor library}{3}{section.2}%
+\contentsline {paragraph}{Empirical anchor: the Yukawa-Damping cluster (suggestive alignment, not strong-significance claim).}{3}{section*.4}%
+\contentsline {paragraph}{Honest caveats on the cluster $p$-value.}{4}{section*.5}%
+\contentsline {paragraph}{Two distinct $\Delta _{\qopname \relax m{min}}$ scales.}{8}{section*.6}%
+\contentsline {paragraph}{Forbidden classes.}{8}{section*.7}%
+\contentsline {section}{\numberline {3}Topology-labeled mapping protocol}{8}{section.3}%
+\contentsline {paragraph}{Semi-formal assignment rules (if-then form).}{9}{section*.8}%
+\contentsline {paragraph}{Two-loop compound admissibility.}{9}{section*.9}%
+\contentsline {paragraph}{Worked-example derivations on five representative observables.}{10}{section*.10}%
+\contentsline {paragraph}{Empirical tuple-exhaustion audit (Avenue-D).}{11}{section*.11}%
+\contentsline {paragraph}{Empirical audit result: loop-correction completeness on the registered domain.}{11}{section*.12}%
+\contentsline {section}{\numberline {4}Closure table}{13}{section.4}%
+\contentsline {paragraph}{Lemma\nobreakspace {}10 (Pure-Sync $\times $ Yukawa-Damping) extension for O28.}{13}{section*.13}%
+\contentsline {section}{\numberline {5}Closure domain and negative controls}{14}{section.5}%
+\contentsline {paragraph}{Negative controls — two sub-classes.}{14}{section*.14}%
+\contentsline {section}{\numberline {6}Reclassification rules and theorem-falsification triggers}{15}{section.6}%
+\contentsline {paragraph}{Reclassification rules R1--R5.}{16}{section*.15}%
+\contentsline {paragraph}{Theorem-falsification triggers F1--F3.}{16}{section*.16}%
+\contentsline {section}{\numberline {7}Cross-sector consequence: persistent-triangle winding-class fraction $f_{\mathrm {neg}}=2/(2N_{\mathrm {gen}}+1)$}{17}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Federer-prefactor closure on the companion-paper bulk-percentile residual}{17}{subsection.7.1}%
+\contentsline {paragraph}{(A1) Cosmological-tensor diagonal $\Lambda _{t}\!=\!\alpha _{\xi }^{2}$.}{18}{section*.17}%
+\contentsline {paragraph}{(A2) Physical factorisation $c\!=\!2\gamma \Lambda _{t}$.}{18}{section*.18}%
+\contentsline {paragraph}{(A3) Sub-leading topology $d/c\!=\!-(1+\gamma )$.}{18}{section*.19}%
+\contentsline {paragraph}{Closure status.}{18}{section*.20}%
+\contentsline {section}{\numberline {8}Reproducibility package}{18}{section.8}%
+\contentsline {section}{\numberline {9}Three additional structural-rational identities}{21}{section.9}%
+\contentsline {paragraph}{Synchronisation-class topological seed angle $\theta _{\rm sync}$.}{21}{section*.21}%
+\contentsline {paragraph}{Persistence-microkernel fixed point.}{21}{section*.22}%
+\contentsline {paragraph}{Synchronisation-class strict-form theorem.}{21}{section*.23}%
+\contentsline {paragraph}{Eight $\alpha _{\rm EM}$-mediated structural identities (chirality-flip framework extension).}{22}{section*.24}%
+\contentsline {paragraph}{Two layers of $\qopname \relax o{sin}^{2}\theta _{W}$ identification.}{22}{section*.25}%
+\contentsline {paragraph}{Cross-observable consistency audit of the $\alpha _{\rm EM}$ identification.}{22}{section*.26}%
+\contentsline {paragraph}{Detailed structural derivation of $\alpha _{\rm EM}\!=\!\gamma ^{2}\,\alpha _{\xi }^{N_{\rm gen}}$.}{23}{section*.27}%
+\contentsline {paragraph}{Detailed forms for the eight $\alpha _{\rm EM}$-mediated identities.}{23}{section*.28}%
+\contentsline {section}{\numberline {10}Spectral Yukawa-eigenvalue pipeline (algorithmic mass-origin layer with explicit L/R chirality splitting)}{24}{section.10}%
+\contentsline {paragraph}{Step 1: explicit L/R chirality splitting on the Gram eigenspectrum.}{24}{section*.29}%
+\contentsline {paragraph}{Step 2: five-factor emergent mass operator.}{25}{section*.30}%
+\contentsline {paragraph}{Steps 3--5: SVD Yukawa extraction and bi-unitary mixing.}{25}{section*.31}%
+\contentsline {paragraph}{Key results on the canonical-regime ladder.}{25}{section*.32}%
+\contentsline {section}{\numberline {11}Limitations}{25}{section.11}%
+\contentsline {section}{\numberline {A}Full 29-row closure table}{29}{appendix.A}%
+\contentsline {paragraph}{Cross-observable consistency of $\alpha _{\xi }^{2}=81/100$.}{30}{section*.33}%
+\contentsline {section}{\numberline {B}Frozen topology-tuple sheet}{30}{appendix.B}%
+\contentsline {section}{\numberline {C}Class $\to $ physical-meaning map}{30}{appendix.C}%
+\contentsline {section}{\numberline {D}0.4\% EXACT-threshold motivation and R-stability}{30}{appendix.D}%
+\contentsline {paragraph}{R-stability sensitivity check.}{31}{section*.34}%

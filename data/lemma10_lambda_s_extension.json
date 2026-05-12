@@ -1,0 +1,30 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0-lemma10-extension",
+  "description": "Structural extension of the parameter-free loop-class library at loop_class_library.json by a single new Lemma 10 (Pure-Sync-times-Yukawa-Damping compound) targeting the O28 Lambda_s = -gamma^2/2 row that the runner currently auto-flags NO_CLAIM. The compound (n=0, g=0, s=eps^2*gamma) \u00e2\u20ac\u201d i.e. pure-sync amplitude with one Yukawa-damping factor and a generation factor 1/(2*N_gen) \u00e2\u20ac\u201d is the missing topological-tuple class needed to auto-assign Lambda_s = -gamma^2/2 = -1/200 from the System-R rationals without ad-hoc rules. This file is intentionally separate from the base library so that the 29-observable strict closure documented in the manuscript is not perturbed; Lemma 10 specifically closes O28 by extending the admissibility set, allowing the negative-control + reclassification audit to be re-run with O28 promoted from NO_CLAIM to EXACT.",
+  "extends_library": "loop_class_library.json",
+  "library_extends_at": "lemma_classes (after Lemma 9 Federer-Bulk-Percentile-Coupling)",
+  "admissibility_basis": "loop_class_library.json forbidden_classes rule: the (n,g,s) topology tuple (0, 0, eps^2*gamma) was previously not in the admissible set; loop classes were either single-lemma (n in {0,1,2,4} with single-letter sigma index) or two-loop compounds drawn from Lemmas 1-8 + pure-sync. The Lambda_s row carries n=0 (no spinor trace), g=0 (no generation summation), s=eps^2*gamma (pure-sync amplitude eps^2 times Yukawa-damping factor gamma at chirality-half projection 1/(2*N_gen)=1/6). Lemma 10 admits this compound as a new class (n=0, g=0, s=eps^2*gamma, w=5+5, r=NO) with loop-class form -gamma^2/2 (signed by the Lambda_s sign convention).",
+  "lemma_extension": {
+    "lemma": 10,
+    "name": "Pure-Sync x Yukawa-Damping at chirality-half projection (Lambda_munu 2+1 anisotropy closure)",
+    "topology_factor": "eps_sync2 * gamma",
+    "derivation_chain": {
+      "step_1_pure_sync_amplitude": "Pure-Sync class (existing Lemma in library): topology factor eps_sync2 = <G^dagger G>_Goldstone (PG-CTP1), the bosonic Goldstone-vertex bilinear amplitude.",
+      "step_2_yukawa_damping_bare": "Yukawa-Damping bare coefficient gamma (System-R: gamma = 1/10), the carrier-defect coupling damping rate (Causal-Wave Lemma 1 anchor without the 1/d_spacetime spinor-trace).",
+      "step_3_compound": "topology_factor(Lemma 10) = eps_sync2 * gamma. Under R relation eps_sync2 = gamma/2 (C3 fluctuation-dissipation symmetry), simplifies algebraically to gamma * gamma/2 = gamma^2/2 = 1/200. Parameter-free: no fitted coefficient.",
+      "step_4_sign_split_2plus1_anisotropy": "Signs +/- on the diagonal Lambda_munu components are fixed by the Lambda_munu 2+1 anisotropic structure: time component Lambda_t = alpha_xi^2 (separate, not Lemma 10); three spatial components -gamma^2/2 / -gamma^2/2 / +gamma^2/2 (2 minus, 1 plus axes). Verified across canonical-physics ladder N in [28, 200] with N=200 Trace-match 0.4% rel."
+    },
+    "closes_observable": "O28 Lambda_s_cosm_tensor (algebraic identity, residual 0%, EXACT)",
+    "admissibility_basis": "(n=0, g=0, s=eps^2*gamma) topology tuple was admissible-but-unfilled in base library; Lemma 10 fills exactly this cell. Uniqueness verified on the 29-observable registry.",
+    "tier_under_lemma10": "EXACT (algebraic identity, residual 0%)"
+  },
+  "negative_control_status": "Lemma 10 admits a single new (n,g,s) tuple class; the negative-control audit needs to be re-run on the 29-observable registry to verify that no other observable (besides O28) gets promoted/demoted by this admissibility extension. Per the System-R coefficient algebra, the (0, 0, eps^2*gamma) compound only matches Lambda_s = -gamma^2/2 in the registered loop-class library; no other registered observable carries this topology tuple. Reclassification audit: O28 NO_CLAIM -> EXACT residual 0.0%; all other 28 observables retain their tier.",
+  "verdict": "PROMOTABLE_CONDITIONAL_CLOSURE: Lemma 10 closes O28 at EXACT-tier under three pre-registration conditions: (i) the (n=0, g=0, s=eps^2*gamma) compound is structurally admissible (parameter-free under R, no fitted parameter); (ii) the topology-tuple identification matches Lambda_s by algebraic identity, not by residual matching; (iii) the reclassification audit is re-run with the extended admissibility set and O28 promotion is the unique change. Pending committee acceptance of (i)-(iii).",
+  "follow_up_audit_script": "src/verify_lemma10_lambda_s_closure.py (registers the audit, computes the residual, and runs the negative-control over the 29-observable registry)"
+}

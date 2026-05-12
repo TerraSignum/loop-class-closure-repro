@@ -1,0 +1,9 @@
+{
+  "criterion": "Gauge-sector origin recompute",
+  "n_subgroups_derived": 3,
+  "n_consequences_derived": 5,
+  "fitted_parameters": 0,
+  "asymptotic_freedom_at_Nf_6": true,
+  "b_0_Nf_6": 0.5570423008216338,
+  "verdict": "PASS"
+}

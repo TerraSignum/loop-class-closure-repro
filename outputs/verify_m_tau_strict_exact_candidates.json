@@ -1,0 +1,281 @@
+{
+  "method": "S1 m_tau strict-EXACT candidate-mechanism scan: tests three independent structural-mechanism families (Froggatt-Nielsen U(1)_FN integer charges, Ma-type radiative analog, SO(10) + 5-loop running) against framework's first-principles System-R rationals (alpha_xi=9/10, gamma=1/10, eps_sync^2=1/20, beta_pi=15/16, D_Omega=67/80) and standard particle-physics expansion parameters (Cabibbo, alpha_em).",
+  "branch_metadata": {
+    "causal_wave_branch": "vacuum",
+    "branch_rationale": "Lepton/quark mass or CP-mixing observable; vacuum-QFT-anchored",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "stand": "2026-05-05",
+  "literature": [
+    "Froggatt-Nielsen 1979 (Hierarchy of quark masses, Cabibbo angles, and CP violation)",
+    "Ma 2006 (Verifiable radiative seesaw mechanism)",
+    "Antusch-Hinze-Saad 2025 arXiv:2510.01312 (running quark/lepton parameters)"
+  ],
+  "anchors": {
+    "PDG_m_tau_pole_GeV": 1.77686,
+    "PDG_m_top_GeV": 172.5,
+    "PDG_v_EW_GeV": 246.22,
+    "framework_cost_dressed_m_tau_GeV": 3.054472,
+    "antusch_2025_eta_b_over_eta_tau": 1.6402
+  },
+  "C1_froggatt_nielsen": {
+    "method": "C1 Froggatt-Nielsen U(1)_FN with integer FN charges and three candidate epsilon values",
+    "rows": [
+      {
+        "epsilon_label": "Cabibbo_0.225",
+        "epsilon_value": 0.225,
+        "FN_charge_q_tau": 1,
+        "ratio_predicted": 0.225,
+        "ratio_observed": 0.01030063768115942,
+        "residual_pct": 2084.330785768153
+      },
+      {
+        "epsilon_label": "Cabibbo_0.225",
+        "epsilon_value": 0.225,
+        "FN_charge_q_tau": 2,
+        "ratio_predicted": 0.050625,
+        "ratio_observed": 0.01030063768115942,
+        "residual_pct": 391.47442679783444
+      },
+      {
+        "epsilon_label": "Cabibbo_0.225",
+        "epsilon_value": 0.225,
+        "FN_charge_q_tau": 3,
+        "ratio_predicted": 0.011390625000000001,
+        "ratio_observed": 0.01030063768115942,
+        "residual_pct": 10.58174602951275
+      },
+      {
+        "epsilon_label": "Cabibbo_0.225",
+        "epsilon_value": 0.225,
+        "FN_charge_q_tau": 4,
+        "ratio_predicted": 0.002562890625,
+        "ratio_observed": 0.01030063768115942,
+        "residual_pct": 75.11910714335964
+      },
+      {
+        "epsilon_label": "Cabibbo_0.225",
+        "epsilon_value": 0.225,
+        "FN_charge_q_tau": 5,
+        "ratio_predicted": 0.0005766503906250001,
+        "ratio_observed": 0.01030063768115942,
+        "residual_pct": 94.40179910725591
+      },
+      {
+        "epsilon_label": "framework_gamma_0.10",
+        "epsilon_value": 0.1,
+        "FN_charge_q_tau": 1,
+        "ratio_predicted": 0.1,
+        "ratio_observed": 0.01030063768115942,
+        "residual_pct": 870.8136825636235
+      },
+      {
+        "epsilon_label": "framework_gamma_0.10",
+        "epsilon_value": 0.1,
+        "FN_charge_q_tau": 2,
+        "ratio_predicted": 0.010000000000000002,
+        "ratio_observed": 0.01030063768115942,
+        "residual_pct": 2.9186317436376332
+      },
+      {
+        "epsilon_label": "framework_gamma_0.10",
+        "epsilon_value": 0.1,
+        "FN_charge_q_tau": 3,
+        "ratio_predicted": 0.0010000000000000002,
+        "ratio_observed": 0.01030063768115942,
+        "residual_pct": 90.29186317436375
+      },
+      {
+        "epsilon_label": "framework_gamma_0.10",
+        "epsilon_value": 0.1,
+        "FN_charge_q_tau": 4,
+        "ratio_predicted": 0.00010000000000000002,
+        "ratio_observed": 0.01030063768115942,
+        "residual_pct": 99.02918631743638
+      },
+      {
+        "epsilon_label": "framework_gamma_0.10",
+        "epsilon_value": 0.1,
+        "FN_charge_q_tau": 5,
+        "ratio_predicted": 1.0000000000000003e-05,
+        "ratio_observed": 0.01030063768115942,
+        "residual_pct": 99.90291863174365
+      },
+      {
+        "epsilon_label": "framework_sqrt_gamma_0.316",
+        "epsilon_value": 0.31622776601683794,
+        "FN_charge_q_tau": 1,
+        "ratio_predicted": 0.31622776601683794,
+        "ratio_observed": 0.01030063768115942,
+        "residual_pct": 2969.982420556743
+      },
+      {
+        "epsilon_label": "framework_sqrt_gamma_0.316",
+        "epsilon_value": 0.31622776601683794,
+        "FN_charge_q_tau": 2,
+        "ratio_predicted": 0.1,
+        "ratio_observed": 0.01030063768115942,
+        "residual_pct": 870.8136825636235
+      },
+      {
+        "epsilon_label": "framework_sqrt_gamma_0.316",
+        "epsilon_value": 0.31622776601683794,
+        "FN_charge_q_tau": 3,
+        "ratio_predicted": 0.0316227766016838,
+        "ratio_observed": 0.01030063768115942,
+        "residual_pct": 206.99824205567433
+      },
+      {
+        "epsilon_label": "framework_sqrt_gamma_0.316",
+        "epsilon_value": 0.31622776601683794,
+        "FN_charge_q_tau": 4,
+        "ratio_predicted": 0.01,
+        "ratio_observed": 0.01030063768115942,
+        "residual_pct": 2.9186317436376497
+      },
+      {
+        "epsilon_label": "framework_sqrt_gamma_0.316",
+        "epsilon_value": 0.31622776601683794,
+        "FN_charge_q_tau": 5,
+        "ratio_predicted": 0.00316227766016838,
+        "ratio_observed": 0.01030063768115942,
+        "residual_pct": 69.30017579443256
+      }
+    ],
+    "best_landing": {
+      "epsilon_label": "framework_gamma_0.10",
+      "epsilon_value": 0.1,
+      "FN_charge_q_tau": 2,
+      "ratio_predicted": 0.010000000000000002,
+      "ratio_observed": 0.01030063768115942,
+      "residual_pct": 2.9186317436376332
+    },
+    "best_tier": "PRECISE_loose",
+    "verdict": "Best FN landing: epsilon=framework_gamma_0.10, q_tau=2, residual 2.92%; tier PRECISE_loose. Cabibbo-FN with q_tau=2 typically lands m_tau/m_top in the right magnitude band; framework gamma=1/10 charges give different integer-quantised options."
+  },
+  "C2_ma_radiative_analog": {
+    "method": "C2 Ma-type radiative analog m_tau = (lambda^2/16 pi^2) v_EW with framework System-R lambda candidates",
+    "rows": [
+      {
+        "lambda_label": "alpha_xi",
+        "lambda_value": 0.9,
+        "m_tau_predicted_GeV": 1.2629571554685832,
+        "m_tau_anchor_GeV": 1.77686,
+        "residual_pct": 28.92196596982412
+      },
+      {
+        "lambda_label": "gamma",
+        "lambda_value": 0.1,
+        "m_tau_predicted_GeV": 0.015592063647760288,
+        "m_tau_anchor_GeV": 1.77686,
+        "residual_pct": 99.12249340703487
+      },
+      {
+        "lambda_label": "sqrt_gamma",
+        "lambda_value": 0.31622776601683794,
+        "m_tau_predicted_GeV": 0.15592063647760288,
+        "m_tau_anchor_GeV": 1.77686,
+        "residual_pct": 91.22493407034865
+      },
+      {
+        "lambda_label": "gamma_squared",
+        "lambda_value": 0.010000000000000002,
+        "m_tau_predicted_GeV": 0.00015592063647760295,
+        "m_tau_anchor_GeV": 1.77686,
+        "residual_pct": 99.99122493407035
+      },
+      {
+        "lambda_label": "alpha_xi_minus_eps2",
+        "lambda_value": 0.85,
+        "m_tau_predicted_GeV": 1.1265265985506805,
+        "m_tau_anchor_GeV": 1.77686,
+        "residual_pct": 36.600148658269056
+      },
+      {
+        "lambda_label": "D_Omega_cubed",
+        "lambda_value": 0.5874277343750001,
+        "m_tau_predicted_GeV": 0.5380374344835176,
+        "m_tau_anchor_GeV": 1.77686,
+        "residual_pct": 69.71976213750561
+      }
+    ],
+    "best_landing": {
+      "lambda_label": "alpha_xi",
+      "lambda_value": 0.9,
+      "m_tau_predicted_GeV": 1.2629571554685832,
+      "m_tau_anchor_GeV": 1.77686,
+      "residual_pct": 28.92196596982412
+    },
+    "best_tier": "FACTOR2_or_open",
+    "lambda_tau_required_for_exact_match": 1.067517015059988,
+    "lambda_tau_standard_yukawa": 0.010205748966120778,
+    "verdict": "Best Ma-radiative landing: lambda=alpha_xi, residual 28.92%; tier FACTOR2_or_open. Required lambda_tau for strict-EXACT: 1.0675; standard Yukawa lambda_tau (PDG): 0.0102."
+  },
+  "C3_so10_plus_5loop_running": {
+    "method": "C3 SO(10) suppression then 5-loop QED+EW running enhancement on m_tau",
+    "m_tau_after_SO10_only_GeV": 1.8622558224606756,
+    "residual_after_SO10_only_pct": 4.805996108904216,
+    "rows": [
+      {
+        "enhancement_label": "no_extra_running",
+        "enhancement_factor": 1.0,
+        "m_tau_after_SO10_then_enhanced_GeV": 1.8622558224606756,
+        "residual_pct": 4.805996108904216
+      },
+      {
+        "enhancement_label": "QED_leading_log_only",
+        "enhancement_factor": 1.0141338996840341,
+        "m_tau_after_SO10_then_enhanced_GeV": 1.8885767594413432,
+        "residual_pct": 6.287313544192736
+      },
+      {
+        "enhancement_label": "QED_5loop_summed",
+        "enhancement_factor": 1.0011614097251225,
+        "m_tau_after_SO10_then_enhanced_GeV": 1.8644186644835474,
+        "residual_pct": 4.92771881203625
+      },
+      {
+        "enhancement_label": "framework_D_Omega_cubed",
+        "enhancement_factor": 0.5874277343750001,
+        "m_tau_after_SO10_then_enhanced_GeV": 1.093940718614727,
+        "residual_pct": 38.43405115683133
+      },
+      {
+        "enhancement_label": "framework_alpha_xi_squared",
+        "enhancement_factor": 0.81,
+        "m_tau_after_SO10_then_enhanced_GeV": 1.5084272161931473,
+        "residual_pct": 15.107143151787577
+      },
+      {
+        "enhancement_label": "framework_inverse_alpha_xi",
+        "enhancement_factor": 1.1111111111111112,
+        "m_tau_after_SO10_then_enhanced_GeV": 2.0691731360674175,
+        "residual_pct": 16.451106787671364
+      },
+      {
+        "enhancement_label": "framework_inverse_alpha_xi_squared",
+        "enhancement_factor": 1.2345679012345678,
+        "m_tau_after_SO10_then_enhanced_GeV": 2.2990812622971304,
+        "residual_pct": 29.390118652968173
+      }
+    ],
+    "best_landing": {
+      "enhancement_label": "no_extra_running",
+      "enhancement_factor": 1.0,
+      "m_tau_after_SO10_then_enhanced_GeV": 1.8622558224606756,
+      "residual_pct": 4.805996108904216
+    },
+    "best_tier": "PRECISE_loose",
+    "verdict": "After SO(10) suppression: m_tau = 1.8623 GeV (residual 4.81%). Best 5-loop / framework-rational enhancement: no_extra_running, residual 4.81%; tier PRECISE_loose."
+  },
+  "best_overall_landing": {
+    "epsilon_label": "framework_gamma_0.10",
+    "epsilon_value": 0.1,
+    "FN_charge_q_tau": 2,
+    "ratio_predicted": 0.010000000000000002,
+    "ratio_observed": 0.01030063768115942,
+    "residual_pct": 2.9186317436376332
+  },
+  "best_overall_tier": "PRECISE_loose",
+  "verdict": "Best of three candidate mechanisms: residual 2.92%, tier PRECISE_loose. All three candidates remain at PRECISE-loose or worse without a free-parameter fit; strict-EXACT (<0.4%) is NOT reached by any single candidate without additional structural input. The framework-internal D_Omega^3 closure (loop-class library) at 0.49% remains the tightest m_tau closure; the literature mechanisms tested here serve as supplementary cross-checks rather than replacement closures."
+}

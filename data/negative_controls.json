@@ -1,0 +1,97 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.2.0",
+  "release": "v0.1.0",
+  "description": "Negative-control observables for the loop-class mapping algorithm. The algorithm must return NO_CLAIM for each entry. Two strict sub-classes appear: (a) DELEGATED controls \u2014 physical observables that the wider program does predict via a separate, independently documented mechanism that lies outside the loop-factor library analysed here; the algorithm correctly delegates rather than misuse a loop class. (b) GENUINE_OUT controls \u2014 observables that lie outside the program's claim domain G_claim^auth altogether (input-coefficient values, anthropic/multiverse questions, and beyond-program model spaces). Together these two sub-classes pin the algorithm's scope discipline: a closing assignment for any of them would be a falsifying over-reach.",
+  "controls": [
+    {
+      "id": "NC01",
+      "name": "m_e_over_m_tau",
+      "category": "Quark/lepton mass ratio",
+      "subclass": "DELEGATED",
+      "n_spinor_trace": 1,
+      "g_generation": "1/N_gen",
+      "s_sync_coupling": 0,
+      "delegated_to": "five-layer lepton-mass dressing cascade (companion sector)",
+      "delegated_status": "family-level aggregate closure within a factor of two of the experimental masses across all nine entries in the canonical lattice variation; the m_tau channel at the tighter (sub-percent) tier remains an open sub-front",
+      "rejection_reason": "OUTSIDE_LOOP_LIBRARY: m_e/m_tau is set by an explicit five-layer dressing cascade (tunnel-overlap quark-isospin splitting; cost-mode lepton dressing; Ward-Z renormalization; ground-state protection; sinc-squared lattice form factor), not by a tree-level composition of the five causal-wave coefficients with a loop class L_sigma. The algorithm therefore correctly returns NO_CLAIM and delegates to the dressing-cascade companion sector.",
+      "expected_outcome": "NO_CLAIM"
+    },
+    {
+      "id": "NC02",
+      "name": "m_u_over_m_t",
+      "category": "Quark/lepton mass ratio",
+      "subclass": "DELEGATED",
+      "n_spinor_trace": 1,
+      "g_generation": "1/N_gen",
+      "s_sync_coupling": 0,
+      "delegated_to": "five-layer lepton-mass dressing cascade (companion sector)",
+      "delegated_status": "the up-quark threshold (factor ~17 in the bare-spectrum residual) is absorbed by the sinc-squared lattice form factor of the dressing cascade (layer E)",
+      "rejection_reason": "OUTSIDE_LOOP_LIBRARY: same mechanism as NC01 (different mass pair). The algorithm correctly delegates.",
+      "expected_outcome": "NO_CLAIM"
+    },
+    {
+      "id": "NC03",
+      "name": "alpha_xi_value_itself",
+      "category": "Coefficient value",
+      "subclass": "GENUINE_OUT",
+      "n_spinor_trace": null,
+      "g_generation": null,
+      "s_sync_coupling": null,
+      "rejection_reason": "INPUT_COEFFICIENT: alpha_xi is one of the five measured causal-wave coefficients that the program treats as a frozen input layer (read off from the bounded-operator measurement on the underlying lattice). The transport law predicts what these coefficients close to; it does not predict their numerical values themselves. (n,g,s) is undefined because the coefficient is not a composed observable.",
+      "expected_outcome": "NO_CLAIM"
+    },
+    {
+      "id": "NC04",
+      "name": "QG_UV_cutoff",
+      "category": "Quantum-gravity",
+      "subclass": "GENUINE_OUT",
+      "n_spinor_trace": null,
+      "g_generation": null,
+      "s_sync_coupling": null,
+      "rejection_reason": "OUTSIDE_PROGRAM_DOMAIN: a hard UV cutoff above the Planck scale is a question about an unspecified UV-completion sector. The five-coefficient transport law is the program's IR effective theory; phenomena above the Planck scale are explicitly outside the closure domain G_claim^auth. (n,g,s) undefined.",
+      "expected_outcome": "NO_CLAIM"
+    },
+    {
+      "id": "NC05",
+      "name": "string_landscape_vacuum_selection",
+      "category": "Beyond-program",
+      "subclass": "GENUINE_OUT",
+      "n_spinor_trace": null,
+      "g_generation": null,
+      "s_sync_coupling": null,
+      "rejection_reason": "ANTHROPIC_OUT: vacuum-selection probabilities in a string landscape rest on anthropic/multiverse arguments that lie outside any local effective-theory closure. The program's bounce-saddle vacuum is unique by Coleman+Callan-Coleman uniqueness on S^4, so the question 'which vacuum was selected from a landscape' is not well-posed inside this framework.",
+      "expected_outcome": "NO_CLAIM"
+    },
+    {
+      "id": "NC06",
+      "name": "supersymmetric_partner_mass_M_susy",
+      "category": "Beyond-program",
+      "subclass": "GENUINE_OUT",
+      "n_spinor_trace": 1,
+      "g_generation": 0,
+      "s_sync_coupling": 0,
+      "rejection_reason": "MISSING_TREE_FORMULA: the program contains no superpartner sector. Although (n,g,s)=(1,0,0) admits a candidate Yukawa-Damping class, no tree-level composition of the five coefficients targets a SUSY mass scale. The algorithm reports NO_TREE_FORMULA and returns NO_CLAIM.",
+      "expected_outcome": "NO_CLAIM"
+    },
+    {
+      "id": "NC07",
+      "name": "neutrino_absolute_mass_scale",
+      "category": "Neutrino mass",
+      "subclass": "DELEGATED",
+      "n_spinor_trace": 1,
+      "g_generation": 0,
+      "s_sync_coupling": 0,
+      "g_generation_rationale": "the see-saw scale M_R that fixes the absolute mass is a single scale, not a generation-resolved index, so g=0 (no generation summation)",
+      "delegated_to": "Triple-Lock topology constraint with see-saw closure (cosmology/neutrino sector)",
+      "delegated_status": "the absolute scale is delivered as m_nu3 = 0.051 eV (Triple-Lock Q_topo*C_geo*sigma_stab=0.158 with effective see-saw scale M_R,eff=7.82e14 GeV); Delta-m^2_atm closes at PRECISE tier; the Gamow-see-saw sub-channel below 1 eV remains an open sub-front",
+      "rejection_reason": "OUTSIDE_LOOP_LIBRARY: the absolute neutrino mass scale is set by the see-saw scale M_R, which is a Triple-Lock + cosmology output, not a tree-level composition of the five causal-wave coefficients. The algorithm correctly delegates to the cosmology/neutrino sector.",
+      "expected_outcome": "NO_CLAIM"
+    }
+  ],
+  "falsification_test": "If the deterministic loop-class mapping algorithm assigns any of NC01-NC07 to a class L_sigma in the loop-factor library AND a tree-level composition exists AND the post-loop value lies within the PRECISE_2.5 cut of the experimental target, the algorithm is falsified (its scope discipline has broken)."
+}

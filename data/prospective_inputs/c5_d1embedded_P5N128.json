@@ -1,0 +1,23 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback; c5 d1-embedded diagnostic recomputed from NPZ snapshot via standalone post-snapshot pipeline.",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "lattice_N": 128,
+  "source_file": "P5N128.snapshots.npz",
+  "source_dir": "results_d1_p5n128_kq_fixed",
+  "regime": "P5N128",
+  "n_seeds": 12,
+  "computation_provenance": "extend_c5_d1embedded_to_higher_N.py (post-snapshot reconstruction); pipeline-identical to the bulk-evolution c5 diagnostic at P5N64/P5N100 modulo the seed-averaging of the final-snapshot state.",
+  "computation_timestamp": "2026-05-11T11:28:29.474384+00:00",
+  "M_eff_final": 1.9894303937963096,
+  "Phi_eff_slope": 0.010999985914885132,
+  "d1_gamma_candidate_physical_newton_like_badness_best": 1.0,
+  "d1_gamma_candidate_physical_newton_like_badness_family_median": 1.0,
+  "d1_gamma_candidate_physical_far_field_exponent_badness_best": 0.8712288131133883,
+  "d1_gamma_candidate_physical_far_field_exponent_badness_family_median": 0.8712288131133883,
+  "d1_gamma_candidate_physical_far_field_residual_badness_best": 0.13592374652908437,
+  "d1_gamma_candidate_physical_far_field_residual_badness_family_median": 0.13592374652908437,
+  "d1_gamma_candidate_physical_poisson_residual_badness_best": 1.0020578343046402
+}

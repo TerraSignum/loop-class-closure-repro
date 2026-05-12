@@ -1,0 +1,1461 @@
+{
+  "method": "Strict-EXACT alpha_xi + omega_world structural-candidate audit",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "framework_constants": {
+    "alpha_xi": 0.9,
+    "gamma": 0.1,
+    "eps_squared": 0.05,
+    "beta_pi": 0.9375,
+    "N_gen": 3
+  },
+  "omega_world_used": 5.5,
+  "omega_world_range": [
+    3.0,
+    9.0
+  ],
+  "tier_thresholds": {
+    "EXACT": 0.01,
+    "PRECISE": 0.025
+  },
+  "per_observable": {
+    "m_tau_GeV": {
+      "observable": "m_tau_GeV",
+      "R_baseline": 1.7107484524479462,
+      "tier_baseline": "FACTOR2",
+      "rel_residual_baseline_pct": 71.07484524479462,
+      "all_candidates": [
+        {
+          "candidate": "D_Omega^3",
+          "factor": 0.5874277343750001,
+          "ratio_after": 1.0049410875070346,
+          "rel_residual_pct": 0.49410875070345917,
+          "tier": "EXACT"
+        },
+        {
+          "candidate": "D_Omega^Ngen",
+          "factor": 0.5874277343750001,
+          "ratio_after": 1.0049410875070346,
+          "rel_residual_pct": 0.49410875070345917,
+          "tier": "EXACT"
+        },
+        {
+          "candidate": "D_Omega^3",
+          "factor": 0.5874277343750001,
+          "ratio_after": 1.0049410875070346,
+          "rel_residual_pct": 0.49410875070345917,
+          "tier": "EXACT"
+        },
+        {
+          "candidate": "alpha_xi^5",
+          "factor": 0.5904900000000001,
+          "ratio_after": 1.0101798536859878,
+          "rel_residual_pct": 1.0179853685987839,
+          "tier": "PRECISE"
+        },
+        {
+          "candidate": "alpha_xi^5",
+          "factor": 0.5904900000000001,
+          "ratio_after": 1.0101798536859878,
+          "rel_residual_pct": 1.0179853685987839,
+          "tier": "PRECISE"
+        },
+        {
+          "candidate": "D_Omega^Ngen*N_gen/(N_gen-gamma)",
+          "factor": 0.6076838631465518,
+          "ratio_after": 1.0395942284555528,
+          "rel_residual_pct": 3.9594228455552827,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^{2*Ngen-0.5}",
+          "factor": 0.560188000665848,
+          "ratio_after": 0.9583407552190084,
+          "rel_residual_pct": 4.165924478099159,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1-eps2)",
+          "factor": 0.55805634765625,
+          "ratio_after": 0.9546940331316828,
+          "rel_residual_pct": 4.530596686831723,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen/(1-eps2)",
+          "factor": 0.6183449835526317,
+          "ratio_after": 1.0578327236916154,
+          "rel_residual_pct": 5.783272369161541,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*beta_pi",
+          "factor": 0.5507135009765626,
+          "ratio_after": 0.9421322695378449,
+          "rel_residual_pct": 5.78677304621551,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1+gamma^2/2)/(1-eps2)",
+          "factor": 0.6214367084703948,
+          "ratio_after": 1.0631218873100734,
+          "rel_residual_pct": 6.31218873100734,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1+gamma^2)/(1-eps2)",
+          "factor": 0.624528433388158,
+          "ratio_after": 1.0684110509285316,
+          "rel_residual_pct": 6.841105092853161,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1+1/(N_gen^2*(2*N_gen+1)))/(1-eps2)",
+          "factor": 0.6281599832915623,
+          "ratio_after": 1.074623719305768,
+          "rel_residual_pct": 7.462371930576794,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^6",
+          "factor": 0.531441,
+          "ratio_after": 0.909161868317389,
+          "rel_residual_pct": 9.083813168261102,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^6",
+          "factor": 0.531441,
+          "ratio_after": 0.909161868317389,
+          "rel_residual_pct": 9.083813168261102,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*alpha_xi",
+          "factor": 0.5286849609375001,
+          "ratio_after": 0.9044469787563311,
+          "rel_residual_pct": 9.555302124366893,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^4",
+          "factor": 0.6561,
+          "ratio_after": 1.1224220596510974,
+          "rel_residual_pct": 12.242205965109743,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^4",
+          "factor": 0.6561,
+          "ratio_after": 1.1224220596510974,
+          "rel_residual_pct": 12.242205965109743,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^4",
+          "factor": 0.49197072753906257,
+          "ratio_after": 0.8416381607871415,
+          "rel_residual_pct": 15.836183921285851,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^4",
+          "factor": 0.49197072753906257,
+          "ratio_after": 0.8416381607871415,
+          "rel_residual_pct": 15.836183921285851,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "beta_pi^6",
+          "factor": 0.6789341568946838,
+          "ratio_after": 1.1614855582216315,
+          "rel_residual_pct": 16.148555822163146,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^3*beta_pi",
+          "factor": 0.6834375000000001,
+          "ratio_after": 1.1691896454698933,
+          "rel_residual_pct": 16.918964546989336,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(2*N_gen+1)/(2*N_gen)",
+          "factor": 0.6853323567708335,
+          "ratio_after": 1.172431268758207,
+          "rel_residual_pct": 17.243126875820703,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(1-gamma^2*omega)*alpha_xi^Ngen",
+          "factor": 0.6889050000000001,
+          "ratio_after": 1.1785431626336524,
+          "rel_residual_pct": 17.854316263365245,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^7",
+          "factor": 0.4782969000000001,
+          "ratio_after": 0.8182456814856502,
+          "rel_residual_pct": 18.175431851434976,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^{Ngen+0.5}",
+          "factor": 0.6915901242788246,
+          "ratio_after": 1.183136734838282,
+          "rel_residual_pct": 18.313673483828197,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^2",
+          "factor": 0.70140625,
+          "ratio_after": 1.1999296567248172,
+          "rel_residual_pct": 19.992965672481724,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1+gamma)/(1-gamma)",
+          "factor": 0.7179672309027778,
+          "ratio_after": 1.2282613291752644,
+          "rel_residual_pct": 22.826132917526444,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^Ngen*(1-gamma^2)",
+          "factor": 0.7217100000000001,
+          "ratio_after": 1.2346642656162072,
+          "rel_residual_pct": 23.46642656162072,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^Ngen*(1-gamma^2/omega)",
+          "factor": 0.7276745454545456,
+          "ratio_after": 1.2448681025221264,
+          "rel_residual_pct": 24.486810252212642,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^3",
+          "factor": 0.7290000000000001,
+          "ratio_after": 1.2471356218345528,
+          "rel_residual_pct": 24.713562183455284,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^3",
+          "factor": 0.7290000000000001,
+          "ratio_after": 1.2471356218345528,
+          "rel_residual_pct": 24.713562183455284,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^Ngen*(1+gamma^2/omega)",
+          "factor": 0.7303254545454546,
+          "ratio_after": 1.2494031411469793,
+          "rel_residual_pct": 24.940314114697927,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi*beta_pi^Ngen",
+          "factor": 0.7415771484375,
+          "ratio_after": 1.2686519590602139,
+          "rel_residual_pct": 26.865195906021388,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(alpha_xi*beta_pi)^(Ngen/2)",
+          "factor": 0.77503386392749,
+          "ratio_after": 1.3258879833087056,
+          "rel_residual_pct": 32.58879833087056,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(2*Ngen+1)/(2*Ngen+3)",
+          "factor": 0.7777777777777778,
+          "ratio_after": 1.330582129681736,
+          "rel_residual_pct": 33.05821296817359,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(N_gen+1)/N_gen",
+          "factor": 0.7832369791666668,
+          "ratio_after": 1.3399214500093795,
+          "rel_residual_pct": 33.992145000937946,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^2",
+          "factor": 0.81,
+          "ratio_after": 1.3857062464828365,
+          "rel_residual_pct": 38.57062464828365,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "beta_pi^3",
+          "factor": 0.823974609375,
+          "ratio_after": 1.409613287844682,
+          "rel_residual_pct": 40.96132878446821,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^6",
+          "factor": 0.3450713431129456,
+          "ratio_after": 0.5903302662146059,
+          "rel_residual_pct": 40.96697337853941,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^1",
+          "factor": 0.8375,
+          "ratio_after": 1.4327518289251548,
+          "rel_residual_pct": 43.27518289251549,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(2*Ngen)/(2*Ngen+1)",
+          "factor": 0.8571428571428571,
+          "ratio_after": 1.4663558163839538,
+          "rel_residual_pct": 46.63558163839539,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^{2*Ngen}*omega^{-1/Ngen}",
+          "factor": 0.301070007558286,
+          "ratio_after": 0.5150550495088292,
+          "rel_residual_pct": 48.494495049117084,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "2/(2*Ngen+1)",
+          "factor": 0.2857142857142857,
+          "ratio_after": 0.4887852721279846,
+          "rel_residual_pct": 51.12147278720154,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^1",
+          "factor": 0.9,
+          "ratio_after": 1.5396736072031516,
+          "rel_residual_pct": 53.96736072031516,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(alpha_xi+beta_pi)/2",
+          "factor": 0.91875,
+          "ratio_after": 1.5717501406865504,
+          "rel_residual_pct": 57.17501406865504,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi/beta_pi",
+          "factor": 0.9600000000000001,
+          "ratio_after": 1.6423185143500285,
+          "rel_residual_pct": 64.23185143500285,
+          "tier": "FACTOR2"
+        }
+      ],
+      "best_candidate": {
+        "candidate": "D_Omega^3",
+        "factor": 0.5874277343750001,
+        "ratio_after": 1.0049410875070346,
+        "rel_residual_pct": 0.49410875070345917,
+        "tier": "EXACT"
+      }
+    },
+    "m_mu_GeV": {
+      "observable": "m_mu_GeV",
+      "R_baseline": 1.4196479273140261,
+      "tier_baseline": "FACTOR2",
+      "rel_residual_baseline_pct": 41.96479273140261,
+      "all_candidates": [
+        {
+          "candidate": "D_Omega^2",
+          "factor": 0.70140625,
+          "ratio_after": 0.9957499290176036,
+          "rel_residual_pct": 0.4250070982396381,
+          "tier": "EXACT"
+        },
+        {
+          "candidate": "D_Omega^2",
+          "factor": 0.70140625,
+          "ratio_after": 0.9957499290176036,
+          "rel_residual_pct": 0.4250070982396381,
+          "tier": "EXACT"
+        },
+        {
+          "candidate": "alpha_xi^{Ngen+0.5}",
+          "factor": 0.6915901242788246,
+          "ratio_after": 0.9818144864832831,
+          "rel_residual_pct": 1.8185513516716934,
+          "tier": "PRECISE"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1+gamma)/(1-gamma)",
+          "factor": 0.7179672309027778,
+          "ratio_after": 1.0192606912305193,
+          "rel_residual_pct": 1.9260691230519322,
+          "tier": "PRECISE"
+        },
+        {
+          "candidate": "(1-gamma^2*omega)*alpha_xi^Ngen",
+          "factor": 0.6889050000000001,
+          "ratio_after": 0.9780025553662693,
+          "rel_residual_pct": 2.1997444633730656,
+          "tier": "PRECISE"
+        },
+        {
+          "candidate": "alpha_xi^Ngen*(1-gamma^2)",
+          "factor": 0.7217100000000001,
+          "ratio_after": 1.0245741056218058,
+          "rel_residual_pct": 2.457410562180584,
+          "tier": "PRECISE"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(2*N_gen+1)/(2*N_gen)",
+          "factor": 0.6853323567708335,
+          "ratio_after": 0.9729306598109504,
+          "rel_residual_pct": 2.7069340189049607,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^Ngen*(1-gamma^2/omega)",
+          "factor": 0.7276745454545456,
+          "ratio_after": 1.0330416602137218,
+          "rel_residual_pct": 3.304166021372179,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^3",
+          "factor": 0.7290000000000001,
+          "ratio_after": 1.0349233390119252,
+          "rel_residual_pct": 3.4923339011925236,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^3",
+          "factor": 0.7290000000000001,
+          "ratio_after": 1.0349233390119252,
+          "rel_residual_pct": 3.4923339011925236,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^3",
+          "factor": 0.7290000000000001,
+          "ratio_after": 1.0349233390119252,
+          "rel_residual_pct": 3.4923339011925236,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^Ngen*(1+gamma^2/omega)",
+          "factor": 0.7303254545454546,
+          "ratio_after": 1.0368050178101287,
+          "rel_residual_pct": 3.680501781012868,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi*beta_pi^Ngen",
+          "factor": 0.7415771484375,
+          "ratio_after": 1.0527784617227427,
+          "rel_residual_pct": 5.27784617227427,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^4",
+          "factor": 0.6561,
+          "ratio_after": 0.9314310051107325,
+          "rel_residual_pct": 6.856899488926748,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^4",
+          "factor": 0.6561,
+          "ratio_after": 0.9314310051107325,
+          "rel_residual_pct": 6.856899488926748,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^2*beta_pi",
+          "factor": 0.759375,
+          "ratio_after": 1.0780451448040886,
+          "rel_residual_pct": 7.804514480408864,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "beta_pi^4",
+          "factor": 0.7724761962890625,
+          "ratio_after": 1.0966442309611903,
+          "rel_residual_pct": 9.664423096119034,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(alpha_xi*beta_pi)^(Ngen/2)",
+          "factor": 0.77503386392749,
+          "ratio_after": 1.1002752185228422,
+          "rel_residual_pct": 10.027521852284217,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(2*Ngen+1)/(2*Ngen+3)",
+          "factor": 0.7777777777777778,
+          "ratio_after": 1.1041706101331314,
+          "rel_residual_pct": 10.417061013313145,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1+1/(N_gen^2*(2*N_gen+1)))/(1-eps2)",
+          "factor": 0.6281599832915623,
+          "ratio_after": 0.8917660183014797,
+          "rel_residual_pct": 10.823398169852027,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(N_gen+1)/N_gen",
+          "factor": 0.7832369791666668,
+          "ratio_after": 1.1119207540696576,
+          "rel_residual_pct": 11.192075406965763,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1+gamma^2)/(1-eps2)",
+          "factor": 0.624528433388158,
+          "ratio_after": 0.8866104960081743,
+          "rel_residual_pct": 11.338950399182568,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1+gamma^2/2)/(1-eps2)",
+          "factor": 0.6214367084703948,
+          "ratio_after": 0.8822213351368466,
+          "rel_residual_pct": 11.777866486315336,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen/(1-eps2)",
+          "factor": 0.6183449835526317,
+          "ratio_after": 0.8778321742655192,
+          "rel_residual_pct": 12.216782573448082,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*N_gen/(N_gen-gamma)",
+          "factor": 0.6076838631465518,
+          "ratio_after": 0.8626971367781825,
+          "rel_residual_pct": 13.730286322181751,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^2",
+          "factor": 0.81,
+          "ratio_after": 1.1499148211243613,
+          "rel_residual_pct": 14.991482112436127,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^2",
+          "factor": 0.81,
+          "ratio_after": 1.1499148211243613,
+          "rel_residual_pct": 14.991482112436127,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^5",
+          "factor": 0.5904900000000001,
+          "ratio_after": 0.8382879045996594,
+          "rel_residual_pct": 16.17120954003406,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^3",
+          "factor": 0.5874277343750001,
+          "ratio_after": 0.8339405655522432,
+          "rel_residual_pct": 16.605943444775683,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen",
+          "factor": 0.5874277343750001,
+          "ratio_after": 0.8339405655522432,
+          "rel_residual_pct": 16.605943444775683,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^3",
+          "factor": 0.5874277343750001,
+          "ratio_after": 0.8339405655522432,
+          "rel_residual_pct": 16.605943444775683,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^1",
+          "factor": 0.8375,
+          "ratio_after": 1.1889551391254969,
+          "rel_residual_pct": 18.89551391254969,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^{2*Ngen-0.5}",
+          "factor": 0.560188000665848,
+          "ratio_after": 0.7952697340514593,
+          "rel_residual_pct": 20.473026594854073,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1-eps2)",
+          "factor": 0.55805634765625,
+          "ratio_after": 0.7922435372746309,
+          "rel_residual_pct": 20.775646272536907,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(2*Ngen)/(2*Ngen+1)",
+          "factor": 0.8571428571428571,
+          "ratio_after": 1.2168410805548795,
+          "rel_residual_pct": 21.68410805548795,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*beta_pi",
+          "factor": 0.5507135009765626,
+          "ratio_after": 0.781819280205228,
+          "rel_residual_pct": 21.818071979477203,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^6",
+          "factor": 0.531441,
+          "ratio_after": 0.7544591141396935,
+          "rel_residual_pct": 24.55408858603065,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "beta_pi^2",
+          "factor": 0.87890625,
+          "ratio_after": 1.2477374361158433,
+          "rel_residual_pct": 24.77374361158433,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*alpha_xi",
+          "factor": 0.5286849609375001,
+          "ratio_after": 0.7505465089970188,
+          "rel_residual_pct": 24.94534910029812,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^1",
+          "factor": 0.9,
+          "ratio_after": 1.2776831345826236,
+          "rel_residual_pct": 27.768313458262362,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^4",
+          "factor": 0.49197072753906257,
+          "ratio_after": 0.6984252236500036,
+          "rel_residual_pct": 30.15747763499964,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^4",
+          "factor": 0.49197072753906257,
+          "ratio_after": 0.6984252236500036,
+          "rel_residual_pct": 30.15747763499964,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(alpha_xi+beta_pi)/2",
+          "factor": 0.91875,
+          "ratio_after": 1.3043015332197614,
+          "rel_residual_pct": 30.43015332197614,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^7",
+          "factor": 0.4782969000000001,
+          "ratio_after": 0.6790132027257242,
+          "rel_residual_pct": 32.09867972742758,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi/beta_pi",
+          "factor": 0.9600000000000001,
+          "ratio_after": 1.3628620102214652,
+          "rel_residual_pct": 36.28620102214653,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "2/(2*Ngen+1)",
+          "factor": 0.2857142857142857,
+          "ratio_after": 0.40561369351829313,
+          "rel_residual_pct": 59.43863064817069,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^{2*Ngen}*omega^{-1/Ngen}",
+          "factor": 0.22660720380148394,
+          "ratio_after": 0.3217024471912038,
+          "rel_residual_pct": 67.82975528087962,
+          "tier": "FACTOR2"
+        }
+      ],
+      "best_candidate": {
+        "candidate": "D_Omega^2",
+        "factor": 0.70140625,
+        "ratio_after": 0.9957499290176036,
+        "rel_residual_pct": 0.4250070982396381,
+        "tier": "EXACT"
+      }
+    },
+    "m_e_GeV": {
+      "observable": "m_e_GeV",
+      "R_baseline": 1.8727984344422701,
+      "tier_baseline": "FACTOR2",
+      "rel_residual_baseline_pct": 87.27984344422701,
+      "all_candidates": [
+        {
+          "candidate": "alpha_xi^6",
+          "factor": 0.531441,
+          "ratio_after": 0.9952818727984346,
+          "rel_residual_pct": 0.4718127201565392,
+          "tier": "EXACT"
+        },
+        {
+          "candidate": "D_Omega^Ngen*alpha_xi",
+          "factor": 0.5286849609375001,
+          "ratio_after": 0.9901203671569229,
+          "rel_residual_pct": 0.9879632843077135,
+          "tier": "EXACT"
+        },
+        {
+          "candidate": "D_Omega^Ngen*beta_pi",
+          "factor": 0.5507135009765626,
+          "ratio_after": 1.031375382455128,
+          "rel_residual_pct": 3.1375382455127943,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1-eps2)",
+          "factor": 0.55805634765625,
+          "ratio_after": 1.0451270542211963,
+          "rel_residual_pct": 4.512705422119634,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^{2*Ngen-0.5}",
+          "factor": 0.560188000665848,
+          "ratio_after": 1.0491192106403455,
+          "rel_residual_pct": 4.911921064034552,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^4",
+          "factor": 0.49197072753906257,
+          "ratio_after": 0.921362008326581,
+          "rel_residual_pct": 7.8637991673419005,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^3",
+          "factor": 0.5874277343750001,
+          "ratio_after": 1.10013374128547,
+          "rel_residual_pct": 10.013374128546992,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen",
+          "factor": 0.5874277343750001,
+          "ratio_after": 1.10013374128547,
+          "rel_residual_pct": 10.013374128546992,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^7",
+          "factor": 0.4782969000000001,
+          "ratio_after": 0.8957536855185911,
+          "rel_residual_pct": 10.424631448140886,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^5",
+          "factor": 0.5904900000000001,
+          "ratio_after": 1.1058687475538163,
+          "rel_residual_pct": 10.586874755381626,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*N_gen/(N_gen-gamma)",
+          "factor": 0.6076838631465518,
+          "ratio_after": 1.138069387536693,
+          "rel_residual_pct": 13.806938753669296,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen/(1-eps2)",
+          "factor": 0.6183449835526317,
+          "ratio_after": 1.1580355171425998,
+          "rel_residual_pct": 15.803551714259978,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1+gamma^2/2)/(1-eps2)",
+          "factor": 0.6214367084703948,
+          "ratio_after": 1.1638256947283128,
+          "rel_residual_pct": 16.38256947283128,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1+gamma^2)/(1-eps2)",
+          "factor": 0.624528433388158,
+          "ratio_after": 1.169615872314026,
+          "rel_residual_pct": 16.961587231402596,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1+1/(N_gen^2*(2*N_gen+1)))/(1-eps2)",
+          "factor": 0.6281599832915623,
+          "ratio_after": 1.1764170332877204,
+          "rel_residual_pct": 17.64170332877204,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^4",
+          "factor": 0.6561,
+          "ratio_after": 1.2287430528375736,
+          "rel_residual_pct": 22.87430528375736,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(2*N_gen+1)/(2*N_gen)",
+          "factor": 0.6853323567708335,
+          "ratio_after": 1.2834893648330483,
+          "rel_residual_pct": 28.348936483304833,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(1-gamma^2*omega)*alpha_xi^Ngen",
+          "factor": 0.6889050000000001,
+          "ratio_after": 1.2901802054794522,
+          "rel_residual_pct": 29.018020547945223,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^{Ngen+0.5}",
+          "factor": 0.6915901242788246,
+          "ratio_after": 1.2952089020251178,
+          "rel_residual_pct": 29.520890202511787,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^2",
+          "factor": 0.70140625,
+          "ratio_after": 1.3135925269080235,
+          "rel_residual_pct": 31.359252690802354,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^2",
+          "factor": 0.70140625,
+          "ratio_after": 1.3135925269080235,
+          "rel_residual_pct": 31.359252690802354,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^2",
+          "factor": 0.70140625,
+          "ratio_after": 1.3135925269080235,
+          "rel_residual_pct": 31.359252690802354,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1+gamma)/(1-gamma)",
+          "factor": 0.7179672309027778,
+          "ratio_after": 1.3446079060155742,
+          "rel_residual_pct": 34.46079060155742,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^Ngen*(1-gamma^2)",
+          "factor": 0.7217100000000001,
+          "ratio_after": 1.3516173581213309,
+          "rel_residual_pct": 35.16173581213309,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^Ngen*(1-gamma^2/omega)",
+          "factor": 0.7276745454545456,
+          "ratio_after": 1.3627877495107634,
+          "rel_residual_pct": 36.27877495107634,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^3",
+          "factor": 0.7290000000000001,
+          "ratio_after": 1.365270058708415,
+          "rel_residual_pct": 36.5270058708415,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^Ngen*(1+gamma^2/omega)",
+          "factor": 0.7303254545454546,
+          "ratio_after": 1.3677523679060668,
+          "rel_residual_pct": 36.775236790606684,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi*beta_pi^Ngen",
+          "factor": 0.7415771484375,
+          "ratio_after": 1.388824522611913,
+          "rel_residual_pct": 38.88245226119129,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(alpha_xi*beta_pi)^(Ngen/2)",
+          "factor": 0.77503386392749,
+          "ratio_after": 1.4514822070031466,
+          "rel_residual_pct": 45.14822070031465,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(2*Ngen+1)/(2*Ngen+3)",
+          "factor": 0.7777777777777778,
+          "ratio_after": 1.45662100456621,
+          "rel_residual_pct": 45.662100456621005,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "2/(2*Ngen+1)",
+          "factor": 0.2857142857142857,
+          "ratio_after": 0.5350852669835057,
+          "rel_residual_pct": 46.491473301649435,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(N_gen+1)/N_gen",
+          "factor": 0.7832369791666668,
+          "ratio_after": 1.4668449883806265,
+          "rel_residual_pct": 46.68449883806265,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^2",
+          "factor": 0.81,
+          "ratio_after": 1.516966731898239,
+          "rel_residual_pct": 51.6966731898239,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^2",
+          "factor": 0.81,
+          "ratio_after": 1.516966731898239,
+          "rel_residual_pct": 51.6966731898239,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^2",
+          "factor": 0.81,
+          "ratio_after": 1.516966731898239,
+          "rel_residual_pct": 51.6966731898239,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^1",
+          "factor": 0.8375,
+          "ratio_after": 1.5684686888454014,
+          "rel_residual_pct": 56.846868884540136,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^1",
+          "factor": 0.8375,
+          "ratio_after": 1.5684686888454014,
+          "rel_residual_pct": 56.846868884540136,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^1*beta_pi",
+          "factor": 0.84375,
+          "ratio_after": 1.5801736790606653,
+          "rel_residual_pct": 58.01736790606653,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(2*Ngen)/(2*Ngen+1)",
+          "factor": 0.8571428571428571,
+          "ratio_after": 1.6052558009505171,
+          "rel_residual_pct": 60.52558009505171,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "beta_pi^2",
+          "factor": 0.87890625,
+          "ratio_after": 1.6460142490215264,
+          "rel_residual_pct": 64.60142490215264,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^1",
+          "factor": 0.9,
+          "ratio_after": 1.6855185909980432,
+          "rel_residual_pct": 68.55185909980432,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^1",
+          "factor": 0.9,
+          "ratio_after": 1.6855185909980432,
+          "rel_residual_pct": 68.55185909980432,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^1",
+          "factor": 0.9,
+          "ratio_after": 1.6855185909980432,
+          "rel_residual_pct": 68.55185909980432,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(alpha_xi+beta_pi)/2",
+          "factor": 0.91875,
+          "ratio_after": 1.7206335616438355,
+          "rel_residual_pct": 72.06335616438355,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "beta_pi^1",
+          "factor": 0.9375,
+          "ratio_after": 1.7557485322896282,
+          "rel_residual_pct": 75.57485322896282,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi/beta_pi",
+          "factor": 0.9600000000000001,
+          "ratio_after": 1.7978864970645794,
+          "rel_residual_pct": 79.78864970645793,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^{2*Ngen}*omega^{-1/Ngen}",
+          "factor": 0.09662563636363637,
+          "ratio_after": 0.18096034050880627,
+          "rel_residual_pct": 81.90396594911937,
+          "tier": "FACTOR2"
+        }
+      ],
+      "best_candidate": {
+        "candidate": "alpha_xi^6",
+        "factor": 0.531441,
+        "ratio_after": 0.9952818727984346,
+        "rel_residual_pct": 0.4718127201565392,
+        "tier": "EXACT"
+      }
+    },
+    "A_s_planck": {
+      "observable": "A_s_planck",
+      "R_baseline": 1.5961995249406176,
+      "tier_baseline": "FACTOR2",
+      "rel_residual_baseline_pct": 59.61995249406176,
+      "all_candidates": [
+        {
+          "candidate": "D_Omega^Ngen*(1+1/(N_gen^2*(2*N_gen+1)))/(1-eps2)",
+          "factor": 0.6281599832915623,
+          "ratio_after": 1.002668666916698,
+          "rel_residual_pct": 0.26686669166979815,
+          "tier": "EXACT"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1+gamma^2)/(1-eps2)",
+          "factor": 0.624528433388158,
+          "ratio_after": 0.996871988686086,
+          "rel_residual_pct": 0.31280113139140475,
+          "tier": "EXACT"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1+gamma^2/2)/(1-eps2)",
+          "factor": 0.6214367084703948,
+          "ratio_after": 0.9919369788411052,
+          "rel_residual_pct": 0.806302115889479,
+          "tier": "EXACT"
+        },
+        {
+          "candidate": "D_Omega^Ngen/(1-eps2)",
+          "factor": 0.6183449835526317,
+          "ratio_after": 0.9870019689961247,
+          "rel_residual_pct": 1.299803100387531,
+          "tier": "PRECISE"
+        },
+        {
+          "candidate": "D_Omega^Ngen*N_gen/(N_gen-gamma)",
+          "factor": 0.6076838631465518,
+          "ratio_after": 0.9699846936686052,
+          "rel_residual_pct": 3.001530633139482,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^4",
+          "factor": 0.6561,
+          "ratio_after": 1.0472665083135393,
+          "rel_residual_pct": 4.726650831353929,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^5",
+          "factor": 0.5904900000000001,
+          "ratio_after": 0.9425398574821854,
+          "rel_residual_pct": 5.746014251781462,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^3",
+          "factor": 0.5874277343750001,
+          "ratio_after": 0.9376518705463184,
+          "rel_residual_pct": 6.234812945368162,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen",
+          "factor": 0.5874277343750001,
+          "ratio_after": 0.9376518705463184,
+          "rel_residual_pct": 6.234812945368162,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(2*N_gen+1)/(2*N_gen)",
+          "factor": 0.6853323567708335,
+          "ratio_after": 1.0939271823040382,
+          "rel_residual_pct": 9.392718230403819,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(1-gamma^2*omega)*alpha_xi^Ngen",
+          "factor": 0.6889050000000001,
+          "ratio_after": 1.0996298337292163,
+          "rel_residual_pct": 9.96298337292163,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^{Ngen+0.5}",
+          "factor": 0.6915901242788246,
+          "ratio_after": 1.1039158278274825,
+          "rel_residual_pct": 10.391582782748255,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^{2*Ngen-0.5}",
+          "factor": 0.560188000665848,
+          "ratio_after": 0.8941718205402609,
+          "rel_residual_pct": 10.582817945973911,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1-eps2)",
+          "factor": 0.55805634765625,
+          "ratio_after": 0.8907692770190023,
+          "rel_residual_pct": 10.923072298099768,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^2",
+          "factor": 0.70140625,
+          "ratio_after": 1.1195843230403801,
+          "rel_residual_pct": 11.958432304038013,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^2",
+          "factor": 0.70140625,
+          "ratio_after": 1.1195843230403801,
+          "rel_residual_pct": 11.958432304038013,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^2",
+          "factor": 0.70140625,
+          "ratio_after": 1.1195843230403801,
+          "rel_residual_pct": 11.958432304038013,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*beta_pi",
+          "factor": 0.5507135009765626,
+          "ratio_after": 0.8790486286371735,
+          "rel_residual_pct": 12.095137136282652,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(1+gamma)/(1-gamma)",
+          "factor": 0.7179672309027778,
+          "ratio_after": 1.1460189528899447,
+          "rel_residual_pct": 14.60189528899447,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^6",
+          "factor": 0.531441,
+          "ratio_after": 0.8482858717339669,
+          "rel_residual_pct": 15.171412826603314,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^Ngen*(1-gamma^2)",
+          "factor": 0.7217100000000001,
+          "ratio_after": 1.1519931591448933,
+          "rel_residual_pct": 15.19931591448933,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*alpha_xi",
+          "factor": 0.5286849609375001,
+          "ratio_after": 0.8438866834916865,
+          "rel_residual_pct": 15.61133165083135,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^Ngen*(1-gamma^2/omega)",
+          "factor": 0.7276745454545456,
+          "ratio_after": 1.1615137637659254,
+          "rel_residual_pct": 16.15137637659254,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^3",
+          "factor": 0.7290000000000001,
+          "ratio_after": 1.1636294536817104,
+          "rel_residual_pct": 16.362945368171044,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^Ngen*(1+gamma^2/omega)",
+          "factor": 0.7303254545454546,
+          "ratio_after": 1.1657451435974953,
+          "rel_residual_pct": 16.574514359749525,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi*beta_pi^Ngen",
+          "factor": 0.7415771484375,
+          "ratio_after": 1.1837050920427554,
+          "rel_residual_pct": 18.370509204275542,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^4",
+          "factor": 0.49197072753906257,
+          "ratio_after": 0.7852834415825417,
+          "rel_residual_pct": 21.47165584174583,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^7",
+          "factor": 0.4782969000000001,
+          "ratio_after": 0.7634572845605702,
+          "rel_residual_pct": 23.654271543942983,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(alpha_xi*beta_pi)^(Ngen/2)",
+          "factor": 0.77503386392749,
+          "ratio_after": 1.2371086854139508,
+          "rel_residual_pct": 23.71086854139508,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(2*Ngen+1)/(2*Ngen+3)",
+          "factor": 0.7777777777777778,
+          "ratio_after": 1.241488519398258,
+          "rel_residual_pct": 24.14885193982581,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^Ngen*(N_gen+1)/N_gen",
+          "factor": 0.7832369791666668,
+          "ratio_after": 1.250202494061758,
+          "rel_residual_pct": 25.0202494061758,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^2",
+          "factor": 0.81,
+          "ratio_after": 1.2929216152019003,
+          "rel_residual_pct": 29.292161520190028,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^2",
+          "factor": 0.81,
+          "ratio_after": 1.2929216152019003,
+          "rel_residual_pct": 29.292161520190028,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^2",
+          "factor": 0.81,
+          "ratio_after": 1.2929216152019003,
+          "rel_residual_pct": 29.292161520190028,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^1",
+          "factor": 0.8375,
+          "ratio_after": 1.3368171021377673,
+          "rel_residual_pct": 33.681710213776725,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "D_Omega^1",
+          "factor": 0.8375,
+          "ratio_after": 1.3368171021377673,
+          "rel_residual_pct": 33.681710213776725,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^1*beta_pi",
+          "factor": 0.84375,
+          "ratio_after": 1.3467933491686461,
+          "rel_residual_pct": 34.67933491686461,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(2*Ngen)/(2*Ngen+1)",
+          "factor": 0.8571428571428571,
+          "ratio_after": 1.368171021377672,
+          "rel_residual_pct": 36.81710213776721,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "beta_pi^2",
+          "factor": 0.87890625,
+          "ratio_after": 1.4029097387173397,
+          "rel_residual_pct": 40.29097387173397,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^1",
+          "factor": 0.9,
+          "ratio_after": 1.4365795724465558,
+          "rel_residual_pct": 43.65795724465558,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^1",
+          "factor": 0.9,
+          "ratio_after": 1.4365795724465558,
+          "rel_residual_pct": 43.65795724465558,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^1",
+          "factor": 0.9,
+          "ratio_after": 1.4365795724465558,
+          "rel_residual_pct": 43.65795724465558,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "(alpha_xi+beta_pi)/2",
+          "factor": 0.91875,
+          "ratio_after": 1.4665083135391923,
+          "rel_residual_pct": 46.65083135391923,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "beta_pi^1",
+          "factor": 0.9375,
+          "ratio_after": 1.496437054631829,
+          "rel_residual_pct": 49.64370546318291,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi/beta_pi",
+          "factor": 0.9600000000000001,
+          "ratio_after": 1.5323515439429929,
+          "rel_residual_pct": 53.235154394299286,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "2/(2*Ngen+1)",
+          "factor": 0.2857142857142857,
+          "ratio_after": 0.4560570071258907,
+          "rel_residual_pct": 54.39429928741093,
+          "tier": "FACTOR2"
+        },
+        {
+          "candidate": "alpha_xi^{2*Ngen}*omega^{-1/Ngen}",
+          "factor": 0.09662563636363637,
+          "ratio_after": 0.15423379486072125,
+          "rel_residual_pct": 84.57662051392786,
+          "tier": "FACTOR2"
+        }
+      ],
+      "best_candidate": {
+        "candidate": "D_Omega^Ngen*(1+1/(N_gen^2*(2*N_gen+1)))/(1-eps2)",
+        "factor": 0.6281599832915623,
+        "ratio_after": 1.002668666916698,
+        "rel_residual_pct": 0.26686669166979815,
+        "tier": "EXACT"
+      }
+    }
+  },
+  "omega_world_sensitivity": {
+    "omega_world_3.0": {
+      "m_tau_GeV": {
+        "best_candidate_label": "D_Omega^3",
+        "best_rel_residual_pct": 0.49410875070345917,
+        "best_tier": "EXACT"
+      },
+      "m_mu_GeV": {
+        "best_candidate_label": "(1-gamma^2*omega)*alpha_xi^Ngen",
+        "best_rel_residual_pct": 0.3875638841567275,
+        "best_tier": "EXACT"
+      },
+      "m_e_GeV": {
+        "best_candidate_label": "alpha_xi^6",
+        "best_rel_residual_pct": 0.4718127201565392,
+        "best_tier": "EXACT"
+      }
+    },
+    "omega_world_5.5": {
+      "m_tau_GeV": {
+        "best_candidate_label": "D_Omega^3",
+        "best_rel_residual_pct": 0.49410875070345917,
+        "best_tier": "EXACT"
+      },
+      "m_mu_GeV": {
+        "best_candidate_label": "D_Omega^2",
+        "best_rel_residual_pct": 0.4250070982396381,
+        "best_tier": "EXACT"
+      },
+      "m_e_GeV": {
+        "best_candidate_label": "alpha_xi^6",
+        "best_rel_residual_pct": 0.4718127201565392,
+        "best_tier": "EXACT"
+      }
+    },
+    "omega_world_9.0": {
+      "m_tau_GeV": {
+        "best_candidate_label": "D_Omega^3",
+        "best_rel_residual_pct": 0.49410875070345917,
+        "best_tier": "EXACT"
+      },
+      "m_mu_GeV": {
+        "best_candidate_label": "D_Omega^2",
+        "best_rel_residual_pct": 0.4250070982396381,
+        "best_tier": "EXACT"
+      },
+      "m_e_GeV": {
+        "best_candidate_label": "alpha_xi^6",
+        "best_rel_residual_pct": 0.4718127201565392,
+        "best_tier": "EXACT"
+      }
+    }
+  },
+  "verdict": {
+    "m_tau_GeV": "CLOSED to EXACT via D_Omega^3",
+    "m_mu_GeV": "CLOSED to EXACT via D_Omega^2",
+    "m_e_GeV": "CLOSED to EXACT via alpha_xi^6",
+    "A_s_planck": "CLOSED to EXACT via D_Omega^Ngen*(1+1/(N_gen^2*(2*N_gen+1)))/(1-eps2)"
+  }
+}

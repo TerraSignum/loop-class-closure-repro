@@ -1,0 +1,32 @@
+{
+  "criterion": "Phase I-IV cross-sector closure aggregate",
+  "tier_counts_recomputed": {
+    "EXACT": 5,
+    "PRECISE": 10,
+    "STRUCTURAL_CLOSED": 2,
+    "STRUCTURAL_STATEMENT": 1,
+    "STRUCTURAL_OPEN_CALIBRATION": 1,
+    "ORDER": 0
+  },
+  "total_recomputed": 20,
+  "consistent_with_bundled": true,
+  "headline_ratios_phase_i": {
+    "Lambda_QCD_threshold_matching": 0.948,
+    "H0_Friedmann_forward": 0.977,
+    "Omega_b_h2_BBN": 1.064,
+    "alpha_s_from_Lambda_QCD": 1.0
+  },
+  "headline_ratios_phase_ii": {
+    "reheating_temperature": 1.021,
+    "eta_B_baryogenesis": 1.06,
+    "tau_reion_Planck_tanh": 1.028
+  },
+  "headline_ratios_phase_iii": {
+    "sigma_8_BBKS": 1.061,
+    "n_s_plateau_slow_roll": 1.032
+  },
+  "headline_ratios_phase_iv": {
+    "alpha_s_forward_4loop": 0.994,
+    "einstein_gap_5point_fit": 0.953
+  }
+}

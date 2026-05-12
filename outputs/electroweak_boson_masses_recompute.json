@@ -1,0 +1,14 @@
+{
+  "criterion": "Electroweak gauge-boson mass closure recompute",
+  "m_W_predicted_GeV": 80.2345,
+  "m_W_recomputed_GeV": 80.2345,
+  "m_W_residual_pct": 0.168,
+  "m_W_EXACT": true,
+  "m_Z_predicted_GeV": 91.5082,
+  "m_Z_recomputed_GeV": 91.5082,
+  "m_Z_residual_pct": 0.351,
+  "m_Z_EXACT": true,
+  "formula_consistent_with_bundled": true,
+  "fitted_parameters": 0,
+  "verdict": "PASS"
+}

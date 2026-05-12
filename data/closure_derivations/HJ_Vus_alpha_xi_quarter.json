@@ -1,0 +1,52 @@
+{
+  "method": "HJ_Vus_alpha_xi_quarter",
+  "PDG_2024_Vus": {
+    "central": 0.22501,
+    "uncertainty": 0.00046
+  },
+  "framework_constants": {
+    "gamma": "1/10",
+    "alpha_xi": "9/10",
+    "s_face": "1/4 (BH entropy face)"
+  },
+  "candidates": [
+    {
+      "label": "alpha_xi * s_face = 9/40",
+      "form": "alpha_xi / 4 = 9/40",
+      "value": 0.225,
+      "is_rational": true,
+      "rel_err_PDG_pct": 0.004444246922351116,
+      "z_score_PDG": -0.02173913043474401
+    },
+    {
+      "label": "gamma sqrt(5)",
+      "form": "gamma * sqrt(5)",
+      "value": 0.223606797749979,
+      "is_rational": false,
+      "rel_err_PDG_pct": 0.6236177281103045,
+      "z_score_PDG": -3.0504396739586874
+    },
+    {
+      "label": "(1+gamma)/(d+1) = 11/50",
+      "form": "(1+gamma)/(d+1) = 11/50",
+      "value": 0.22000000000000003,
+      "is_rational": true,
+      "rel_err_PDG_pct": 2.226567708101844,
+      "z_score_PDG": -10.891304347825997
+    }
+  ],
+  "best_match": {
+    "label": "alpha_xi * s_face = 9/40",
+    "form": "alpha_xi / 4 = 9/40",
+    "value": 0.225,
+    "is_rational": true,
+    "rel_err_PDG_pct": 0.004444246922351116,
+    "z_score_PDG": -0.02173913043474401
+  },
+  "coherence_with_HI": {
+    "sin2_theta_W": "1/4 - tau/N_gen = 7/30 = 0.2333",
+    "V_us": "alpha_xi * 1/4 = 9/40 = 0.2250",
+    "common_structure": "s_face = 1/4 appears in both"
+  },
+  "verdict": "ALPHA_XI_QUARTER_PREFERRED: V_us = alpha_xi / 4 = 9/40 matches PDG 2024 V_us = 0.22501(46) at 0.004% rel-err, dominating over V_us = gamma*sqrt(5) (rel-err 0.62%). The reading V_us = alpha_xi * s_face = back-channel projection times BH entropy face fraction uses only System-R rationals and the same s_face=1/4 structure as H-I's sin^2(theta_W) closure."
+}

@@ -1,0 +1,10 @@
+{
+  "criterion": "CKM closure recompute",
+  "ckm_matrix_derived": true,
+  "jarlskog_EXACT_via_Wolfenstein_Compound": true,
+  "jarlskog_residual_pct": 0.73,
+  "delta_CP_EXACT": true,
+  "delta_CP_residual_pct": 1.23,
+  "fitted_parameters": 0,
+  "verdict": "PASS"
+}

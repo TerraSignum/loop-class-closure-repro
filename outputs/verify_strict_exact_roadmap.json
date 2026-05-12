@@ -1,0 +1,316 @@
+{
+  "method": "Strict-EXACT roadmap audit for A_s + charged-lepton masses",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "tier_thresholds": {
+    "EXACT": 0.01,
+    "PRECISE": 0.025,
+    "FACTOR2": 1.0
+  },
+  "A_s": {
+    "observable": "A_s_primordial_scalar_amplitude",
+    "observed": 2.105e-09,
+    "convention": "reduced-Planck-mass standard slow-roll",
+    "A_s_raw_baseline": 21.518557344583783,
+    "single_instanton": {
+      "A_s_predicted": 2.0821323651816855e-06,
+      "ratio_to_Planck": 989.1365155257413,
+      "rel_residual_pct": 98813.65155257413,
+      "tier": "OPEN"
+    },
+    "cascade_instanton": {
+      "N_barriers=1": {
+        "S_cascade": 14.868559030241117,
+        "A_s_predicted": 2.0821323651816855e-06,
+        "ratio_to_Planck": 989.1365155257413,
+        "rel_residual_pct": 98813.65155257413,
+        "tier": "OPEN"
+      },
+      "N_barriers=2": {
+        "S_cascade": 29.737118060482235,
+        "A_s_predicted": 7.263989275191007e-13,
+        "ratio_to_Planck": 0.0003450826258998103,
+        "rel_residual_pct": 99.96549173741002,
+        "tier": "FACTOR2"
+      },
+      "N_barriers=3": {
+        "S_cascade": 44.605677090723354,
+        "A_s_predicted": 2.5342068099251513e-19,
+        "ratio_to_Planck": 1.2038987220547036e-10,
+        "rel_residual_pct": 99.999999987961,
+        "tier": "FACTOR2"
+      },
+      "N_barriers=4": {
+        "S_cascade": 59.47423612096447,
+        "A_s_predicted": 8.841153135240775e-26,
+        "ratio_to_Planck": 4.20007274833291e-17,
+        "rel_residual_pct": 100.0,
+        "tier": "FACTOR2"
+      },
+      "N_barriers=5": {
+        "S_cascade": 74.34279515120559,
+        "A_s_predicted": 3.084436063175361e-32,
+        "ratio_to_Planck": 1.4652902912947082e-23,
+        "rel_residual_pct": 100.0,
+        "tier": "FACTOR2"
+      }
+    },
+    "cascade_2_plus_sinc2_lattice": {
+      "N=100": {
+        "sinc2_factor": 0.9996710564765076,
+        "A_s_predicted": 7.261599832964214e-13,
+        "ratio_to_Planck": 0.00034496911320495077,
+        "rel_residual_pct": 99.96550308867951,
+        "tier": "FACTOR2"
+      },
+      "N=200": {
+        "sinc2_factor": 0.999917756002418,
+        "A_s_predicted": 7.263391855674622e-13,
+        "ratio_to_Planck": 0.0003450542449251602,
+        "rel_residual_pct": 99.96549457550749,
+        "tier": "FACTOR2"
+      },
+      "N=300": {
+        "sinc2_factor": 0.999963446444102,
+        "A_s_predicted": 7.263723750552993e-13,
+        "ratio_to_Planck": 0.00034507001190275504,
+        "rel_residual_pct": 99.96549299880972,
+        "tier": "FACTOR2"
+      },
+      "N=500": {
+        "sinc2_factor": 0.9999868405967337,
+        "A_s_predicted": 7.263893685426812e-13,
+        "ratio_to_Planck": 0.00034507808481837587,
+        "rel_residual_pct": 99.96549219151815,
+        "tier": "FACTOR2"
+      },
+      "N=1000": {
+        "sinc2_factor": 0.9999967101361957,
+        "A_s_predicted": 7.263965377655616e-13,
+        "ratio_to_Planck": 0.00034508149062496986,
+        "rel_residual_pct": 99.96549185093751,
+        "tier": "FACTOR2"
+      }
+    },
+    "best_candidate": {
+      "label": "cascade-N_barriers=2",
+      "rel_residual_pct": 99.96549173741002,
+      "tier": "FACTOR2"
+    }
+  },
+  "charged_leptons": {
+    "m_tau": {
+      "observed": 1.777,
+      "framework_dressed_baseline": 3.04,
+      "ratio_baseline": 1.7107484524479462,
+      "tier_baseline": "FACTOR2",
+      "sinc2_lattice_layer": {
+        "N=100": {
+          "sinc2_factor": 0.9996710564765076,
+          "m_predicted": 3.039000011688583,
+          "ratio_to_obs": 1.7101857128241886,
+          "rel_residual_pct": 71.01857128241886,
+          "tier": "FACTOR2"
+        },
+        "N=200": {
+          "sinc2_factor": 0.999917756002418,
+          "m_predicted": 3.0397499782473507,
+          "ratio_to_obs": 1.7106077536563595,
+          "rel_residual_pct": 71.06077536563595,
+          "tier": "FACTOR2"
+        },
+        "N=300": {
+          "sinc2_factor": 0.999963446444102,
+          "m_predicted": 3.03988887719007,
+          "ratio_to_obs": 1.710685918508762,
+          "rel_residual_pct": 71.06859185087619,
+          "tier": "FACTOR2"
+        },
+        "N=500": {
+          "sinc2_factor": 0.9999868405967337,
+          "m_predicted": 3.0399599954140704,
+          "ratio_to_obs": 1.710725940019173,
+          "rel_residual_pct": 71.0725940019173,
+          "tier": "FACTOR2"
+        },
+        "N=1000": {
+          "sinc2_factor": 0.9999967101361957,
+          "m_predicted": 3.039989998814035,
+          "ratio_to_obs": 1.710742824318534,
+          "rel_residual_pct": 71.0742824318534,
+          "tier": "FACTOR2"
+        }
+      },
+      "generation_residue": {
+        "factor": 0.9982588968709043,
+        "m_predicted": 3.034707046487549,
+        "ratio_to_obs": 1.7077698629642932,
+        "rel_residual_pct": 70.77698629642933,
+        "tier": "FACTOR2"
+      },
+      "combined_sinc2_plus_residue": {
+        "N=200": {
+          "m_predicted": 3.034457460048556,
+          "ratio_to_obs": 1.7076294091438131,
+          "rel_residual_pct": 70.76294091438132,
+          "tier": "FACTOR2"
+        },
+        "N=500": {
+          "m_predicted": 3.034667111553729,
+          "ratio_to_obs": 1.7077473897319804,
+          "rel_residual_pct": 70.77473897319804,
+          "tier": "FACTOR2"
+        },
+        "N=1000": {
+          "m_predicted": 3.03469706271468,
+          "ratio_to_obs": 1.707764244634035,
+          "rel_residual_pct": 70.77642446340352,
+          "tier": "FACTOR2"
+        }
+      }
+    },
+    "m_mu": {
+      "observed": 0.10566,
+      "framework_dressed_baseline": 0.15,
+      "ratio_baseline": 1.4196479273140261,
+      "tier_baseline": "FACTOR2",
+      "sinc2_lattice_layer": {
+        "N=100": {
+          "sinc2_factor": 0.9996710564765076,
+          "m_predicted": 0.14995065847147612,
+          "ratio_to_obs": 1.4191809433226965,
+          "rel_residual_pct": 41.91809433226965,
+          "tier": "FACTOR2"
+        },
+        "N=200": {
+          "sinc2_factor": 0.999917756002418,
+          "m_predicted": 0.14998766340036268,
+          "ratio_to_obs": 1.4195311697933246,
+          "rel_residual_pct": 41.953116979332464,
+          "tier": "FACTOR2"
+        },
+        "N=300": {
+          "sinc2_factor": 0.999963446444102,
+          "m_predicted": 0.14999451696661528,
+          "ratio_to_obs": 1.4195960341341594,
+          "rel_residual_pct": 41.959603413415934,
+          "tier": "FACTOR2"
+        },
+        "N=500": {
+          "sinc2_factor": 0.9999868405967337,
+          "m_predicted": 0.14999802608951004,
+          "ratio_to_obs": 1.4196292455944544,
+          "rel_residual_pct": 41.96292455944543,
+          "tier": "FACTOR2"
+        },
+        "N=1000": {
+          "sinc2_factor": 0.9999967101361957,
+          "m_predicted": 0.14999950652042934,
+          "ratio_to_obs": 1.4196432568656951,
+          "rel_residual_pct": 41.96432568656952,
+          "tier": "FACTOR2"
+        }
+      },
+      "generation_residue": {
+        "factor": 0.998838927493015,
+        "m_predicted": 0.14982583912395223,
+        "ratio_to_obs": 1.4179996131360233,
+        "rel_residual_pct": 41.79996131360233,
+        "tier": "FACTOR2"
+      },
+      "combined_sinc2_plus_residue": {
+        "N=200": {
+          "m_predicted": 0.1498135168480016,
+          "ratio_to_obs": 1.4178829911792692,
+          "rel_residual_pct": 41.78829911792692,
+          "tier": "FACTOR2"
+        },
+        "N=500": {
+          "m_predicted": 0.14982386750531548,
+          "ratio_to_obs": 1.4179809531072827,
+          "rel_residual_pct": 41.798095310728264,
+          "tier": "FACTOR2"
+        },
+        "N=1000": {
+          "m_predicted": 0.14982534621734714,
+          "ratio_to_obs": 1.4179949481104215,
+          "rel_residual_pct": 41.79949481104215,
+          "tier": "FACTOR2"
+        }
+      }
+    },
+    "m_e": {
+      "observed": 0.000511,
+      "framework_dressed_baseline": 0.000957,
+      "ratio_baseline": 1.8727984344422701,
+      "tier_baseline": "FACTOR2",
+      "sinc2_lattice_layer": {
+        "N=100": {
+          "sinc2_factor": 0.9996710564765076,
+          "m_predicted": 0.0009566852010480177,
+          "ratio_to_obs": 1.8721823895264535,
+          "rel_residual_pct": 87.21823895264535,
+          "tier": "FACTOR2"
+        },
+        "N=200": {
+          "sinc2_factor": 0.999917756002418,
+          "m_predicted": 0.0009569212924943139,
+          "ratio_to_obs": 1.872644408012356,
+          "rel_residual_pct": 87.26444080123561,
+          "tier": "FACTOR2"
+        },
+        "N=300": {
+          "sinc2_factor": 0.999963446444102,
+          "m_predicted": 0.0009569650182470055,
+          "ratio_to_obs": 1.872729977000011,
+          "rel_residual_pct": 87.2729977000011,
+          "tier": "FACTOR2"
+        },
+        "N=500": {
+          "sinc2_factor": 0.9999868405967337,
+          "m_predicted": 0.0009569874064510741,
+          "ratio_to_obs": 1.872773789532435,
+          "rel_residual_pct": 87.2773789532435,
+          "tier": "FACTOR2"
+        },
+        "N=1000": {
+          "sinc2_factor": 0.9999967101361957,
+          "m_predicted": 0.0009569968516003393,
+          "ratio_to_obs": 1.872792273190488,
+          "rel_residual_pct": 87.2792273190488,
+          "tier": "FACTOR2"
+        }
+      },
+      "generation_residue": {
+        "factor": 0.9994192951374388,
+        "m_predicted": 0.0009564442654465289,
+        "ratio_to_obs": 1.8717108912847926,
+        "rel_residual_pct": 87.17108912847927,
+        "tier": "FACTOR2"
+      },
+      "combined_sinc2_plus_residue": {
+        "N=200": {
+          "m_predicted": 0.0009563656036466741,
+          "ratio_to_obs": 1.8715569542987753,
+          "rel_residual_pct": 87.15569542987754,
+          "tier": "FACTOR2"
+        },
+        "N=500": {
+          "m_predicted": 0.0009564316792107381,
+          "ratio_to_obs": 1.871686260686376,
+          "rel_residual_pct": 87.1686260686376,
+          "tier": "FACTOR2"
+        },
+        "N=1000": {
+          "m_predicted": 0.0009564411188751592,
+          "ratio_to_obs": 1.8717047336108792,
+          "rel_residual_pct": 87.17047336108791,
+          "tier": "FACTOR2"
+        }
+      }
+    }
+  }
+}

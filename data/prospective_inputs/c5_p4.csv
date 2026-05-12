@@ -1,0 +1,2 @@
+Phi_eff_slope,M_eff_final,rho_res_mean,curvature_load_corr,far_field_exponent,poisson_residual,newton_like_pass,newton_like,campaign,model_point,regime,seed_count,iterations
+-1.0328619153287761,7.115484803676306,0.016993065960972817,0.03530964108185124,-0.00294731761995672,0.969633356192807,0.0,0.0,C5,P4,P4,4,12

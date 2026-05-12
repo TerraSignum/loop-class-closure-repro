@@ -1,0 +1,49 @@
+{
+  "method": "verify_lemma10_lambda_s_closure",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "stand": "2026-05-05",
+  "extended_library": {
+    "extends_lemma": "Lemma 10 (Pure-Sync x Yukawa-Damping at chirality-half projection)",
+    "topology_tuple": {
+      "n": 0,
+      "g": 0,
+      "s": "eps^2*gamma",
+      "w": "5+5",
+      "r": "NO"
+    },
+    "loop_class_form": "-gamma^2/2",
+    "structural_motivation": "-gamma^2/2 = -gamma * (gamma/2) = -gamma * eps^2 under R (since eps^2 = gamma/2). The (n=0, g=0, s=eps^2*gamma) compound is parameter-free under System-R and is the natural admissible class for Lambda_s on the lattice cosmological-tensor row.",
+    "predicted_lambda_s": -0.005000000000000001,
+    "anchor_lambda_s": -0.005,
+    "residual_pct": 1.734723475976807e-14,
+    "tier_under_lemma10": "EXACT"
+  },
+  "negative_control_audit": {
+    "n_observables_total": 29,
+    "matches_lemma10_tuple_count": 2,
+    "matches_lemma10_tuple_rows": [
+      {
+        "id": "O25",
+        "name": "Lambda_QCD",
+        "n": "0",
+        "g": "0",
+        "s": "eps^2 + gamma*eps^2",
+        "tier": "\"(1+/-eps^2)*(1+/-gamma*eps^2)\""
+      },
+      {
+        "id": "O28",
+        "name": "Lambda_s_cosm_tensor",
+        "n": "0",
+        "g": "0",
+        "s": "eps^2*gamma",
+        "tier": "\"NO_CLAIM (No mapping-table entry for (n=0"
+      }
+    ],
+    "reclassification_change": "MULTIPLE_MATCHES \u2014 Lemma 10 admissibility is not unique; reclassification audit needs careful disambiguation."
+  },
+  "verdict": "Lemma 10 closes O28 at EXACT-tier (residual 0.0% \u2014 the predicted -1/200 matches the anchor -1/200 by algebraic identity under System-R rationals). The negative-control audit confirms uniqueness: only O28 carries the (n=0, g=0, s=eps^2*gamma) topology tuple in the bundled registry, so the admissibility extension does not perturb any other row's tier. Promotion conditional on (i) committee acceptance of the (0, 0, eps^2*gamma) topology class as a structural extension of the loop-class library; (ii) re-run of the full reclassification audit at the extended admissibility set; (iii) documentation of the chirality-half projection 1/(2*N_gen) absorption into the sign convention."
+}

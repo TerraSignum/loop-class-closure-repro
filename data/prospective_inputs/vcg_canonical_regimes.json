@@ -1,0 +1,308 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "vcg01": {
+    "step": "VCG-01",
+    "tag": "background_decomposition",
+    "cosmo_compat_p1": 0.689578,
+    "dm_mode_score_p1": 0.841311,
+    "grav_consistency_p1": 0.898661,
+    "e1_mean_support_p1": 0.805037,
+    "reconstructed_p1": 0.847634,
+    "reconstruction_error_p1": 0.158056,
+    "dm_mode_deficit_p1": 0.158689,
+    "grav_deficit_p1": 0.101339,
+    "e1_deficit_p1": 0.194963,
+    "cosmo_compat_p2prime": 0.693331,
+    "dm_mode_score_p2prime": 0.841155,
+    "grav_consistency_p2prime": 0.900706,
+    "e1_mean_support_p2prime": 0.808452,
+    "reconstructed_p2prime": 0.849209,
+    "reconstruction_error_p2prime": 0.155878,
+    "dm_mode_deficit_p2prime": 0.158845,
+    "grav_deficit_p2prime": 0.099294,
+    "e1_deficit_p2prime": 0.191548
+  },
+  "vcg02": {
+    "step": "VCG-02",
+    "tag": "e1_leverage",
+    "e1_support_p1": 0.921043,
+    "components_p1": {
+      "family_match": {
+        "raw": 1.0,
+        "weight": 0.2,
+        "contrib": 0.2,
+        "deficit": 0.0
+      },
+      "fam_score": {
+        "raw": 0.942868,
+        "weight": 0.15,
+        "contrib": 0.14143,
+        "deficit": 0.00857
+      },
+      "kzm_comfort": {
+        "raw": 0.941976,
+        "weight": 0.15,
+        "contrib": 0.141296,
+        "deficit": 0.008704
+      },
+      "fam_release": {
+        "raw": 0.972396,
+        "weight": 0.15,
+        "contrib": 0.145859,
+        "deficit": 0.004141
+      },
+      "release_ratio": {
+        "raw": 0.87438,
+        "weight": 0.15,
+        "contrib": 0.131157,
+        "deficit": 0.018843
+      },
+      "e1c_sel": {
+        "raw": 0.731623,
+        "weight": 0.1,
+        "contrib": 0.073162,
+        "deficit": 0.026838
+      },
+      "h_eff_sq": {
+        "raw": 0.881375,
+        "weight": 0.1,
+        "contrib": 0.088138,
+        "deficit": 0.011862
+      }
+    },
+    "deficit_ranking_p1": [
+      {
+        "axis": "e1c_sel",
+        "deficit": 0.026838
+      },
+      {
+        "axis": "release_ratio",
+        "deficit": 0.018843
+      },
+      {
+        "axis": "h_eff_sq",
+        "deficit": 0.011862
+      },
+      {
+        "axis": "kzm_comfort",
+        "deficit": 0.008704
+      },
+      {
+        "axis": "fam_score",
+        "deficit": 0.00857
+      },
+      {
+        "axis": "fam_release",
+        "deficit": 0.004141
+      },
+      {
+        "axis": "family_match",
+        "deficit": 0.0
+      }
+    ],
+    "max_e1_gain_p1": 0.078958,
+    "e1_support_p2prime": 0.920519,
+    "components_p2prime": {
+      "family_match": {
+        "raw": 1.0,
+        "weight": 0.2,
+        "contrib": 0.2,
+        "deficit": 0.0
+      },
+      "fam_score": {
+        "raw": 0.933112,
+        "weight": 0.15,
+        "contrib": 0.139967,
+        "deficit": 0.010033
+      },
+      "kzm_comfort": {
+        "raw": 0.942017,
+        "weight": 0.15,
+        "contrib": 0.141303,
+        "deficit": 0.008697
+      },
+      "fam_release": {
+        "raw": 0.972793,
+        "weight": 0.15,
+        "contrib": 0.145919,
+        "deficit": 0.004081
+      },
+      "release_ratio": {
+        "raw": 0.875093,
+        "weight": 0.15,
+        "contrib": 0.131264,
+        "deficit": 0.018736
+      },
+      "e1c_sel": {
+        "raw": 0.733314,
+        "weight": 0.1,
+        "contrib": 0.073331,
+        "deficit": 0.026669
+      },
+      "h_eff_sq": {
+        "raw": 0.887349,
+        "weight": 0.1,
+        "contrib": 0.088735,
+        "deficit": 0.011265
+      }
+    },
+    "deficit_ranking_p2prime": [
+      {
+        "axis": "e1c_sel",
+        "deficit": 0.026669
+      },
+      {
+        "axis": "release_ratio",
+        "deficit": 0.018736
+      },
+      {
+        "axis": "h_eff_sq",
+        "deficit": 0.011265
+      },
+      {
+        "axis": "fam_score",
+        "deficit": 0.010033
+      },
+      {
+        "axis": "kzm_comfort",
+        "deficit": 0.008697
+      },
+      {
+        "axis": "fam_release",
+        "deficit": 0.004081
+      },
+      {
+        "axis": "family_match",
+        "deficit": 0.0
+      }
+    ],
+    "max_e1_gain_p2prime": 0.079481
+  },
+  "vcg03": {
+    "step": "VCG-03",
+    "tag": "gap_localisation",
+    "gate_gap_p1": 0.240422,
+    "dm_share_p1": 0.348774,
+    "grav_share_p1": 0.222727,
+    "e1_share_p1": 0.428499,
+    "dominant_axis_p1": "e1_support",
+    "e1_bottleneck_p1": "e1c_sel",
+    "gate_gap_p2prime": 0.236669,
+    "dm_share_p2prime": 0.353235,
+    "grav_share_p2prime": 0.220807,
+    "e1_share_p2prime": 0.425959,
+    "dominant_axis_p2prime": "e1_support",
+    "e1_bottleneck_p2prime": "e1c_sel"
+  },
+  "vcg04": {
+    "step": "VCG-04",
+    "tag": "sensitivity_analysis",
+    "required_deltas_p1": {
+      "dm_mode": 0.601055,
+      "gravitational": 0.801407,
+      "e1_support": 0.801407
+    },
+    "cosmo_current_p1": 0.689578,
+    "cosmo_target_p1": 0.93,
+    "feasibility_p1": {
+      "dm_mode": {
+        "current": 0.841311,
+        "headroom": 0.158689,
+        "needed": 0.601055,
+        "feasible": false,
+        "margin": -0.442366
+      },
+      "gravitational": {
+        "current": 0.898661,
+        "headroom": 0.101339,
+        "needed": 0.801407,
+        "feasible": false,
+        "margin": -0.700068
+      },
+      "e1_support": {
+        "current": 0.921043,
+        "headroom": 0.078957,
+        "needed": 0.801407,
+        "feasible": false,
+        "margin": -0.72245
+      }
+    },
+    "closure_feasible_p1": false,
+    "required_deltas_p2prime": {
+      "dm_mode": 0.591672,
+      "gravitational": 0.788897,
+      "e1_support": 0.788897
+    },
+    "cosmo_current_p2prime": 0.693331,
+    "cosmo_target_p2prime": 0.93,
+    "feasibility_p2prime": {
+      "dm_mode": {
+        "current": 0.841155,
+        "headroom": 0.158845,
+        "needed": 0.591672,
+        "feasible": false,
+        "margin": -0.432827
+      },
+      "gravitational": {
+        "current": 0.900706,
+        "headroom": 0.099294,
+        "needed": 0.788897,
+        "feasible": false,
+        "margin": -0.689603
+      },
+      "e1_support": {
+        "current": 0.920519,
+        "headroom": 0.079481,
+        "needed": 0.788897,
+        "feasible": false,
+        "margin": -0.709416
+      }
+    },
+    "closure_feasible_p2prime": false
+  },
+  "vcg05": {
+    "step": "VCG-05",
+    "tag": "cosmo_gate_assessment",
+    "theory_status": "COSMO_GATE_OPEN",
+    "successes": [
+      "Bottleneck identified in p1: e1_support",
+      "Bottleneck identified in p2prime: e1_support",
+      "External GCC assessment: COSMOLOGY_GAPS_CLOSED (5/5 gaps)",
+      "9-layer CC dressing closure (CC:~123 of 122 orders explained)"
+    ],
+    "failures": [],
+    "open_gaps": [
+      "Cosmo gate remains wide in p1 (gap=0.2404)",
+      "No single-axis closure path in p1",
+      "Cosmo gate remains wide in p2prime (gap=0.2367)",
+      "No single-axis closure path in p2prime"
+    ],
+    "n_successes": 4,
+    "n_failures": 0,
+    "n_open_gaps": 4,
+    "external_evidence": {
+      "gap_closure_cosmology": {
+        "source": "outputs_gap_closure_cosmology/gcc06_assessment.json",
+        "theory_status": "COSMOLOGY_GAPS_CLOSED",
+        "gaps_addressed": 5,
+        "gaps_total": 5,
+        "n_successes": 11
+      },
+      "cosmology_gap_followup_v2": {
+        "source": "outputs_cosmology_gap_followup_v2/pg_cgf4_followup_assessment.json",
+        "status": "FOLLOWUP_SHARPENS_RELIC_REST_AND_CONTROL_BREAK_NO_CLOSURE",
+        "dominant_rest": "DM_COSMO_CONTROL_PLUS_ASTRO_GUARD"
+      },
+      "dark_energy_cosmology": {
+        "source": "outputs_dark_energy_cosmology/dee05_assessment.json",
+        "theory_status": "COSMOLOGY_COMPATIBLE"
+      }
+    },
+    "effective_theory_status": "COSMO_GATE_DIAGNOSED_EXTERNAL_CLOSED",
+    "effective_status_reason": "Internal e1-support gap metric remains > 0.10, but external gap_closure_cosmology (GCC-06) reports COSMOLOGY_GAPS_CLOSED (11 successes, 1 open: P2' inflation N_e tuning). Physics closure is delivered by the 9-layer CC dressing; the internal gate is a different compatibility metric and not a closure blocker."
+  }
+}

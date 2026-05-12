@@ -1,0 +1,38 @@
+{
+  "method": "verify_A_s_from_T_RH_slow_roll_HONEST",
+  "branch_metadata": {
+    "causal_wave_branch": "vacuum",
+    "branch_rationale": "Lepton/quark mass or CP-mixing observable; vacuum-QFT-anchored",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "2.0.0",
+  "convention": "reduced_planck_mass_standard_slow_roll",
+  "M_Pl_full_GeV": 1.2209e+19,
+  "M_Pl_reduced_GeV": 2.435343150710546e+18,
+  "epsilon_slow": 0.0018125,
+  "r_tensor_framework": 0.029,
+  "framework_T_RH_candidates": [
+    {
+      "label": "v5 grav-decay",
+      "T_RH_GeV": 6.61e+16,
+      "V_GeV4": 1.90899960241e+67,
+      "A_s_pred": 1.2640847151605276e-06,
+      "ratio_to_planck": 600.5153041142648
+    },
+    {
+      "label": "Phase-III KT-kin",
+      "T_RH_GeV": 4.29e+17,
+      "V_GeV4": 3.3871089681e+70,
+      "A_s_pred": 0.0022428462896236837,
+      "ratio_to_planck": 1065485.173217902
+    }
+  ],
+  "A_s_obs_planck": 2.105e-09,
+  "required_for_A_s_match": {
+    "V_GeV4": 3.178935806183484e+64,
+    "V_quarter_GeV": 1.3352741441049802e+16,
+    "H_inf_GeV": 42268816476572.93
+  },
+  "verdict": "A_s remains OPEN: framework T_RH values are 5-30x too high under instantaneous-reheat assumption to match Planck A_s under standard slow-roll. An earlier 'PRECISE 4.9%' claim based on full-Planck-mass convention is RETRACTED.",
+  "retraction_note": "An earlier audit version used the FULL Planck mass in both Friedmann and slow-roll A_s formulas; the cancellation produced a misleading apparent match to Planck. Standard convention uses the REDUCED Planck mass throughout."
+}

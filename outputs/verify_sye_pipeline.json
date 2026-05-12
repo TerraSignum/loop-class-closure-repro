@@ -1,0 +1,94 @@
+{
+  "bundle": "verify_sye_pipeline",
+  "description": "In-repo reproducibility entry point for the SYE-Y1..Y5 spectral-Yukawa-eigenvalue pipeline. Reads the bundled data/sye_y1_y5_canonical_regime.json output of the parent-package src/worldformula/physics/spectral_yukawa_eigenvalue.py and reports the precision-tier key results documented in Section sec:sye_pipeline of the manuscript.",
+  "regime_ckm": "p2prime",
+  "regime_top_mass": "cross-regime majority (factor-2 window)",
+  "top_quark": {
+    "m_t_GeV_pred": 174.1,
+    "m_t_GeV_pdg": 172.69,
+    "rel_err_pct": 0.816491979848281,
+    "tier": "PRECISE"
+  },
+  "mass_hierarchy": {
+    "m_t_over_m_u_pred": 28.578336898375532,
+    "m_t_over_m_u_pdg": 79949.07407407407
+  },
+  "ckm_bi_unitary": {
+    "Vud": {
+      "pred": 0.9665218878679599,
+      "pdg": 0.97373,
+      "ratio": 0.9925974221477821,
+      "rel_err_pct": -0.7402577852217853,
+      "tier": "PRECISE"
+    },
+    "Vus": {
+      "pred": 0.2565319400673395,
+      "pdg": 0.225,
+      "ratio": 1.140141955854842,
+      "rel_err_pct": 14.01419558548421,
+      "tier": "FACTOR2"
+    },
+    "Vub": {
+      "pred": 0.005177257714442088,
+      "pdg": 0.00369,
+      "ratio": 1.4030508711225171,
+      "rel_err_pct": 40.305087112251705,
+      "tier": "FACTOR2"
+    },
+    "Vcd": {
+      "pred": 0.25640021857957307,
+      "pdg": 0.22486,
+      "ratio": 1.1402660258808728,
+      "rel_err_pct": 14.026602588087284,
+      "tier": "FACTOR2"
+    },
+    "Vcs": {
+      "pred": 0.9649577831971068,
+      "pdg": 0.97349,
+      "ratio": 0.991235434567491,
+      "rel_err_pct": -0.8764565432508991,
+      "tier": "PRECISE"
+    },
+    "Vcb": {
+      "pred": 0.05581580922706363,
+      "pdg": 0.04182,
+      "ratio": 1.3346678437844004,
+      "rel_err_pct": 33.46678437844005,
+      "tier": "FACTOR2"
+    },
+    "Vtd": {
+      "pred": 0.009714328824059338,
+      "pdg": 0.00857,
+      "ratio": 1.1335272840209263,
+      "rel_err_pct": 13.352728402092628,
+      "tier": "FACTOR2"
+    },
+    "Vts": {
+      "pred": 0.055207249275903605,
+      "pdg": 0.0411,
+      "ratio": 1.3432420748395038,
+      "rel_err_pct": 34.32420748395039,
+      "tier": "FACTOR2"
+    },
+    "Vtb": {
+      "pred": 0.9984276595942674,
+      "pdg": 0.99911,
+      "ratio": 0.9993170517703429,
+      "rel_err_pct": -0.0682948229657068,
+      "tier": "EXACT"
+    }
+  },
+  "jarlskog": {
+    "J_CP_pred": 2.279e-05,
+    "J_CP_pdg": 3.08e-05,
+    "ratio": 0.7399350649350649,
+    "rel_err_pct": -26.006493506493513,
+    "tier": "FACTOR2"
+  },
+  "ckm_summary": {
+    "n_EXACT": 1,
+    "n_PRECISE_or_better": 3,
+    "n_FACTOR2_or_better": 9,
+    "n_total_elements": 9
+  }
+}

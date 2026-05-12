@@ -1,0 +1,122 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "block": "PG-ZMEQ-B2",
+  "tag": "p2prime_core_patch_self_closure_promotion_audit",
+  "status": "CORE_PROMOTION_NOT_A_LIFT_BUT_AN_INVERSE_DAMPING",
+  "status_note": "P2prime S1_CORE patches are NOT under-supported zero modes that could be lifted into A_MATURE. They are OVER-AMPLIFIED zero modes: cw_net_corrected is 3.4x above the P5 rank-1 reference, abs_over_sync_floor is 3.2x above, xi_support is 1.5x above \u2014 while structural properties (defect, compactness, retention) match P5 within 7-20%. A Self-Closure 'promotion' in the usual lift-up sense is not applicable; what the data would require is a downward damping of the zero-mode amplitude by factor ~3.4, which is categorically different from Self-Closure promotion.",
+  "real_vs_synthetic": "REAL_ONLY",
+  "data_sources": [
+    "outputs_cwbp_patch_cw/zmeq_a2_p2prime_near_miss.json (P2prime per-patch atlas + P5 rank-1/2/3 reference)",
+    "outputs_cwbp_patch_cw/zmeq_a1_p5_zero_mode_patch_atlas.json (P5 S1_CORE reference aggregates)"
+  ],
+  "no_recompute_clause": "B2 reads A1/A2 outputs directly. No new physics, no new runs, no new simulations triggered.",
+  "p2prime_s1_core_patches": {
+    "sample_size_n": 2,
+    "seeds": [
+      2,
+      3
+    ],
+    "aggregates": {
+      "cw_net_corrected_mean": 0.0216,
+      "abs_over_sync_floor_mean": 2.36,
+      "retention_patch_score_mean": 0.307,
+      "xi_support_patch_score_mean": 0.162,
+      "defect_patch_score_mean": 2.024,
+      "compactness_patch_score_mean": 1.15
+    }
+  },
+  "p5_s1_core_reference_top3": {
+    "sample_size_n": 3,
+    "seeds": [
+      3,
+      2,
+      0
+    ],
+    "aggregates": {
+      "cw_net_corrected_mean": 0.0063,
+      "abs_over_sync_floor_mean": 0.745,
+      "retention_patch_score_mean": 0.257,
+      "xi_support_patch_score_mean": 0.108,
+      "defect_patch_score_mean": 1.891,
+      "compactness_patch_score_mean": 1.187
+    }
+  },
+  "gap_analysis_p2p_s1_vs_p5_ref": {
+    "cw_net_corrected": {
+      "delta": 0.0153,
+      "ratio_p2p_over_p5": 3.43,
+      "verdict": "OVERSHOOT_FACTOR_3p43"
+    },
+    "abs_over_sync_floor": {
+      "delta": 1.615,
+      "ratio_p2p_over_p5": 3.17,
+      "verdict": "OVERSHOOT_FACTOR_3p17"
+    },
+    "xi_support_patch_score": {
+      "delta": 0.054,
+      "ratio_p2p_over_p5": 1.5,
+      "verdict": "OVERSHOOT_FACTOR_1p50"
+    },
+    "retention_patch_score": {
+      "delta": 0.05,
+      "ratio_p2p_over_p5": 1.2,
+      "verdict": "MODERATE_OVERSHOOT"
+    },
+    "defect_patch_score": {
+      "delta": 0.133,
+      "ratio_p2p_over_p5": 1.07,
+      "verdict": "STRUCTURALLY_SIMILAR"
+    },
+    "compactness_patch_score": {
+      "delta": -0.037,
+      "ratio_p2p_over_p5": 0.97,
+      "verdict": "STRUCTURALLY_SIMILAR"
+    }
+  },
+  "interpretation": {
+    "core_patches_structurally_mature": "Defect (ratio 1.07), compactness (0.97), and retention (1.20) of P2prime S1_CORE patches match the P5 reference within 7-20% \u2014 the geometric and dissipative ingredients are there.",
+    "core_patches_dynamically_over_amplified": "cw_net_corrected (3.4x), abs_over_sync_floor (3.2x), and xi_support (1.5x) overshoot the P5 reference by factors that cannot be explained by finite-N noise. The zero-mode amplitude is over-driven.",
+    "physical_root_cause_hypothesis": "At N=30 with the P2prime defect parameters (g=1.25, omega=1.40, lambda_triangle=2.3), the Xi-reactivity is too strong relative to dissipation: reac_over_diss = 0.718 (P2prime) vs 0.524 (P5) \u2014 37% higher reactivity-to-dissipation ratio. The S1_CORE carrier has enough structural support to form, but the local Xi-reaction term pumps the zero-mode past the lock window."
+  },
+  "self_closure_promotion_feasibility": {
+    "classical_lift_up_interpretation": "INAPPLICABLE",
+    "classical_lift_up_reason": "Self-Closure promotion in the ZMEQ-A1/A4 sense assumes the core-patch carrier is near-mature but sub-threshold (cw_net approx 0, abs_over_sync approx 1) and a mild reactive boost would drive it into equilibrium. P2prime S1_CORE is the opposite configuration: cw_net = +0.022 (far above sync_floor), abs_over_sync = 2.36 (far above 1). A boost would worsen it.",
+    "inverse_damping_interpretation": {
+      "status": "THEORETICALLY_TRACTABLE_BUT_REQUIRES_NEW_RUN_CLASS",
+      "required_damping_factor": 3.43,
+      "required_damping_direction": "DOWNWARD_ON_CW_NET_CORRECTED",
+      "levers_that_would_achieve_damping": [
+        "Increase gamma_damping term in CTP1 (currently 0.100 in P2prime slice, A1 coefficients)",
+        "Decrease alpha_xi (Xi-reactive coupling, currently 0.901 in P2prime A1 coefficients)",
+        "Increase lattice N toward N=50 (as P5 shows, the damping happens naturally at larger N due to finite-size-suppressed Xi-reactivity)"
+      ],
+      "why_not_self_closure": "Self-Closure refers to the patch carrier autonomously closing into zero-mode without external scaffolding. Damping the amplitude via gamma_damping or N-lift is NOT self-closure, it is external parameter adjustment."
+    }
+  },
+  "seed_2_special_case": {
+    "note": "Seed 2 is both the most over-amplified S1_CORE patch (abs_over_sync = 2.53) AND the most heralding-failed seed (XCFP2 margin = -0.42). These two signals converge: the patch over-shoots the Xi-reactive amplitude so far that it exits the observable lock window entirely, producing negative heralding margin. Seeds 2 and 23 together drive 74% of the cross-seed SD (B1 finding)."
+  },
+  "verdict": {
+    "classification": "CORE_PROMOTION_NOT_PLAUSIBLE_AS_SELF_CLOSURE",
+    "reason": "P2prime S1_CORE patches are NOT sub-threshold carriers. They are supra-threshold over-amplified zero modes that overshoot the authorization window. 'Promotion' in the ZMEQ-A1/A4 lift-up sense does not apply. Only an inverse damping (or N-lift) can align them to the P5 reference, and that is not a self-closure operation.",
+    "alternative_pathway_for_b4": "REQUIRES_NEW_RUN_CLASS_OR_NOT_BEST_SECOND_A_CANDIDATE"
+  },
+  "implications_for_b_chain": {
+    "b3_boundary_drain_suppression": "Independent of B2: even if S3/S4 drain is suppressed, the S1_CORE branch in seeds 2,3 would still be over-amplified. Drain suppression alone does not produce an A_MATURE regime.",
+    "b4_second_a_regime_decision": "B2 rules out the simplest lift-up pathway. Given that B3 is also unable to solve the S1_CORE overshoot, B4 should conclude: P2prime is NOT a feasible second A_MATURE regime under existing run parameters. Either a new run class is needed (adjusted gamma_damping or N-lift) or P2prime is not the best second-A candidate."
+  },
+  "claim_limit": "P2PRIME_CORE_PATCH_SELF_CLOSURE_FEASIBILITY_ONLY",
+  "honesty_guard": {
+    "no_new_physics_introduced": true,
+    "no_synthetic_values": true,
+    "no_recompute_of_simulations": true,
+    "reuses_existing_a1_a2_outputs_only": true,
+    "overshoot_language_supported_by_ratio_computation": true,
+    "small_sample_scope_declared": "P2prime S1_CORE n=2, P5 reference n=3 \u2014 A2 atlas surfaces only the top-ranked patches per regime; full 28-seed S1_CORE inventory for P2prime is not surfaced by A2."
+  },
+  "validation_pass": true
+}

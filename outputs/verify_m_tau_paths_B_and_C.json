@@ -1,0 +1,455 @@
+{
+  "method": "m_tau closure audit, Path B (loop-class IR matching) + Path C (QFE+GJ joint)",
+  "branch_metadata": {
+    "causal_wave_branch": "vacuum",
+    "branch_rationale": "Lepton/quark mass or CP-mixing observable; vacuum-QFT-anchored",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "stand": "2026-05-05",
+  "PDG_target_GeV": 1.77686,
+  "QFE_predictions_GeV": {
+    "p1": 3.054472,
+    "p2prime": 17.012014
+  },
+  "F05_GJ_predictions_GeV": {
+    "p5n64": 5.72107798,
+    "p5n100": 5.63937824
+  },
+  "fitted_parameters": 0,
+  "path_B_scan": {
+    "QFE_p1": [
+      {
+        "factors": [
+          "L8-",
+          "L8-",
+          "L8-"
+        ],
+        "value": 2.6188279309999993,
+        "residual_pct": 47.38515870693241,
+        "tier": "FACTOR2"
+      },
+      {
+        "factors": [
+          "L8-",
+          "L8-",
+          "PS-"
+        ],
+        "value": 2.6188279309999993,
+        "residual_pct": 47.38515870693241,
+        "tier": "FACTOR2"
+      },
+      {
+        "factors": [
+          "L8-",
+          "PS-",
+          "PS-"
+        ],
+        "value": 2.6188279309999993,
+        "residual_pct": 47.38515870693241,
+        "tier": "FACTOR2"
+      },
+      {
+        "factors": [
+          "PS-",
+          "PS-",
+          "PS-"
+        ],
+        "value": 2.6188279309999993,
+        "residual_pct": 47.38515870693241,
+        "tier": "FACTOR2"
+      },
+      {
+        "factors": [
+          "L5",
+          "L8-",
+          "L8-"
+        ],
+        "value": 2.6647722806666665,
+        "residual_pct": 49.97086324565055,
+        "tier": "FACTOR2"
+      },
+      {
+        "factors": [
+          "L5",
+          "L8-",
+          "PS-"
+        ],
+        "value": 2.6647722806666665,
+        "residual_pct": 49.97086324565055,
+        "tier": "FACTOR2"
+      },
+      {
+        "factors": [
+          "L5",
+          "PS-",
+          "PS-"
+        ],
+        "value": 2.6647722806666665,
+        "residual_pct": 49.97086324565055,
+        "tier": "FACTOR2"
+      },
+      {
+        "factors": [
+          "L1-",
+          "L8-",
+          "L8-"
+        ],
+        "value": 2.6877444555,
+        "residual_pct": 51.26371551500961,
+        "tier": "FACTOR2"
+      },
+      {
+        "factors": [
+          "L1-",
+          "L8-",
+          "PS-"
+        ],
+        "value": 2.6877444555,
+        "residual_pct": 51.26371551500961,
+        "tier": "FACTOR2"
+      },
+      {
+        "factors": [
+          "L1-",
+          "PS-",
+          "PS-"
+        ],
+        "value": 2.6877444555,
+        "residual_pct": 51.26371551500961,
+        "tier": "FACTOR2"
+      }
+    ],
+    "F05_p5n64": [
+      {
+        "factors": [
+          "L8-",
+          "L8-",
+          "L8-"
+        ],
+        "value": 4.905109233102499,
+        "residual_pct": 176.05490770811986,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "L8-",
+          "L8-",
+          "PS-"
+        ],
+        "value": 4.905109233102499,
+        "residual_pct": 176.05490770811986,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "L8-",
+          "PS-",
+          "PS-"
+        ],
+        "value": 4.905109233102499,
+        "residual_pct": 176.05490770811986,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "PS-",
+          "PS-",
+          "PS-"
+        ],
+        "value": 4.905109233102499,
+        "residual_pct": 176.05490770811986,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "L5",
+          "L8-",
+          "L8-"
+        ],
+        "value": 4.991163781051666,
+        "residual_pct": 180.89797626440273,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "L5",
+          "L8-",
+          "PS-"
+        ],
+        "value": 4.991163781051666,
+        "residual_pct": 180.89797626440273,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "L5",
+          "PS-",
+          "PS-"
+        ],
+        "value": 4.991163781051666,
+        "residual_pct": 180.89797626440273,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "L1-",
+          "L8-",
+          "L8-"
+        ],
+        "value": 5.034191055026249,
+        "residual_pct": 183.3195105425441,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "L1-",
+          "L8-",
+          "PS-"
+        ],
+        "value": 5.034191055026249,
+        "residual_pct": 183.3195105425441,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "L1-",
+          "PS-",
+          "PS-"
+        ],
+        "value": 5.034191055026249,
+        "residual_pct": 183.3195105425441,
+        "tier": "ORDER"
+      }
+    ],
+    "F05_p5n100": [
+      {
+        "factors": [
+          "L8-",
+          "L8-",
+          "L8-"
+        ],
+        "value": 4.835061918519999,
+        "residual_pct": 172.1127111038573,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "L8-",
+          "L8-",
+          "PS-"
+        ],
+        "value": 4.835061918519999,
+        "residual_pct": 172.1127111038573,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "L8-",
+          "PS-",
+          "PS-"
+        ],
+        "value": 4.835061918519999,
+        "residual_pct": 172.1127111038573,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "PS-",
+          "PS-",
+          "PS-"
+        ],
+        "value": 4.835061918519999,
+        "residual_pct": 172.1127111038573,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "L5",
+          "L8-",
+          "L8-"
+        ],
+        "value": 4.919887566213333,
+        "residual_pct": 176.88661831620573,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "L5",
+          "L8-",
+          "PS-"
+        ],
+        "value": 4.919887566213333,
+        "residual_pct": 176.88661831620573,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "L5",
+          "PS-",
+          "PS-"
+        ],
+        "value": 4.919887566213333,
+        "residual_pct": 176.88661831620573,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "L1-",
+          "L8-",
+          "L8-"
+        ],
+        "value": 4.96230039006,
+        "residual_pct": 179.27357192237992,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "L1-",
+          "L8-",
+          "PS-"
+        ],
+        "value": 4.96230039006,
+        "residual_pct": 179.27357192237992,
+        "tier": "ORDER"
+      },
+      {
+        "factors": [
+          "L1-",
+          "PS-",
+          "PS-"
+        ],
+        "value": 4.96230039006,
+        "residual_pct": 179.27357192237992,
+        "tier": "ORDER"
+      }
+    ]
+  },
+  "path_C_joint": {
+    "p1_x_p5n64": [
+      {
+        "method": "geometric_mean",
+        "value": 4.18029574309361,
+        "residual_pct": 135.26309011928964,
+        "tier": "ORDER"
+      },
+      {
+        "method": "arithmetic_mean",
+        "value": 4.38777499,
+        "residual_pct": 146.9398258726067,
+        "tier": "ORDER"
+      },
+      {
+        "method": "harmonic_mean",
+        "value": 3.982627308727734,
+        "residual_pct": 124.13849761532893,
+        "tier": "ORDER"
+      },
+      {
+        "method": "gamma_log_hybrid_QFE^gamma_GJ^(1-gamma)",
+        "value": 5.373084808044809,
+        "residual_pct": 202.39213038983425,
+        "tier": "ORDER"
+      }
+    ],
+    "p1_x_p5n100": [
+      {
+        "method": "geometric_mean",
+        "value": 4.150340098291859,
+        "residual_pct": 133.57721476604004,
+        "tier": "ORDER"
+      },
+      {
+        "method": "arithmetic_mean",
+        "value": 4.34692512,
+        "residual_pct": 144.64083383046494,
+        "tier": "ORDER"
+      },
+      {
+        "method": "harmonic_mean",
+        "value": 3.962645423137466,
+        "residual_pct": 123.01393599594037,
+        "tier": "ORDER"
+      },
+      {
+        "method": "gamma_log_hybrid_QFE^gamma_GJ^(1-gamma)",
+        "value": 5.303978031997123,
+        "residual_pct": 198.50286640461954,
+        "tier": "ORDER"
+      }
+    ],
+    "p2prime_x_p5n64": [
+      {
+        "method": "geometric_mean",
+        "value": 9.86544771872274,
+        "residual_pct": 455.2180655044707,
+        "tier": "ORDER"
+      },
+      {
+        "method": "arithmetic_mean",
+        "value": 11.36654599,
+        "residual_pct": 539.6984562655471,
+        "tier": "ORDER"
+      },
+      {
+        "method": "harmonic_mean",
+        "value": 8.562588738608685,
+        "residual_pct": 381.89439452791356,
+        "tier": "ORDER"
+      },
+      {
+        "method": "gamma_log_hybrid_QFE^gamma_GJ^(1-gamma)",
+        "value": 6.379779279980192,
+        "residual_pct": 259.0479429994593,
+        "tier": "ORDER"
+      }
+    ],
+    "p2prime_x_p5n100": [
+      {
+        "method": "geometric_mean",
+        "value": 9.794752756970201,
+        "residual_pct": 451.2394199301127,
+        "tier": "ORDER"
+      },
+      {
+        "method": "arithmetic_mean",
+        "value": 11.32569612,
+        "residual_pct": 537.3994642234053,
+        "tier": "ORDER"
+      },
+      {
+        "method": "harmonic_mean",
+        "value": 8.47075363436251,
+        "residual_pct": 376.7260017312849,
+        "tier": "ORDER"
+      },
+      {
+        "method": "gamma_log_hybrid_QFE^gamma_GJ^(1-gamma)",
+        "value": 6.297724744515733,
+        "residual_pct": 254.42999136205066,
+        "tier": "ORDER"
+      }
+    ]
+  },
+  "verdict": {
+    "best_path_B": {
+      "factors": [
+        "L8-",
+        "L8-",
+        "L8-"
+      ],
+      "value": 2.6188279309999993,
+      "residual_pct": 47.38515870693241,
+      "tier": "FACTOR2"
+    },
+    "best_path_C": {
+      "method": "harmonic_mean",
+      "value": 3.962645423137466,
+      "residual_pct": 123.01393599594037,
+      "tier": "ORDER"
+    },
+    "path_B_reaches_EXACT": false,
+    "path_B_reaches_PRECISE": false,
+    "path_C_reaches_EXACT": false,
+    "path_C_reaches_PRECISE": false
+  }
+}

@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+title: "Deterministic loop-class mapping for cross-sector observable corrections"
+message: "If you use this software or data, please cite it using the metadata below."
+authors:
+  - family-names: Bucciarelli
+    given-names: Sandro
+version: 0.1.0
+date-released: 2026-04-26
+license: MIT
+repository-code: "https://github.com/[anonymized]/loop-class-closure-repro"
+abstract: >-
+  A reproducible Python package implementing the deterministic
+  loop-class mapping algorithm and its application to 26
+  cross-sector observables. Nine library entries — eight Lemmas
+  (Yukawa-Damping, PMNS-Self-Energy, Pure-Self-Energy,
+  Resummed-Propagator, Generation, Sub-Generation, EW-Mixed,
+  Cosmological-Density) plus a Pure-Sync class — form a finite,
+  parameter-free loop-factor library. Each observable is uniquely
+  classified by its (n, g, s) topology factors;
+  no free choice of class is possible. Negative-control observables
+  outside the closure domain return NO_CLAIM. Reclassifications are
+  bounded by R1-R5 and theorem-falsification triggers F1-F3.
+keywords:
+  - loop classes
+  - deterministic mapping
+  - negative controls
+  - reclassification rules
+  - reproducibility
+references:
+  - type: article
+    title: "Deterministic loop-class mappings for cross-sector physical observables"
+    authors:
+      - family-names: Bucciarelli
+        given-names: Sandro
+    year: 2026
+    notes: "Accompanying preprint; see paper/manuscript.pdf in this repository."

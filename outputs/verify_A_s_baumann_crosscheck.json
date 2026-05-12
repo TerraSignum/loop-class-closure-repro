@@ -1,0 +1,49 @@
+{
+  "method": "A_s_Baumann_crosscheck",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "framework_inputs": {
+    "V_0_GeV4": 3.25e+74,
+    "epsilon": 0.001826,
+    "eta_S": 3.023577,
+    "N_modes": 13
+  },
+  "M_Pl_conventions": {
+    "M_Pl_full_GeV": 1.221e+19,
+    "M_Pl_red_GeV": 2.435542621850747e+18,
+    "ratio_full4_over_red4": 631.6546816697189
+  },
+  "instanton_modulation": {
+    "S_inst": 14.92075443311628,
+    "exp_neg_S_inst": 3.3113011798632627e-07,
+    "one_loop_factor": 0.2773500981126146,
+    "total_suppression": 9.183897071154924e-08
+  },
+  "A_s_predictions": {
+    "framework_full_MPl": {
+      "A_s_raw": 0.033807179919497506,
+      "A_s_phys": 3.104816606466807e-09,
+      "ratio_to_obs": 1.4749722596041837,
+      "log10_ratio": 0.16878385244020266,
+      "verdict": "PRECISE (full-M_Pl convention): factor 1.47, log10 +0.17"
+    },
+    "Baumann_reduced_MPl": {
+      "A_s_raw": 21.354463470201097,
+      "A_s_phys": 1.9611719452006466e-06,
+      "ratio_to_obs": 931.6731331119461,
+      "log10_ratio": 2.9692635718123572,
+      "verdict": "OPEN (Baumann reduced): off by factor 2.97 log-orders; additional suppression mechanism needed to close"
+    }
+  },
+  "Baumann_closure_required": {
+    "additional_suppression": 0.001073337809645568,
+    "delta_S_inst_required": 6.836982037625389,
+    "V_0_required_GeV4": 3.488347881348096e+71,
+    "V_0_quarter_required_GeV": 7.685195986749057e+17,
+    "V_quarter_over_M_Pl_red": 0.31554348167839275
+  }
+}

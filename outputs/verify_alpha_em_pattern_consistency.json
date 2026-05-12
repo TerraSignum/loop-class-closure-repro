@@ -1,0 +1,186 @@
+{
+  "method": "verify_alpha_em_pattern_consistency",
+  "branch_metadata": {
+    "causal_wave_branch": "vacuum",
+    "branch_rationale": "Electroweak / vacuum-anchor QFT observable; vacuum-projection side",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "stand": "2026-05-07",
+  "system_R_inputs": {
+    "alpha_xi": 0.9,
+    "gamma": 0.1,
+    "eps_sync_squared": 0.05,
+    "beta_pi": 0.9375,
+    "N_gen": 3,
+    "d": 4
+  },
+  "derived": {
+    "alpha_EM_pred": 0.007290000000000002,
+    "sin2_theta_W_pred": 0.23064165294229655,
+    "cos2_theta_W_pred": 0.7693583470577035,
+    "alpha_W_pred": 0.031607473788890436,
+    "alpha_W_inv_pred": 31.638086823360283,
+    "alpha_Y_renorm": 0.009475428489051328,
+    "alpha_Y_renorm_inv": 105.53612442492499
+  },
+  "pattern_identities": [
+    {
+      "label": "O33: alpha_EM = gamma^2 * alpha_xi^N_gen",
+      "formula": "gamma^2 * alpha_xi^N_gen",
+      "predicted": 0.007290000000000002,
+      "target": 0.0072973525205055605,
+      "rel_err_pct": -0.10075599999996908,
+      "abs_rel_err_pct": 0.10075599999996908,
+      "tier": "EXACT"
+    },
+    {
+      "label": "O34/T43: m_mu/m_e = 3/(2*alpha_EM)",
+      "formula": "3 / (2*alpha_EM)",
+      "predicted": 205.76131687242793,
+      "target": 206.7682,
+      "rel_err_pct": -0.4869622734889026,
+      "abs_rel_err_pct": 0.4869622734889026,
+      "tier": "PRECISE"
+    },
+    {
+      "label": "O35/T52: |V_ub| = alpha_EM / 2",
+      "formula": "alpha_EM / 2",
+      "predicted": 0.003645000000000001,
+      "target": 0.0037,
+      "rel_err_pct": -1.486486486486461,
+      "abs_rel_err_pct": 1.486486486486461,
+      "tier": "PRECISE"
+    },
+    {
+      "label": "O36/T53: |V_td| = 2*alpha_EM/sqrt(N_gen)",
+      "formula": "2*alpha_EM / sqrt(N_gen)",
+      "predicted": 0.008417766924784747,
+      "target": 0.00854,
+      "rel_err_pct": -1.4313006465486362,
+      "abs_rel_err_pct": 1.4313006465486362,
+      "tier": "PRECISE"
+    },
+    {
+      "label": "O37/T51: |V_cb| = alpha_EM*d*(1+1/N_gen)",
+      "formula": "alpha_EM * d * (1+1/N_gen)",
+      "predicted": 0.03888000000000001,
+      "target": 0.042,
+      "rel_err_pct": -7.428571428571407,
+      "abs_rel_err_pct": 7.428571428571407,
+      "tier": "FACTOR2"
+    },
+    {
+      "label": "O38/T49: m_b/m_s = 1/(alpha_EM*N_gen)",
+      "formula": "1 / (alpha_EM*N_gen)",
+      "predicted": 45.724737082761756,
+      "target": 44.946236559139784,
+      "rel_err_pct": 1.7320705429866836,
+      "abs_rel_err_pct": 1.7320705429866836,
+      "tier": "PRECISE"
+    },
+    {
+      "label": "O39/T41: Dm^2_21/Dm^2_31 = 4*alpha_EM",
+      "formula": "4 * alpha_EM",
+      "predicted": 0.02916000000000001,
+      "target": 0.029502982107355868,
+      "rel_err_pct": -1.1625336927223517,
+      "abs_rel_err_pct": 1.1625336927223517,
+      "tier": "PRECISE"
+    },
+    {
+      "label": "O40/T45: sin^2(theta_W) = 1/4 - eps^2/N_gen",
+      "formula": "1/4 - eps^2/N_gen",
+      "predicted": 0.23333333333333334,
+      "target": 0.23129,
+      "rel_err_pct": 0.8834507904939001,
+      "abs_rel_err_pct": 0.8834507904939001,
+      "tier": "PRECISE"
+    },
+    {
+      "label": "T44: m_t/m_b = 1/(2*alpha_EM*sqrt(N_gen))",
+      "formula": "1 / (2*alpha_EM*sqrt(N_gen))",
+      "predicted": 39.59878389503605,
+      "target": 41.26794258373206,
+      "rel_err_pct": -4.04468598188366,
+      "abs_rel_err_pct": 4.04468598188366,
+      "tier": "FACTOR2"
+    },
+    {
+      "label": "T46b: Y_p = 1/(d+1) + eps^2 - alpha_EM",
+      "formula": "1/(d+1) + eps^2 - alpha_EM",
+      "predicted": 0.24271,
+      "target": 0.245,
+      "rel_err_pct": -0.934693877551015,
+      "abs_rel_err_pct": 0.934693877551015,
+      "tier": "PRECISE"
+    },
+    {
+      "label": "T42: BR(B_s->mumu) = alpha_EM^4",
+      "formula": "alpha_EM^4",
+      "predicted": 2.8242953648100034e-09,
+      "target": 3.09e-09,
+      "rel_err_pct": -8.598855507766876,
+      "abs_rel_err_pct": 8.598855507766876,
+      "tier": "FACTOR2"
+    },
+    {
+      "label": "T50: m_c/m_u = 1/(30*alpha_EM^2)",
+      "formula": "1 / (30*alpha_EM^2)",
+      "predicted": 627.2254743863065,
+      "target": 587.9629629629629,
+      "rel_err_pct": 6.67771847830095,
+      "abs_rel_err_pct": 6.67771847830095,
+      "tier": "FACTOR2"
+    },
+    {
+      "label": "V_us = gamma*sqrt(5)",
+      "formula": "gamma * sqrt(5)",
+      "predicted": 0.223606797749979,
+      "target": 0.225,
+      "rel_err_pct": -0.6192010000093395,
+      "abs_rel_err_pct": 0.6192010000093395,
+      "tier": "PRECISE"
+    }
+  ],
+  "n_total": 13,
+  "n_exact": 1,
+  "n_precise": 8,
+  "n_factor2": 4,
+  "n_better_2_5pct": 9,
+  "alpha_W_consistency_residual_pct": -6.461474218633412,
+  "delta_Y_candidates": [
+    {
+      "alpha_Y_tree_label": "alpha_EM (= alpha_Y^renorm * cos^2)",
+      "alpha_Y_tree": 0.007290000000000002,
+      "delta_Y_required": 0.2997844292251475,
+      "note": "tree = alpha_EM (assumes Z_Y absorbs only cos^2 effect)"
+    },
+    {
+      "alpha_Y_tree_label": "eps_sync^2 * gamma^2  (S-R rational)",
+      "alpha_Y_tree": 0.0005000000000000001,
+      "delta_Y_required": 17.950856978102653,
+      "note": "framework structural rational"
+    },
+    {
+      "alpha_Y_tree_label": "alpha_EM / 10  (memory hint Sigma Y^2 = 10)",
+      "alpha_Y_tree": 0.0007290000000000003,
+      "delta_Y_required": 11.997844292251475,
+      "note": "if alpha_Y^tree is alpha_EM scaled by Sigma Y^2"
+    },
+    {
+      "alpha_Y_tree_label": "gamma^4  (chirality-squared squared)",
+      "alpha_Y_tree": 0.00010000000000000002,
+      "delta_Y_required": 93.75428489051326,
+      "note": "structural framework rational"
+    },
+    {
+      "alpha_Y_tree_label": "alpha_EM_observed at low E",
+      "alpha_Y_tree": 0.0072973525205055605,
+      "delta_Y_required": 0.29847481842563783,
+      "note": "PDG reference"
+    }
+  ],
+  "verdict_pattern": "ALPHA_EM_PATTERN_STRUCTURALLY_CONSISTENT",
+  "verdict_alpha_W": "ALPHA_W_SELF_CONSISTENT_AT_M_Z"
+}

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loop-class-closure-repro"
+version = "0.1.0"
+description = "Reproducibility package for the deterministic loop-class mapping algorithm and the closure of 26 cross-sector observables under Lemmas 1-8."
+authors = [
+    { name = "Sandro Bucciarelli", email = "sandro.bucciarelli89@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["loop classes", "deterministic mapping", "negative controls", "reclassification rules", "reproducibility"]
+dependencies = [
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+]
+
+[project.urls]
+Repository = "https://github.com/[anonymized]/loop-class-closure-repro"
+Homepage = "https://github.com/[anonymized]/loop-class-closure-repro"
+Issues = "https://github.com/[anonymized]/loop-class-closure-repro/issues"
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+addopts = "-ra"

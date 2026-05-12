@@ -1,0 +1,23 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "observable": "Y_p_primordial_helium",
+  "id": "O29",
+  "framework_prediction": 0.2474,
+  "framework_pipeline_note": "BBN refinement pipeline: T_freeze=0.6938 MeV, S_gamow=18.998, delta_weak=0.112, Y_p_corrected=0.2474. Inputs: framework-internal alpha_s(Lambda_QCD), proton-neutron mass gap, lattice freeze-out.",
+  "reference_value": 0.2448,
+  "reference_uncertainty_1sigma": 0.0033,
+  "reference_source": "PDG 2024 booklet, db2024.pdf p.10-11, sha256 prefix fffa63ac",
+  "absolute_deviation": 0.002600000000000019,
+  "relative_deviation_pct": 1.0620915032679816,
+  "deviation_sigma": 0.7878787878787936,
+  "consistent_within_1_sigma": true,
+  "post_loop_residual_pct": 1.0620915032679816,
+  "tier_after_loop_strict_cut": "PRECISE",
+  "strict_exact_cut_pct": 0.4,
+  "precise_cut_pct": 2.5,
+  "verdict": "PRECISE: framework prediction Y_p = 0.2474 sits at 0.79 sigma inside the PDG 2024 1-sigma band (0.2448 +/- 0.0033); relative deviation 1.062% < 0.4% strict-EXACT cut."
+}

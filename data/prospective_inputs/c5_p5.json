@@ -1,0 +1,20 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "M_eff_final": 6.686394010474423,
+  "Phi_eff_slope": -3.2642504459942847,
+  "campaign": "C5",
+  "curvature_load_corr": 0.002870048913527684,
+  "far_field_exponent": -0.012530544201807724,
+  "iterations": 12,
+  "model_point": "P5",
+  "newton_like": 0.0,
+  "newton_like_pass": 0.0,
+  "poisson_residual": 0.9988130543874805,
+  "regime": "P5",
+  "rho_res_mean": 0.019876912855569376,
+  "seed_count": 4
+}

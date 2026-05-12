@@ -1,0 +1,108 @@
+{
+  "method": "yukawa_cluster_fisher_sensitivity_scan",
+  "branch_metadata": {
+    "causal_wave_branch": "vacuum",
+    "branch_rationale": "Electroweak / vacuum-anchor QFT observable; vacuum-projection side",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "stand": "2026-05-05",
+  "cluster_observables": {
+    "alpha_dn": 0.0001,
+    "w_DE": 0.05,
+    "H_0": 0.6
+  },
+  "nulls": {
+    "null_uniform_2.5": {
+      "kind": "uniform",
+      "params": {
+        "upper_pct": 2.5
+      },
+      "per_observable_p": {
+        "alpha_dn": 4e-05,
+        "w_DE": 0.02,
+        "H_0": 0.24
+      },
+      "fisher_T": 30.93154092983726,
+      "p_combined": 2.612367331232512e-05,
+      "sigma_two_sided": 4.204866130042013
+    },
+    "null_uniform_1.5": {
+      "kind": "uniform",
+      "params": {
+        "upper_pct": 1.5
+      },
+      "per_observable_p": {
+        "alpha_dn": 6.666666666666667e-05,
+        "w_DE": 0.03333333333333333,
+        "H_0": 0.39999999999999997
+      },
+      "fisher_T": 27.866587187241315,
+      "p_combined": 9.95570033570097e-05,
+      "sigma_two_sided": 3.8916690059447845
+    },
+    "null_uniform_5.0": {
+      "kind": "uniform",
+      "params": {
+        "upper_pct": 5.0
+      },
+      "per_observable_p": {
+        "alpha_dn": 2e-05,
+        "w_DE": 0.01,
+        "H_0": 0.12
+      },
+      "fisher_T": 35.09042401319693,
+      "p_combined": 4.139098660436204e-06,
+      "sigma_two_sided": 4.604272670734088
+    },
+    "null_truncnorm_0_5": {
+      "kind": "truncnorm",
+      "params": {
+        "sigma_pct": 0.5,
+        "upper_pct": 2.5
+      },
+      "per_observable_p": {
+        "alpha_dn": 0.00015957700258268994,
+        "w_DE": 0.0796557202209328,
+        "H_0": 0.7698611009203731
+      },
+      "fisher_T": 23.069141148979845,
+      "p_combined": 0.0007736490332315914,
+      "sigma_two_sided": 3.3620543183913787
+    },
+    "null_truncnorm_1_0": {
+      "kind": "truncnorm",
+      "params": {
+        "sigma_pct": 1.0,
+        "upper_pct": 2.5
+      },
+      "per_observable_p": {
+        "alpha_dn": 8.079183647853351e-05,
+        "w_DE": 0.040379092983922074,
+        "H_0": 0.457171528881508
+      },
+      "fisher_T": 26.831548762747293,
+      "p_combined": 0.00015571626519967816,
+      "sigma_two_sided": 3.781771500982718
+    },
+    "null_exponential_2": {
+      "kind": "exponential",
+      "params": {
+        "rate": 2.0
+      },
+      "per_observable_p": {
+        "alpha_dn": 0.00019998000133325533,
+        "w_DE": 0.09516258196404048,
+        "H_0": 0.6988057880877978
+      },
+      "fisher_T": 22.455688137308307,
+      "p_combined": 0.0010008614995574729,
+      "sigma_two_sided": 3.2902844512525995
+    }
+  },
+  "headline": {
+    "primary_null": "null_uniform_2.5",
+    "primary_p_combined": 2.612367331232512e-05,
+    "primary_sigma": 4.204866130042013,
+    "robust_under_5_alternative_nulls": true
+  }
+}

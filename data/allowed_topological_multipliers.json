@@ -1,0 +1,143 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "Allowed topology factors (n, g, s) used by the deterministic loop-class mapping algorithm. Each observable maps to a unique loop class as a function of (n, g, s) plus the +/- sign from the CP/T eigenparity (T-parity from the bounce-saddle source axiom, CP-parity from standard SM eigenparity).",
+  "n_spinor_trace_components": {
+    "allowed_values": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "physical_meaning": {
+      "0": "No spinor trace (pure boson, e.g. eps^2 only)",
+      "1": "Single-spinor current (Yukawa vertex; self-Wick)",
+      "2": "Chirality subgroup (matter-only / CP-asymmetric-only / time-forward-only)",
+      "4": "Full spinor-trace volume resummation (long-distance propagation)"
+    }
+  },
+  "g_generation_range": {
+    "allowed_values": [
+      0,
+      "1/N_gen",
+      "1/(2*N_gen)"
+    ],
+    "physical_meaning": {
+      "0": "No generation index",
+      "1/N_gen": "Generation-summed",
+      "1/(2*N_gen)": "Sub-generation: SU(2)_L doublet/singlet splitting"
+    },
+    "comment": "g=1 (single-generation) was reserved in earlier drafts but is unused in the current mapping algorithm; removed for consistency with manuscript."
+  },
+  "s_sync_coupling": {
+    "allowed_values": [
+      0,
+      "eps^2",
+      "eps^2 pure",
+      "eps^2*gamma"
+    ],
+    "physical_meaning": {
+      "0": "No Goldstone mediation",
+      "eps^2": "Higgs-Goldstone-mediated (gamma * eps^2 factor)",
+      "eps^2 pure": "Pure Goldstone-vertex (eps^2 alone)",
+      "eps^2*gamma": "Pure-Sync x Yukawa-Damping compound (Goldstone bilinear x carrier-defect damping)"
+    }
+  },
+  "mapping_algorithm_table": [
+    {
+      "n": 1,
+      "g": 0,
+      "s": 0,
+      "loop_class": "1+/-gamma/4",
+      "lemma": 1,
+      "name": "Yukawa-Damping"
+    },
+    {
+      "n": 1,
+      "g": 0,
+      "s": 0,
+      "loop_class": "1+/-gamma^2/4",
+      "lemma": 2,
+      "name": "PMNS-Self-Energy",
+      "double_wick": true
+    },
+    {
+      "n": 4,
+      "g": 0,
+      "s": 0,
+      "loop_class": "1+/-gamma^2",
+      "lemma": 3,
+      "name": "Pure-Self-Energy"
+    },
+    {
+      "n": 4,
+      "g": 0,
+      "s": 0,
+      "loop_class": "(1+/-2*gamma^2) or 1/(1+/-2*gamma^2)",
+      "lemma": 4,
+      "name": "Resummed-Propagator",
+      "resummed": true
+    },
+    {
+      "n": 2,
+      "g": 0,
+      "s": 0,
+      "loop_class": "1+/-gamma/2",
+      "lemma": 8,
+      "name": "Cosmological-Density"
+    },
+    {
+      "n": 2,
+      "g": "1/N_gen",
+      "s": 0,
+      "loop_class": "1+/-gamma/N_gen",
+      "lemma": 5,
+      "name": "Generation"
+    },
+    {
+      "n": 1,
+      "g": "1/(2*N_gen)",
+      "s": 0,
+      "loop_class": "1+/-gamma/(2*N_gen)",
+      "lemma": 6,
+      "name": "Sub-Generation"
+    },
+    {
+      "n": 1,
+      "g": 0,
+      "s": "eps^2",
+      "loop_class": "1+/-gamma*eps^2",
+      "lemma": 7,
+      "name": "EW-Mixed"
+    },
+    {
+      "n": 0,
+      "g": 0,
+      "s": "eps^2 pure",
+      "loop_class": "1+/-eps^2",
+      "lemma": "pure-eps2",
+      "name": "Pure-Sync"
+    },
+    {
+      "n": 0,
+      "g": 0,
+      "s": "eps^2*gamma",
+      "loop_class": "+/-gamma^2/2",
+      "lemma": 10,
+      "name": "Pure-Sync x Yukawa-Damping",
+      "comment": "Compound (Pure-Sync amplitude eps^2_sync) x (Yukawa-Damping bare coefficient gamma). Under R-relation eps^2_sync = gamma/2 (C3 fluctuation-dissipation symmetry) the compound simplifies algebraically to gamma^2/2 = 1/200, parameter-free. Owner of O28 (Lambda_s_cosm_tensor); promotion approved with this release."
+    }
+  ],
+  "sign_convention": {
+    "rule": "+ sign for CP-/T-even observables; - sign for CP-/T-odd observables",
+    "T_parity_source": "T-parity source axiom on bounce negative mode",
+    "CP_parity_source": "standard SM CP eigenparity"
+  },
+  "two_loop_compounds_allowed": true,
+  "max_compound_factors": 2
+}

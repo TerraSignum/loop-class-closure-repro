@@ -1,0 +1,190 @@
+{
+  "method": "m_tau Path D \u2014 TIME_FEED_NORMALIZATION-corrected closure using PG-TCP1 GFS04-vs-Y5 normalization mismatch",
+  "branch_metadata": {
+    "causal_wave_branch": "vacuum",
+    "branch_rationale": "Lepton/quark mass or CP-mixing observable; vacuum-QFT-anchored",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "stand": "2026-05-05",
+  "PDG_target_GeV": 1.77686,
+  "framework_arms": [
+    {
+      "arm": "F05_GJ_textur_null_extension_p5n100",
+      "pred_GeV": 5.63937824,
+      "ratio_to_PDG": 3.1737887284310524,
+      "residual_pct": 217.37887284310523,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "F05_GJ_textur_null_extension_p5n64",
+      "pred_GeV": 5.72107798,
+      "ratio_to_PDG": 3.2197685692738873,
+      "residual_pct": 221.97685692738872,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "F05_GJ_textur_null_row0",
+      "pred_GeV": 5.69479732,
+      "ratio_to_PDG": 3.204978062424727,
+      "residual_pct": 220.49780624247268,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "F05_GJ_textur_null_row1",
+      "pred_GeV": 5.75184706,
+      "ratio_to_PDG": 3.2370851164413628,
+      "residual_pct": 223.70851164413628,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "F05_GJ_textur_null_row2",
+      "pred_GeV": 5.67103138,
+      "ratio_to_PDG": 3.191602816203865,
+      "residual_pct": 219.1602816203865,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "F05_GJ_textur_null_row3",
+      "pred_GeV": 5.70498526,
+      "ratio_to_PDG": 3.210711738685096,
+      "residual_pct": 221.07117386850962,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "F05_GJ_textur_null_row4",
+      "pred_GeV": 5.68589362,
+      "ratio_to_PDG": 3.1999671442882387,
+      "residual_pct": 219.99671442882388,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "F05_GJ_textur_null_row5",
+      "pred_GeV": 5.67944777,
+      "ratio_to_PDG": 3.1963394808820054,
+      "residual_pct": 219.63394808820053,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "F05_GJ_textur_null_row6",
+      "pred_GeV": 5.87844469,
+      "ratio_to_PDG": 3.308333065069842,
+      "residual_pct": 230.83330650698423,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "F05_GJ_textur_null_row7",
+      "pred_GeV": 5.71006176,
+      "ratio_to_PDG": 3.2135687448645363,
+      "residual_pct": 221.35687448645362,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "Y3_raw_p0",
+      "pred_GeV": 109.020669,
+      "ratio_to_PDG": 61.355801244892675,
+      "residual_pct": 6035.580124489267,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "Y3_raw_p1",
+      "pred_GeV": 87.613514,
+      "ratio_to_PDG": 49.30805690937946,
+      "residual_pct": 4830.805690937946,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "Y3_raw_p2prime",
+      "pred_GeV": 437.091755,
+      "ratio_to_PDG": 245.99110509550553,
+      "residual_pct": 24499.11050955055,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "Y3_raw_p3",
+      "pred_GeV": 86.64231,
+      "ratio_to_PDG": 48.761472485170465,
+      "residual_pct": 4776.147248517046,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "Y3_raw_p4",
+      "pred_GeV": 100.649187,
+      "ratio_to_PDG": 56.64441036435059,
+      "residual_pct": 5564.441036435059,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "Y3_raw_p5",
+      "pred_GeV": 101.330379,
+      "ratio_to_PDG": 57.02777877829429,
+      "residual_pct": 5602.777877829429,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "Y3_raw_p6",
+      "pred_GeV": 132.481025,
+      "ratio_to_PDG": 74.5590676811904,
+      "residual_pct": 7355.90676811904,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "Y3_raw_p7",
+      "pred_GeV": 154.132765,
+      "ratio_to_PDG": 86.74446214108033,
+      "residual_pct": 8574.446214108033,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "Y3_raw_p8",
+      "pred_GeV": 174.102842,
+      "ratio_to_PDG": 97.98343257206533,
+      "residual_pct": 9698.343257206532,
+      "tier": "ORDER"
+    },
+    {
+      "arm": "gfs08_cost_dressed_p1",
+      "pred_GeV": 3.040719,
+      "ratio_to_PDG": 1.711287889873147,
+      "residual_pct": 71.1287889873147,
+      "tier": "FACTOR2"
+    },
+    {
+      "arm": "gfs08_cost_dressed_p2prime",
+      "pred_GeV": 16.935417,
+      "ratio_to_PDG": 9.531092488997444,
+      "residual_pct": 853.1092488997447,
+      "tier": "ORDER"
+    }
+  ],
+  "PG_TCP1_normalizations": {
+    "direct_gfs04_eta_transport_ratio_p1": 0.533684,
+    "biunitary_y5_eta_transport_ratio_p1": 89242.36923,
+    "direct_gfs04_time_feed_health": 0.785721,
+    "biunitary_y5_time_feed_health": 0.168051,
+    "first_time_to_cp_quantitative_loss": "TIME_FEED_NORMALIZATION_MISMATCH"
+  },
+  "path_D_corrections_on_gfs08_p1_base": {
+    "base * eta_B_transport_GFS04": {
+      "value": 1.6227830787960003,
+      "residual_pct": 8.671303378093933,
+      "tier": "FACTOR2",
+      "note": "Hypothesis: time-feed normalization mismatch on the GFS04 arm is the same factor that closes eta_B; applied to m_tau gives 1.6228 GeV vs PDG 1.77686 GeV."
+    },
+    "base * gfs04_time_feed_health": {
+      "value": 2.3891567733990002,
+      "residual_pct": 34.4594832119019,
+      "tier": "FACTOR2"
+    },
+    "base * eta * health": {
+      "value": 1.2750547434546722,
+      "residual_pct": 28.241125161539337,
+      "tier": "FACTOR2"
+    },
+    "base * sqrt(eta_B_transport)": {
+      "value": 2.2213570943397403,
+      "residual_pct": 25.01587600259672,
+      "tier": "FACTOR2"
+    }
+  },
+  "verdict": "PATH D HYPOTHETICAL: applying the GFS04-arm eta_B transport ratio 0.534 (PG-TCP1, baryogenesis-credible) as a multiplicative correction to the gfs08 cost-dressed m_tau prediction (3.04 GeV) yields 1.624 GeV vs PDG 1.777 GeV (~8.6% FACTOR2 residual, much tighter than the bare 71% residual). This is a structural hypothesis: it requires an independent argument that the same TIME_FEED_NORMALIZATION_MISMATCH that closes baryogenesis on the GFS04 arm also applies to the charged-lepton mass scale. If accepted, m_tau closes at FACTOR2 8.6%; without that argument, the correction is target-aware and inadmissible. Independent route: compute m_tau directly from the GFS04 arm (currently bundled outputs only carry GFS04-derived eta_B / Jarlskog, not m_tau)."
+}

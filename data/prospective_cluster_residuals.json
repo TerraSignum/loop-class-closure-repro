@@ -1,0 +1,330 @@
+{
+  "computation_timestamp": "2026-05-11T11:28:46.756247+00:00",
+  "registry_timestamp": "2026-05-03T22:00:00Z",
+  "null_model": {
+    "name": "uniform_residual_under_loop_class",
+    "description": "Each observable's residual is drawn uniformly from [0, residual_cut] under the null. The cluster-p is computed via Fisher combination over the prospectively-registered observable set ONLY (not including reference observables).",
+    "residual_cut_pct": 2.5,
+    "fisher_combination": "two_sided"
+  },
+  "prospective_residuals": [
+    {
+      "id": "PROSP-01",
+      "status": "PARTIAL_BROADER_CORPUS_RESULT",
+      "post_loop_residual": null,
+      "p_value": null,
+      "broader_corpus_baseline": {
+        "theory_conformant_bare_phi_field": {
+          "diagnostic": "Bare-Phi_eff gravitational coupling-scaling on canonical regimes (results_c5_fix4)",
+          "summary": {
+            "regimes_used": [
+              "p0",
+              "p1",
+              "p2prime"
+            ],
+            "per_regime": [
+              {
+                "regime": "p0",
+                "newton_like_pass": 0.0,
+                "far_field_exponent": -0.023672148212929872,
+                "poisson_residual": 0.9981980572558753,
+                "rho_res_mean": 0.008177828107206716,
+                "M_eff_final": 0.7459783088651957,
+                "Phi_eff_slope": -0.4723052259857323,
+                "seed_count": 24,
+                "iterations": 28
+              },
+              {
+                "regime": "p1",
+                "newton_like_pass": 1.0,
+                "far_field_exponent": -1.0000000000000002,
+                "poisson_residual": 0.7034583227233193,
+                "rho_res_mean": 0.009374382453928291,
+                "M_eff_final": 0.9328660781253328,
+                "Phi_eff_slope": -0.3255439360674915,
+                "seed_count": 32,
+                "iterations": 36
+              },
+              {
+                "regime": "p2prime",
+                "newton_like_pass": 0.9285714285714286,
+                "far_field_exponent": -1.0,
+                "poisson_residual": 0.725693208744587,
+                "rho_res_mean": 0.008794130638410802,
+                "M_eff_final": 0.7926170828221613,
+                "Phi_eff_slope": -0.3325877538616547,
+                "seed_count": 28,
+                "iterations": 42
+              }
+            ],
+            "far_field_exponent_mean": -0.6745573827376434,
+            "far_field_exponent_spread": 0.9763278517870704,
+            "rho_res_mean_mean": 0.008782113733181936,
+            "rho_res_mean_spread": 0.0011965543467215758
+          },
+          "newton_pass_at_P1": 1.0,
+          "newton_pass_at_P2prime": 0.9285714285714286,
+          "far_field_at_P1": -1.0000000000000002,
+          "interpretation": "Theory-conformant Newton-asymptote standard: newton_like_pass = 1.0 on P_1, 0.929 on P_2', far_field_exponent = -1.000 on both (clean 1/r); matches the SCD-01 Xi-perturbation backbone delta_Xi(r) ~ -GM/r."
+        },
+        "xi_projected_projector_diagnostic": {
+          "diagnostic": "Xi-projected Phi_eff (results_c5_real + results_c5_pX_extension)",
+          "summary": {
+            "regimes_used": [
+              "p1",
+              "p2prime",
+              "p3",
+              "p4",
+              "p5",
+              "p6"
+            ],
+            "per_regime": [
+              {
+                "regime": "p1",
+                "newton_like_pass": 0.0,
+                "far_field_exponent": -0.04394134566776341,
+                "poisson_residual": 0.993068267578537,
+                "rho_res_mean": 0.020933978805908266,
+                "M_eff_final": 6.405503298456257,
+                "Phi_eff_slope": -2.2865018684669005,
+                "seed_count": 32,
+                "iterations": 36
+              },
+              {
+                "regime": "p2prime",
+                "newton_like_pass": 0.0,
+                "far_field_exponent": -0.0497872029609074,
+                "poisson_residual": 0.9959471142312434,
+                "rho_res_mean": 0.022484991262630122,
+                "M_eff_final": 6.621980910318852,
+                "Phi_eff_slope": -3.793259631193227,
+                "seed_count": 28,
+                "iterations": 42
+              },
+              {
+                "regime": "p3",
+                "newton_like_pass": 0.0,
+                "far_field_exponent": -0.019978266076323137,
+                "poisson_residual": 0.9987176605101638,
+                "rho_res_mean": 0.01663282326623118,
+                "M_eff_final": 7.022836143539844,
+                "Phi_eff_slope": -3.0221423937587666,
+                "seed_count": 4,
+                "iterations": 12
+              },
+              {
+                "regime": "p4",
+                "newton_like_pass": 0.0,
+                "far_field_exponent": -0.00294731761995672,
+                "poisson_residual": 0.969633356192807,
+                "rho_res_mean": 0.016993065960972817,
+                "M_eff_final": 7.115484803676306,
+                "Phi_eff_slope": -1.0328619153287761,
+                "seed_count": 4,
+                "iterations": 12
+              },
+              {
+                "regime": "p5",
+                "newton_like_pass": 0.0,
+                "far_field_exponent": -0.012530544201807724,
+                "poisson_residual": 0.9988130543874805,
+                "rho_res_mean": 0.019876912855569376,
+                "M_eff_final": 6.686394010474423,
+                "Phi_eff_slope": -3.2642504459942847,
+                "seed_count": 4,
+                "iterations": 12
+              },
+              {
+                "regime": "p6",
+                "newton_like_pass": 0.0,
+                "far_field_exponent": -0.02522355309731371,
+                "poisson_residual": 0.9960978536596847,
+                "rho_res_mean": 0.01231861194465251,
+                "M_eff_final": 15.686301804499887,
+                "Phi_eff_slope": -1.6642818714784513,
+                "seed_count": 4,
+                "iterations": 12
+              }
+            ],
+            "far_field_exponent_mean": -0.02573470493734535,
+            "far_field_exponent_spread": 0.046839885340950675,
+            "rho_res_mean_mean": 0.018206730682660714,
+            "rho_res_mean_spread": 0.010166379317977613
+          },
+          "interpretation": "Xi-projected reading: newton_like_pass = 0 on all six regimes, far_field_exponent in [-0.05, -0.003]. Per Paper 05 Section 6 Resolution (b), this is a PROJECTOR_BANDWIDTH_REGRESSION (the Xi-coarse-graining kernel washes out the 1/r far-field of the bare delta_Xi field), NOT a physics result. The Newton-asymptote claim is carried by the bare-Phi reading above and by the Schwarzschild defect derivation upstream."
+        },
+        "d1_embedded_lattice_N_extension": {
+          "diagnostic": "d1-embedded gravitational coupling-scaling diagnostic on lattice-N variants of P_5 (results_d1_p5n64 + results_d1_p5n100, the full 1178-key d1 outputs; remaining lattice-N points P5N72/84/128/200/256/300 carry only the 33-key subset and do not embed the c5 diagnostic)",
+          "lattice_points": [
+            {
+              "lattice_N": 64,
+              "regime": "P5N64",
+              "n_seeds": 24,
+              "M_eff_final": 1.8261852878435283,
+              "Phi_eff_slope": 0.05074296154752626,
+              "newton_like_badness_best": 1.0,
+              "newton_like_badness_family_median": 1.0,
+              "far_field_exponent_badness_best": 0.941927193863898,
+              "far_field_residual_badness_best": 1.840435257999536e-16
+            },
+            {
+              "lattice_N": 72,
+              "regime": "P5N72",
+              "n_seeds": 24,
+              "M_eff_final": 1.8829070055340003,
+              "Phi_eff_slope": -0.01568258179738048,
+              "newton_like_badness_best": 1.0,
+              "newton_like_badness_family_median": 1.0,
+              "far_field_exponent_badness_best": 0.9133551793165379,
+              "far_field_residual_badness_best": 0.023156019162713096
+            },
+            {
+              "lattice_N": 84,
+              "regime": "P5N84",
+              "n_seeds": 24,
+              "M_eff_final": 3.7765601123561465,
+              "Phi_eff_slope": -0.10693729765934581,
+              "newton_like_badness_best": 1.0,
+              "newton_like_badness_family_median": 1.0,
+              "far_field_exponent_badness_best": 0.8942523226208945,
+              "far_field_residual_badness_best": 0.005654393440001143
+            },
+            {
+              "lattice_N": 100,
+              "regime": "P5N100",
+              "n_seeds": 24,
+              "M_eff_final": 3.0296529961858836,
+              "Phi_eff_slope": -0.11645206686222856,
+              "newton_like_badness_best": 1.0,
+              "newton_like_badness_family_median": 1.0,
+              "far_field_exponent_badness_best": 0.9513948338192232,
+              "far_field_residual_badness_best": 0.06722394599376454
+            },
+            {
+              "lattice_N": 128,
+              "regime": "P5N128",
+              "n_seeds": 12,
+              "M_eff_final": 1.9894303937963096,
+              "Phi_eff_slope": 0.010999985914885132,
+              "newton_like_badness_best": 1.0,
+              "newton_like_badness_family_median": 1.0,
+              "far_field_exponent_badness_best": 0.8712288131133883,
+              "far_field_residual_badness_best": 0.13592374652908437
+            },
+            {
+              "lattice_N": 200,
+              "regime": "P5N200",
+              "n_seeds": 8,
+              "M_eff_final": 9.489996609465722,
+              "Phi_eff_slope": -0.09198232199266189,
+              "newton_like_badness_best": 1.0,
+              "newton_like_badness_family_median": 1.0,
+              "far_field_exponent_badness_best": 0.9905022185503158,
+              "far_field_residual_badness_best": 0.049769069793820196
+            },
+            {
+              "lattice_N": 256,
+              "regime": "P5N256",
+              "n_seeds": 12,
+              "M_eff_final": 13.549547292901883,
+              "Phi_eff_slope": -0.19716737713393065,
+              "newton_like_badness_best": 1.0,
+              "newton_like_badness_family_median": 1.0,
+              "far_field_exponent_badness_best": 0.966566236339274,
+              "far_field_residual_badness_best": 0.11058285819295831
+            },
+            {
+              "lattice_N": 300,
+              "regime": "P5N300",
+              "n_seeds": 12,
+              "M_eff_final": 14.414726331403171,
+              "Phi_eff_slope": -0.22234490126004045,
+              "newton_like_badness_best": 1.0,
+              "newton_like_badness_family_median": 1.0,
+              "far_field_exponent_badness_best": 0.9977741325269547,
+              "far_field_residual_badness_best": 0.04522989981469635
+            },
+            {
+              "lattice_N": 512,
+              "regime": "P5N512",
+              "n_seeds": 12,
+              "M_eff_final": 9.050296256024673,
+              "Phi_eff_slope": -0.10062567096106781,
+              "newton_like_badness_best": 1.0,
+              "newton_like_badness_family_median": 1.0,
+              "far_field_exponent_badness_best": 1.0510399112663678,
+              "far_field_residual_badness_best": 0.06718593533690702
+            }
+          ],
+          "newton_like_badness_at_N64": 1.0,
+          "newton_like_badness_at_N100": 1.0,
+          "newton_like_badness_N_stable": true,
+          "far_field_exponent_badness_at_N64": 0.941927193863898,
+          "far_field_exponent_badness_at_N100": 0.9133551793165379,
+          "interpretation": "The d1-embedded reading on the lattice-N extension is N-stable in the SAME projector-bandwidth-regression mode as the canonical-regime Xi-projected reading: newton_like_badness ~ 1.0 (i.e. far-from-Newton) at BOTH N=64 and N=100. The diagnostic does not flip sign or shift across the two lattice-N points available; the projector-bandwidth issue is lattice-N-stable. The bare-Phi standard remains the theory-conformant Newton-asymptote measure."
+        }
+      },
+      "what_is_partial": "The d1-embedded c5 diagnostic is bundled at TWO lattice-N points (P5N64, P5N100) with the full 1178-key d1 output. The remaining lattice-N regimes (P5N72/84/128/200/256/300) carry only the 33-key subset that does not embed the c5 Newton/far-field/poisson keys. A run extending the 1178-key format to those higher-N points would close PROSP-01 with a 6-point Symanzik-2 fit; the present 2-point N-stability check is the broader-corpus partial result."
+    },
+    {
+      "id": "PROSP-02",
+      "status": "NOT_YET_COMPUTED",
+      "post_loop_residual": null,
+      "p_value": null,
+      "broader_corpus_baseline": {
+        "diagnostic": "Vortex-cosmological-gate on canonical regime",
+        "P1_summary": {
+          "cosmo_compat_p1": 0.689578,
+          "e1_support_p1": 0.921043,
+          "gate_gap_p1": 0.240422,
+          "dm_share_p1": 0.348774,
+          "theory_status": "COSMO_GATE_OPEN"
+        },
+        "lambda_DM_self_consistency": {
+          "rho_DM_lattice": 0.9358666666666666,
+          "rho_DE_lattice": 0.43733333333333335,
+          "ratio_lattice": 2.1399390243902436,
+          "z_solution": 0.7685419485146225,
+          "round_trip_lattice_to_z0": 0.38686131386861317,
+          "headline": "Phase S decomposition is exactly self-consistent at the FRW-ratio level with the lattice as a z ~ 0.77 cosmological-epoch snapshot of standard LCDM (round-trip residual < 1e-4). At the absolute-density level the corpus DM-specific reduction chain (GCC04, L_occ_DM ~ 0.60) delivers Omega_DM h^2 ~ 0.068 vs observed 0.120, a residual factor 1.77 (~ 0.25 OoM); the uniform-Lambda-reduction straw-man with 3-OoM gap does NOT apply, the corpus pipeline is component-specific by design."
+        }
+      },
+      "what_is_pending": "The pre-registered prospective is the LATTICE-N extension of the diagnostic on P5N64..P5N300, which is not in the broader corpus at the registry timestamp; the run is required before the residual can be filled in."
+    },
+    {
+      "id": "PROSP-03",
+      "status": "PENDING_RUN_BUT_LEADING_ORDER_ANALYTICALLY_FALSIFIED",
+      "post_loop_residual": null,
+      "p_value": null,
+      "leading_order_analytic_residual": 0.66353,
+      "leading_order_analytic_pvalue": 0.0,
+      "registry_compliance_note": "The prospective residual is to be filled in only by the explicit re-run at g = 1.42 (data computed AFTER T_0), per the registry's no-back-fill clause. The leading-order analytic projection below uses pre-T_0 baseline inputs and is a broader-corpus consistency check, not the prospective residual itself.",
+      "details": {
+        "g_old_heuristic": 2.0,
+        "g_new_rigorous": 1.42,
+        "g_new_envelope": [
+          1.32,
+          1.52
+        ],
+        "g_squared_rescale": 0.5041,
+        "g_squared_rescale_envelope": [
+          0.43560000000000004,
+          0.5776
+        ],
+        "baseline_ratio_cw_net": 3.43,
+        "baseline_ratio_abs_over_sync": 3.17,
+        "projected_ratio_cw_net": 1.729063,
+        "projected_ratio_abs_over_sync": 1.597997,
+        "projected_ratio_combined": 1.66353,
+        "predicted_ratio": 1.0,
+        "predicted_residual_window": 0.05,
+        "leading_order_analytic_residual": 0.66353
+      },
+      "verdict": "Leading-order g^2-rescaling alone does NOT bring the P_2' Xi-reactivity ratio back to the predicted 1.0 +/- 0.05 window. The analytic projected residual ~0.66 is well outside the null support [0, 0.025] and the prediction window. The full re-run at g = 1.42 is still required to test whether sub-leading corrections close the gap; the leading-order result is reported here as the honest broader-corpus prospective check."
+    }
+  ],
+  "fisher_combination_on_computed_subset": {
+    "k_observables_in_combination": 0,
+    "note": "No prospective residuals are post-T_0 yet (all three require dedicated lattice-extension or coupling re-runs). The multi-observable Fisher combination is therefore not yet defined; the registry remains open until the runs land or the 2026-12-31 fail-safe expires."
+  }
+}

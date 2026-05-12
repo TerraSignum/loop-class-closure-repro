@@ -1,0 +1,756 @@
+{
+  "method": "Numerical-exactness meta-audit on the 29 registered observables. (M1) Tier-threshold consistency; (M2) Tree-formula safe-eval against System-R rationals; (M3) Tuple -> lemma library cross-check.",
+  "n_observables": 29,
+  "M1_tier_threshold_consistency": {
+    "passes": 29,
+    "documented_discrepancies": 1,
+    "total": 29,
+    "verdict": "PASS",
+    "per_observable": [
+      {
+        "id": "O01",
+        "name": "alpha_dn_yukawa_exponent",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.0001,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O02",
+        "name": "Omega_DM_h2",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.26,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O03",
+        "name": "w_DE",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.05,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O04",
+        "name": "alpha_s_M_Z",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.2,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O05",
+        "name": "alpha_cl_lepton_yukawa",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.003,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O06",
+        "name": "sin2_theta_W",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.0015,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O07",
+        "name": "BH_entropy_quarter",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.004,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O08",
+        "name": "Einstein_gap_two_thirds",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.0025,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O09",
+        "name": "PMNS_theta_13",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.0,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O10",
+        "name": "PMNS_theta_12",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.244,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O11",
+        "name": "PMNS_theta_23",
+        "stamped_tier": "PRECISE",
+        "stamped_pct": 0.524,
+        "derived_tier": "PRECISE",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O12",
+        "name": "PMNS_delta_CP",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.023,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O13",
+        "name": "CKM_V_us",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.004,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O14",
+        "name": "CKM_V_cb",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.267,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O15",
+        "name": "m_H",
+        "stamped_tier": "PRECISE",
+        "stamped_pct": 0.84,
+        "derived_tier": "PRECISE",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O16",
+        "name": "m_W",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.18,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O17",
+        "name": "m_Z",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.35,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O18",
+        "name": "Gamma_W",
+        "stamped_tier": "PRECISE",
+        "stamped_pct": 0.5,
+        "derived_tier": "PRECISE",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O19",
+        "name": "Gamma_Z",
+        "stamped_tier": "PRECISE",
+        "stamped_pct": 0.5,
+        "derived_tier": "PRECISE",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O20",
+        "name": "H_0",
+        "stamped_tier": "PRECISE",
+        "stamped_pct": 0.6,
+        "derived_tier": "PRECISE",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O21",
+        "name": "T_RH",
+        "stamped_tier": "PRECISE",
+        "stamped_pct": 0.5,
+        "derived_tier": "PRECISE",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O22",
+        "name": "n_s",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.3,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O23",
+        "name": "sigma_8",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.002,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O24",
+        "name": "eta_B",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.103,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O25",
+        "name": "Lambda_QCD",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.039,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O26",
+        "name": "omega_b_h2",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.067,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O27",
+        "name": "Lambda_t_cosm_tensor",
+        "stamped_tier": "PRECISE",
+        "stamped_pct": 0.12,
+        "derived_tier": "EXACT",
+        "status": "DOCUMENTED_REGISTRY_VS_RECOMPUTE_DISCREPANCY",
+        "passes": true
+      },
+      {
+        "id": "O28",
+        "name": "Lambda_s_cosm_tensor",
+        "stamped_tier": "EXACT",
+        "stamped_pct": 0.0,
+        "derived_tier": "EXACT",
+        "status": "CONSISTENT",
+        "passes": true
+      },
+      {
+        "id": "O29",
+        "name": "Y_p_primordial_helium",
+        "stamped_tier": "PRECISE",
+        "stamped_pct": 1.062,
+        "derived_tier": "PRECISE",
+        "status": "CONSISTENT",
+        "passes": true
+      }
+    ]
+  },
+  "M2_tree_formula_safe_eval": {
+    "evaluated": 10,
+    "evaluation_passes": 10,
+    "unevaluable_in_safe_namespace": 19,
+    "total": 29,
+    "verdict": "PARTIAL",
+    "per_observable": [
+      {
+        "id": "O01",
+        "name": "alpha_dn_yukawa_exponent",
+        "tree_formula": "alpha_xi + beta_pi + eps_sync2 - gamma",
+        "tree_value": 1.7874999999999999,
+        "target": 1.8333333333333333,
+        "tree_only_residual_pct": 2.5000000000000036,
+        "stamped_loop_corrected_residual_pct": 0.0001,
+        "status": "EVALUATED",
+        "passes": true
+      },
+      {
+        "id": "O02",
+        "name": "Omega_DM_h2",
+        "tree_formula": "alpha_xi**2 * eps_sync2 * N_gen",
+        "tree_value": 0.12150000000000002,
+        "target": 0.12,
+        "tree_only_residual_pct": 1.2500000000000242,
+        "stamped_loop_corrected_residual_pct": 0.26,
+        "status": "EVALUATED",
+        "passes": true
+      },
+      {
+        "id": "O03",
+        "name": "w_DE",
+        "tree_formula": "-1 + eps_sync2**2/gamma",
+        "tree_value": -0.975,
+        "target": -1.0,
+        "tree_only_residual_pct": 2.500000000000002,
+        "stamped_loop_corrected_residual_pct": 0.05,
+        "status": "EVALUATED",
+        "passes": true
+      },
+      {
+        "id": "O04",
+        "name": "alpha_s_M_Z",
+        "tree_formula": "gamma*beta_pi*4/pi",
+        "tree_value": 0.1193662073189215,
+        "target": 0.1179,
+        "tree_only_residual_pct": 1.243602475760388,
+        "stamped_loop_corrected_residual_pct": 0.2,
+        "status": "EVALUATED",
+        "passes": true
+      },
+      {
+        "id": "O05",
+        "name": "alpha_cl_lepton_yukawa",
+        "tree_formula": "(alpha_xi/beta_pi)*(D_Omega/(1+gamma))*G_NET",
+        "status": "UNEVALUABLE_IN_SAFE_NAMESPACE",
+        "passes": null
+      },
+      {
+        "id": "O06",
+        "name": "sin2_theta_W",
+        "tree_formula": "beta_pi - (1-gamma)*pi/4",
+        "tree_value": 0.23064165294229655,
+        "target": 0.23122,
+        "tree_only_residual_pct": 0.250128474052184,
+        "stamped_loop_corrected_residual_pct": 0.0015,
+        "status": "EVALUATED",
+        "passes": true
+      },
+      {
+        "id": "O07",
+        "name": "BH_entropy_quarter",
+        "tree_formula": "alpha_xi/2 - 2*gamma",
+        "tree_value": 0.25,
+        "target": 0.25,
+        "tree_only_residual_pct": 0.0,
+        "stamped_loop_corrected_residual_pct": 0.004,
+        "status": "EVALUATED",
+        "passes": true
+      },
+      {
+        "id": "O08",
+        "name": "Einstein_gap_two_thirds",
+        "tree_formula": "(1-gamma)*pi/4 - (1-D_Omega)/4",
+        "tree_value": 0.6662333470577034,
+        "target": 0.6666666666666666,
+        "tree_only_residual_pct": 0.06499794134448011,
+        "stamped_loop_corrected_residual_pct": 0.0025,
+        "status": "EVALUATED",
+        "passes": true
+      },
+      {
+        "id": "O09",
+        "name": "PMNS_theta_13",
+        "tree_formula": "alpha_xi/(2*N_gen)",
+        "tree_value": 0.15,
+        "target": 8.58,
+        "tree_only_residual_pct": 98.25174825174825,
+        "stamped_loop_corrected_residual_pct": 0.0,
+        "status": "EVALUATED",
+        "passes": true
+      },
+      {
+        "id": "O10",
+        "name": "PMNS_theta_12",
+        "status": "MISSING_FIELDS",
+        "passes": null
+      },
+      {
+        "id": "O11",
+        "name": "PMNS_theta_23",
+        "status": "MISSING_FIELDS",
+        "passes": null
+      },
+      {
+        "id": "O12",
+        "name": "PMNS_delta_CP",
+        "tree_formula": "pi (CP-phase basis-scale, stand-alone)",
+        "status": "UNEVALUABLE_IN_SAFE_NAMESPACE",
+        "passes": null
+      },
+      {
+        "id": "O13",
+        "name": "CKM_V_us",
+        "tree_formula": "(structural)",
+        "status": "UNEVALUABLE_IN_SAFE_NAMESPACE",
+        "passes": null
+      },
+      {
+        "id": "O14",
+        "name": "CKM_V_cb",
+        "tree_formula": "(structural)",
+        "status": "UNEVALUABLE_IN_SAFE_NAMESPACE",
+        "passes": null
+      },
+      {
+        "id": "O15",
+        "name": "m_H",
+        "tree_formula": "(structural)",
+        "status": "UNEVALUABLE_IN_SAFE_NAMESPACE",
+        "passes": null
+      },
+      {
+        "id": "O16",
+        "name": "m_W",
+        "tree_formula": "v_EW * sqrt(g/2)",
+        "status": "UNEVALUABLE_IN_SAFE_NAMESPACE",
+        "passes": null
+      },
+      {
+        "id": "O17",
+        "name": "m_Z",
+        "tree_formula": "v_EW * sqrt(g^2 + g'^2)/2",
+        "status": "UNEVALUABLE_IN_SAFE_NAMESPACE",
+        "passes": null
+      },
+      {
+        "id": "O18",
+        "name": "Gamma_W",
+        "tree_formula": "(structural)",
+        "status": "UNEVALUABLE_IN_SAFE_NAMESPACE",
+        "passes": null
+      },
+      {
+        "id": "O19",
+        "name": "Gamma_Z",
+        "tree_formula": "(structural)",
+        "status": "UNEVALUABLE_IN_SAFE_NAMESPACE",
+        "passes": null
+      },
+      {
+        "id": "O20",
+        "name": "H_0",
+        "tree_formula": "(structural)",
+        "status": "UNEVALUABLE_IN_SAFE_NAMESPACE",
+        "passes": null
+      },
+      {
+        "id": "O21",
+        "name": "T_RH",
+        "status": "MISSING_FIELDS",
+        "passes": null
+      },
+      {
+        "id": "O22",
+        "name": "n_s",
+        "tree_formula": "(structural)",
+        "status": "UNEVALUABLE_IN_SAFE_NAMESPACE",
+        "passes": null
+      },
+      {
+        "id": "O23",
+        "name": "sigma_8",
+        "tree_formula": "(structural)",
+        "status": "UNEVALUABLE_IN_SAFE_NAMESPACE",
+        "passes": null
+      },
+      {
+        "id": "O24",
+        "name": "eta_B",
+        "status": "MISSING_FIELDS",
+        "passes": null
+      },
+      {
+        "id": "O25",
+        "name": "Lambda_QCD",
+        "tree_formula": "(structural)",
+        "status": "UNEVALUABLE_IN_SAFE_NAMESPACE",
+        "passes": null
+      },
+      {
+        "id": "O26",
+        "name": "omega_b_h2",
+        "tree_formula": "(structural)",
+        "status": "UNEVALUABLE_IN_SAFE_NAMESPACE",
+        "passes": null
+      },
+      {
+        "id": "O27",
+        "name": "Lambda_t_cosm_tensor",
+        "tree_formula": "alpha_xi**2",
+        "tree_value": 0.81,
+        "target": 0.81,
+        "tree_only_residual_pct": 0.0,
+        "stamped_loop_corrected_residual_pct": 0.12,
+        "status": "EVALUATED",
+        "passes": true
+      },
+      {
+        "id": "O28",
+        "name": "Lambda_s_cosm_tensor",
+        "tree_formula": "-gamma**2 / 2",
+        "tree_value": -0.005000000000000001,
+        "target": -0.005,
+        "tree_only_residual_pct": 1.734723475976807e-14,
+        "stamped_loop_corrected_residual_pct": 0.0,
+        "status": "EVALUATED",
+        "passes": true
+      },
+      {
+        "id": "O29",
+        "name": "Y_p_primordial_helium",
+        "tree_formula": "BBN abundance pipeline using framework-internal alpha_s(Lambda_QCD), proton-neutron mass gap Delta_np = m_n - m_p, lattice-derived Gamow factor S_gamow = 18.998, and weak-rate correction delta_weak = 11%; full pipeline at src/verify_Y_p_bbn_closure.py.",
+        "status": "UNEVALUABLE_IN_SAFE_NAMESPACE",
+        "passes": null
+      }
+    ]
+  },
+  "M3_tuple_to_library_lemma": {
+    "passes": 29,
+    "total": 29,
+    "n_tree_level_no_lemma": 3,
+    "verdict": "PASS",
+    "per_observable": [
+      {
+        "id": "O01",
+        "name": "alpha_dn_yukawa_exponent",
+        "stamped_lemma": 1,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O02",
+        "name": "Omega_DM_h2",
+        "stamped_lemma": 6,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O03",
+        "name": "w_DE",
+        "stamped_lemma": 1,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O04",
+        "name": "alpha_s_M_Z",
+        "stamped_lemma": 6,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O05",
+        "name": "alpha_cl_lepton_yukawa",
+        "stamped_lemma": 6,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O06",
+        "name": "sin2_theta_W",
+        "status": "TREE_LEVEL_NO_LEMMA",
+        "passes": true
+      },
+      {
+        "id": "O07",
+        "name": "BH_entropy_quarter",
+        "status": "TREE_LEVEL_NO_LEMMA",
+        "passes": true
+      },
+      {
+        "id": "O08",
+        "name": "Einstein_gap_two_thirds",
+        "status": "TREE_LEVEL_NO_LEMMA",
+        "passes": true
+      },
+      {
+        "id": "O09",
+        "name": "PMNS_theta_13",
+        "stamped_lemma": 2,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O10",
+        "name": "PMNS_theta_12",
+        "stamped_lemma": 2,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O11",
+        "name": "PMNS_theta_23",
+        "stamped_lemma": "6+8",
+        "status": "COMPOUND",
+        "all_components_in_library": true,
+        "passes": true
+      },
+      {
+        "id": "O12",
+        "name": "PMNS_delta_CP",
+        "stamped_lemma": "1+2",
+        "status": "COMPOUND",
+        "all_components_in_library": true,
+        "passes": true
+      },
+      {
+        "id": "O13",
+        "name": "CKM_V_us",
+        "stamped_lemma": 6,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O14",
+        "name": "CKM_V_cb",
+        "stamped_lemma": 6,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O15",
+        "name": "m_H",
+        "stamped_lemma": 1,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O16",
+        "name": "m_W",
+        "stamped_lemma": 7,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O17",
+        "name": "m_Z",
+        "stamped_lemma": 7,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O18",
+        "name": "Gamma_W",
+        "stamped_lemma": 7,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O19",
+        "name": "Gamma_Z",
+        "stamped_lemma": 7,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O20",
+        "name": "H_0",
+        "stamped_lemma": 1,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O21",
+        "name": "T_RH",
+        "stamped_lemma": 4,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O22",
+        "name": "n_s",
+        "stamped_lemma": 7,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      },
+      {
+        "id": "O23",
+        "name": "sigma_8",
+        "stamped_lemma": "1+5",
+        "status": "COMPOUND",
+        "all_components_in_library": true,
+        "passes": true
+      },
+      {
+        "id": "O24",
+        "name": "eta_B",
+        "stamped_lemma": "1+5",
+        "status": "COMPOUND",
+        "all_components_in_library": true,
+        "passes": true
+      },
+      {
+        "id": "O25",
+        "name": "Lambda_QCD",
+        "stamped_lemma": "pure-eps2 + 7",
+        "status": "COMPOUND",
+        "all_components_in_library": true,
+        "passes": true
+      },
+      {
+        "id": "O26",
+        "name": "omega_b_h2",
+        "stamped_lemma": "8+3",
+        "status": "COMPOUND",
+        "all_components_in_library": true,
+        "passes": true
+      },
+      {
+        "id": "O27",
+        "name": "Lambda_t_cosm_tensor",
+        "stamped_lemma": "1+1",
+        "status": "COMPOUND",
+        "all_components_in_library": true,
+        "passes": true
+      },
+      {
+        "id": "O28",
+        "name": "Lambda_s_cosm_tensor",
+        "stamped_lemma": "5+5",
+        "status": "COMPOUND",
+        "all_components_in_library": true,
+        "passes": true
+      },
+      {
+        "id": "O29",
+        "name": "Y_p_primordial_helium",
+        "stamped_lemma": 1,
+        "in_library": true,
+        "status": "SINGLE",
+        "passes": true
+      }
+    ]
+  },
+  "overall_verdict": "META_AUDIT_PASS"
+}

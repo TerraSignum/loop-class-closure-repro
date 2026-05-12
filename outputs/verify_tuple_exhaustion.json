@@ -1,0 +1,685 @@
+{
+  "schema_version": "1.0.0",
+  "method": "Avenue-D tuple-exhaustion audit: for each registered observable, count how many entries in the loop-factor library match its (n, g, s, w, r) tuple. Multiple matches indicate the tuple alone does not single out the loop class and a lemma disambiguator is needed.",
+  "admissibility_space_size": 192,
+  "library_entries": 10,
+  "n_observables": 29,
+  "n_observables_uniquely_determined": 29,
+  "n_observables_with_tuple_ambiguity": 0,
+  "ambiguous_tuples_in_library": [],
+  "per_observable": [
+    {
+      "id": "O01",
+      "name": "alpha_dn_yukawa_exponent",
+      "canonical_tuple": {
+        "n": 1,
+        "g": 0,
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1+gamma/4",
+      "registered_lemma": 1,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/4",
+          "lemma": 1,
+          "name": "Yukawa-Damping",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O02",
+      "name": "Omega_DM_h2",
+      "canonical_tuple": {
+        "n": 1,
+        "g": "1/(2*N_gen)",
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1-gamma/(2*N_gen)",
+      "registered_lemma": 6,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/(2*N_gen)",
+          "lemma": 6,
+          "name": "Sub-Generation",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O03",
+      "name": "w_DE",
+      "canonical_tuple": {
+        "n": 1,
+        "g": 0,
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1+gamma/4",
+      "registered_lemma": 1,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/4",
+          "lemma": 1,
+          "name": "Yukawa-Damping",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O04",
+      "name": "alpha_s_M_Z",
+      "canonical_tuple": {
+        "n": 1,
+        "g": "1/(2*N_gen)",
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1-gamma/(2*N_gen)",
+      "registered_lemma": 6,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/(2*N_gen)",
+          "lemma": 6,
+          "name": "Sub-Generation",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O05",
+      "name": "alpha_cl_lepton_yukawa",
+      "canonical_tuple": {
+        "n": 1,
+        "g": "1/(2*N_gen)",
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1+gamma/(2*N_gen)",
+      "registered_lemma": 6,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/(2*N_gen)",
+          "lemma": 6,
+          "name": "Sub-Generation",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O06",
+      "name": "sin2_theta_W",
+      "canonical_tuple": {
+        "n": 1,
+        "g": 0,
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1 (tree)",
+      "registered_lemma": null,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/4",
+          "lemma": 1,
+          "name": "Yukawa-Damping",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O07",
+      "name": "BH_entropy_quarter",
+      "canonical_tuple": {
+        "n": 1,
+        "g": 0,
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1 (tree)",
+      "registered_lemma": null,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/4",
+          "lemma": 1,
+          "name": "Yukawa-Damping",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O08",
+      "name": "Einstein_gap_two_thirds",
+      "canonical_tuple": {
+        "n": 1,
+        "g": 0,
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1 (tree)",
+      "registered_lemma": null,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/4",
+          "lemma": 1,
+          "name": "Yukawa-Damping",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O09",
+      "name": "PMNS_theta_13",
+      "canonical_tuple": {
+        "n": 1,
+        "g": 0,
+        "s": 0,
+        "w": 1,
+        "r": 0
+      },
+      "registered_loop_class": "1-gamma^2/4",
+      "registered_lemma": 2,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma^2/4",
+          "lemma": 2,
+          "name": "PMNS-Self-Energy",
+          "w": 1,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O10",
+      "name": "PMNS_theta_12",
+      "canonical_tuple": {
+        "n": 1,
+        "g": 0,
+        "s": 0,
+        "w": 1,
+        "r": 0
+      },
+      "registered_loop_class": "1-gamma^2/4",
+      "registered_lemma": 2,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma^2/4",
+          "lemma": 2,
+          "name": "PMNS-Self-Energy",
+          "w": 1,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O11",
+      "name": "PMNS_theta_23",
+      "canonical_tuple": {
+        "n": 1,
+        "g": "1/(2*N_gen)",
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "(1-gamma/(2*N_gen))*(1-gamma/2)",
+      "registered_lemma": "6+8",
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/(2*N_gen)",
+          "lemma": 6,
+          "name": "Sub-Generation",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O12",
+      "name": "PMNS_delta_CP",
+      "canonical_tuple": {
+        "n": 1,
+        "g": 0,
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "(1+gamma/4)*(1-gamma^2/4)",
+      "registered_lemma": "1+2",
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/4",
+          "lemma": 1,
+          "name": "Yukawa-Damping",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O13",
+      "name": "CKM_V_us",
+      "canonical_tuple": {
+        "n": 1,
+        "g": "1/(2*N_gen)",
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1-gamma/(2*N_gen)",
+      "registered_lemma": 6,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/(2*N_gen)",
+          "lemma": 6,
+          "name": "Sub-Generation",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O14",
+      "name": "CKM_V_cb",
+      "canonical_tuple": {
+        "n": 1,
+        "g": "1/(2*N_gen)",
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1+gamma/(2*N_gen)",
+      "registered_lemma": 6,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/(2*N_gen)",
+          "lemma": 6,
+          "name": "Sub-Generation",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O15",
+      "name": "m_H",
+      "canonical_tuple": {
+        "n": 1,
+        "g": 0,
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1+gamma/4",
+      "registered_lemma": 1,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/4",
+          "lemma": 1,
+          "name": "Yukawa-Damping",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O16",
+      "name": "m_W",
+      "canonical_tuple": {
+        "n": 1,
+        "g": 0,
+        "s": "eps^2",
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1+gamma*eps_sync2",
+      "registered_lemma": 7,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma*eps^2",
+          "lemma": 7,
+          "name": "EW-Mixed",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O17",
+      "name": "m_Z",
+      "canonical_tuple": {
+        "n": 1,
+        "g": 0,
+        "s": "eps^2",
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1+gamma*eps_sync2",
+      "registered_lemma": 7,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma*eps^2",
+          "lemma": 7,
+          "name": "EW-Mixed",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O18",
+      "name": "Gamma_W",
+      "canonical_tuple": {
+        "n": 1,
+        "g": 0,
+        "s": "eps^2",
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1+gamma*eps_sync2",
+      "registered_lemma": 7,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma*eps^2",
+          "lemma": 7,
+          "name": "EW-Mixed",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O19",
+      "name": "Gamma_Z",
+      "canonical_tuple": {
+        "n": 1,
+        "g": 0,
+        "s": "eps^2",
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1+gamma*eps_sync2",
+      "registered_lemma": 7,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma*eps^2",
+          "lemma": 7,
+          "name": "EW-Mixed",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O20",
+      "name": "H_0",
+      "canonical_tuple": {
+        "n": 1,
+        "g": 0,
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1+gamma/4",
+      "registered_lemma": 1,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/4",
+          "lemma": 1,
+          "name": "Yukawa-Damping",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O21",
+      "name": "T_RH",
+      "canonical_tuple": {
+        "n": 4,
+        "g": 0,
+        "s": 0,
+        "w": 0,
+        "r": 1
+      },
+      "registered_loop_class": "1/(1-2*gamma^2)",
+      "registered_lemma": 4,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "(1+/-2*gamma^2) or 1/(1+/-2*gamma^2)",
+          "lemma": 4,
+          "name": "Resummed-Propagator",
+          "w": 0,
+          "r": 1
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O22",
+      "name": "n_s",
+      "canonical_tuple": {
+        "n": 1,
+        "g": 0,
+        "s": "eps^2",
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1-gamma*eps_sync2",
+      "registered_lemma": 7,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma*eps^2",
+          "lemma": 7,
+          "name": "EW-Mixed",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O23",
+      "name": "sigma_8",
+      "canonical_tuple": {
+        "n": 1,
+        "g": "1/N_gen",
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "(1-gamma/4)*(1-gamma/N_gen)",
+      "registered_lemma": "1+5",
+      "n_library_entries_matching_tuple": 0,
+      "library_matches": [],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O24",
+      "name": "eta_B",
+      "canonical_tuple": {
+        "n": 1,
+        "g": "1/N_gen",
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "(1-gamma/4)*(1-gamma/N_gen)",
+      "registered_lemma": "1+5",
+      "n_library_entries_matching_tuple": 0,
+      "library_matches": [],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O25",
+      "name": "Lambda_QCD",
+      "canonical_tuple": {
+        "n": 0,
+        "g": 0,
+        "s": "eps^2 + gamma*eps^2",
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "(1+eps_sync2)*(1+gamma*eps_sync2)",
+      "registered_lemma": "pure-eps2 + 7",
+      "n_library_entries_matching_tuple": 0,
+      "library_matches": [],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O26",
+      "name": "omega_b_h2",
+      "canonical_tuple": {
+        "n": 2,
+        "g": 0,
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "(1-gamma/2)*(1-gamma^2)",
+      "registered_lemma": "8+3",
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/2",
+          "lemma": 8,
+          "name": "Cosmological-Density",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O27",
+      "name": "Lambda_t_cosm_tensor",
+      "canonical_tuple": {
+        "n": 2,
+        "g": 0,
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "alpha_xi**2",
+      "registered_lemma": "1+1",
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/2",
+          "lemma": 8,
+          "name": "Cosmological-Density",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O28",
+      "name": "Lambda_s_cosm_tensor",
+      "canonical_tuple": {
+        "n": 0,
+        "g": 0,
+        "s": "eps^2*gamma",
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "-gamma**2 / 2",
+      "registered_lemma": "5+5",
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "+/-gamma^2/2",
+          "lemma": 10,
+          "name": "Pure-Sync x Yukawa-Damping",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    },
+    {
+      "id": "O29",
+      "name": "Y_p_primordial_helium",
+      "canonical_tuple": {
+        "n": 1,
+        "g": 0,
+        "s": 0,
+        "w": 0,
+        "r": 0
+      },
+      "registered_loop_class": "1+gamma/4",
+      "registered_lemma": 1,
+      "n_library_entries_matching_tuple": 1,
+      "library_matches": [
+        {
+          "loop_class": "1+/-gamma/4",
+          "lemma": 1,
+          "name": "Yukawa-Damping",
+          "w": 0,
+          "r": 0
+        }
+      ],
+      "tuple_uniquely_determines_loop_class": true
+    }
+  ],
+  "verdict": "TUPLE_UNIQUE_PER_OBSERVABLE"
+}

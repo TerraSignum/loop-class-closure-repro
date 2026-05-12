@@ -1,0 +1,51 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Structural / loop-class closure repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "MD-47..50 audit: 4 internal-paper claim verification",
+  "stand": "2026-05-05",
+  "MD_47": {
+    "claim_id": "MD-47 SN_THETA_SN_LEMMA",
+    "structural_form": "theta_SN = pi * gamma / 2 with gamma=1/10",
+    "theta_SN_predicted_rad": 0.15707963267948966,
+    "theta_SN_predicted_deg": 9.0,
+    "F_healthy_realised_predicted": 0.024471741852423214,
+    "F_healthy_claim": 0.02447,
+    "consistency_residual_pct": 0.0071183180352059495,
+    "integration_status": "PROVEN-NOT-YET-INTEGRATED in external papers; structurally clean derivation under System-R (theta_SN = pi*gamma/2 is a Lemma-8 cosmological-density Sektor-Topologie-Faktor 1/2) but not currently exposed as an external observable in P1-P5 / P4-A..D.",
+    "consistent": true
+  },
+  "MD_48": {
+    "claim_id": "MD-48 K_OMEGA_BEWIESEN",
+    "K_Omega_min_predicted": 0.9,
+    "K_macro_pipeline_claim": 0.899794,
+    "K_consistency_residual_pct": 0.022888888888893278,
+    "lambda_predicted_N_gen_div_5": 0.6,
+    "lambda_pipeline_claim": 0.6,
+    "lambda_consistency_residual_pct": 0.0,
+    "integration_status": "PROVEN-INTERNAL: identification K_Omega^min = alpha_xi + lambda = N_gen/5 = 3/5 are clean structural identities matching the pipeline measurements at ~0.1% precision. Result pertains to the framework's internal microkernel persistence theorem (Beweissammlung 04 internal paper); not directly an external observable, hence not in P1-P5.",
+    "consistent": true
+  },
+  "MD_49": {
+    "claim_id": "MD-49 G_CLAIM_FORMALISIERT",
+    "G_claim_cardinality_internal_paper": 26,
+    "G_closure_cardinality_P3_external": 29,
+    "delta_3_observables_P3_extension": "P3 closure table has 29 observables = 26 core + 3 extension rows O27=Lambda_t, O28=Lambda_s, O29=Y_p. MD-49's 26-cardinality refers to the Beweissammlung core registry; P3 manuscript adds the three extension rows separately.",
+    "integration_status": "PROVEN-AND-INTEGRATED: P3 manuscript (loop-class-closure-repro) reports 29 cross-sector observables, with the 26-row core explicitly distinguished from the 3-row Lambda_munu + Y_p extension; figure 3 caption documents the dual-state nature.",
+    "consistent": true
+  },
+  "MD_50": {
+    "claim_id": "MD-50 SN_DEFEKT_TOPOLOGIE_STRENGE_FORM",
+    "theta_em_EMT_04b_rad": 3.141592653589793,
+    "theta_em_EMT_04b_deg": 180.0,
+    "theta_SN_predicted_rad": 0.15707963267948966,
+    "theta_SN_predicted_deg": 9.0,
+    "ratio_theta_SN_over_theta_em": 0.05,
+    "structural_parallel": "theta_em = pi from EMT-04b Quellaxiom (full pi-rotation in chirality-restricted subspace); theta_SN = pi * gamma/2 from the Sektor-Topologie-Faktor 1/2 of the Cosmological-Density class (Lemma 8) plus chirality-half-restriction to Time-Forward subgroup. The two angles differ by the structural ratio gamma/2 = 1/20.",
+    "integration_status": "PROVEN-NOT-YET-INTEGRATED in external papers; the strict-form theorem is in Beweissammlung 04 internal paper \u00a716d.9 but does not appear as a load-bearing claim in P1-P5 since the SN-distance observable is not currently in the external closure registry.",
+    "consistent": true
+  },
+  "verdict": "All four MD-47..50 claims are NUMERICALLY CONSISTENT with the System-R coefficient algebra. MD-49 is integrated externally (P3 26+3 = 29 observables, with extension explicitly distinguished). MD-47, MD-48, MD-50 are proven internal-paper results without current external-paper exposure (the underlying observables \u2014 F_healthy SN seed, K_Omega microkernel, theta_SN topological angle \u2014 are not in the external closure registry of P1-P5/P4-A..D). They remain structurally clean and ready for external promotion if needed."
+}

@@ -1,0 +1,15 @@
+{
+  "criterion": "Neutrino-sector closure recompute",
+  "n_closures": 5,
+  "EXACT": 4,
+  "PRECISE": 1,
+  "PRECISE_or_better_count": 5,
+  "all_PRECISE_or_better": true,
+  "delta_CP_PMNS_tier": "EXACT",
+  "delta_CP_PMNS_residual_pct": 0.27,
+  "delta_CP_F02b_CKM_tier": "EXACT",
+  "structural_theta13_residual_pct_rad": 1.8643759047031166e-14,
+  "structural_theta13_residual_pct_sin2": 3.154042683594195e-14,
+  "structural_theta13_EXACT_in_rad": true,
+  "verdict": "PASS"
+}

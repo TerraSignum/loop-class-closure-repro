@@ -1,0 +1,56 @@
+{
+  "method": "verify_m_tau_path_A_audit",
+  "branch_metadata": {
+    "causal_wave_branch": "vacuum",
+    "branch_rationale": "Lepton/quark mass or CP-mixing observable; vacuum-QFT-anchored",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "PDG_measured_GeV": {
+    "m_e": 0.000511,
+    "m_mu": 0.10566,
+    "m_tau": 1.77686
+  },
+  "system_R_rationals": {
+    "gamma": 0.1,
+    "eps_sync_sq": 0.05
+  },
+  "candidate_closure_factors": {
+    "1": 1.0,
+    "1/(2 gamma^2)": 49.99999999999999,
+    "1/gamma": 10.0,
+    "1/gamma^2": 99.99999999999999,
+    "4/pi": 1.2732395447351628,
+    "1/(2 eps_sync^2)": 10.0,
+    "pi/2": 1.5707963267948966
+  },
+  "regime_count": 8,
+  "best_factor_per_lepton": {
+    "e": {
+      "best_factor_name": "1/gamma^2",
+      "best_factor_value": 99.99999999999999,
+      "ratio_after_correction": 2.9084858121330734,
+      "relative_diff": 1.9084858121330734
+    },
+    "mu": {
+      "best_factor_name": "1/(2 gamma^2)",
+      "best_factor_value": 49.99999999999999,
+      "ratio_after_correction": 0.9847105337876207,
+      "relative_diff": -0.015289466212379255
+    },
+    "tau": {
+      "best_factor_name": "1/(2 gamma^2)",
+      "best_factor_value": 49.99999999999999,
+      "ratio_after_correction": 1.2235218010985671,
+      "relative_diff": 0.22352180109856712
+    }
+  },
+  "uniform_factor_used": 49.99999999999999,
+  "uniform_factor_label": "1/(2 gamma^2)",
+  "tier_per_lepton_under_uniform_factor": {
+    "e": "STRUC",
+    "mu": "PRECISE",
+    "tau": "FACTOR2"
+  },
+  "verdict": "PATH_A_INSUFFICIENT: uniform System-R factor does not deliver PRECISE-tier closure on charged leptons."
+}

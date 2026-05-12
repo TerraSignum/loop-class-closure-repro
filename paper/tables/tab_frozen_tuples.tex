@@ -1,0 +1,36 @@
+\setlength{\tabcolsep}{1.5pt}\tiny
+\begin{tabular}{@{}l p{0.17\textwidth} c c c c c l p{0.23\textwidth}@{}}
+\toprule
+ID & Observable & $n$ & $g$ & $s$ & $w$ & $r$ & Lemma & Structural justification \\
+\midrule
+O01 & \texttt{alpha\_dn\_yukawa\_exponent} & 1 & 0 & 0 & 0 & 0 & 1 & single Yukawa vertex, one spinor-trace closure \\
+O02 & \texttt{Omega\_DM\_h2} & 1 & $1/(2\Ngen)$ & 0 & 0 & 0 & 6 & $\Omega_{\rm DM}h^{2}$: gen-summed Yukawa-driven density (Lemma~6 sub-gen) \\
+O03 & \texttt{w\_DE} & 1 & 0 & 0 & 0 & 0 & 1 & $w_{\rm DE}$: $-1$ shifted by single Yukawa-loop correction \\
+O04 & \texttt{alpha\_s\_M\_Z} & 1 & $1/(2\Ngen)$ & 0 & 0 & 0 & 6 & QCD running with gen-summed quark loops, $g=1/(2\Ngen)$ \\
+O05 & \texttt{alpha\_cl\_lepton\_yukawa} & 1 & $1/(2\Ngen)$ & 0 & 0 & 0 & 6 & charged-lepton Yukawa-exponent ratio, sub-gen lepton splitting \\
+O06 & \texttt{sin2\_theta\_W} & 1 & 0 & 0 & 0 & 0 & tree & EW mixing tree value, no loop dressing \\
+O07 & \texttt{BH\_entropy\_quarter} & 1 & 0 & 0 & 0 & 0 & tree & horizon-area tree quarter, no loop dressing \\
+O08 & \texttt{Einstein\_gap\_two\_thirds} & 1 & 0 & 0 & 0 & 0 & tree & Einstein-gap tree $2/3$, no loop dressing \\
+O09 & \texttt{PMNS\_theta\_13} & 1 & 0 & 0 & 1 & 0 & 2 & PMNS reactor angle: double-Wick $\langle\Xi\Xi^{\dagger}\Xi\Xi^{\dagger}\rangle$ \\
+O10 & \texttt{PMNS\_theta\_12} & 1 & 0 & 0 & 1 & 0 & 2 & PMNS solar angle: double-Wick on the same family \\
+O11 & \texttt{PMNS\_theta\_23} & 1 & $1/(2\Ngen)$ & 0 & 0 & 0 & 6+8 & PMNS atmospheric angle: 2-loop sub-gen $\times$ pure-Yukawa \\
+O12 & \texttt{PMNS\_delta\_CP} & 1 & 0 & 0 & 1 & 0 & 1+2 & PMNS Dirac CP-phase: stand-alone $\pi$ basis-scale, 2-loop compound \\
+O13 & \texttt{CKM\_V\_us} & 1 & $1/(2\Ngen)$ & 0 & 0 & 0 & 6 & CKM $V_{us}$: gen-summed sub-generation mixing \\
+O14 & \texttt{CKM\_V\_cb} & 1 & $1/(2\Ngen)$ & 0 & 0 & 0 & 6 & CKM $V_{cb}$: gen-summed sub-generation mixing (heavy-light) \\
+O15 & \texttt{m\_H} & 1 & 0 & 0 & 0 & 0 & 1 & Higgs mass: single Yukawa-driven mass-counterterm \\
+O16 & \texttt{m\_W} & 1 & 0 & $\esync$ & 0 & 0 & 7 & $m_{W}$: EW-mixed loop with Goldstone vertex, $s=\esync$ \\
+O17 & \texttt{m\_Z} & 1 & 0 & $\esync$ & 0 & 0 & 7 & $m_{Z}$: EW-mixed loop with Goldstone vertex, $s=\esync$ \\
+O18 & \texttt{Gamma\_W} & 1 & 0 & $\esync$ & 0 & 0 & 7 & $\Gamma_{W}$: EW-mixed decay-width, $s=\esync$ \\
+O19 & \texttt{Gamma\_Z} & 1 & 0 & $\esync$ & 0 & 0 & 7 & $\Gamma_{Z}$: EW-mixed decay-width, $s=\esync$ \\
+O20 & \texttt{H\_0} & 1 & 0 & 0 & 0 & 0 & 1 & $H_{0}$: cosmological Yukawa-class running, single trace \\
+O21 & \texttt{T\_RH} & 4 & 0 & 0 & 0 & 1 & 4 & $T_{\rm RH}$: resummed inflaton-decay propagator, $r=1$ \\
+O22 & \texttt{n\_s} & 1 & 0 & $\esync$ & 0 & 0 & 7 & $n_{s}$: EW-precision tilt with Goldstone, $s=\esync$ \\
+O23 & \texttt{sigma\_8} & 1 & $1/\Ngen$ & 0 & 0 & 0 & 1+5 & $\sigma_{8}$: 2-loop Yukawa $\times$ generation \\
+O24 & \texttt{eta\_B} & 1 & $1/\Ngen$ & 0 & 0 & 0 & 1+5 & $\eta_{B}$: 2-loop Yukawa $\times$ generation (asymmetry) \\
+O25 & \texttt{Lambda\_QCD} & 0 & 0 & $\esync + \gamma\,\esync$ & 0 & 0 & pure-$\esync$ + 7 & $\Lambda_{\rm QCD}$: 2-loop pure-$\esync$ $\times$ EW-mixed \\
+O26 & \texttt{omega\_b\_h2} & 2 & 0 & 0 & 0 & 0 & 8+3 & $\omega_{b}h^{2}$: 2-loop pure-self-energy $\times$ Yukawa-density \\
+O27 & \texttt{Lambda\_t\_cosm\_tensor} & 2 & 0 & 0 & 0 & 0 & 1+1 & $\Lambda_{t}$: time-time cosmological tensor, $\axi^{2}$ \\
+O28 & \texttt{Lambda\_s\_cosm\_tensor} & 0 & 0 & $\esync\,\gamma$ & 0 & 0 & 5+5 & $\Lambda_{s}$: spatial-isotropic cosmological tensor, $-\gamma^{2}/2$ \\
+O29 & \texttt{Y\_p\_primordial\_helium} & 1 & 0 & 0 & 0 & 0 & 1 & $Y_{p}$: BBN refinement pipeline; sector-Yukawa class \\
+\bottomrule
+\end{tabular}

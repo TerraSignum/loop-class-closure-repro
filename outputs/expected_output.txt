@@ -1,0 +1,43 @@
+﻿============================================================================================
+Loop-class closure recompute (26 observables; deterministic mapping algorithm)
+============================================================================================
+
+  id    name                       sector                           lemma    tier    
+  ------------------------------------------------------------------------------------------
+  O01   alpha_dn_yukawa_exponent   Yukawa                           1        EXACT   
+  O02   Omega_DM_h2                Cosmological-Density             6        EXACT   
+  O03   w_DE                       Yukawa                           1        EXACT   
+  O04   alpha_s_M_Z                Sub-Generation                   6        EXACT   
+  O05   alpha_cl_lepton_yukawa     Sub-Generation                   6        EXACT   
+  O06   sin2_theta_W               EW-Precision (tree)              tree     EXACT   
+  O07   BH_entropy_quarter         Horizon (tree)                   tree     EXACT   
+  O08   Einstein_gap_two_thirds    Continuum-Limit (tree)           tree     EXACT   
+  O09   PMNS_theta_13              PMNS-Self-Energy                 2        EXACT   
+  O10   PMNS_theta_12              PMNS-Self-Energy                 2        EXACT   
+  O11   PMNS_theta_23              Sub-Generation x Cosmological-De 6+8      EXACT   
+  O12   PMNS_delta_CP              Yukawa x PMNS-Self-Energy        1+2      EXACT   
+  O13   CKM_V_us                   Sub-Generation                   6        EXACT   
+  O14   CKM_V_cb                   Sub-Generation                   6        PRECISE 
+  O15   m_H                        Yukawa (Higgs)                   1        PRECISE 
+  O16   m_W                        EW-Precision                     7        EXACT   
+  O17   m_Z                        EW-Precision                     7        EXACT   
+  O18   Gamma_W                    EW-Precision                     7        PRECISE 
+  O19   Gamma_Z                    EW-Precision                     7        PRECISE 
+  O20   H_0                        Yukawa (cosmo)                   1        PRECISE 
+  O21   T_RH                       Resummed-Propagator              4        PRECISE 
+  O22   n_s                        EW-Precision                     7        EXACT   
+  O23   sigma_8                    Yukawa x Generation (2-loop)     1+5      EXACT   
+  O24   eta_B                      Yukawa x Generation (2-loop)     1+5      EXACT   
+  O25   Lambda_QCD                 Pure-Sync x EW-Mixed (2-loop)    pure-eps2 + 7 EXACT   
+  O26   omega_b_h2                 Cosmological-Density x Pure-Self 8+3      EXACT   
+
+--- Aggregate ---
+  Total observables:   26
+  EXACT after loop:    20/26
+  PRECISE after loop:  6/26
+  Contradictions:      0/26
+
+  PASS: all 26/26 observables in PRECISE-or-better tier; 0 contradictions.
+
+Saved: C:\Users\user\Desktop\Emergence\loop-class-closure-repro\outputs\closure_table.json
+Saved: C:\Users\user\Desktop\Emergence\loop-class-closure-repro\outputs\closure_table.csv
