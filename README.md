@@ -2,7 +2,7 @@
 
 **Deterministic loop-class mapping for cross-sector observable corrections.**
 
-[![CI: reproduce](https://github.com/[anonymized]/loop-class-closure-repro/actions/workflows/reproduce.yml/badge.svg)](https://github.com/[anonymized]/loop-class-closure-repro/actions/workflows/reproduce.yml)
+[![CI: reproduce](https://github.com/TerraSignum/loop-class-closure-repro/actions/workflows/reproduce.yml/badge.svg)](https://github.com/TerraSignum/loop-class-closure-repro/actions/workflows/reproduce.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 This repository reproduces the deterministic loop-class mapping algorithm
@@ -46,7 +46,7 @@ on the defect field, fixing the bounce negative mode to be T-odd).
 ## Installation (Windows PowerShell)
 
 ```powershell
-git clone https://github.com/[anonymized]/loop-class-closure-repro.git
+git clone https://github.com/TerraSignum/loop-class-closure-repro.git
 cd loop-class-closure-repro
 
 py -3.11 -m venv .venv
