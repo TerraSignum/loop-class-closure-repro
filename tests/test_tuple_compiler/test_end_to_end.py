@@ -34,8 +34,13 @@ def test_no_extraction_errors(bundle):
     assert bundle["n_errors"] == 0, bundle["errors"]
 
 
-def test_three_observables_extracted(bundle):
-    assert bundle["n_observables"] == 3
+def test_phase1_observables_in_bundle(bundle):
+    """The three Phase-1 IDs must always be present; additional
+    Phase-2+ YAMLs only add to the bundle, they don't remove."""
+    by_id = {r["id"]: r for r in bundle["results"]}
+    for obs_id in EXPECTED_PREDICTIONS:
+        assert obs_id in by_id, f"Phase-1 observable {obs_id} missing"
+    assert bundle["n_observables"] >= len(EXPECTED_PREDICTIONS)
 
 
 def test_target_isolation_locked(bundle):

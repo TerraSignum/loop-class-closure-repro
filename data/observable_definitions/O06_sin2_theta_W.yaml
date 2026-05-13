@@ -1,0 +1,30 @@
+id: O06
+name: sin2_theta_W
+sector: Electroweak
+observable_type: mixing_angle
+description: |
+  Weak mixing angle squared sin^2(theta_W) = 7/30 at tree level
+  in the corpus (primary closure; an alternative beta_pi-(1-gamma)*pi/4
+  causal-wave route is documented in P2/P3/P6).
+
+operator:
+  kind: electroweak_mixing
+  spinor_trace_count: 1
+  double_wick: false
+  resummed: false
+  loop_dressed: false  # tree-level structural closure
+
+generation:
+  support: none
+
+sync:
+  channel: "0"
+
+parity:
+  expected_sign: +1
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

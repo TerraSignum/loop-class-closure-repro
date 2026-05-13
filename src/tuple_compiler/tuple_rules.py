@@ -54,12 +54,20 @@ def loop_dressed(obs: Dict[str, Any]) -> bool:
     return bool(obs["operator"]["loop_dressed"])
 
 
+def resummation_inverse(obs: Dict[str, Any]) -> bool:
+    """Whether a resummed (L4) observable uses the inverse form 1/(1+/-2γ²)
+    versus the direct form 1+/-2γ². Required for L4; ignored otherwise.
+    """
+    return bool(obs["operator"].get("resummation_inverse", False))
+
+
 def extract_tuple(obs: Dict[str, Any]) -> Dict[str, Any]:
     """Validate then extract the (n, g, s, w, r) tuple.
 
     Returns a dict with the tuple plus passthrough metadata
-    (expected_sign and loop_dressed). The target value is NEVER
-    read or returned -- the YAML schema forbids carrying one.
+    (expected_sign, loop_dressed, resummation_inverse). The target
+    value is NEVER read or returned -- the YAML schema forbids
+    carrying one.
     """
     schema.validate(obs)
     return {
@@ -73,8 +81,9 @@ def extract_tuple(obs: Dict[str, Any]) -> Dict[str, Any]:
             "w": infer_w(obs),
             "r": infer_r(obs),
         },
-        "expected_sign": expected_sign(obs),
-        "loop_dressed":  loop_dressed(obs),
+        "expected_sign":       expected_sign(obs),
+        "loop_dressed":        loop_dressed(obs),
+        "resummation_inverse": resummation_inverse(obs),
     }
 
 

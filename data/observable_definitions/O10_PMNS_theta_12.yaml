@@ -1,0 +1,30 @@
+id: O10
+name: PMNS_theta_12
+sector: PMNS
+observable_type: pmns_mixing_angle
+description: |
+  PMNS lepton mixing angle theta_12 (solar mixing), closed via the L2
+  PMNS-Self-Energy lemma (double-Wick) with negative dressing
+  (1 - gamma^2/4).
+
+operator:
+  kind: pmns_mixing
+  spinor_trace_count: 1
+  double_wick: true
+  resummed: false
+  loop_dressed: true
+
+generation:
+  support: none
+
+sync:
+  channel: "0"
+
+parity:
+  expected_sign: -1
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

@@ -60,6 +60,18 @@ def _validate_operator(op: Dict[str, Any], oid: str) -> None:
             raise SchemaError(
                 f"{oid}: operator.{field} must be a boolean{descr}."
             )
+    # resummation_inverse is required iff resummed=True; otherwise it must
+    # be absent or False (it only makes sense for the L4 inverse variants).
+    res_inv = op.get("resummation_inverse", False)
+    if not isinstance(res_inv, bool):
+        raise SchemaError(
+            f"{oid}: operator.resummation_inverse must be a boolean."
+        )
+    if res_inv and not op["resummed"]:
+        raise SchemaError(
+            f"{oid}: operator.resummation_inverse=true requires "
+            f"operator.resummed=true."
+        )
 
 
 def _validate_generation(gen: Dict[str, Any], oid: str) -> None:

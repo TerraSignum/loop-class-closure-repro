@@ -1,0 +1,29 @@
+id: O08
+name: Einstein_gap_two_thirds
+sector: Einstein
+observable_type: structural_ratio
+description: |
+  Einstein-gap two-thirds structural ratio (tree-level closure
+  of the corpus).
+
+operator:
+  kind: einstein_gap_observable
+  spinor_trace_count: 1
+  double_wick: false
+  resummed: false
+  loop_dressed: false  # tree-level structural
+
+generation:
+  support: none
+
+sync:
+  channel: "0"
+
+parity:
+  expected_sign: +1
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

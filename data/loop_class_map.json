@@ -45,9 +45,11 @@
       "lemma_id": "L4",
       "name": "Resummed-Propagator",
       "match": {"n": 4, "g": "0", "s": "0", "w": false, "r": true},
-      "factor_plus":  "1 + 2*gamma^2",
-      "factor_minus": "1 - 2*gamma^2",
-      "physics": "Geometric-series resummation of the L3 self-energy class."
+      "factor_plus":          "1 + 2*gamma^2",
+      "factor_minus":         "1 - 2*gamma^2",
+      "factor_plus_inverse":  "1/(1 + 2*gamma^2)",
+      "factor_minus_inverse": "1/(1 - 2*gamma^2)",
+      "physics": "Geometric-series resummation of the L3 self-energy class. Four variants: direct +, direct -, inverse +, inverse - (the inverse forms correspond to propagator-resummed observables such as T_RH)."
     },
     {
       "lemma_id": "L5",

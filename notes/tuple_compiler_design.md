@@ -161,12 +161,32 @@ in tuple identification.
 
 ## 5. Phase plan
 
-| Phase | Scope |
-|---|---|
-| **Phase 1 (this commit)** | 3 YAMLs: BH_entropy_quarter (tree), CKM_V_us (L6), alpha_dn_yukawa_exponent (L1). End-to-end extractor + predictor + tests. |
-| Phase 2 | Extend to all 19 single-loop EXACT-tier entries. `sign_rules.yaml` implementing CP-T-chirality sign algebra. |
-| Phase 3 | Two-loop compounds via `factors: [...]`. Lambda_QCD sum-form handler. |
-| Phase 4 | Prospective-registry observables (not yet closed) — the compiler outputs `OPEN` status for unmatched tuples. |
+| Phase | Status | Scope |
+|---|---|---|
+| **Phase 1** | done (commit 5a6c528) | 3 YAMLs covering TREE + L1 + L6. End-to-end extractor + predictor + 61 tests. |
+| **Phase 2** | done (this commit) | All 21 single-loop observables in the existing P3 registry. L4 inverse-form extension (`operator.resummation_inverse` flag). Cross-verification: 45 Phase-2 tests pin every compiler factor + lemma assignment against `data/observable_registry.json` without registry access during extraction. |
+| Phase 3 | open | Two-loop compounds via `factors: [...]`. Lambda_QCD sum-form handler. |
+| Phase 4 | open | Prospective-registry observables (not yet closed); the compiler outputs `OPEN` for unmatched tuples. |
+
+### Phase 2 sign-rules note
+
+Within the 21 single-loop observables, signs distribute as follows:
+
+| Lemma | Count | Signs |
+|---|---:|---|
+| L1 Yukawa-Damping     | 5 | all `+` |
+| L2 PMNS-Self-Energy   | 2 | all `-` |
+| L6 Sub-Generation     | 5 | 2 `+`, 3 `-` (mixed within lemma class) |
+| L7 EW-Mixed           | 5 | 4 `+`, 1 `-` (mixed within lemma class) |
+| L4 Resummed (inverse) | 1 | `-` (T_RH) |
+| TREE                  | 3 | sign meaningless (factor = 1) |
+
+L6 and L7 carry **mixed signs within the same structural lemma class**.
+The sign therefore cannot be derived from the lemma class alone — it
+is sector-determined by the physical observable. The decision in this
+phase is: keep `parity.expected_sign` as an explicit per-YAML field
+(declarative), and defer a sign-rules layer to a later phase only if
+prospective observables expose a derivable sub-pattern within a lemma.
 
 ---
 

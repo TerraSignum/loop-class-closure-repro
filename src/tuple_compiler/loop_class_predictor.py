@@ -44,6 +44,25 @@ def match_one(tup: Dict[str, Any], classes: List[Dict[str, Any]]
     return "ERROR", matches
 
 
+def _select_factor(cls: Dict[str, Any], *, sign: int, inverse: bool) -> str:
+    """Pick the (sign, direct/inverse) variant from a matched lemma class.
+
+    The inverse fields exist only for L4 (Resummed-Propagator); for all
+    other lemma classes the inverse variant is structurally undefined.
+    Raises if the YAML requests an inverse form on a non-resummed class.
+    """
+    if inverse:
+        key = "factor_plus_inverse" if sign > 0 else "factor_minus_inverse"
+        if key not in cls:
+            raise RuntimeError(
+                f"Lemma {cls['lemma_id']} has no '{key}' (inverse form is "
+                f"defined for L4 only; check the YAML's "
+                f"operator.resummation_inverse flag)."
+            )
+        return cls[key]
+    return cls["factor_plus"] if sign > 0 else cls["factor_minus"]
+
+
 def predict_all() -> Dict[str, Any]:
     """Run the predictor on the current extracted tuples."""
     if not TUPLES_PATH.exists():
@@ -66,13 +85,14 @@ def predict_all() -> Dict[str, Any]:
 
     for r in bundle["results"]:
         entry: Dict[str, Any] = {
-            "id":            r["id"],
-            "name":          r["name"],
-            "sector":        r["sector"],
-            "tuple":         r["tuple"],
-            "expected_sign": r["expected_sign"],
-            "loop_dressed":  r["loop_dressed"],
-            "provenance":    r["provenance"],
+            "id":                  r["id"],
+            "name":                r["name"],
+            "sector":              r["sector"],
+            "tuple":               r["tuple"],
+            "expected_sign":       r["expected_sign"],
+            "loop_dressed":        r["loop_dressed"],
+            "resummation_inverse": r.get("resummation_inverse", False),
+            "provenance":          r["provenance"],
         }
 
         if not r["loop_dressed"]:
@@ -92,8 +112,11 @@ def predict_all() -> Dict[str, Any]:
             entry["status"] = status
             if status == "MATCHED":
                 cls = matches[0]
-                sign = r["expected_sign"]
-                factor = cls["factor_plus"] if sign > 0 else cls["factor_minus"]
+                factor = _select_factor(
+                    cls,
+                    sign=r["expected_sign"],
+                    inverse=entry["resummation_inverse"],
+                )
                 entry["prediction"] = {
                     "lemma_id": cls["lemma_id"],
                     "name":     cls["name"],

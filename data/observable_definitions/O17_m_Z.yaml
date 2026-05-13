@@ -1,0 +1,29 @@
+id: O17
+name: m_Z
+sector: Electroweak
+observable_type: boson_mass
+description: |
+  Z-boson mass m_Z, closed via the L7 EW-Mixed lemma with
+  positive dressing (1 + gamma * eps_sync^2).
+
+operator:
+  kind: boson_mass_ew
+  spinor_trace_count: 1
+  double_wick: false
+  resummed: false
+  loop_dressed: true
+
+generation:
+  support: none
+
+sync:
+  channel: "eps^2"
+
+parity:
+  expected_sign: +1
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

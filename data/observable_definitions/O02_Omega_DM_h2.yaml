@@ -1,0 +1,30 @@
+id: O02
+name: Omega_DM_h2
+sector: Cosmological-Density
+observable_type: cosmological_density
+description: |
+  Dark-matter density parameter today, closed via L6 sub-generation
+  with negative dressing (1 - gamma/(2*N_gen)).
+
+operator:
+  kind: dark_matter_density
+  spinor_trace_count: 1
+  double_wick: false
+  resummed: false
+  loop_dressed: true
+
+generation:
+  support: sub_generation
+  symbol: "1/(2*N_gen)"
+
+sync:
+  channel: "0"
+
+parity:
+  expected_sign: -1
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

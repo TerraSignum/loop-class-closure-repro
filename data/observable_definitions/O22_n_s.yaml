@@ -1,0 +1,31 @@
+id: O22
+name: n_s
+sector: Electroweak
+observable_type: scalar_spectral_index
+description: |
+  Scalar spectral index n_s, closed via the L7 EW-Mixed lemma with
+  NEGATIVE dressing (1 - gamma * eps_sync^2). This is the only L7
+  closure in the 21-observable single-loop set that takes the
+  negative sign.
+
+operator:
+  kind: scalar_spectral_index
+  spinor_trace_count: 1
+  double_wick: false
+  resummed: false
+  loop_dressed: true
+
+generation:
+  support: none
+
+sync:
+  channel: "eps^2"
+
+parity:
+  expected_sign: -1
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

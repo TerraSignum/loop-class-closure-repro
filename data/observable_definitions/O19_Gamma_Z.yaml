@@ -1,0 +1,29 @@
+id: O19
+name: Gamma_Z
+sector: Electroweak
+observable_type: decay_width
+description: |
+  Z-boson total decay width Gamma_Z, closed via the L7 EW-Mixed
+  lemma with positive dressing (1 + gamma * eps_sync^2).
+
+operator:
+  kind: decay_width_ew
+  spinor_trace_count: 1
+  double_wick: false
+  resummed: false
+  loop_dressed: true
+
+generation:
+  support: none
+
+sync:
+  channel: "eps^2"
+
+parity:
+  expected_sign: +1
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

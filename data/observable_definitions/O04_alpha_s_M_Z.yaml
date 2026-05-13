@@ -1,0 +1,30 @@
+id: O04
+name: alpha_s_M_Z
+sector: Sub-Generation
+observable_type: strong_coupling
+description: |
+  Strong coupling alpha_s at M_Z, closed via the L6 sub-generation
+  lemma with negative dressing (1 - gamma/(2*N_gen)).
+
+operator:
+  kind: gauge_coupling
+  spinor_trace_count: 1
+  double_wick: false
+  resummed: false
+  loop_dressed: true
+
+generation:
+  support: sub_generation
+  symbol: "1/(2*N_gen)"
+
+sync:
+  channel: "0"
+
+parity:
+  expected_sign: -1
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

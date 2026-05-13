@@ -1,0 +1,31 @@
+id: O21
+name: T_RH
+sector: Resummed-Propagator
+observable_type: reheating_temperature
+description: |
+  Reheating temperature T_RH, closed via the L4 Resummed-Propagator
+  lemma in its INVERSE form (1/(1 - 2*gamma^2)). The propagator-
+  resummed nature is what selects the inverse variant.
+
+operator:
+  kind: reheating_temperature
+  spinor_trace_count: 4
+  double_wick: false
+  resummed: true
+  resummation_inverse: true  # inverse form 1/(1 - 2*gamma^2)
+  loop_dressed: true
+
+generation:
+  support: none
+
+sync:
+  channel: "0"
+
+parity:
+  expected_sign: -1
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1
