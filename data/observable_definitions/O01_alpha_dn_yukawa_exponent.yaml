@@ -1,0 +1,29 @@
+id: O01
+name: alpha_dn_yukawa_exponent
+sector: Yukawa
+observable_type: yukawa_exponent
+description: |
+  Yukawa-channel down-type damping exponent, closed via the L1
+  Yukawa-Damping lemma with positive dressing (1 + gamma/4).
+
+operator:
+  kind: yukawa_coupling
+  spinor_trace_count: 1
+  double_wick: false
+  resummed: false
+  loop_dressed: true  # L1 Yukawa-Damping loop class
+
+generation:
+  support: none
+
+sync:
+  channel: "0"
+
+parity:
+  expected_sign: +1
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

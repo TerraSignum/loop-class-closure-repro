@@ -1,0 +1,30 @@
+id: O13
+name: CKM_V_us
+sector: Sub-Generation
+observable_type: ckm_matrix_element
+description: |
+  Cabibbo CKM-matrix element V_us, closed via the L6
+  sub-generation lemma with negative dressing (1 - gamma/(2*N_gen)).
+
+operator:
+  kind: ckm_mixing
+  spinor_trace_count: 1
+  double_wick: false
+  resummed: false
+  loop_dressed: true  # L6 sub-generation loop class
+
+generation:
+  support: sub_generation
+  symbol: "1/(2*N_gen)"
+
+sync:
+  channel: "0"
+
+parity:
+  expected_sign: -1
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

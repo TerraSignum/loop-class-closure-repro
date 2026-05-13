@@ -1,0 +1,101 @@
+{
+  "schema_version": "loop-class-map-v0.1",
+  "release": "2026-05-13",
+  "description": "Bijective map from extracted topology tuple (n, g, s, w, r) to loop-class lemma. Derived from data/loop_class_library.json (10 lemma classes + 1 tree-level entry). Each entry lists the canonical loop-class factors at sign=+1 and sign=-1; the predictor selects the sign from the YAML's parity.expected_sign field.",
+  "tuple_components": {
+    "n": "spinor_trace_count, integer in {0, 1, 2, 4}",
+    "g": "generation suppression symbol; one of '0' | '1/N_gen' | '1/(2*N_gen)'",
+    "s": "sync coupling channel symbol; one of '0' | 'eps^2' | 'eps^2 pure' | 'eps^2 * gamma'",
+    "w": "double-Wick contraction; boolean",
+    "r": "resummed propagator; boolean"
+  },
+  "tree_class": {
+    "lemma_id": "TREE",
+    "name": "Tree-level (no loop dressing)",
+    "factor_plus":  "1",
+    "factor_minus": "1",
+    "physics": "Tree-level closure with no loop correction. The observable's tree formula reaches the target without applying any loop-class factor."
+  },
+  "classes": [
+    {
+      "lemma_id": "L1",
+      "name": "Yukawa-Damping",
+      "match": {"n": 1, "g": "0", "s": "0", "w": false, "r": false},
+      "factor_plus":  "1 + gamma/4",
+      "factor_minus": "1 - gamma/4",
+      "physics": "Single-spinor self-Wick contraction at d=4 spinor-trace normalisation, multiplied by the System-R Yukawa damping coefficient gamma."
+    },
+    {
+      "lemma_id": "L2",
+      "name": "PMNS-Self-Energy",
+      "match": {"n": 1, "g": "0", "s": "0", "w": true, "r": false},
+      "factor_plus":  "1 + gamma^2/4",
+      "factor_minus": "1 - gamma^2/4",
+      "physics": "Double-Wick contraction in the lepton-mixing self-energy."
+    },
+    {
+      "lemma_id": "L3",
+      "name": "Pure-Self-Energy",
+      "match": {"n": 4, "g": "0", "s": "0", "w": false, "r": false},
+      "factor_plus":  "1 + gamma^2",
+      "factor_minus": "1 - gamma^2",
+      "physics": "Spinor-trace-less vertex self-energy."
+    },
+    {
+      "lemma_id": "L4",
+      "name": "Resummed-Propagator",
+      "match": {"n": 4, "g": "0", "s": "0", "w": false, "r": true},
+      "factor_plus":  "1 + 2*gamma^2",
+      "factor_minus": "1 - 2*gamma^2",
+      "physics": "Geometric-series resummation of the L3 self-energy class."
+    },
+    {
+      "lemma_id": "L5",
+      "name": "Generation",
+      "match": {"n": 2, "g": "1/N_gen", "s": "0", "w": false, "r": false},
+      "factor_plus":  "1 + gamma/N_gen",
+      "factor_minus": "1 - gamma/N_gen",
+      "physics": "Generation-mixing channel with full N_gen support."
+    },
+    {
+      "lemma_id": "L6",
+      "name": "Sub-Generation",
+      "match": {"n": 1, "g": "1/(2*N_gen)", "s": "0", "w": false, "r": false},
+      "factor_plus":  "1 + gamma/(2*N_gen)",
+      "factor_minus": "1 - gamma/(2*N_gen)",
+      "physics": "Single-generation sub-channel; suppresses by 1/(2 N_gen) relative to the generation channel."
+    },
+    {
+      "lemma_id": "L7",
+      "name": "EW-Mixed",
+      "match": {"n": 1, "g": "0", "s": "eps^2", "w": false, "r": false},
+      "factor_plus":  "1 + gamma * eps_sync^2",
+      "factor_minus": "1 - gamma * eps_sync^2",
+      "physics": "Electroweak-mixed channel coupling the Yukawa class to the sync-coupling eps_sync^2."
+    },
+    {
+      "lemma_id": "L8",
+      "name": "Matter-Core",
+      "match": {"n": 2, "g": "0", "s": "0", "w": false, "r": false},
+      "factor_plus":  "1 + gamma/2",
+      "factor_minus": "1 - gamma/2",
+      "physics": "Double-spinor-trace matter-core class."
+    },
+    {
+      "lemma_id": "L_pure_eps2",
+      "name": "Pure-Sync",
+      "match": {"n": 0, "g": "0", "s": "eps^2 pure", "w": false, "r": false},
+      "factor_plus":  "1 + eps_sync^2",
+      "factor_minus": "1 - eps_sync^2",
+      "physics": "Pure sync-coupling class with no spinor-trace content."
+    },
+    {
+      "lemma_id": "L10",
+      "name": "Sync-x-Gamma",
+      "match": {"n": 0, "g": "0", "s": "eps^2 * gamma", "w": false, "r": false},
+      "factor_plus":  "+ gamma^2/2",
+      "factor_minus": "- gamma^2/2",
+      "physics": "Sync-coupling multiplied by gamma (eps_sync^2 = gamma/2 gives gamma^2/2)."
+    }
+  ]
+}

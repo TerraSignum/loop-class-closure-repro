@@ -1,0 +1,72 @@
+{
+  "errors": [],
+  "n_errors": 0,
+  "n_observables": 3,
+  "results": [
+    {
+      "expected_sign": 1,
+      "id": "O01",
+      "loop_dressed": true,
+      "name": "alpha_dn_yukawa_exponent",
+      "provenance": {
+        "extracted_at": "2026-05-13T19:57:17Z",
+        "extractor_commit": "4717fe59a9239fb98b6adb06ffd24c1ab7e68c1f",
+        "schema_version": "tuple-compiler-v0.1",
+        "yaml_path": "data\\observable_definitions\\O01_alpha_dn_yukawa_exponent.yaml",
+        "yaml_sha256": "bb699d39523bbbfd529b7463f188967b54276911e90f5801a7a92e6e7ce06624"
+      },
+      "sector": "Yukawa",
+      "tuple": {
+        "g": "0",
+        "n": 1,
+        "r": false,
+        "s": "0",
+        "w": false
+      }
+    },
+    {
+      "expected_sign": 1,
+      "id": "O07",
+      "loop_dressed": false,
+      "name": "BH_entropy_quarter",
+      "provenance": {
+        "extracted_at": "2026-05-13T19:57:17Z",
+        "extractor_commit": "4717fe59a9239fb98b6adb06ffd24c1ab7e68c1f",
+        "schema_version": "tuple-compiler-v0.1",
+        "yaml_path": "data\\observable_definitions\\O07_BH_entropy_quarter.yaml",
+        "yaml_sha256": "8bb487e8209c0a445976a0df7feb3ba39296a2e21013c3c3179f23543d996c18"
+      },
+      "sector": "Horizon",
+      "tuple": {
+        "g": "0",
+        "n": 1,
+        "r": false,
+        "s": "0",
+        "w": false
+      }
+    },
+    {
+      "expected_sign": -1,
+      "id": "O13",
+      "loop_dressed": true,
+      "name": "CKM_V_us",
+      "provenance": {
+        "extracted_at": "2026-05-13T19:57:17Z",
+        "extractor_commit": "4717fe59a9239fb98b6adb06ffd24c1ab7e68c1f",
+        "schema_version": "tuple-compiler-v0.1",
+        "yaml_path": "data\\observable_definitions\\O13_CKM_V_us.yaml",
+        "yaml_sha256": "1802bcc6581e97e90568dc08a730867a9a57ff5e0bf6f7a5860d3e6b98fee3f3"
+      },
+      "sector": "Sub-Generation",
+      "tuple": {
+        "g": "1/(2*N_gen)",
+        "n": 1,
+        "r": false,
+        "s": "0",
+        "w": false
+      }
+    }
+  ],
+  "schema_version": "tuple-compiler-v0.1",
+  "target_isolation_locked": true
+}

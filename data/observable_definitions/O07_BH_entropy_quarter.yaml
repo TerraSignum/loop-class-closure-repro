@@ -1,0 +1,29 @@
+id: O07
+name: BH_entropy_quarter
+sector: Horizon
+observable_type: dimensionless_ratio
+description: |
+  Bekenstein-Hawking entropy per horizon area, S_BH/A = 1/4
+  (in natural units). Tree-level closure in the corpus.
+
+operator:
+  kind: horizon_entropy_density
+  spinor_trace_count: 1
+  double_wick: false
+  resummed: false
+  loop_dressed: false  # tree-level: tree formula alone reaches the target
+
+generation:
+  support: none
+
+sync:
+  channel: "0"
+
+parity:
+  expected_sign: +1
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1
