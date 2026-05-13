@@ -47,8 +47,12 @@
       "anchor": 0.2243,
       "anchor_source": "PDG 2024: V_us = 0.2243 +/- 0.0008",
       "residual_pct": 0.1,
-      "tier": "EXACT",
-      "lemma": "Loop-class compound from Lemmas 1+6 (MD-46)"
+      "lemma": "Loop-class compound from Lemmas 1+6 (MD-46)",
+      "superseded_2026_05_10": {
+        "canonical_form_now": "See observable_registry.json closure_form_2026_05_10 for V_us = alpha_xi*s_face = 9/40 (H-J) and V_cb = alpha_xi/(2(2d+N_gen)) = 9/220 (H-Q). The legacy structural_identity field in this file is retained for historical record.",
+        "status": "LEGACY"
+      },
+      "tier": "EXACT"
     },
     "V_cb": {
       "structural_identity": "V_cb = eps_sync^2 sqrt(2/N_gen)",
@@ -56,7 +60,6 @@
       "anchor": 0.041,
       "anchor_source": "PDG 2024: V_cb = 0.0410 +/- 0.0014",
       "residual_pct": 0.43,
-      "tier": "EXACT",
       "lemma": "Loop-class compound from Lemmas 1+6 (MD-46)",
       "antusch_2025_cross_check": {
         "anchor_value": 0.04193,
@@ -65,7 +68,12 @@
         "residual_pct_vs_antusch": 2.65,
         "tension_sigma": 2.7,
         "framing": "Framework V_cb is within 1-sigma of PDG 2024 inclusive (0.0410 +/- 0.0014) but in 2.7-sigma tension with the tighter exclusive UTfit-2023 anchor used by Antusch et al. 2025; this is the well-known V_cb^excl / V_cb^incl tension in the literature, NOT a structural failure of the loop-class closure"
-      }
+      },
+      "superseded_2026_05_10": {
+        "canonical_form_now": "See observable_registry.json closure_form_2026_05_10 for V_us = alpha_xi*s_face = 9/40 (H-J) and V_cb = alpha_xi/(2(2d+N_gen)) = 9/220 (H-Q). The legacy structural_identity field in this file is retained for historical record.",
+        "status": "LEGACY"
+      },
+      "tier": "EXACT"
     },
     "R_b_apex_distance": {
       "structural_identity": "R_b = d * gamma * (1 + eps_sync^2) under Theorem 16d.10.7 d-multiplier extension (MD-60)",
