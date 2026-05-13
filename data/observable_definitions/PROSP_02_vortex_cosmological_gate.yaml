@@ -1,0 +1,35 @@
+id: PROSP-02
+name: Vortex-cosmological-gate diagnostic
+sector: P4B dark-matter / cosmology
+description: |
+  Canonical-regime baseline of the vortex-cosmological-gate diagnostic.
+  Reads outputs_theory_closure/pg_vtx02_cosmo_gate.json (vcg01 step P1
+  summary) and extracts cosmo_compat_p1, dm_mode_score_p1,
+  grav_consistency_p1, e1_mean_support_p1.
+
+  Per registry: cosmo_compat ~ 0.690, gate_gap ~ 0.240, dm_share ~ 0.341
+  on P1; theory_status = COSMO_GATE_OPEN. The prospective extension to
+  lattice-N regimes (P5N64..P5N300) is not in corpus at T_0 and not
+  reproduced here -- this YAML records the P1 baseline only.
+
+closure_kind: stability_diagnostic
+diagnostic:
+  bundle_files:
+    - {path: "outputs_theory_closure/pg_vtx02_cosmo_gate.json",
+       regime: "P1"}
+  extract:
+    - {field: "vcg01.cosmo_compat_p1"}
+    - {field: "vcg01.dm_mode_score_p1"}
+    - {field: "vcg01.grav_consistency_p1"}
+    - {field: "vcg01.e1_mean_support_p1"}
+    - {field: "vcg03.gate_gap_p1"}
+    - {field: "vcg03.dm_share_p1"}
+    - {field: "vcg03.grav_share_p1"}
+  # No prediction window: this records the P1 baseline only; the
+  # prospective lattice-N extension is not bundled at T_0.
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

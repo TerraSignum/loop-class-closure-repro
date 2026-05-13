@@ -144,6 +144,31 @@ def _predict_structural(r: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
+def _predict_diagnostic(r: Dict[str, Any]) -> Dict[str, Any]:
+    """Predict for a stability-diagnostic: read bundles, extract fields,
+    compare to YAML prediction window. No fabrication."""
+    from .stability_diagnostic import evaluate_diagnostic
+    verdict = evaluate_diagnostic(r)
+    # Status is one of BUNDLE_MISSING, EXTRACT_ERROR, BASELINE_RECOVERED,
+    # PROSPECTIVE_CONFIRMED, PROSPECTIVE_FALSIFIED.
+    base_status = verdict["status"]
+    matched_statuses = {"BASELINE_RECOVERED", "PROSPECTIVE_CONFIRMED"}
+    return {
+        "id":            r["id"],
+        "name":          r["name"],
+        "sector":        r["sector"],
+        "closure_kind":  "stability_diagnostic",
+        "status":        "MATCHED" if base_status in matched_statuses else "OPEN",
+        "diagnostic_status": base_status,
+        "provenance":    r.get("provenance"),
+        "prediction": {
+            "lemma_id": "STABILITY_DIAGNOSTIC",
+            "name":     verdict["name"],
+            "verdict":  verdict,
+        },
+    }
+
+
 def _predict_one(r: Dict[str, Any], classes: List[Dict[str, Any]],
                  tree_class: Dict[str, Any]) -> Dict[str, Any]:
     kind = r.get("closure_kind", "single_loop")
@@ -153,6 +178,8 @@ def _predict_one(r: Dict[str, Any], classes: List[Dict[str, Any]],
         return _predict_compound(r, classes)
     if kind == "structural":
         return _predict_structural(r)
+    if kind == "stability_diagnostic":
+        return _predict_diagnostic(r)
     raise RuntimeError(f"{r['id']}: unhandled closure_kind={kind!r}")
 
 

@@ -1,0 +1,39 @@
+id: PROSP-03
+name: Charged-current Xi-reactivity ratio
+sector: P4B dark-matter / electroweak-mixed
+description: |
+  Pre-T_0 baseline of the charged-current Xi-reactivity ratio at the
+  P_2' regime, computed with the legacy carrier-defect coupling
+  g_old = 2.00 (heuristic).
+
+  Reads outputs_cwbp_patch_cw/zmeq_b2_p2prime_core_patch_self_closure_audit.json
+  and extracts the cw_net_corrected and abs_over_sync_floor ratios from
+  the gap_analysis_p2p_s1_vs_p5_ref block.
+
+  Per registry: at g_old = 2.00 the ratios are 3.43 and 3.17. The
+  prospective claim is that at g_new = 1.42 (the framework's rigorous
+  four-path-consensus coupling) the ratio drops to ~1.0 +- 0.05. The
+  re-run at g_new is not in corpus at T_0 and not reproduced here --
+  this YAML records the g_old baseline only.
+
+  The registry's leading-order analytic projection gives projected
+  ratio ~1.66 at g_new (g^2-rescaling alone), which already
+  falsifies the prediction at leading order. The post-T_0 full re-run
+  is what would close the prospective registration.
+
+closure_kind: stability_diagnostic
+diagnostic:
+  bundle_files:
+    - {path: "outputs_cwbp_patch_cw/zmeq_b2_p2prime_core_patch_self_closure_audit.json",
+       regime: "P2prime_g_old_2.00"}
+  extract:
+    - {field: "gap_analysis_p2p_s1_vs_p5_ref.cw_net_corrected"}
+    - {field: "gap_analysis_p2p_s1_vs_p5_ref.abs_over_sync_floor"}
+  # No prediction window: the prospective prediction is for the
+  # POST-T_0 re-run at g_new = 1.42, which is not bundled here.
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

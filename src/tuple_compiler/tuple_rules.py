@@ -97,6 +97,10 @@ def extract_tuple(obs: Dict[str, Any]) -> Dict[str, Any]:
         base["structural_rational"] = str(obs["structural_rational"])
         return base
 
+    if kind == "stability_diagnostic":
+        base["diagnostic"] = obs["diagnostic"]
+        return base
+
     if kind == "loop_compound":
         base["factors"] = [
             {

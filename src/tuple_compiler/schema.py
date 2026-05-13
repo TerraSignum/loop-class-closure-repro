@@ -19,7 +19,8 @@ G_SYMBOL_BY_SUPPORT = {
     "sub_generation":    "1/(2*N_gen)",
 }
 S_DOMAIN_CHANNEL = {"0", "eps^2", "eps^2 pure", "eps^2 * gamma"}
-CLOSURE_KIND_DOMAIN = {"tree", "single_loop", "loop_compound", "structural"}
+CLOSURE_KIND_DOMAIN = {"tree", "single_loop", "loop_compound",
+                       "structural", "stability_diagnostic"}
 
 # Required for tree / single_loop closures.
 REQUIRED_FLAT = ("id", "name", "sector", "operator", "generation",
@@ -32,6 +33,10 @@ REQUIRED_COMPOUND = ("id", "name", "sector", "factors", "anchors",
 # Required for structural closures.
 REQUIRED_STRUCTURAL = ("id", "name", "sector", "structural_formula",
                        "structural_rational", "anchors", "schema_version")
+
+# Required for stability_diagnostic closures (Phase 7).
+REQUIRED_DIAGNOSTIC = ("id", "name", "sector", "diagnostic", "anchors",
+                       "schema_version")
 
 
 class SchemaError(ValueError):
@@ -206,6 +211,38 @@ def _validate_structural(obs: Dict[str, Any], oid: str) -> None:
         raise SchemaError(f"{oid}: structural_rational must be a string.")
 
 
+def _validate_diagnostic(obs: Dict[str, Any], oid: str) -> None:
+    """Validate the stability_diagnostic shape: bundle_files + extract list."""
+    _validate_top_level(obs, oid, REQUIRED_DIAGNOSTIC)
+    _validate_anchors(obs["anchors"], oid)
+    diag = obs["diagnostic"]
+    if not isinstance(diag, dict):
+        raise SchemaError(f"{oid}: diagnostic must be a mapping.")
+    bundles = diag.get("bundle_files")
+    if not isinstance(bundles, list) or not bundles:
+        raise SchemaError(
+            f"{oid}: diagnostic.bundle_files must be a non-empty list."
+        )
+    for idx, b in enumerate(bundles):
+        if not isinstance(b, dict) or "path" not in b:
+            raise SchemaError(
+                f"{oid}: diagnostic.bundle_files[{idx}] must be a mapping "
+                f"with at least a 'path' key."
+            )
+    extract = diag.get("extract")
+    if not isinstance(extract, list) or not extract:
+        raise SchemaError(
+            f"{oid}: diagnostic.extract must be a non-empty list of "
+            f"{{field: <name>}} mappings."
+        )
+    for idx, e in enumerate(extract):
+        if not isinstance(e, dict) or "field" not in e:
+            raise SchemaError(
+                f"{oid}: diagnostic.extract[{idx}] must be a mapping "
+                f"with at least a 'field' key."
+            )
+
+
 def validate(obs: Dict[str, Any]) -> None:
     """Raise SchemaError if obs does not conform.
 
@@ -223,6 +260,8 @@ def validate(obs: Dict[str, Any]) -> None:
         _validate_compound(obs, oid)
     elif kind == "structural":
         _validate_structural(obs, oid)
+    elif kind == "stability_diagnostic":
+        _validate_diagnostic(obs, oid)
     else:  # pragma: no cover -- closure_kind_of already enforces the domain
         raise SchemaError(f"{oid}: unhandled closure_kind={kind!r}.")
 

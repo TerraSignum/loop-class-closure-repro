@@ -1,11 +1,11 @@
 {
   "counts": {
     "ERROR": 0,
-    "MATCHED": 47,
+    "MATCHED": 50,
     "OPEN": 0
   },
   "loop_map_version": "loop-class-map-v0.1",
-  "n_observables": 47,
+  "n_observables": 50,
   "predictions": [
     {
       "closure_kind": "structural",
@@ -26,8 +26,8 @@
         "rational": "143/144"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:38Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\BPI_REFINED_VACUUM.yaml",
         "yaml_sha256": "f9c3d3d68b287de1bb787bb0a999f01371b6624795d0f13d09104f9d4164faed"
@@ -54,8 +54,8 @@
         "rational": "9/40"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:38Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\HJ_13_CKM_V_us.yaml",
         "yaml_sha256": "f7d00770f55c193afe9731da50cfb9fb2eebb843f0f8b563a4b5294e452a2ad0"
@@ -82,8 +82,8 @@
         "rational": "11/500"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:38Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\HK_09_PMNS_theta_13_sin2.yaml",
         "yaml_sha256": "2403161dc29b9c7443f0bee12b1a0b9cb664b00c130ba4c182d2cb53a729fbca"
@@ -110,8 +110,8 @@
         "rational": "49/160"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:38Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\HK_10_PMNS_theta_12_sin2.yaml",
         "yaml_sha256": "76368dd48fbc77d25328f06b7441a4ab06a46072317026a79d3a0591fa709fc4"
@@ -138,8 +138,8 @@
         "rational": "23/40"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:38Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\HK_11_PMNS_theta_23_sin2.yaml",
         "yaml_sha256": "fd7cb3c0957a853982cc640309ec209a21f80a4c42ba127897d6ef11cd8018a0"
@@ -166,8 +166,8 @@
         "rational": "4389/4000"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:38Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\HK_12_PMNS_delta_CP_rad.yaml",
         "yaml_sha256": "4fe4a23c006ee84cc50d8a1a93422f56e655bffc466b2b007b65426289511dc5"
@@ -194,8 +194,8 @@
         "rational": "9/220"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\HQ_14_CKM_V_cb.yaml",
         "yaml_sha256": "f88a9d1fbc44ff7841421edefa6ecd68a7555e3288d8b2dcf4c41caa33d6d315"
@@ -222,8 +222,8 @@
         "rational": "7/6"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\LEMB_FAMILY.yaml",
         "yaml_sha256": "0fd654ec39d532873bfc50f24261500a46edd530cbfcf00c542403776bc9536f"
@@ -250,8 +250,8 @@
         "rational": "9/7"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\LEMB_KAHALE.yaml",
         "yaml_sha256": "788b0699c62710b917a39260a992e11b74c119ba2c66768f9638fe36c04eba4c"
@@ -278,8 +278,8 @@
         "rational": "20/21"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\LEMB_MASTER_CORRECTION.yaml",
         "yaml_sha256": "d98d03afb9e6653efbeaf86d4036d7b7b9ca528e6ee663a38a8502ba58487595"
@@ -306,8 +306,8 @@
         "rational": "7/24"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\LEMB_SKELETON.yaml",
         "yaml_sha256": "386a846fb9eaf27bcb429cbf715e3bd47166517b2d9291ff975b415b40398fb5"
@@ -327,8 +327,8 @@
         "name": "Yukawa-Damping"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O01_alpha_dn_yukawa_exponent.yaml",
         "yaml_sha256": "bb699d39523bbbfd529b7463f188967b54276911e90f5801a7a92e6e7ce06624"
@@ -356,8 +356,8 @@
         "name": "Sub-Generation"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O02_Omega_DM_h2.yaml",
         "yaml_sha256": "8e8e09f4efce0d9a708f81ec9a5baaf60d28f586e55b702450efbd3278fc83a4"
@@ -385,8 +385,8 @@
         "name": "Yukawa-Damping"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O03_w_DE.yaml",
         "yaml_sha256": "467c346b414f4bb0069c7081770b25306afa0335cdd19e98d6af134e9179ffbd"
@@ -414,8 +414,8 @@
         "name": "Sub-Generation"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O04_alpha_s_M_Z.yaml",
         "yaml_sha256": "991a88596641f576d25c5a3323a3909d80315ad59aaad52b696723c7782fa55e"
@@ -443,8 +443,8 @@
         "name": "Sub-Generation"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O05_alpha_cl_lepton_yukawa.yaml",
         "yaml_sha256": "bbc307f776baafa35d9747f142c641ebde27c7dd2393a2571615f38141bca42e"
@@ -472,8 +472,8 @@
         "name": "Tree-level (no loop dressing)"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O06_sin2_theta_W.yaml",
         "yaml_sha256": "b9d1831b0baa83778c510365831987982edf0e004fd7cdeb872cbae0989e36e0"
@@ -501,8 +501,8 @@
         "name": "Tree-level (no loop dressing)"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O07_BH_entropy_quarter.yaml",
         "yaml_sha256": "8bb487e8209c0a445976a0df7feb3ba39296a2e21013c3c3179f23543d996c18"
@@ -530,8 +530,8 @@
         "name": "Tree-level (no loop dressing)"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O08_Einstein_gap_two_thirds.yaml",
         "yaml_sha256": "e363009544453d515a8385b59b332a99915d72e129f6b852707ff343119b98ad"
@@ -559,8 +559,8 @@
         "name": "PMNS-Self-Energy"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O09_PMNS_theta_13.yaml",
         "yaml_sha256": "b474ab2f62028fddc8b1098827b44667852f3f2f386588e450c6a8c77c209e84"
@@ -588,8 +588,8 @@
         "name": "PMNS-Self-Energy"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O10_PMNS_theta_12.yaml",
         "yaml_sha256": "15f356ee129b0aff0ec05777fc5b95c7421cbca8bca03846a83ed6314d4086fd"
@@ -639,8 +639,8 @@
         "name": "L6 x L8"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O11_PMNS_theta_23.yaml",
         "yaml_sha256": "1078d3d7f59f2d42896c9483edd223def7cbaed00c1b55f83167f4b97c08dc61"
@@ -682,8 +682,8 @@
         "name": "L1 x L2"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O12_PMNS_delta_CP.yaml",
         "yaml_sha256": "b629b9bdec60964105e27a051c05788f615103cbd577d564dab558f8f7f81b0d"
@@ -703,8 +703,8 @@
         "name": "Sub-Generation"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O13_CKM_V_us.yaml",
         "yaml_sha256": "1802bcc6581e97e90568dc08a730867a9a57ff5e0bf6f7a5860d3e6b98fee3f3"
@@ -732,8 +732,8 @@
         "name": "Sub-Generation"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O14_CKM_V_cb.yaml",
         "yaml_sha256": "bae4ebc1e6faed1f04e1cbfb7cec508db08439fc3354d08c4bcc2fa83499d362"
@@ -761,8 +761,8 @@
         "name": "Yukawa-Damping"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:15Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O15_m_H.yaml",
         "yaml_sha256": "e6bc22e305d250548c0357d0e57a26ab8678c18b3b69b28cb251ace1298f8c3d"
@@ -790,8 +790,8 @@
         "name": "EW-Mixed"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O16_m_W.yaml",
         "yaml_sha256": "dd6a8fdac7c54e19a9a36ab2fdab97b4176ee66a92134eed9b0c26704021f70e"
@@ -819,8 +819,8 @@
         "name": "EW-Mixed"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O17_m_Z.yaml",
         "yaml_sha256": "1a68ba6875f4ac7dc145fcf014b5862d72a1214f5edc3c85862158e8cde62d1c"
@@ -848,8 +848,8 @@
         "name": "EW-Mixed"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O18_Gamma_W.yaml",
         "yaml_sha256": "f12f71e99eea2f6a6e27d912499116c2f07f2af421e091dee94f065419d25add"
@@ -877,8 +877,8 @@
         "name": "EW-Mixed"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O19_Gamma_Z.yaml",
         "yaml_sha256": "d84b23df4a5b314546317b3da1a57b59868c1c514cac99f33a4ac38f4b788ac4"
@@ -906,8 +906,8 @@
         "name": "Yukawa-Damping"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O20_H_0.yaml",
         "yaml_sha256": "f1c99947a94d9c03af07f096491b50e21a60c39e2cbe34606d89d6970cfd4dae"
@@ -935,8 +935,8 @@
         "name": "Resummed-Propagator"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O21_T_RH.yaml",
         "yaml_sha256": "ec7fc9411498d472f1e7563e8836dc58018c21d6427ee3015012614c3a946ae0"
@@ -964,8 +964,8 @@
         "name": "EW-Mixed"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O22_n_s.yaml",
         "yaml_sha256": "498f01b8107a8be419494d82a5953c04b1087e919fdfedb73dc36b2f62f1bbc9"
@@ -1015,8 +1015,8 @@
         "name": "L1 x L5"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O23_sigma_8.yaml",
         "yaml_sha256": "364c85a4599b358f0b365a5bebcf61f4f01175b9f8efcc4b97c9bfef418bb2fa"
@@ -1058,8 +1058,8 @@
         "name": "L1 x L5"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O24_eta_B.yaml",
         "yaml_sha256": "8991332f1cbf42ac5da3525414db3d529cc945a151bc74a0bf1fe7c1f5e60e4f"
@@ -1101,8 +1101,8 @@
         "name": "L_pure_eps2 x L7"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O25_Lambda_QCD.yaml",
         "yaml_sha256": "83ab0a279743073c9a02d28126e0cb1deaf2e29076b46e39e19cc7ae16747a6a"
@@ -1144,8 +1144,8 @@
         "name": "L8 x L3"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O26_omega_b_h2.yaml",
         "yaml_sha256": "ad76cd2d5ff84cd6cc920ccd5882a92e152b27871fcfc8d87f4f0a9b4b783802"
@@ -1172,8 +1172,8 @@
         "rational": "81/100"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O27_Lambda_t_cosm_tensor.yaml",
         "yaml_sha256": "8e4cc03ea2bbdcb5919578417122a971d918460c8c35c4d20bc8ec5c1a4c0535"
@@ -1200,8 +1200,8 @@
         "rational": "-1/200"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O28_Lambda_s_cosm_tensor.yaml",
         "yaml_sha256": "8e828e39608253308c4ab6150bc9310546cc05fb889e4766ac4aa7f02c7a208c"
@@ -1221,8 +1221,8 @@
         "name": "Yukawa-Damping"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O29_Y_p_primordial_helium.yaml",
         "yaml_sha256": "0bf0e017cdee3fb5c89a02384c831708110f440c9efd657a07f5f0c909c3f506"
@@ -1257,8 +1257,8 @@
         "rational": "1/300"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\P4_MAT_G00.yaml",
         "yaml_sha256": "8a335b12428e076179a01c9b760f7f5216d65bc575b9d92fe4e2f9ad759c073b"
@@ -1285,8 +1285,8 @@
         "rational": "79/200"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\P4_MAT_LAMBDA_W.yaml",
         "yaml_sha256": "2466cec1b6a4c61ab73b988759c0e6bc7849d797136258164274a4a5c2e7abbe"
@@ -1313,8 +1313,8 @@
         "rational": "81/100"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\P4_MAT_T00.yaml",
         "yaml_sha256": "2929ac6b17de0bac05ff7652db2e6b46598a3d907e741c7b841fd3772d4155db"
@@ -1341,8 +1341,8 @@
         "rational": "3/200"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\P4_VAC_G00.yaml",
         "yaml_sha256": "4f741fdfab5abc784bc2382cfa018952328432de410a0b2d933fdab98f9dd278"
@@ -1369,8 +1369,8 @@
         "rational": "33/40"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\P4_VAC_LAMBDA_T.yaml",
         "yaml_sha256": "986a7a31b485022dab1df90a65f71bb4cfe39dddfe21b080cc5dce9a97c98f0e"
@@ -1397,8 +1397,8 @@
         "rational": "3/8"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\P4_VAC_LAMBDA_W.yaml",
         "yaml_sha256": "e87cb4d2ecf7e275fb45f62a6b9651662298c11a766530c94ff9a512174a89aa"
@@ -1425,13 +1425,254 @@
         "rational": "84/100"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T21:16:16Z",
-        "extractor_commit": "ee658ba093ef6b9a2b7fb751705652abc76eb988",
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\P4_VAC_T00.yaml",
         "yaml_sha256": "65da413cdcce148d4b0acb23c5e6c696d964b4628d37de814afc8bc180642ebd"
       },
       "sector": "P4 emergent-GR (vacuum branch, theta_chir < pi/4)",
+      "status": "MATCHED"
+    },
+    {
+      "closure_kind": "stability_diagnostic",
+      "diagnostic_status": "BASELINE_RECOVERED",
+      "id": "PROSP-01",
+      "name": "Gravitational coupling-scaling diagnostic",
+      "prediction": {
+        "lemma_id": "STABILITY_DIAGNOSTIC",
+        "name": "Gravitational coupling-scaling diagnostic",
+        "verdict": {
+          "bundles": [
+            {
+              "path": "results_c5_fix4/c5_p0.json",
+              "regime": "p0",
+              "resolved_path": "C:\\Users\\user\\Desktop\\Emergence\\results_c5_fix4\\c5_p0.json",
+              "resolved_path_relative": "results_c5_fix4\\c5_p0.json",
+              "sha256": "418e52d0d4edea569cff4a312090886e4699c798064fd1404d26c23d59ff8bee"
+            },
+            {
+              "path": "results_c5_fix4/c5_p1.json",
+              "regime": "p1",
+              "resolved_path": "C:\\Users\\user\\Desktop\\Emergence\\results_c5_fix4\\c5_p1.json",
+              "resolved_path_relative": "results_c5_fix4\\c5_p1.json",
+              "sha256": "73bd64efb2343257a993a07dbda49cc849de043029307862104636a2478d9137"
+            },
+            {
+              "path": "results_c5_fix4/c5_p2prime.json",
+              "regime": "p2prime",
+              "resolved_path": "C:\\Users\\user\\Desktop\\Emergence\\results_c5_fix4\\c5_p2prime.json",
+              "resolved_path_relative": "results_c5_fix4\\c5_p2prime.json",
+              "sha256": "4f3246bdd34d036e3222109c85b9151d17a180e2952b0004fb373e03d00782a7"
+            }
+          ],
+          "extract_aggregated": {
+            "far_field_exponent": [
+              -0.023672148212929872,
+              -1.0000000000000002,
+              -1.0
+            ],
+            "newton_like_pass": [
+              0.0,
+              1.0,
+              0.9285714285714286
+            ],
+            "poisson_residual": [
+              0.9981980572558753,
+              0.7034583227233193,
+              0.725693208744587
+            ]
+          },
+          "extract_per_bundle": [
+            {
+              "far_field_exponent": -0.023672148212929872,
+              "newton_like_pass": 0.0,
+              "path": "results_c5_fix4\\c5_p0.json",
+              "poisson_residual": 0.9981980572558753,
+              "regime": "p0",
+              "sha256": "418e52d0d4edea569cff4a312090886e4699c798064fd1404d26c23d59ff8bee"
+            },
+            {
+              "far_field_exponent": -1.0000000000000002,
+              "newton_like_pass": 1.0,
+              "path": "results_c5_fix4\\c5_p1.json",
+              "poisson_residual": 0.7034583227233193,
+              "regime": "p1",
+              "sha256": "73bd64efb2343257a993a07dbda49cc849de043029307862104636a2478d9137"
+            },
+            {
+              "far_field_exponent": -1.0,
+              "newton_like_pass": 0.9285714285714286,
+              "path": "results_c5_fix4\\c5_p2prime.json",
+              "poisson_residual": 0.725693208744587,
+              "regime": "p2prime",
+              "sha256": "4f3246bdd34d036e3222109c85b9151d17a180e2952b0004fb373e03d00782a7"
+            }
+          ],
+          "id": "PROSP-01",
+          "name": "Gravitational coupling-scaling diagnostic",
+          "prediction_check": {
+            "checked": false,
+            "reason": "no prediction declared"
+          },
+          "sector": "P4 emergent-GR (lattice-N stability)",
+          "status": "BASELINE_RECOVERED"
+        }
+      },
+      "provenance": {
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
+        "schema_version": "tuple-compiler-v0.1",
+        "yaml_path": "data\\observable_definitions\\PROSP_01_gravitational_coupling_scaling.yaml",
+        "yaml_sha256": "b3fbaf660c83ebec2991b3b052dd81c2c5ba7c41ed19b0c7f5d313efcc76389b"
+      },
+      "sector": "P4 emergent-GR (lattice-N stability)",
+      "status": "MATCHED"
+    },
+    {
+      "closure_kind": "stability_diagnostic",
+      "diagnostic_status": "BASELINE_RECOVERED",
+      "id": "PROSP-02",
+      "name": "Vortex-cosmological-gate diagnostic",
+      "prediction": {
+        "lemma_id": "STABILITY_DIAGNOSTIC",
+        "name": "Vortex-cosmological-gate diagnostic",
+        "verdict": {
+          "bundles": [
+            {
+              "path": "outputs_theory_closure/pg_vtx02_cosmo_gate.json",
+              "regime": "P1",
+              "resolved_path": "C:\\Users\\user\\Desktop\\Emergence\\outputs_theory_closure\\pg_vtx02_cosmo_gate.json",
+              "resolved_path_relative": "outputs_theory_closure\\pg_vtx02_cosmo_gate.json",
+              "sha256": "03e3898370b9db60cc2211721a29a2363b5182a0cad48b175e4a0806e550bbf3"
+            }
+          ],
+          "extract_aggregated": {
+            "vcg01.cosmo_compat_p1": [
+              0.689578
+            ],
+            "vcg01.dm_mode_score_p1": [
+              0.841311
+            ],
+            "vcg01.e1_mean_support_p1": [
+              0.805037
+            ],
+            "vcg01.grav_consistency_p1": [
+              0.898661
+            ],
+            "vcg03.dm_share_p1": [
+              0.348774
+            ],
+            "vcg03.gate_gap_p1": [
+              0.240422
+            ],
+            "vcg03.grav_share_p1": [
+              0.222727
+            ]
+          },
+          "extract_per_bundle": [
+            {
+              "path": "outputs_theory_closure\\pg_vtx02_cosmo_gate.json",
+              "regime": "P1",
+              "sha256": "03e3898370b9db60cc2211721a29a2363b5182a0cad48b175e4a0806e550bbf3",
+              "vcg01.cosmo_compat_p1": 0.689578,
+              "vcg01.dm_mode_score_p1": 0.841311,
+              "vcg01.e1_mean_support_p1": 0.805037,
+              "vcg01.grav_consistency_p1": 0.898661,
+              "vcg03.dm_share_p1": 0.348774,
+              "vcg03.gate_gap_p1": 0.240422,
+              "vcg03.grav_share_p1": 0.222727
+            }
+          ],
+          "id": "PROSP-02",
+          "name": "Vortex-cosmological-gate diagnostic",
+          "prediction_check": {
+            "checked": false,
+            "reason": "no prediction declared"
+          },
+          "sector": "P4B dark-matter / cosmology",
+          "status": "BASELINE_RECOVERED"
+        }
+      },
+      "provenance": {
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
+        "schema_version": "tuple-compiler-v0.1",
+        "yaml_path": "data\\observable_definitions\\PROSP_02_vortex_cosmological_gate.yaml",
+        "yaml_sha256": "1c7d2296f0255c49bbb248d366c7a6cdd38aecfd77075e0458081528ab678492"
+      },
+      "sector": "P4B dark-matter / cosmology",
+      "status": "MATCHED"
+    },
+    {
+      "closure_kind": "stability_diagnostic",
+      "diagnostic_status": "BASELINE_RECOVERED",
+      "id": "PROSP-03",
+      "name": "Charged-current Xi-reactivity ratio",
+      "prediction": {
+        "lemma_id": "STABILITY_DIAGNOSTIC",
+        "name": "Charged-current Xi-reactivity ratio",
+        "verdict": {
+          "bundles": [
+            {
+              "path": "outputs_cwbp_patch_cw/zmeq_b2_p2prime_core_patch_self_closure_audit.json",
+              "regime": "P2prime_g_old_2.00",
+              "resolved_path": "C:\\Users\\user\\Desktop\\Emergence\\outputs_cwbp_patch_cw\\zmeq_b2_p2prime_core_patch_self_closure_audit.json",
+              "resolved_path_relative": "outputs_cwbp_patch_cw\\zmeq_b2_p2prime_core_patch_self_closure_audit.json",
+              "sha256": "ee959a22b8fcae76b97f733beba80c687a4b22d3e56c53b943736308c85afe66"
+            }
+          ],
+          "extract_aggregated": {
+            "gap_analysis_p2p_s1_vs_p5_ref.abs_over_sync_floor": [
+              {
+                "delta": 1.615,
+                "ratio_p2p_over_p5": 3.17,
+                "verdict": "OVERSHOOT_FACTOR_3p17"
+              }
+            ],
+            "gap_analysis_p2p_s1_vs_p5_ref.cw_net_corrected": [
+              {
+                "delta": 0.0153,
+                "ratio_p2p_over_p5": 3.43,
+                "verdict": "OVERSHOOT_FACTOR_3p43"
+              }
+            ]
+          },
+          "extract_per_bundle": [
+            {
+              "gap_analysis_p2p_s1_vs_p5_ref.abs_over_sync_floor": {
+                "delta": 1.615,
+                "ratio_p2p_over_p5": 3.17,
+                "verdict": "OVERSHOOT_FACTOR_3p17"
+              },
+              "gap_analysis_p2p_s1_vs_p5_ref.cw_net_corrected": {
+                "delta": 0.0153,
+                "ratio_p2p_over_p5": 3.43,
+                "verdict": "OVERSHOOT_FACTOR_3p43"
+              },
+              "path": "outputs_cwbp_patch_cw\\zmeq_b2_p2prime_core_patch_self_closure_audit.json",
+              "regime": "P2prime_g_old_2.00",
+              "sha256": "ee959a22b8fcae76b97f733beba80c687a4b22d3e56c53b943736308c85afe66"
+            }
+          ],
+          "id": "PROSP-03",
+          "name": "Charged-current Xi-reactivity ratio",
+          "prediction_check": {
+            "checked": false,
+            "reason": "no prediction declared"
+          },
+          "sector": "P4B dark-matter / electroweak-mixed",
+          "status": "BASELINE_RECOVERED"
+        }
+      },
+      "provenance": {
+        "extracted_at": "2026-05-13T22:16:39Z",
+        "extractor_commit": "6faadbf3c78da136f56445bf65fb992e712bc2a2",
+        "schema_version": "tuple-compiler-v0.1",
+        "yaml_path": "data\\observable_definitions\\PROSP_03_charged_current_xi_reactivity.yaml",
+        "yaml_sha256": "3bcdd6fc4104a4fa733ba8f7145e44acdd161c3d704620a2bdcc9849c7e7810a"
+      },
+      "sector": "P4B dark-matter / electroweak-mixed",
       "status": "MATCHED"
     }
   ],

@@ -1,0 +1,36 @@
+id: PROSP-01
+name: Gravitational coupling-scaling diagnostic
+sector: P4 emergent-GR (lattice-N stability)
+description: |
+  Multi-N stability test of newton_like_pass and far_field_exponent
+  on the c5 (theory-conformant bare-Phi) diagnostic across canonical
+  regimes p0, p1, p2prime. Pre-T_0 baseline established in
+  results_c5_fix4/.
+
+  Reads three c5 bundles and extracts newton_like_pass + far_field_exponent
+  per regime. The prospective claim per registry:
+  newton_like_pass = 1.0 on physically-meaningful regimes (p1, p2prime);
+  far_field_exponent = -1.0 (clean 1/r Newton). p0 is the negative-
+  control regime where newton_like_pass = 0 is expected.
+
+closure_kind: stability_diagnostic
+diagnostic:
+  bundle_files:
+    - {path: "results_c5_fix4/c5_p0.json",       regime: "p0"}
+    - {path: "results_c5_fix4/c5_p1.json",       regime: "p1"}
+    - {path: "results_c5_fix4/c5_p2prime.json",  regime: "p2prime"}
+  extract:
+    - {field: "newton_like_pass"}
+    - {field: "far_field_exponent"}
+    - {field: "poisson_residual"}
+  # No aggregate prediction window: p0 is a negative-control regime
+  # with newton_like_pass = 0 expected, while p1/p2prime have
+  # newton_like_pass = 1. A single ladder-wide expected value would
+  # conflate physical regimes with the negative control. The harness
+  # reports BASELINE_RECOVERED with the per-regime values.
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

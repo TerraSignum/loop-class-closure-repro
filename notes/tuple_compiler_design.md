@@ -229,7 +229,71 @@ cannot silently drift.
 
 | **Phase 5** | done (this commit) | Structural-identity evaluator (sympy-based, exact Fraction arithmetic) closes every Phase-4-surfaced dual-state gap. 6 new YAMLs (HK-09, HK-10, HK-11, HK-12, HJ-13, HQ-14) declare the registry's `closure_form_2026_05_10` forms; O27/O28 structural fields are activated. All 8 structural forms evaluate EXACTLY to their claimed rationals; no float fallback, no stub. Audit upgraded to v0.2 with `phase5_resolution` block per dual-state entry; all 6 RESOLVED. |
 | **Phase 6** | done (this commit) | Branch-resolved P4 + Lemma B + β_π refined-vacuum structural identities. 12 new YAMLs cover both vacuum AND matter branches of T_00, G_00, Λ_t, λ_w; Lemma B's family-coupling, skeleton, Kahale, and 20/21 master-correction; and the β_π 143/144 refined-vacuum identity. Every form evaluates EXACTLY via sympy. |
-| Phase 7 | open | Prospective-registry stability diagnostics — would require a separate diagnostic harness (multi-N stability regression), not the tuple compiler. |
+| **Phase 7** | done (this commit) | Prospective-registry stability diagnostics. 3 new YAMLs (PROSP-01/02/03) with `closure_kind: stability_diagnostic`. The harness reads bundle JSON files from the broader Emergence corpus, extracts named diagnostic fields via dotted paths, and reports verdict status. SHA-256 hash-pinning per bundle catches silent upstream data drift. |
+
+### Phase 7 honest scope statement
+
+The prospective registry's 3 entries (PROSP-01 gravitational coupling
+scaling, PROSP-02 vortex cosmological gate, PROSP-03 charged-current
+Xi-reactivity ratio) are **multi-N stability diagnostics**, not
+closures. They report scores like `newton_like_pass`,
+`far_field_exponent`, `cosmo_compat`, `gate_gap`, `cw_net_corrected`
+on lattice bundles produced by separate simulation pipelines. The
+tuple compiler does NOT run those simulations; it **reproduces the
+recorded outputs deterministically** from the JSON bundles.
+
+Specifically the harness:
+
+1. Resolves each declared bundle path relative to the Emergence root
+   (the parent of loop-class-closure-repro).
+2. Reads the bundle, extracts the named fields via dotted paths.
+3. Computes the SHA-256 of each bundle so a silent upstream change
+   fails the test.
+4. Reports one of these status values:
+   - `BUNDLE_MISSING` — a declared bundle file is absent on disk.
+   - `EXTRACT_ERROR` — a declared field path is missing in the bundle.
+   - `BASELINE_RECOVERED` — pre-T_0 baseline values extracted; no
+     prospective prediction declared (the post-T_0 residual would
+     require a new lattice run).
+   - `PROSPECTIVE_CONFIRMED` — prediction declared and all extracted
+     values within tolerance.
+   - `PROSPECTIVE_FALSIFIED` — prediction declared and at least one
+     extracted value outside tolerance.
+
+For PROSP-01/02/03 the harness reports `BASELINE_RECOVERED`: the
+pre-T_0 baseline values are deterministically extracted from
+`results_c5_fix4/c5_p{0,1,2prime}.json`,
+`outputs_theory_closure/pg_vtx02_cosmo_gate.json`, and
+`outputs_cwbp_patch_cw/zmeq_b2_p2prime_core_patch_self_closure_audit.json`.
+The post-T_0 prospective residuals (lattice-N extension, full re-run
+at g=1.42) are NOT in the corpus at T_0 and the harness does not
+fabricate them; running the corresponding simulations is a separate
+task outside the tuple compiler.
+
+### Honest "no fabrication" pinning
+
+Phase-7 tests pin the SHA-256 prefix of each bundle PLUS the EXACT
+extracted value of each field. This guards against three failure
+modes simultaneously:
+
+- **Silent data drift**: a bundle file changes upstream → SHA fails.
+- **Schema drift**: a JSON field is renamed upstream → extract fails.
+- **Logic drift**: the harness changes behaviour → value test fails.
+
+No tolerance, no fallback, no default value. The harness reads what
+is on disk; the tests pin what the harness must return.
+
+### What stays out of scope (intentionally)
+
+- **Running the lattice simulations**. The harness reproduces recorded
+  outputs; it does not run new simulations. Computing the post-T_0
+  prospective residuals (e.g. the g=1.42 re-run of PROSP-03) is a
+  separate task — when those bundle files appear on disk, the
+  corresponding YAMLs can be extended with the new bundle paths and
+  the verdict status will upgrade from BASELINE_RECOVERED to
+  PROSPECTIVE_CONFIRMED or PROSPECTIVE_FALSIFIED automatically.
+
+| Phase 8 | open | Future work would build the lattice-simulation runner that produces the post-T_0 bundle files; the harness then automatically picks up the new data and upgrades the verdict. |
 
 ### Phase 6 honest scope statement
 
