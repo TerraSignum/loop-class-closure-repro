@@ -1,0 +1,21 @@
+id: O26
+name: omega_b_h2
+sector: Matter-Core x Pure-Self-Energy
+observable_type: cosmological_density
+description: |
+  Baryon density parameter omega_b * h^2, closed by a 2-loop compound:
+  L8 Matter-Core (1 - gamma/2) times L3 Pure-Self-Energy (1 - gamma^2).
+
+closure_kind: loop_compound
+
+factors:
+  - {n: 2, g_support: none, s_channel: "0",
+     w: false, r: false, sign: -1}
+  - {n: 4, g_support: none, s_channel: "0",
+     w: false, r: false, sign: -1}
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

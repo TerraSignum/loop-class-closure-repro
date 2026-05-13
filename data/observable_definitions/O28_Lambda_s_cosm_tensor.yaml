@@ -1,0 +1,20 @@
+id: O28
+name: Lambda_s_cosm_tensor
+sector: Cosmological-Tensor (spatial)
+observable_type: cosmological_constant_tensor
+description: |
+  Spatial-isotropic component of the anisotropic cosmological-constant
+  tensor Lambda_munu. Closed via direct System-R algebraic identity
+  Lambda_s = -gamma^2/2 = -eps_sync^2 * gamma = -1/200, using the
+  identity eps_sync^2 = gamma/2. Loop-class library is NOT the closure
+  mechanism.
+
+closure_kind: structural
+structural_formula: "-gamma^2/2"
+structural_rational: "-1/200"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

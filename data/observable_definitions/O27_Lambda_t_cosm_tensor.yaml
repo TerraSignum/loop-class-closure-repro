@@ -1,0 +1,20 @@
+id: O27
+name: Lambda_t_cosm_tensor
+sector: Cosmological-Tensor (time-time)
+observable_type: cosmological_constant_tensor
+description: |
+  Matter-branch time-time component of the anisotropic cosmological-
+  constant tensor Lambda_munu. Closed via direct System-R algebraic
+  identity Lambda_t = alpha_xi^2 = (9/10)^2 = 81/100, NOT via the
+  loop-class library. Derived in P4 (branch-resolved Lambda_t per
+  Eq. lambda_t_branch_resolved).
+
+closure_kind: structural
+structural_formula: "alpha_xi^2"
+structural_rational: "81/100"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

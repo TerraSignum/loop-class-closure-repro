@@ -51,8 +51,17 @@ def test_each_result_has_no_target_field(bundle):
     forbidden = {"target", "target_value", "expected_value",
                  "pdg_value", "residual"}
     for r in bundle["results"]:
-        keys = set(r.keys()) | set(r["tuple"].keys())
-        assert keys.isdisjoint(forbidden)
+        keys = set(r.keys())
+        if "tuple" in r:
+            keys |= set(r["tuple"].keys())
+        if "factors" in r:
+            for f in r["factors"]:
+                if "tuple" in f:
+                    keys |= set(f["tuple"].keys())
+                keys |= set(f.keys())
+        assert keys.isdisjoint(forbidden), (
+            f"{r['id']} leaks target-field(s): {keys & forbidden}"
+        )
 
 
 def test_predictions_match_expected(bundle, loop_map):
@@ -62,6 +71,7 @@ def test_predictions_match_expected(bundle, loop_map):
     by_id = {r["id"]: r for r in bundle["results"]}
     for obs_id, (expected_lemma, expected_factor) in EXPECTED_PREDICTIONS.items():
         r = by_id[obs_id]
+        # Phase-1 observables are all flat (single_loop or tree).
         if not r["loop_dressed"]:
             assert tree_class["lemma_id"] == expected_lemma
             assert tree_class["factor_plus"] == expected_factor

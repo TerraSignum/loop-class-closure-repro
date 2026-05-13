@@ -165,8 +165,58 @@ in tuple identification.
 |---|---|---|
 | **Phase 1** | done (commit 5a6c528) | 3 YAMLs covering TREE + L1 + L6. End-to-end extractor + predictor + 61 tests. |
 | **Phase 2** | done (this commit) | All 21 single-loop observables in the existing P3 registry. L4 inverse-form extension (`operator.resummation_inverse` flag). Cross-verification: 45 Phase-2 tests pin every compiler factor + lemma assignment against `data/observable_registry.json` without registry access during extraction. |
-| Phase 3 | open | Two-loop compounds via `factors: [...]`. Lambda_QCD sum-form handler. |
+| **Phase 3** | done (this commit) | 6 standard two-loop compounds (O11, O12, O23, O24, O25, O26) via `closure_kind: loop_compound` + compact `factors: [...]` array; 2 structural-only observables (O27 α_ξ²=81/100, O28 −γ²/2=−1/200) via `closure_kind: structural`. Cross-verification: every compound's factor string matches the registry's `loop_class` formula. |
 | Phase 4 | open | Prospective-registry observables (not yet closed); the compiler outputs `OPEN` for unmatched tuples. |
+
+### Phase 3 closure_kind taxonomy
+
+The audit of the 29-entry registry reveals **four** distinct closure
+mechanisms, not two:
+
+| `closure_kind` | Count | Mechanism |
+|---|---:|---|
+| `tree` | 3 | Tree formula alone reaches target; loop factor = 1. |
+| `single_loop` | 18 | Tree formula × one loop-class factor = target. |
+| `loop_compound` | 6 | Tree formula × product of two loop-class factors = target. |
+| `structural` | 2 | Direct System-R algebraic identity (no tree × loop split); loop-class library is not the closure mechanism. |
+
+Two observables fall in the `structural` class:
+- **O27 Lambda_t_cosm_tensor** = α_ξ² = 81/100 — matter-branch
+  cosmological-constant tensor diagonal (P4 Eq. branch-resolved).
+- **O28 Lambda_s_cosm_tensor** = −γ²/2 = −1/200 — spatial
+  cosmological-constant tensor component, via the System-R identity
+  eps_sync² = γ/2.
+
+Their registry `lemma: "1+1"` and `lemma: "5+5"` labels are bookkeeping
+of the *symbolic factor count*, not literal loop-class products. The
+compiler treats them as structural identities and records the closed
+form directly, without going through the loop-class matcher.
+
+### Phase 3 schema extension (compact factors syntax)
+
+For compounds, the YAML has an optional top-level `closure_kind` and a
+`factors: [...]` array (length 2 in Phase 3), each entry a compact
+record:
+
+```yaml
+closure_kind: loop_compound
+factors:
+  - {n: 1, g_support: sub_generation, g_symbol: "1/(2*N_gen)",
+     s_channel: "0", w: false, r: false, sign: -1}
+  - {n: 1, g_support: none, s_channel: "0", w: false, r: false, sign: -1}
+```
+
+For `structural`:
+
+```yaml
+closure_kind: structural
+structural_formula: "alpha_xi^2"
+structural_rational: "81/100"
+```
+
+For `tree` / `single_loop`, the existing flat schema is unchanged.
+The validator branches on `closure_kind` (default `single_loop` for
+backward compatibility with Phase-1/2 YAMLs).
 
 ### Phase 2 sign-rules note
 

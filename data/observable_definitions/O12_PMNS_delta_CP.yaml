@@ -1,0 +1,19 @@
+id: O12
+name: PMNS_delta_CP
+sector: Yukawa x PMNS-Self-Energy
+observable_type: cp_phase
+description: |
+  PMNS leptonic CP-violating phase delta_CP, closed by a 2-loop compound:
+  L1 Yukawa-Damping (1 + gamma/4) times L2 PMNS-Self-Energy (1 - gamma^2/4).
+
+closure_kind: loop_compound
+
+factors:
+  - {n: 1, g_support: none, s_channel: "0", w: false, r: false, sign: +1}
+  - {n: 1, g_support: none, s_channel: "0", w: true,  r: false, sign: -1}
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

@@ -15,9 +15,7 @@ from pathlib import Path
 import pytest
 
 from tuple_compiler.extract_topology_tuple import extract_all
-from tuple_compiler.loop_class_predictor import (
-    _select_factor, match_one,
-)
+from tuple_compiler.loop_class_predictor import _predict_one
 
 
 SINGLE_LOOP_IDS = {
@@ -57,33 +55,23 @@ def registry(repo_root: Path) -> dict:
 
 @pytest.fixture(scope="module")
 def predictions(repo_root: Path, loop_map_path: Path) -> dict:
-    """Run extractor + predictor and return predictions keyed by id."""
+    """Run extractor + predictor; return predictions keyed by id,
+    restricted to the Phase-2 single-loop set."""
     bundle = extract_all()
     assert bundle["n_errors"] == 0, bundle["errors"]
-
     loop_map = json.loads(loop_map_path.read_text(encoding="utf-8"))
     classes = loop_map["classes"]
     tree_class = loop_map["tree_class"]
 
     out = {}
     for r in bundle["results"]:
-        entry = dict(r)
-        if not r["loop_dressed"]:
-            entry["lemma_id"] = tree_class["lemma_id"]
-            entry["factor"]   = tree_class["factor_plus"]
-        else:
-            status, matches = match_one(r["tuple"], classes)
-            assert status == "MATCHED", (
-                f"{r['id']}: {status} not MATCHED; "
-                f"matches={[m['lemma_id'] for m in matches]}"
-            )
-            cls = matches[0]
-            entry["lemma_id"] = cls["lemma_id"]
-            entry["factor"]   = _select_factor(
-                cls, sign=r["expected_sign"],
-                inverse=r.get("resummation_inverse", False),
-            )
-        out[r["id"]] = entry
+        if r["id"] not in SINGLE_LOOP_IDS:
+            continue
+        pred = _predict_one(r, classes, tree_class)
+        # Flatten 'factor' and 'lemma_id' onto the entry for convenience.
+        pred["lemma_id"] = pred["prediction"]["lemma_id"]
+        pred["factor"]   = pred["prediction"]["factor"]
+        out[r["id"]] = pred
     return out
 
 
@@ -122,12 +110,10 @@ def test_compiler_lemma_matches_registry(obs_id, predictions, registry):
 def test_no_observables_open(predictions):
     """No single-loop observable should land OPEN in Phase 2."""
     for obs_id, pred in predictions.items():
-        # Tree-level entries are MATCHED via the loop_dressed=false path
-        # so they don't go through match_one(); just check we have a factor.
         assert "factor" in pred, f"{obs_id} has no factor"
 
 
-def test_l4_inverse_form_for_T_RH(predictions):
+def test_l4_inverse_form_for_t_rh(predictions):
     """O21 T_RH must use the L4 inverse form 1/(1 - 2*gamma^2)."""
     pred = predictions["O21"]
     assert pred["lemma_id"] == "L4"

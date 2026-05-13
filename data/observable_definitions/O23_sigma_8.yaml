@@ -1,0 +1,22 @@
+id: O23
+name: sigma_8
+sector: Yukawa x Generation
+observable_type: cosmological_amplitude
+description: |
+  Linear-power-spectrum amplitude sigma_8 (8 Mpc/h sphere), closed by a
+  2-loop compound: L1 Yukawa-Damping (1 - gamma/4) times L5 Generation
+  (1 - gamma/N_gen).
+
+closure_kind: loop_compound
+
+factors:
+  - {n: 1, g_support: none,            s_channel: "0",
+     w: false, r: false, sign: -1}
+  - {n: 2, g_support: full_generation, g_symbol: "1/N_gen",
+     s_channel: "0", w: false, r: false, sign: -1}
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

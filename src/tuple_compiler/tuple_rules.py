@@ -61,30 +61,65 @@ def resummation_inverse(obs: Dict[str, Any]) -> bool:
     return bool(obs["operator"].get("resummation_inverse", False))
 
 
-def extract_tuple(obs: Dict[str, Any]) -> Dict[str, Any]:
-    """Validate then extract the (n, g, s, w, r) tuple.
+def _factor_record_to_tuple(factor: Dict[str, Any]) -> Dict[str, Any]:
+    """Build a tuple dict from a compact factor record."""
+    return {
+        "n": int(factor["n"]),
+        "g": schema.g_symbol_from_support(factor["g_support"]),
+        "s": str(factor["s_channel"]),
+        "w": bool(factor["w"]),
+        "r": bool(factor["r"]),
+    }
 
-    Returns a dict with the tuple plus passthrough metadata
-    (expected_sign, loop_dressed, resummation_inverse). The target
-    value is NEVER read or returned -- the YAML schema forbids
+
+def extract_tuple(obs: Dict[str, Any]) -> Dict[str, Any]:
+    """Validate then extract the observable record.
+
+    Dispatches on closure_kind:
+    - tree / single_loop -> single (n, g, s, w, r) tuple
+    - loop_compound      -> list of factor tuples, each with its own sign
+    - structural         -> structural_formula + structural_rational only
+
+    The target value is NEVER read or returned -- the YAML schema forbids
     carrying one.
     """
     schema.validate(obs)
-    return {
-        "id":   obs["id"],
-        "name": obs["name"],
-        "sector": obs["sector"],
-        "tuple": {
-            "n": infer_n(obs),
-            "g": infer_g(obs),
-            "s": infer_s(obs),
-            "w": infer_w(obs),
-            "r": infer_r(obs),
-        },
-        "expected_sign":       expected_sign(obs),
-        "loop_dressed":        loop_dressed(obs),
-        "resummation_inverse": resummation_inverse(obs),
+    kind = schema.closure_kind_of(obs)
+    base = {
+        "id":           obs["id"],
+        "name":         obs["name"],
+        "sector":       obs["sector"],
+        "closure_kind": kind,
     }
+
+    if kind == "structural":
+        base["structural_formula"]  = str(obs["structural_formula"])
+        base["structural_rational"] = str(obs["structural_rational"])
+        return base
+
+    if kind == "loop_compound":
+        base["factors"] = [
+            {
+                "tuple": _factor_record_to_tuple(f),
+                "expected_sign": int(f["sign"]),
+                "resummation_inverse": bool(f.get("resummation_inverse", False)),
+            }
+            for f in obs["factors"]
+        ]
+        return base
+
+    # tree / single_loop: flat shape (Phase-1/2 backward-compatible)
+    base["tuple"] = {
+        "n": infer_n(obs),
+        "g": infer_g(obs),
+        "s": infer_s(obs),
+        "w": infer_w(obs),
+        "r": infer_r(obs),
+    }
+    base["expected_sign"]       = expected_sign(obs)
+    base["loop_dressed"]        = loop_dressed(obs)
+    base["resummation_inverse"] = resummation_inverse(obs)
+    return base
 
 
 def tuple_as_canonical_key(t: Dict[str, Any]) -> Tuple[Any, ...]:

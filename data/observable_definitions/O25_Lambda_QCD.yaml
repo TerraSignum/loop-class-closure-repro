@@ -1,0 +1,22 @@
+id: O25
+name: Lambda_QCD
+sector: Pure-Sync x EW-Mixed
+observable_type: qcd_scale
+description: |
+  QCD scale Lambda_QCD, closed by a 2-loop compound:
+  L_pure_eps2 Pure-Sync (1 + eps_sync^2) times L7 EW-Mixed
+  (1 + gamma * eps_sync^2).
+
+closure_kind: loop_compound
+
+factors:
+  - {n: 0, g_support: none, s_channel: "eps^2 pure",
+     w: false, r: false, sign: +1}
+  - {n: 1, g_support: none, s_channel: "eps^2",
+     w: false, r: false, sign: +1}
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

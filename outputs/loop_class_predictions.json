@@ -1,13 +1,14 @@
 {
   "counts": {
     "ERROR": 0,
-    "MATCHED": 21,
+    "MATCHED": 29,
     "OPEN": 0
   },
   "loop_map_version": "loop-class-map-v0.1",
-  "n_observables": 21,
+  "n_observables": 29,
   "predictions": [
     {
+      "closure_kind": "single_loop",
       "expected_sign": 1,
       "id": "O01",
       "loop_dressed": true,
@@ -18,8 +19,8 @@
         "name": "Yukawa-Damping"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:39Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O01_alpha_dn_yukawa_exponent.yaml",
         "yaml_sha256": "bb699d39523bbbfd529b7463f188967b54276911e90f5801a7a92e6e7ce06624"
@@ -36,6 +37,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": -1,
       "id": "O02",
       "loop_dressed": true,
@@ -46,8 +48,8 @@
         "name": "Sub-Generation"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:39Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O02_Omega_DM_h2.yaml",
         "yaml_sha256": "8e8e09f4efce0d9a708f81ec9a5baaf60d28f586e55b702450efbd3278fc83a4"
@@ -64,6 +66,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": 1,
       "id": "O03",
       "loop_dressed": true,
@@ -74,8 +77,8 @@
         "name": "Yukawa-Damping"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:39Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O03_w_DE.yaml",
         "yaml_sha256": "467c346b414f4bb0069c7081770b25306afa0335cdd19e98d6af134e9179ffbd"
@@ -92,6 +95,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": -1,
       "id": "O04",
       "loop_dressed": true,
@@ -102,8 +106,8 @@
         "name": "Sub-Generation"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:39Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O04_alpha_s_M_Z.yaml",
         "yaml_sha256": "991a88596641f576d25c5a3323a3909d80315ad59aaad52b696723c7782fa55e"
@@ -120,6 +124,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": 1,
       "id": "O05",
       "loop_dressed": true,
@@ -130,8 +135,8 @@
         "name": "Sub-Generation"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:39Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O05_alpha_cl_lepton_yukawa.yaml",
         "yaml_sha256": "bbc307f776baafa35d9747f142c641ebde27c7dd2393a2571615f38141bca42e"
@@ -148,6 +153,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": 1,
       "id": "O06",
       "loop_dressed": false,
@@ -158,8 +164,8 @@
         "name": "Tree-level (no loop dressing)"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:39Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O06_sin2_theta_W.yaml",
         "yaml_sha256": "b9d1831b0baa83778c510365831987982edf0e004fd7cdeb872cbae0989e36e0"
@@ -176,6 +182,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": 1,
       "id": "O07",
       "loop_dressed": false,
@@ -186,8 +193,8 @@
         "name": "Tree-level (no loop dressing)"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:39Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O07_BH_entropy_quarter.yaml",
         "yaml_sha256": "8bb487e8209c0a445976a0df7feb3ba39296a2e21013c3c3179f23543d996c18"
@@ -204,6 +211,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": 1,
       "id": "O08",
       "loop_dressed": false,
@@ -214,8 +222,8 @@
         "name": "Tree-level (no loop dressing)"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:39Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O08_Einstein_gap_two_thirds.yaml",
         "yaml_sha256": "e363009544453d515a8385b59b332a99915d72e129f6b852707ff343119b98ad"
@@ -232,6 +240,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": -1,
       "id": "O09",
       "loop_dressed": true,
@@ -242,8 +251,8 @@
         "name": "PMNS-Self-Energy"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:39Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O09_PMNS_theta_13.yaml",
         "yaml_sha256": "b474ab2f62028fddc8b1098827b44667852f3f2f386588e450c6a8c77c209e84"
@@ -260,6 +269,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": -1,
       "id": "O10",
       "loop_dressed": true,
@@ -270,8 +280,8 @@
         "name": "PMNS-Self-Energy"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:39Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O10_PMNS_theta_12.yaml",
         "yaml_sha256": "15f356ee129b0aff0ec05777fc5b95c7421cbca8bca03846a83ed6314d4086fd"
@@ -288,6 +298,93 @@
       }
     },
     {
+      "closure_kind": "loop_compound",
+      "factors": [
+        {
+          "expected_sign": -1,
+          "resummation_inverse": false,
+          "tuple": {
+            "g": "1/(2*N_gen)",
+            "n": 1,
+            "r": false,
+            "s": "0",
+            "w": false
+          }
+        },
+        {
+          "expected_sign": -1,
+          "resummation_inverse": false,
+          "tuple": {
+            "g": "0",
+            "n": 2,
+            "r": false,
+            "s": "0",
+            "w": false
+          }
+        }
+      ],
+      "id": "O11",
+      "name": "PMNS_theta_23",
+      "prediction": {
+        "factor": "(1 - gamma/(2*N_gen))*(1 - gamma/2)",
+        "lemma_id": "L6+L8",
+        "name": "L6 x L8"
+      },
+      "provenance": {
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
+        "schema_version": "tuple-compiler-v0.1",
+        "yaml_path": "data\\observable_definitions\\O11_PMNS_theta_23.yaml",
+        "yaml_sha256": "1078d3d7f59f2d42896c9483edd223def7cbaed00c1b55f83167f4b97c08dc61"
+      },
+      "sector": "Sub-Generation x Matter-Core",
+      "status": "MATCHED"
+    },
+    {
+      "closure_kind": "loop_compound",
+      "factors": [
+        {
+          "expected_sign": 1,
+          "resummation_inverse": false,
+          "tuple": {
+            "g": "0",
+            "n": 1,
+            "r": false,
+            "s": "0",
+            "w": false
+          }
+        },
+        {
+          "expected_sign": -1,
+          "resummation_inverse": false,
+          "tuple": {
+            "g": "0",
+            "n": 1,
+            "r": false,
+            "s": "0",
+            "w": true
+          }
+        }
+      ],
+      "id": "O12",
+      "name": "PMNS_delta_CP",
+      "prediction": {
+        "factor": "(1 + gamma/4)*(1 - gamma^2/4)",
+        "lemma_id": "L1+L2",
+        "name": "L1 x L2"
+      },
+      "provenance": {
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
+        "schema_version": "tuple-compiler-v0.1",
+        "yaml_path": "data\\observable_definitions\\O12_PMNS_delta_CP.yaml",
+        "yaml_sha256": "b629b9bdec60964105e27a051c05788f615103cbd577d564dab558f8f7f81b0d"
+      },
+      "sector": "Yukawa x PMNS-Self-Energy",
+      "status": "MATCHED"
+    },
+    {
+      "closure_kind": "single_loop",
       "expected_sign": -1,
       "id": "O13",
       "loop_dressed": true,
@@ -298,8 +395,8 @@
         "name": "Sub-Generation"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O13_CKM_V_us.yaml",
         "yaml_sha256": "1802bcc6581e97e90568dc08a730867a9a57ff5e0bf6f7a5860d3e6b98fee3f3"
@@ -316,6 +413,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": 1,
       "id": "O14",
       "loop_dressed": true,
@@ -326,8 +424,8 @@
         "name": "Sub-Generation"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O14_CKM_V_cb.yaml",
         "yaml_sha256": "bae4ebc1e6faed1f04e1cbfb7cec508db08439fc3354d08c4bcc2fa83499d362"
@@ -344,6 +442,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": 1,
       "id": "O15",
       "loop_dressed": true,
@@ -354,8 +453,8 @@
         "name": "Yukawa-Damping"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O15_m_H.yaml",
         "yaml_sha256": "e6bc22e305d250548c0357d0e57a26ab8678c18b3b69b28cb251ace1298f8c3d"
@@ -372,6 +471,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": 1,
       "id": "O16",
       "loop_dressed": true,
@@ -382,8 +482,8 @@
         "name": "EW-Mixed"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O16_m_W.yaml",
         "yaml_sha256": "dd6a8fdac7c54e19a9a36ab2fdab97b4176ee66a92134eed9b0c26704021f70e"
@@ -400,6 +500,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": 1,
       "id": "O17",
       "loop_dressed": true,
@@ -410,8 +511,8 @@
         "name": "EW-Mixed"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O17_m_Z.yaml",
         "yaml_sha256": "1a68ba6875f4ac7dc145fcf014b5862d72a1214f5edc3c85862158e8cde62d1c"
@@ -428,6 +529,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": 1,
       "id": "O18",
       "loop_dressed": true,
@@ -438,8 +540,8 @@
         "name": "EW-Mixed"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O18_Gamma_W.yaml",
         "yaml_sha256": "f12f71e99eea2f6a6e27d912499116c2f07f2af421e091dee94f065419d25add"
@@ -456,6 +558,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": 1,
       "id": "O19",
       "loop_dressed": true,
@@ -466,8 +569,8 @@
         "name": "EW-Mixed"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O19_Gamma_Z.yaml",
         "yaml_sha256": "d84b23df4a5b314546317b3da1a57b59868c1c514cac99f33a4ac38f4b788ac4"
@@ -484,6 +587,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": 1,
       "id": "O20",
       "loop_dressed": true,
@@ -494,8 +598,8 @@
         "name": "Yukawa-Damping"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O20_H_0.yaml",
         "yaml_sha256": "f1c99947a94d9c03af07f096491b50e21a60c39e2cbe34606d89d6970cfd4dae"
@@ -512,6 +616,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": -1,
       "id": "O21",
       "loop_dressed": true,
@@ -522,8 +627,8 @@
         "name": "Resummed-Propagator"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O21_T_RH.yaml",
         "yaml_sha256": "ec7fc9411498d472f1e7563e8836dc58018c21d6427ee3015012614c3a946ae0"
@@ -540,6 +645,7 @@
       }
     },
     {
+      "closure_kind": "single_loop",
       "expected_sign": -1,
       "id": "O22",
       "loop_dressed": true,
@@ -550,8 +656,8 @@
         "name": "EW-Mixed"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O22_n_s.yaml",
         "yaml_sha256": "498f01b8107a8be419494d82a5953c04b1087e919fdfedb73dc36b2f62f1bbc9"
@@ -568,6 +674,219 @@
       }
     },
     {
+      "closure_kind": "loop_compound",
+      "factors": [
+        {
+          "expected_sign": -1,
+          "resummation_inverse": false,
+          "tuple": {
+            "g": "0",
+            "n": 1,
+            "r": false,
+            "s": "0",
+            "w": false
+          }
+        },
+        {
+          "expected_sign": -1,
+          "resummation_inverse": false,
+          "tuple": {
+            "g": "1/N_gen",
+            "n": 2,
+            "r": false,
+            "s": "0",
+            "w": false
+          }
+        }
+      ],
+      "id": "O23",
+      "name": "sigma_8",
+      "prediction": {
+        "factor": "(1 - gamma/4)*(1 - gamma/N_gen)",
+        "lemma_id": "L1+L5",
+        "name": "L1 x L5"
+      },
+      "provenance": {
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
+        "schema_version": "tuple-compiler-v0.1",
+        "yaml_path": "data\\observable_definitions\\O23_sigma_8.yaml",
+        "yaml_sha256": "364c85a4599b358f0b365a5bebcf61f4f01175b9f8efcc4b97c9bfef418bb2fa"
+      },
+      "sector": "Yukawa x Generation",
+      "status": "MATCHED"
+    },
+    {
+      "closure_kind": "loop_compound",
+      "factors": [
+        {
+          "expected_sign": -1,
+          "resummation_inverse": false,
+          "tuple": {
+            "g": "0",
+            "n": 1,
+            "r": false,
+            "s": "0",
+            "w": false
+          }
+        },
+        {
+          "expected_sign": -1,
+          "resummation_inverse": false,
+          "tuple": {
+            "g": "1/N_gen",
+            "n": 2,
+            "r": false,
+            "s": "0",
+            "w": false
+          }
+        }
+      ],
+      "id": "O24",
+      "name": "eta_B",
+      "prediction": {
+        "factor": "(1 - gamma/4)*(1 - gamma/N_gen)",
+        "lemma_id": "L1+L5",
+        "name": "L1 x L5"
+      },
+      "provenance": {
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
+        "schema_version": "tuple-compiler-v0.1",
+        "yaml_path": "data\\observable_definitions\\O24_eta_B.yaml",
+        "yaml_sha256": "8991332f1cbf42ac5da3525414db3d529cc945a151bc74a0bf1fe7c1f5e60e4f"
+      },
+      "sector": "Yukawa x Generation",
+      "status": "MATCHED"
+    },
+    {
+      "closure_kind": "loop_compound",
+      "factors": [
+        {
+          "expected_sign": 1,
+          "resummation_inverse": false,
+          "tuple": {
+            "g": "0",
+            "n": 0,
+            "r": false,
+            "s": "eps^2 pure",
+            "w": false
+          }
+        },
+        {
+          "expected_sign": 1,
+          "resummation_inverse": false,
+          "tuple": {
+            "g": "0",
+            "n": 1,
+            "r": false,
+            "s": "eps^2",
+            "w": false
+          }
+        }
+      ],
+      "id": "O25",
+      "name": "Lambda_QCD",
+      "prediction": {
+        "factor": "(1 + eps_sync^2)*(1 + gamma * eps_sync^2)",
+        "lemma_id": "L_pure_eps2+L7",
+        "name": "L_pure_eps2 x L7"
+      },
+      "provenance": {
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
+        "schema_version": "tuple-compiler-v0.1",
+        "yaml_path": "data\\observable_definitions\\O25_Lambda_QCD.yaml",
+        "yaml_sha256": "83ab0a279743073c9a02d28126e0cb1deaf2e29076b46e39e19cc7ae16747a6a"
+      },
+      "sector": "Pure-Sync x EW-Mixed",
+      "status": "MATCHED"
+    },
+    {
+      "closure_kind": "loop_compound",
+      "factors": [
+        {
+          "expected_sign": -1,
+          "resummation_inverse": false,
+          "tuple": {
+            "g": "0",
+            "n": 2,
+            "r": false,
+            "s": "0",
+            "w": false
+          }
+        },
+        {
+          "expected_sign": -1,
+          "resummation_inverse": false,
+          "tuple": {
+            "g": "0",
+            "n": 4,
+            "r": false,
+            "s": "0",
+            "w": false
+          }
+        }
+      ],
+      "id": "O26",
+      "name": "omega_b_h2",
+      "prediction": {
+        "factor": "(1 - gamma/2)*(1 - gamma^2)",
+        "lemma_id": "L8+L3",
+        "name": "L8 x L3"
+      },
+      "provenance": {
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
+        "schema_version": "tuple-compiler-v0.1",
+        "yaml_path": "data\\observable_definitions\\O26_omega_b_h2.yaml",
+        "yaml_sha256": "ad76cd2d5ff84cd6cc920ccd5882a92e152b27871fcfc8d87f4f0a9b4b783802"
+      },
+      "sector": "Matter-Core x Pure-Self-Energy",
+      "status": "MATCHED"
+    },
+    {
+      "closure_kind": "structural",
+      "id": "O27",
+      "name": "Lambda_t_cosm_tensor",
+      "prediction": {
+        "factor": "alpha_xi^2",
+        "lemma_id": "STRUCTURAL",
+        "name": "Structural identity (no loop class)",
+        "rational": "81/100"
+      },
+      "provenance": {
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
+        "schema_version": "tuple-compiler-v0.1",
+        "yaml_path": "data\\observable_definitions\\O27_Lambda_t_cosm_tensor.yaml",
+        "yaml_sha256": "8e4cc03ea2bbdcb5919578417122a971d918460c8c35c4d20bc8ec5c1a4c0535"
+      },
+      "sector": "Cosmological-Tensor (time-time)",
+      "status": "MATCHED"
+    },
+    {
+      "closure_kind": "structural",
+      "id": "O28",
+      "name": "Lambda_s_cosm_tensor",
+      "prediction": {
+        "factor": "-gamma^2/2",
+        "lemma_id": "STRUCTURAL",
+        "name": "Structural identity (no loop class)",
+        "rational": "-1/200"
+      },
+      "provenance": {
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
+        "schema_version": "tuple-compiler-v0.1",
+        "yaml_path": "data\\observable_definitions\\O28_Lambda_s_cosm_tensor.yaml",
+        "yaml_sha256": "8e828e39608253308c4ab6150bc9310546cc05fb889e4766ac4aa7f02c7a208c"
+      },
+      "sector": "Cosmological-Tensor (spatial)",
+      "status": "MATCHED"
+    },
+    {
+      "closure_kind": "single_loop",
       "expected_sign": 1,
       "id": "O29",
       "loop_dressed": true,
@@ -578,8 +897,8 @@
         "name": "Yukawa-Damping"
       },
       "provenance": {
-        "extracted_at": "2026-05-13T20:37:18Z",
-        "extractor_commit": "5a6c5282145169f18b4259f679a627a3b2968b57",
+        "extracted_at": "2026-05-13T20:47:40Z",
+        "extractor_commit": "b77a0931c43fef3611f28fa60080763e0bd62d0e",
         "schema_version": "tuple-compiler-v0.1",
         "yaml_path": "data\\observable_definitions\\O29_Y_p_primordial_helium.yaml",
         "yaml_sha256": "0bf0e017cdee3fb5c89a02384c831708110f440c9efd657a07f5f0c909c3f506"
