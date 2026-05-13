@@ -35,7 +35,31 @@ def audit():
 
 
 def test_audit_schema_version(audit):
-    assert audit["schema_version"] == "cross-consistency-audit-v0.1"
+    assert audit["schema_version"] == "cross-consistency-audit-v0.2"
+
+
+def test_all_dual_state_resolved_by_phase5(audit):
+    """Phase 5 declared a structural-alternative YAML for every dual-state
+    registry observable; every one must evaluate EXACTLY against its
+    claimed rational. n_dual_state_resolved_by_phase5 must equal
+    n_dual_state_observables."""
+    assert audit["n_dual_state_resolved_by_phase5"] == audit["n_dual_state_observables"], (
+        f"Phase-5 resolution gap: "
+        f"{audit['n_dual_state_resolved_by_phase5']} resolved / "
+        f"{audit['n_dual_state_observables']} dual-state. "
+        f"Every dual-state observable needs a Phase-5 alternative YAML."
+    )
+
+
+def test_each_resolved_carries_yaml_id_and_formula(audit):
+    """Every RESOLVED entry must carry the Phase-5 YAML id and its
+    structural formula, so the audit output is self-traceable."""
+    for e in audit["dual_state_observables"]:
+        res = e.get("phase5_resolution", {})
+        assert res.get("status") == "RESOLVED", e["id"]
+        assert "yaml_id" in res
+        assert "structural_formula" in res
+        assert "structural_rational" in res
 
 
 def test_audit_runs_with_no_uncaught_exceptions(audit):
@@ -91,5 +115,5 @@ def test_rational_form_extraction_for_o09(audit):
 def test_audit_output_is_self_describing(audit):
     """The audit JSON must carry a 'note' field documenting honest scope."""
     assert "note" in audit
-    assert "tuple compiler" in audit["note"].lower()
-    assert "does not pick" in audit["note"].lower() or "not pick" in audit["note"].lower()
+    assert "compiler" in audit["note"].lower()
+    assert "not pick" in audit["note"].lower()

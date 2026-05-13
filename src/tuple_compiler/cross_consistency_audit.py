@@ -209,65 +209,152 @@ COMPANION_ID_MAP = {
     "O14": "CKM_V_cb",
 }
 
+# Phase-5: explicit alternative-form YAML ID per dual-state registry entry.
+# When a Phase-5 YAML evaluates the closure_form_2026_05_10 form to its
+# exact rational, the audit records that pairing so the dual state is
+# *resolved* in the sense that both forms are now machine-verifiable.
+ALT_FORM_YAML_BY_REGISTRY_ID = {
+    "O09": "HK-09",
+    "O10": "HK-10",
+    "O11": "HK-11",
+    "O12": "HK-12",
+    "O13": "HJ-13",
+    "O14": "HQ-14",
+}
+
+
+def _attach_alt_form_evaluation(o: Dict[str, Any],
+                                 dual: Dict[str, Any]) -> None:
+    """Numeric + sympy evaluation of the closure_form_2026_05_10 form."""
+    alt = o.get("closure_form_2026_05_10", "")
+    evaluation = _evaluate_alternative_form(alt, o.get("target"))
+    rat = o.get("rational_form")
+    if rat:
+        evaluation["rational_form_numerical"] = _try_extract_rational_value(rat)
+    dual["alternative_form_evaluation"] = evaluation
+
+
+def _attach_compiler_prediction(o: Dict[str, Any],
+                                 predictions: Dict[str, Dict[str, Any]],
+                                 dual: Dict[str, Any]) -> None:
+    """Record what the loop-class compiler currently emits for this id."""
+    pred = predictions.get(o["id"])
+    if pred and "prediction" in pred:
+        dual["compiler_prediction"] = {
+            "lemma_id":     pred["prediction"]["lemma_id"],
+            "factor":       pred["prediction"]["factor"],
+            "closure_kind": pred.get("closure_kind"),
+        }
+
+
+def _attach_phase5_resolution(o: Dict[str, Any],
+                               predictions: Dict[str, Dict[str, Any]],
+                               dual: Dict[str, Any]) -> None:
+    """If a Phase-5 alternative YAML exists and evaluates EXACTLY, the
+    dual state is resolved: both forms are machine-verifiable."""
+    alt_yaml_id = ALT_FORM_YAML_BY_REGISTRY_ID.get(o["id"])
+    if alt_yaml_id is None:
+        dual["phase5_resolution"] = {"status": "NO_ALTERNATIVE_YAML"}
+        return
+
+    alt_pred = predictions.get(alt_yaml_id)
+    if alt_pred is None:
+        dual["phase5_resolution"] = {
+            "status":            "ALT_YAML_DECLARED_BUT_NOT_EXTRACTED",
+            "expected_yaml_id":  alt_yaml_id,
+        }
+        return
+
+    evaluation = alt_pred.get("prediction", {}).get("evaluation")
+    if not evaluation or not evaluation.get("exact_match"):
+        dual["phase5_resolution"] = {
+            "status":            "ALT_YAML_DID_NOT_EVALUATE_EXACTLY",
+            "yaml_id":           alt_yaml_id,
+        }
+        return
+
+    dual["phase5_resolution"] = {
+        "status":               "RESOLVED",
+        "yaml_id":              alt_yaml_id,
+        "structural_formula":   evaluation["formula"],
+        "structural_rational":  evaluation["claimed_rational"],
+        "is_pure_rational":     evaluation["is_pure_rational"],
+    }
+
+
+def _audit_dual_state_for(o: Dict[str, Any],
+                           predictions: Dict[str, Dict[str, Any]]
+                           ) -> Optional[Dict[str, Any]]:
+    """Build the full dual-state record for one registry observable."""
+    dual = _audit_dual_closure(o)
+    if dual is None:
+        return None
+    _attach_alt_form_evaluation(o, dual)
+    _attach_compiler_prediction(o, predictions, dual)
+    _attach_phase5_resolution(o, predictions, dual)
+    return dual
+
+
+def _audit_disagreement_for(o: Dict[str, Any],
+                             companions: Dict[str, Dict[str, Any]]
+                             ) -> Optional[Dict[str, Any]]:
+    """Build the disagreement record for one registry observable, if any."""
+    comp_id = COMPANION_ID_MAP.get(o["id"])
+    if comp_id is None or comp_id not in companions:
+        return None
+    disagreement = _audit_companion_disagreement(o, companions[comp_id])
+    if disagreement is None:
+        return None
+    disagreement["observable_id"]   = o["id"]
+    disagreement["observable_name"] = o["name"]
+    return disagreement
+
 
 def run_audit() -> Dict[str, Any]:
-    registry = _load_registry()
+    registry    = _load_registry()
     predictions = _load_predictions()
-    companions = _load_companion_observables()
+    companions  = _load_companion_observables()
 
     dual_state_observables: List[Dict[str, Any]] = []
     companion_disagreements: List[Dict[str, Any]] = []
 
     for o in registry["observables"]:
-        # 1. Dual-closure entries within the registry itself.
-        dual = _audit_dual_closure(o)
-        if dual:
-            # Try numeric evaluation of the alternative form.
-            alt = o.get("closure_form_2026_05_10", "")
-            evaluation = _evaluate_alternative_form(alt, o.get("target"))
-            # Also try the rational_form, if present.
-            rat = o.get("rational_form")
-            if rat:
-                rat_val = _try_extract_rational_value(rat)
-                evaluation["rational_form_numerical"] = rat_val
-            dual["alternative_form_evaluation"] = evaluation
-            # Compiler's current prediction.
-            pred = predictions.get(o["id"])
-            if pred and "prediction" in pred:
-                dual["compiler_prediction"] = {
-                    "lemma_id": pred["prediction"]["lemma_id"],
-                    "factor":   pred["prediction"]["factor"],
-                    "closure_kind": pred.get("closure_kind"),
-                }
+        dual = _audit_dual_state_for(o, predictions)
+        if dual is not None:
             dual_state_observables.append(dual)
+        disagreement = _audit_disagreement_for(o, companions)
+        if disagreement is not None:
+            companion_disagreements.append(disagreement)
 
-        # 2. Companion-JSON disagreements.
-        comp_id = COMPANION_ID_MAP.get(o["id"])
-        if comp_id and comp_id in companions:
-            disagreement = _audit_companion_disagreement(o, companions[comp_id])
-            if disagreement:
-                disagreement["observable_id"] = o["id"]
-                disagreement["observable_name"] = o["name"]
-                companion_disagreements.append(disagreement)
+    n_resolved = sum(
+        1 for d in dual_state_observables
+        if d.get("phase5_resolution", {}).get("status") == "RESOLVED"
+    )
 
     return {
-        "schema_version":           "cross-consistency-audit-v0.1",
-        "registry_size":            len(registry["observables"]),
-        "n_dual_state_observables": len(dual_state_observables),
+        "schema_version":            "cross-consistency-audit-v0.2",
+        "registry_size":             len(registry["observables"]),
+        "n_dual_state_observables":  len(dual_state_observables),
+        "n_dual_state_resolved_by_phase5": n_resolved,
         "n_companion_disagreements": len(companion_disagreements),
-        "dual_state_observables":   dual_state_observables,
-        "companion_disagreements":  companion_disagreements,
+        "dual_state_observables":    dual_state_observables,
+        "companion_disagreements":   companion_disagreements,
         "note": (
             "Honest gap report: each dual-state entry shows the original "
-            "loop_class field (which the tuple compiler reproduces) "
-            "alongside the closure_form_2026_05_10 alternative. Numerical "
-            "evaluation of the alternative is attempted in the System-R "
-            "rational variables when the expression is in the safe subset. "
-            "Companion-disagreements list cases where a companion closure "
-            "JSON describes the same observable with a structural identity "
-            "that does not embed the registry's loop_class as a substring. "
-            "This audit does NOT pick a side; it surfaces candidates for "
-            "registry consolidation."
+            "loop_class field (which the loop-class compiler reproduces) "
+            "alongside the closure_form_2026_05_10 alternative. The "
+            "Phase-5 structural evaluator (sympy-based, exact Fraction "
+            "arithmetic in the System-R rationals) is applied to each "
+            "alternative form whose YAML has been declared in "
+            "data/observable_definitions/. 'RESOLVED' means the "
+            "alternative form was evaluated EXACTLY against its claimed "
+            "rational and matched without tolerance. Companion-"
+            "disagreements list cases where a companion closure JSON "
+            "describes the same observable with a structural identity "
+            "that does not embed the registry's loop_class as a "
+            "substring. The audit does NOT pick a canonical form; it "
+            "verifies that BOTH forms are machine-checkable and surfaces "
+            "the dual state for explicit corpus consolidation."
         ),
     }
 

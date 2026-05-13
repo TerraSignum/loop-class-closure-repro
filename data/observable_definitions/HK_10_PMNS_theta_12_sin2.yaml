@@ -1,0 +1,22 @@
+id: HK-10
+name: PMNS_theta_12_sin2_HK_structural
+sector: PMNS (H-K structural alternative to L2 loop-class)
+observable_type: pmns_mixing_angle_sin_squared
+description: |
+  H-K structural closure for sin^2(theta_12). Supersedes the
+  loop-class L2 reading of O10 PMNS_theta_12 via the direct System-R
+  rational identity:
+
+      sin^2(theta_12) = 1/4 + alpha_xi/16 = 49/160
+
+  Documented in observable_registry.json O10.closure_form_2026_05_10.
+
+closure_kind: structural
+structural_formula: "1/4 + alpha_xi/16"
+structural_rational: "49/160"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

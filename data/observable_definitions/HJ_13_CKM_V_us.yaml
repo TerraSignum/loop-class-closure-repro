@@ -1,0 +1,24 @@
+id: HJ-13
+name: CKM_V_us_HJ_alpha_xi_quarter
+sector: CKM (H-J structural alternative to L6 loop-class)
+observable_type: ckm_matrix_element
+description: |
+  H-J structural closure for CKM V_us. Supersedes the legacy
+  V_us = gamma * sqrt(5) reading of O13 via the direct System-R
+  rational identity:
+
+      V_us = alpha_xi * s_face = 9/40
+
+  using the BH-entropy face-fraction auxiliary s_face = 1/4 (see
+  data/closure_derivations/HJ_Vus_alpha_xi_quarter.json). Matches PDG
+  2024 V_us = 0.22501(46) at 0.004% rel-err.
+
+closure_kind: structural
+structural_formula: "alpha_xi * s_face"
+structural_rational: "9/40"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

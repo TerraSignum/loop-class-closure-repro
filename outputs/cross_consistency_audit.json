@@ -52,6 +52,13 @@
       "id": "O09",
       "loop_class": "1-gamma^2/4",
       "name": "PMNS_theta_13",
+      "phase5_resolution": {
+        "is_pure_rational": true,
+        "status": "RESOLVED",
+        "structural_formula": "2 * gamma^2 * (1 + gamma)",
+        "structural_rational": "11/500",
+        "yaml_id": "HK-09"
+      },
       "rational_form": null,
       "stand_alone_form": false,
       "structural_origin": null,
@@ -75,6 +82,13 @@
       "id": "O10",
       "loop_class": "1-gamma^2/4",
       "name": "PMNS_theta_12",
+      "phase5_resolution": {
+        "is_pure_rational": true,
+        "status": "RESOLVED",
+        "structural_formula": "1/4 + alpha_xi/16",
+        "structural_rational": "49/160",
+        "yaml_id": "HK-10"
+      },
       "rational_form": null,
       "stand_alone_form": false,
       "structural_origin": null,
@@ -98,6 +112,13 @@
       "id": "O11",
       "loop_class": "(1-gamma/(2*N_gen))*(1-gamma/2)",
       "name": "PMNS_theta_23",
+      "phase5_resolution": {
+        "is_pure_rational": true,
+        "status": "RESOLVED",
+        "structural_formula": "1/2 + alpha_xi/12",
+        "structural_rational": "23/40",
+        "yaml_id": "HK-11"
+      },
       "rational_form": null,
       "stand_alone_form": false,
       "structural_origin": null,
@@ -121,6 +142,13 @@
       "id": "O12",
       "loop_class": "(1+gamma/4)*(1-gamma^2/4)",
       "name": "PMNS_delta_CP",
+      "phase5_resolution": {
+        "is_pure_rational": false,
+        "status": "RESOLVED",
+        "structural_formula": "pi * (1 + gamma) * (1 - gamma^2/4)",
+        "structural_rational": "4389/4000",
+        "yaml_id": "HK-12"
+      },
       "rational_form": null,
       "stand_alone_form": true,
       "structural_origin": null,
@@ -144,6 +172,13 @@
       "id": "O13",
       "loop_class": "1-gamma/(2*N_gen)",
       "name": "CKM_V_us",
+      "phase5_resolution": {
+        "is_pure_rational": true,
+        "status": "RESOLVED",
+        "structural_formula": "alpha_xi * s_face",
+        "structural_rational": "9/40",
+        "yaml_id": "HJ-13"
+      },
       "rational_form": null,
       "stand_alone_form": false,
       "structural_origin": null,
@@ -167,6 +202,13 @@
       "id": "O14",
       "loop_class": "1+gamma/(2*N_gen)",
       "name": "CKM_V_cb",
+      "phase5_resolution": {
+        "is_pure_rational": true,
+        "status": "RESOLVED",
+        "structural_formula": "alpha_xi / (2 * (2*d + N_gen))",
+        "structural_rational": "9/220",
+        "yaml_id": "HQ-14"
+      },
       "rational_form": null,
       "stand_alone_form": false,
       "structural_origin": null,
@@ -178,7 +220,8 @@
   ],
   "n_companion_disagreements": 5,
   "n_dual_state_observables": 6,
-  "note": "Honest gap report: each dual-state entry shows the original loop_class field (which the tuple compiler reproduces) alongside the closure_form_2026_05_10 alternative. Numerical evaluation of the alternative is attempted in the System-R rational variables when the expression is in the safe subset. Companion-disagreements list cases where a companion closure JSON describes the same observable with a structural identity that does not embed the registry's loop_class as a substring. This audit does NOT pick a side; it surfaces candidates for registry consolidation.",
+  "n_dual_state_resolved_by_phase5": 6,
+  "note": "Honest gap report: each dual-state entry shows the original loop_class field (which the loop-class compiler reproduces) alongside the closure_form_2026_05_10 alternative. The Phase-5 structural evaluator (sympy-based, exact Fraction arithmetic in the System-R rationals) is applied to each alternative form whose YAML has been declared in data/observable_definitions/. 'RESOLVED' means the alternative form was evaluated EXACTLY against its claimed rational and matched without tolerance. Companion-disagreements list cases where a companion closure JSON describes the same observable with a structural identity that does not embed the registry's loop_class as a substring. The audit does NOT pick a canonical form; it verifies that BOTH forms are machine-checkable and surfaces the dual state for explicit corpus consolidation.",
   "registry_size": 29,
-  "schema_version": "cross-consistency-audit-v0.1"
+  "schema_version": "cross-consistency-audit-v0.2"
 }

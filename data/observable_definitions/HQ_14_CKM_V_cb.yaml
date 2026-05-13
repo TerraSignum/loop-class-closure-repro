@@ -1,0 +1,22 @@
+id: HQ-14
+name: CKM_V_cb_HQ_alpha_xi_quotient
+sector: CKM (H-Q structural alternative to L6 loop-class)
+observable_type: ckm_matrix_element
+description: |
+  H-Q structural closure for CKM V_cb. Supersedes the legacy
+  V_cb = eps_sync^2 * sqrt(2/N_gen) reading of O14 via the direct
+  System-R rational identity:
+
+      V_cb = alpha_xi / (2 * (2*d + N_gen)) = 9 / 220
+
+  Documented in observable_registry.json O14.closure_form_2026_05_10.
+
+closure_kind: structural
+structural_formula: "alpha_xi / (2 * (2*d + N_gen))"
+structural_rational: "9/220"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

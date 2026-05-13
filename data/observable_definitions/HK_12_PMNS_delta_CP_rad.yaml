@@ -1,0 +1,28 @@
+id: HK-12
+name: PMNS_delta_CP_HK_pi_rational
+sector: PMNS (H-K refined-eval structural form, pi x rational)
+observable_type: cp_phase_radians
+description: |
+  H-K structural closure for the PMNS leptonic CP phase delta_CP.
+  Refined evaluation of the registry's stand-alone form:
+
+      delta_CP = pi * (1 + gamma) * (1 - gamma^2/4)
+               = pi * (11/10) * (399/400)
+               = pi * 4389/4000
+
+  Documented in observable_registry.json O12.closure_form_2026_05_10
+  (existing, refined eval). Stand-alone form: True.
+
+  The rational coefficient 4389/4000 is what the structural compiler
+  verifies exactly; numerically delta_CP ~ 3.4471 rad ~ 197.50 deg
+  (anchor 197 deg, residual 0.25 percent).
+
+closure_kind: structural
+structural_formula: "pi * (1 + gamma) * (1 - gamma^2/4)"
+structural_rational: "4389/4000"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

@@ -227,7 +227,89 @@ new registry entry adds a `closure_form_2026_05_10` field, the test
 fails and forces explicit acknowledgment — the audit's coverage
 cannot silently drift.
 
-| Phase 5 | open | Prospective-registry observables — would require a separate diagnostic harness, not the tuple compiler. |
+| **Phase 5** | done (this commit) | Structural-identity evaluator (sympy-based, exact Fraction arithmetic) closes every Phase-4-surfaced dual-state gap. 6 new YAMLs (HK-09, HK-10, HK-11, HK-12, HJ-13, HQ-14) declare the registry's `closure_form_2026_05_10` forms; O27/O28 structural fields are activated. All 8 structural forms evaluate EXACTLY to their claimed rationals; no float fallback, no stub. Audit upgraded to v0.2 with `phase5_resolution` block per dual-state entry; all 6 RESOLVED. |
+| Phase 6 | open | Prospective-registry stability diagnostics — would require a separate diagnostic harness (multi-N stability regression), not the tuple compiler. |
+
+### Phase 5 honest scope statement
+
+The Phase-4 audit revealed 6 dual-state observables (O09-O14) where
+the registry's `loop_class` field is reproduced by the loop-class
+compiler but a superseding `closure_form_2026_05_10` field documents
+a System-R rational identity that the loop-class compiler is silent
+about. Phase 5 closes this gap by:
+
+1. Building `src/tuple_compiler/structural_evaluator.py` — a
+   sympy-based evaluator that parses each structural formula in the
+   System-R rational namespace and computes its **exact** rational
+   coefficient. There is no float-approximation fallback: an
+   expression that does not reduce to either a pure rational or
+   (rational × π) raises `StructuralEvaluationError`.
+
+2. Declaring 6 new YAMLs in `data/observable_definitions/` with
+   `closure_kind: structural`:
+
+| YAML id  | observable                  | structural formula                       | claimed rational |
+|----------|-----------------------------|------------------------------------------|------------------|
+| HK-09    | sin²(θ₁₃)                   | `2·γ²·(1+γ)`                            | 11/500           |
+| HK-10    | sin²(θ₁₂)                   | `1/4 + α_ξ/16`                           | 49/160           |
+| HK-11    | sin²(θ₂₃)                   | `1/2 + α_ξ/12`                           | 23/40            |
+| HK-12    | δ_CP (rad)                  | `π · (1+γ) · (1−γ²/4)`                   | 4389/4000 (×π)   |
+| HJ-13    | V_us                        | `α_ξ · s_face` with s_face = 1/4         | 9/40             |
+| HQ-14    | V_cb                        | `α_ξ / (2·(2·d+N_gen))`                  | 9/220            |
+
+   The auxiliary `s_face = 1/4` is the BH-entropy face fraction
+   documented in `data/closure_derivations/HJ_Vus_alpha_xi_quarter.json`
+   (not fabricated for this phase).
+
+3. Activating the previously-stub `closure_kind: structural` handler:
+   O27 (Λ_t = α_ξ² = 81/100) and O28 (Λ_s = −γ²/2 = −1/200) now
+   evaluate exactly.
+
+4. Upgrading the cross-consistency audit to v0.2 with a
+   `phase5_resolution` block per dual-state entry. The audit reports
+   `RESOLVED` iff the Phase-5 alternative YAML evaluates EXACTLY against
+   its claimed rational. All 6 dual-state observables now report
+   `RESOLVED`.
+
+5. Adding 22 Phase-5 tests (every structural form, every System-R
+   constant in the symbol table, plus negative tests for unknown
+   identifiers, float-claimed-rationals, mismatch-rejection, and
+   unsupported irrationals). Audit tests upgraded to lock the
+   `n_dual_state_resolved_by_phase5 == n_dual_state_observables`
+   invariant.
+
+### Symbol table (exact sympy expressions)
+
+```
+gamma     = 1/10
+alpha_xi  = 9/10
+beta_pi   = 15/16
+eps_sync2 = 1/20
+D_Omega   = 67/80
+N_gen     = 3
+d         = 4
+s_face    = 1/4      (BH-entropy face fraction; corpus-documented)
+pi        = sympy.pi (exact symbolic; supports rational × π closures)
+```
+
+No additional symbols are injected. Any structural_formula using a
+name outside this table raises `StructuralEvaluationError` with the
+exact unknown-identifier list.
+
+### What stays out of scope (intentionally)
+
+- **PROSP-01/02/03 stability diagnostics**: not loop-class, not
+  structural-identity, but multi-N regression diagnostics. A future
+  phase would build a separate harness; the tuple compiler does not
+  apply.
+- **Sign-rule derivation**: the L6/L7 mixed signs within a lemma class
+  remain sector-determined. `parity.expected_sign` is still declared
+  per YAML; a Phase-3 derivation pass would need prospective
+  observables to expose a sub-pattern.
+- **Companion-JSON LEGACY forms**: `ckm_closure.json`'s
+  `V_us = γ√5` and `V_cb = eps_sync²·√(2/N_gen)` are explicitly
+  marked superseded in the registry. The Phase-5 alternative YAMLs
+  encode the CURRENT canonical structural form, not the legacy.
 
 ### Phase 3 closure_kind taxonomy
 

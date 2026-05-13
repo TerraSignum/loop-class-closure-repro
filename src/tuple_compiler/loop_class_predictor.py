@@ -120,7 +120,13 @@ def _predict_compound(r: Dict[str, Any], classes: List[Dict[str, Any]]
 
 
 def _predict_structural(r: Dict[str, Any]) -> Dict[str, Any]:
-    """Predict for a structural observable: identity, no loop match."""
+    """Predict for a structural observable: actually evaluate the
+    formula in the System-R rationals and assert it matches the claimed
+    rational EXACTLY. No fallback, no approximation."""
+    from .structural_evaluator import verify_structural_match
+    match = verify_structural_match(
+        r["structural_formula"], r["structural_rational"]
+    )
     return {
         "id":            r["id"],
         "name":          r["name"],
@@ -133,6 +139,7 @@ def _predict_structural(r: Dict[str, Any]) -> Dict[str, Any]:
             "name":     "Structural identity (no loop class)",
             "factor":   r["structural_formula"],
             "rational": r["structural_rational"],
+            "evaluation": match,
         },
     }
 

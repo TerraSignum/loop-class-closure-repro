@@ -1,0 +1,22 @@
+id: HK-09
+name: PMNS_theta_13_sin2_HK_structural
+sector: PMNS (H-K structural alternative to L2 loop-class)
+observable_type: pmns_mixing_angle_sin_squared
+description: |
+  H-K structural closure for sin^2(theta_13). Supersedes the
+  loop-class L2 reading of O09 PMNS_theta_13 via the direct System-R
+  rational identity:
+
+      sin^2(theta_13) = 2 * gamma^2 * (1 + gamma) = 11/500
+
+  Documented in observable_registry.json O09.closure_form_2026_05_10.
+
+closure_kind: structural
+structural_formula: "2 * gamma^2 * (1 + gamma)"
+structural_rational: "11/500"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

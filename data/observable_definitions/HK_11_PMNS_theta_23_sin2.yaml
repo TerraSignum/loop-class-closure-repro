@@ -1,0 +1,23 @@
+id: HK-11
+name: PMNS_theta_23_sin2_HK_structural
+sector: PMNS (H-K structural alternative to L6xL8 loop-class compound)
+observable_type: pmns_mixing_angle_sin_squared
+description: |
+  H-K structural closure for sin^2(theta_23). Supersedes the
+  loop-class L6 x L8 compound reading of O11 PMNS_theta_23 via the
+  direct System-R rational identity:
+
+      sin^2(theta_23) = 1/2 + alpha_xi/12 = 23/40
+
+  Documented in observable_registry.json O11.closure_form_2026_05_10
+  (no higher-octant ambiguity in this form).
+
+closure_kind: structural
+structural_formula: "1/2 + alpha_xi/12"
+structural_rational: "23/40"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1
