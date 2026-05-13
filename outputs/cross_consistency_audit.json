@@ -1,0 +1,184 @@
+{
+  "companion_disagreements": [
+    {
+      "companion_form": "theta_13 = alpha_xi / (2 * N_gen) = (1 - gamma) / (2 * N_gen)",
+      "companion_source": "neutrino_sector_closure.json",
+      "observable_id": "O09",
+      "observable_name": "PMNS_theta_13",
+      "registry_loop_class": "1-gamma^2/4"
+    },
+    {
+      "companion_form": "sin^2 theta_12 = (1 - gamma)(1 + gamma/4) / N_gen (Yukawa-Damping x Generation, MD-46 closure)",
+      "companion_source": "neutrino_sector_closure.json",
+      "observable_id": "O10",
+      "observable_name": "PMNS_theta_12",
+      "registry_loop_class": "1-gamma^2/4"
+    },
+    {
+      "companion_form": "delta theta_23 = (beta_pi - gamma)(gamma/2) sqrt(N_gen) as Sub-Generation x Cosmological-Density x TBM-Inverse compound (Lemmas 6+8); theta_23 ~ pi/4 + delta",
+      "companion_source": "neutrino_sector_closure.json",
+      "observable_id": "O11",
+      "observable_name": "PMNS_theta_23",
+      "registry_loop_class": "(1-gamma/(2*N_gen))*(1-gamma/2)"
+    },
+    {
+      "companion_form": "V_us = gamma sqrt(5)",
+      "companion_source": "ckm_closure.json.ckm_magnitudes_closure",
+      "observable_id": "O13",
+      "observable_name": "CKM_V_us",
+      "registry_loop_class": "1-gamma/(2*N_gen)"
+    },
+    {
+      "companion_form": "V_cb = eps_sync^2 sqrt(2/N_gen)",
+      "companion_source": "ckm_closure.json.ckm_magnitudes_closure",
+      "observable_id": "O14",
+      "observable_name": "CKM_V_cb",
+      "registry_loop_class": "1+gamma/(2*N_gen)"
+    }
+  ],
+  "dual_state_observables": [
+    {
+      "alternative_form_evaluation": {
+        "evaluation_status": "non_evaluatable",
+        "expression": "2 gamma^2 (1+gamma) = 11/500 (H-K)",
+        "numerical_value": null
+      },
+      "closure_form_2026_05_10": "2 gamma^2 (1+gamma) = 11/500 (H-K)",
+      "compiler_prediction": {
+        "closure_kind": "single_loop",
+        "factor": "1 - gamma^2/4",
+        "lemma_id": "L2"
+      },
+      "id": "O09",
+      "loop_class": "1-gamma^2/4",
+      "name": "PMNS_theta_13",
+      "rational_form": null,
+      "stand_alone_form": false,
+      "structural_origin": null,
+      "target": 8.58,
+      "target_units": "degrees",
+      "tier_after_loop": "EXACT",
+      "tree_formula": "alpha_xi/(2*N_gen)"
+    },
+    {
+      "alternative_form_evaluation": {
+        "evaluation_status": "non_evaluatable",
+        "expression": "1/4 + alpha_xi/16 = 49/160 (H-K)",
+        "numerical_value": null
+      },
+      "closure_form_2026_05_10": "1/4 + alpha_xi/16 = 49/160 (H-K)",
+      "compiler_prediction": {
+        "closure_kind": "single_loop",
+        "factor": "1 - gamma^2/4",
+        "lemma_id": "L2"
+      },
+      "id": "O10",
+      "loop_class": "1-gamma^2/4",
+      "name": "PMNS_theta_12",
+      "rational_form": null,
+      "stand_alone_form": false,
+      "structural_origin": null,
+      "target": null,
+      "target_units": null,
+      "tier_after_loop": "EXACT",
+      "tree_formula": "(structural)"
+    },
+    {
+      "alternative_form_evaluation": {
+        "evaluation_status": "non_evaluatable",
+        "expression": "1/2 + alpha_xi/12 = 23/40 (H-K, NO higher-octant)",
+        "numerical_value": null
+      },
+      "closure_form_2026_05_10": "1/2 + alpha_xi/12 = 23/40 (H-K, NO higher-octant)",
+      "compiler_prediction": {
+        "closure_kind": "loop_compound",
+        "factor": "(1 - gamma/(2*N_gen))*(1 - gamma/2)",
+        "lemma_id": "L6+L8"
+      },
+      "id": "O11",
+      "loop_class": "(1-gamma/(2*N_gen))*(1-gamma/2)",
+      "name": "PMNS_theta_23",
+      "rational_form": null,
+      "stand_alone_form": false,
+      "structural_origin": null,
+      "target": null,
+      "target_units": null,
+      "tier_after_loop": "PRECISE",
+      "tree_formula": "(structural; 2-loop compound)"
+    },
+    {
+      "alternative_form_evaluation": {
+        "evaluation_status": "non_evaluatable",
+        "expression": "pi(1+gamma)(1-gamma^2/4) (existing, refined eval)",
+        "numerical_value": null
+      },
+      "closure_form_2026_05_10": "pi(1+gamma)(1-gamma^2/4) (existing, refined eval)",
+      "compiler_prediction": {
+        "closure_kind": "loop_compound",
+        "factor": "(1 + gamma/4)*(1 - gamma^2/4)",
+        "lemma_id": "L1+L2"
+      },
+      "id": "O12",
+      "loop_class": "(1+gamma/4)*(1-gamma^2/4)",
+      "name": "PMNS_delta_CP",
+      "rational_form": null,
+      "stand_alone_form": true,
+      "structural_origin": null,
+      "target": 197.0,
+      "target_units": "degrees",
+      "tier_after_loop": "EXACT",
+      "tree_formula": "pi (CP-phase basis-scale, stand-alone)"
+    },
+    {
+      "alternative_form_evaluation": {
+        "evaluation_status": "non_evaluatable",
+        "expression": "alpha_xi * s_face = 9/40 (H-J; supersedes legacy gamma sqrt 5)",
+        "numerical_value": null
+      },
+      "closure_form_2026_05_10": "alpha_xi * s_face = 9/40 (H-J; supersedes legacy gamma sqrt 5)",
+      "compiler_prediction": {
+        "closure_kind": "single_loop",
+        "factor": "1 - gamma/(2*N_gen)",
+        "lemma_id": "L6"
+      },
+      "id": "O13",
+      "loop_class": "1-gamma/(2*N_gen)",
+      "name": "CKM_V_us",
+      "rational_form": null,
+      "stand_alone_form": false,
+      "structural_origin": null,
+      "target": 0.2253,
+      "target_units": null,
+      "tier_after_loop": "EXACT",
+      "tree_formula": "(structural)"
+    },
+    {
+      "alternative_form_evaluation": {
+        "evaluation_status": "non_evaluatable",
+        "expression": "alpha_xi/(2(2d+N_gen)) = 9/220 (H-Q; supersedes legacy eps sync sqrt 2/N)",
+        "numerical_value": null
+      },
+      "closure_form_2026_05_10": "alpha_xi/(2(2d+N_gen)) = 9/220 (H-Q; supersedes legacy eps sync sqrt 2/N)",
+      "compiler_prediction": {
+        "closure_kind": "single_loop",
+        "factor": "1 + gamma/(2*N_gen)",
+        "lemma_id": "L6"
+      },
+      "id": "O14",
+      "loop_class": "1+gamma/(2*N_gen)",
+      "name": "CKM_V_cb",
+      "rational_form": null,
+      "stand_alone_form": false,
+      "structural_origin": null,
+      "target": 0.041,
+      "target_units": null,
+      "tier_after_loop": "EXACT",
+      "tree_formula": "(structural)"
+    }
+  ],
+  "n_companion_disagreements": 5,
+  "n_dual_state_observables": 6,
+  "note": "Honest gap report: each dual-state entry shows the original loop_class field (which the tuple compiler reproduces) alongside the closure_form_2026_05_10 alternative. Numerical evaluation of the alternative is attempted in the System-R rational variables when the expression is in the safe subset. Companion-disagreements list cases where a companion closure JSON describes the same observable with a structural identity that does not embed the registry's loop_class as a substring. This audit does NOT pick a side; it surfaces candidates for registry consolidation.",
+  "registry_size": 29,
+  "schema_version": "cross-consistency-audit-v0.1"
+}

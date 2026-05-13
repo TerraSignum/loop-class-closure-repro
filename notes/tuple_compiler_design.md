@@ -166,7 +166,68 @@ in tuple identification.
 | **Phase 1** | done (commit 5a6c528) | 3 YAMLs covering TREE + L1 + L6. End-to-end extractor + predictor + 61 tests. |
 | **Phase 2** | done (this commit) | All 21 single-loop observables in the existing P3 registry. L4 inverse-form extension (`operator.resummation_inverse` flag). Cross-verification: 45 Phase-2 tests pin every compiler factor + lemma assignment against `data/observable_registry.json` without registry access during extraction. |
 | **Phase 3** | done (this commit) | 6 standard two-loop compounds (O11, O12, O23, O24, O25, O26) via `closure_kind: loop_compound` + compact `factors: [...]` array; 2 structural-only observables (O27 α_ξ²=81/100, O28 −γ²/2=−1/200) via `closure_kind: structural`. Cross-verification: every compound's factor string matches the registry's `loop_class` formula. |
-| Phase 4 | open | Prospective-registry observables (not yet closed); the compiler outputs `OPEN` for unmatched tuples. |
+| **Phase 4** | done (this commit) | Cross-consistency audit between the compiler and the broader corpus state. **Not** a YAML extension — the Phase-4 audit honestly revealed that (a) the `prospective_cluster_registry` contains stability-diagnostic tests, not loop-class closures, so the tuple compiler does not apply; (b) six registry observables (O09-O14) carry a `closure_form_2026_05_10` field documenting a **superseding** structural closure that the compiler is silent about; and (c) five companion-JSON entries (`neutrino_sector_closure`, `ckm_closure`) describe the same observables via different structural identities. The audit script surfaces all of these explicitly so corpus owners can resolve them. |
+
+### Phase 4 honest scope statement
+
+The naïve Phase-4 plan would have been "extend the compiler to the
+prospective registry and to closures in companion JSONs". The audit
+revealed this was the wrong move:
+
+**Why the prospective registry is out of scope.** The 3 entries
+(PROSP-01 gravitational coupling-scaling, PROSP-02 vortex-cosmological
+gate, PROSP-03 Xi-reactivity ratio at g=1.42) are **multi-N stability
+diagnostics**, not closure observables. Their "residuals" are scores
+like `newton_like_badness` or `cosmo_compat`, not target-vs-predicted
+percentages on a closed structural formula. Forcing them into the
+loop-class tuple schema would be cheating — they have no `(n, g, s, w, r)`
+classification because they aren't loop-class observables.
+
+**Why the dual-closure state is out of scope.** Six registry entries
+(O09 PMNS_θ₁₃, O10 PMNS_θ₁₂, O11 PMNS_θ₂₃, O12 PMNS_δ_CP, O13 CKM_V_us,
+O14 CKM_V_cb) carry both:
+- A `loop_class` field — what the tuple compiler reproduces (e.g.
+  O09's `1 - γ²/4` = L2 single-loop).
+- A `closure_form_2026_05_10` field — a System-R structural rational
+  identity that supersedes the loop-class form (e.g. O09's
+  `2 γ²(1+γ) = 11/500`).
+
+The two forms can be numerically close (both within ~1% of anchor) but
+they are **different closure mechanisms**. The compiler's job is to
+reproduce the `loop_class` field, which it does correctly for all 29
+entries. The audit surfaces the dual-state so corpus owners can
+decide whether to (a) consolidate to a single canonical form, (b) keep
+both as alternative closures, or (c) deprecate one. **The compiler does
+not pick a side.**
+
+**Why companion-JSON disagreements are out of scope.** The
+`neutrino_sector_closure.json` describes PMNS_θ₁₃ as
+`(1-γ)/(2 N_gen)` (tree-only structural identity), while the registry
+says L2 dressed `1 - γ²/4`. Both round to ≈0.15 rad (the anchor is
+0.149636). The companion form is the structural identity; the registry
+form is the loop-class form. The audit lists these without picking
+one.
+
+The legacy `V_us = γ√5` and `V_cb = eps²√(2/N_gen)` in `ckm_closure.json`
+are **already noted as superseded** in the registry's
+`closure_form_2026_05_10` ("supersedes legacy gamma sqrt 5"). The
+audit surfaces this for cleanup.
+
+### Phase 4 deliverable
+
+`src/tuple_compiler/cross_consistency_audit.py` produces
+`outputs/cross_consistency_audit.json` listing:
+- 6 dual-state registry observables with both forms side-by-side
+- 5 companion-JSON disagreements
+- A `note` field stating the audit picks no side
+
+Tests (`tests/test_tuple_compiler/test_phase4_cross_consistency.py`)
+**pin the exact set** of dual-state IDs and disagreement IDs. If a
+new registry entry adds a `closure_form_2026_05_10` field, the test
+fails and forces explicit acknowledgment — the audit's coverage
+cannot silently drift.
+
+| Phase 5 | open | Prospective-registry observables — would require a separate diagnostic harness, not the tuple compiler. |
 
 ### Phase 3 closure_kind taxonomy
 
