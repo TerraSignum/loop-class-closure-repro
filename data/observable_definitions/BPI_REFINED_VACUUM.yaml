@@ -1,0 +1,24 @@
+id: BPI-REFINED-VACUUM
+name: beta_pi_refined_vacuum_closure
+sector: P2/P4 (refined vacuum sub-sector, beta_pi closure)
+observable_type: structural_correction
+description: |
+  Refined vacuum closure factor for the beta_pi causal-wave coefficient:
+
+      beta_pi_refined = (2^d * N_gen^2 - 1) / (2^d * N_gen^2) = 143/144
+
+  This is the (X-1)/X universal pattern at slot count
+  X = 2^d * N_gen^2 = 144 (spinor x PMNS^2 sub-sector). Together with
+  Lemma B's X = 21 family-coupling slot, it covers the two
+  structurally distinct non-2-adic-multiple-of-(d+1) sub-sectors in
+  the loop-class library.
+
+closure_kind: structural
+structural_formula: "(2^d * N_gen^2 - 1) / (2^d * N_gen^2)"
+structural_rational: "143/144"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

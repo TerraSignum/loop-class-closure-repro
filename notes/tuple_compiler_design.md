@@ -228,7 +228,60 @@ fails and forces explicit acknowledgment — the audit's coverage
 cannot silently drift.
 
 | **Phase 5** | done (this commit) | Structural-identity evaluator (sympy-based, exact Fraction arithmetic) closes every Phase-4-surfaced dual-state gap. 6 new YAMLs (HK-09, HK-10, HK-11, HK-12, HJ-13, HQ-14) declare the registry's `closure_form_2026_05_10` forms; O27/O28 structural fields are activated. All 8 structural forms evaluate EXACTLY to their claimed rationals; no float fallback, no stub. Audit upgraded to v0.2 with `phase5_resolution` block per dual-state entry; all 6 RESOLVED. |
-| Phase 6 | open | Prospective-registry stability diagnostics — would require a separate diagnostic harness (multi-N stability regression), not the tuple compiler. |
+| **Phase 6** | done (this commit) | Branch-resolved P4 + Lemma B + β_π refined-vacuum structural identities. 12 new YAMLs cover both vacuum AND matter branches of T_00, G_00, Λ_t, λ_w; Lemma B's family-coupling, skeleton, Kahale, and 20/21 master-correction; and the β_π 143/144 refined-vacuum identity. Every form evaluates EXACTLY via sympy. |
+| Phase 7 | open | Prospective-registry stability diagnostics — would require a separate diagnostic harness (multi-N stability regression), not the tuple compiler. |
+
+### Phase 6 honest scope statement
+
+Phase 5 closed the P3 registry's dual-state gap (6 dual + O27/O28 = 8
+structural). It left untouched the structural identities documented
+in P4 outside the P3 registry:
+
+- **P4 branch-resolved Eq.** `lambda_t_branch_resolved` (manuscript
+  line 3083) splits T_00, G_00, Λ_t at θ_chir = π/4. Phase 5 only
+  carried the matter-branch Λ_t = α_ξ² = 81/100 (via O27). Phase 6
+  adds the vacuum-branch counterparts and the missing source-side
+  components.
+- **Lemma B Step 4a** identifies four structural rationals
+  (family-coupling 7/6, skeleton 7/24, Kahale 9/7, master-correction
+  20/21) plus the chain `3/8 = (7/24)·(9/7)`. None of these were in
+  Phase 5.
+- **β_π refined vacuum** 143/144 = (2^d·N_gen² − 1)/(2^d·N_gen²) —
+  the (X−1)/X universal-pattern counterpart at X = 144.
+
+Phase 6 adds all 12 as `closure_kind: structural` YAMLs evaluated
+exactly:
+
+| YAML id                 | structural formula                           | claimed rational |
+|-------------------------|----------------------------------------------|------------------|
+| P4-VAC-T00              | `α_ξ² + 3·γ²`                                | 84/100 = 21/25   |
+| P4-MAT-T00              | `α_ξ²`                                       | 81/100           |
+| P4-VAC-G00              | `3·γ²/2`                                     | 3/200            |
+| P4-MAT-G00              | `γ²/3`                                       | 1/300            |
+| P4-VAC-LAMBDA-T         | `α_ξ² + 3·γ²/2`                              | 33/40            |
+| P4-VAC-LAMBDA-W         | `(d−1)/(2·d)`                                | 3/8              |
+| P4-MAT-LAMBDA-W         | `(d−1)/(2·d) + 2·γ²`                         | 79/200           |
+| LEMB-FAMILY             | `(d+N_gen)/(2·N_gen)`                        | 7/6              |
+| LEMB-SKELETON           | `(d+N_gen)/(2·d·N_gen)`                      | 7/24             |
+| LEMB-KAHALE             | `(d−1)·N_gen/(d+N_gen)`                      | 9/7              |
+| LEMB-MASTER-CORRECTION  | `d·(d+1)/(N_gen·(d+N_gen))`                  | 20/21            |
+| BPI-REFINED-VACUUM      | `(2^d·N_gen²−1)/(2^d·N_gen²)`                | 143/144          |
+
+### Phase 6 algebraic identities verified by tests
+
+- **Lemma B master identity**: `7/6 = α_ξ · Kahale + γ² · (20/21)`
+  via direct sympy evaluation. Test `test_lemma_b_master_identity`
+  asserts EXACT Fraction equality.
+- **Spatial dilution**: `λ_skel = (1/d) · λ_family = 7/24`. Test
+  `test_lemma_b_skeleton_via_spatial_dilution`.
+- **λ_w chain**: `3/8 = (7/24)·(9/7) = (d−1)/(2·d)`. Test
+  `test_lemma_b_lambda_w_chain`.
+- **Matter-branch shift**: `λ_w^mat − λ_w^vac = 2·γ² = 1/50`. Test
+  `test_branch_resolved_matter_shift_consistency`.
+- **T_00 chirality-flip shift**: `T_00^vac − T_00^mat = 3·γ² = 3/100`.
+  Test `test_t00_branch_difference_equals_3_gamma_squared`.
+- **Universal (X−1)/X pattern**: at X=21 and X=144, both forms
+  evaluate exactly. Test `test_x_minus_1_over_x_pattern_universal`.
 
 ### Phase 5 honest scope statement
 

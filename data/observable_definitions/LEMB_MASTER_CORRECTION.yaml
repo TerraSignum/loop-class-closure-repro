@@ -1,0 +1,29 @@
+id: LEMB-MASTER-CORRECTION
+name: lemma_B_master_identity_correction
+sector: P4 Lemma B (master algebraic identity correction factor)
+observable_type: structural_correction
+description: |
+  The gamma^2-scale correction term in the Lemma B master identity:
+
+      lambda_family = alpha_xi * Kahale + gamma^2 * correction
+                    = (9/10) * (9/7) + (1/100) * (20/21)
+                    = 81/70 + 20/2100
+                    = 2430/2100 + 20/2100
+                    = 2450/2100 = 7/6  EXACT
+
+  The correction factor is the structural rational
+
+      correction = d * (d + 1) / (N_gen * (d + N_gen)) = 20/21
+
+  which is (X-1)/X with X = N_gen * (d + N_gen) = 21, the unique
+  non-2-adic slot count in the universal (X-1)/X loop-class pattern.
+
+closure_kind: structural
+structural_formula: "d * (d + 1) / (N_gen * (d + N_gen))"
+structural_rational: "20/21"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

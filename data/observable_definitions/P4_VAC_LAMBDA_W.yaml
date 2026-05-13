@@ -1,0 +1,22 @@
+id: P4-VAC-LAMBDA-W
+name: lambda_w_inf_vacuum_branch
+sector: P4 Lemma B (weighted-Laplacian asymptote, vacuum branch)
+observable_type: spectral_gap_asymptote
+description: |
+  Vacuum-branch weighted-Laplacian asymptotic spectral gap from
+  Lemma B (P4): lambda_w^vac = (d-1) / (2*d) = 3/8.
+
+  Closed via the Cartesian-product synthesis chain
+  3/8 = (7/24) * (9/7) = lambda_skeleton * Kahale_lift exactly.
+  Empirically certified at PRECISE tier on the canonical 10-regime
+  N-ladder.
+
+closure_kind: structural
+structural_formula: "(d - 1) / (2 * d)"
+structural_rational: "3/8"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

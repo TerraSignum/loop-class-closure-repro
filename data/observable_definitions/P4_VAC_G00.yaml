@@ -1,0 +1,22 @@
+id: P4-VAC-G00
+name: G_00_vacuum_branch
+sector: P4 emergent-GR (vacuum branch, theta_chir < pi/4)
+observable_type: einstein_curvature_diagonal
+description: |
+  Vacuum-branch (PRE chirality-flip) Einstein curvature diagonal G_00,
+  from the P4 branch-resolved Eq. lambda_t_branch_resolved
+  (emergent-gr-closure-repro/paper/manuscript.tex line 3085):
+
+      G_00^vacuum = 3 * gamma^2 / 2 = 3/200
+
+  Empirical match -2.0 percent rel. on PRE-flip canonical ladder.
+
+closure_kind: structural
+structural_formula: "3 * gamma^2 / 2"
+structural_rational: "3/200"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

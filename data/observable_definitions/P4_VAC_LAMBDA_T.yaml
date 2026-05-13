@@ -1,0 +1,26 @@
+id: P4-VAC-LAMBDA-T
+name: Lambda_t_vacuum_branch
+sector: P4 emergent-GR (vacuum branch, theta_chir < pi/4)
+observable_type: cosmological_constant_tensor_time_time
+description: |
+  Vacuum-branch (PRE chirality-flip) cosmological-constant tensor
+  time-time component Lambda_t, from the P4 branch-resolved
+  Eq. lambda_t_branch_resolved
+  (emergent-gr-closure-repro/paper/manuscript.tex line 3087):
+
+      Lambda_t^vacuum = alpha_xi^2 + 3 * gamma^2 / 2 = 33/40
+
+  Empirical match 0.04 percent rel. on PRE-flip canonical ladder
+  (BEST tier among the branch-resolved candidates).
+  Counterpart: O27 names Lambda_t = alpha_xi^2 = 81/100 (matter
+  branch). The two values differ by the chirality-flip shift +3*gamma^2/2.
+
+closure_kind: structural
+structural_formula: "alpha_xi^2 + 3 * gamma^2 / 2"
+structural_rational: "33/40"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

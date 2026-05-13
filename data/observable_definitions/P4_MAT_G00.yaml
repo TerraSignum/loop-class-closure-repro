@@ -1,0 +1,22 @@
+id: P4-MAT-G00
+name: G_00_matter_branch
+sector: P4 emergent-GR (matter branch, theta_chir > pi/4)
+observable_type: einstein_curvature_diagonal
+description: |
+  Matter-branch (POST chirality-flip) Einstein curvature diagonal G_00,
+  from the P4 branch-resolved Eq. lambda_t_branch_resolved:
+
+      G_00^matter = gamma^2 / 3 = 1/300
+
+  Empirical match -10 percent rel. on POST-flip canonical ladder
+  (the small POST gamma^2/3 form is softer to finite-N fluctuations).
+
+closure_kind: structural
+structural_formula: "gamma^2 / 3"
+structural_rational: "1/300"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

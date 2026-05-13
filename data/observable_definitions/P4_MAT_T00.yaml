@@ -1,0 +1,25 @@
+id: P4-MAT-T00
+name: T_00_matter_branch
+sector: P4 emergent-GR (matter branch, theta_chir > pi/4)
+observable_type: energy_density_diagonal
+description: |
+  Matter-branch (POST chirality-flip) energy-density diagonal T_00,
+  from the P4 branch-resolved Eq. lambda_t_branch_resolved:
+
+      T_00^matter = alpha_xi^2 = 81/100
+
+  Empirical match 0.31 percent rel. on POST-flip canonical ladder.
+  Note: this equals O27's structural_formula 'alpha_xi^2' numerically,
+  but O27 names the Lambda_t cosmological-tensor component; T_00 is
+  the source-side energy density. They coincide numerically in the
+  matter branch because the matter shift on Lambda_t cancels.
+
+closure_kind: structural
+structural_formula: "alpha_xi^2"
+structural_rational: "81/100"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

@@ -1,0 +1,21 @@
+id: P4-MAT-LAMBDA-W
+name: lambda_w_inf_matter_branch
+sector: P4 Lemma B (weighted-Laplacian asymptote, matter branch)
+observable_type: spectral_gap_asymptote
+description: |
+  Matter-branch weighted-Laplacian asymptotic spectral gap from
+  Lemma B (P4): lambda_w^mat = (d-1)/(2*d) + 2*gamma^2 = 3/8 + 1/50 = 79/200.
+
+  The +2*gamma^2 shift is the gamma^2-universal chirality-flip
+  correction inherited from the matter-branch energy-density shift.
+  Empirically certified at PRECISE tier on the POST-flip regimes.
+
+closure_kind: structural
+structural_formula: "(d - 1) / (2 * d) + 2 * gamma^2"
+structural_rational: "79/200"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

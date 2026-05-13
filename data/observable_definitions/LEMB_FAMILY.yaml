@@ -1,0 +1,26 @@
+id: LEMB-FAMILY
+name: lambda_family_coupling
+sector: P4 Lemma B (family-coupling matrix M_F spectral gap)
+observable_type: spectral_gap
+description: |
+  Family-coupling matrix normalised-Laplacian spectral gap, from
+  P4 Lemma B Step 4a:
+
+      lambda_family = (d + N_gen) / (2 * N_gen) = 7/6
+
+  Empirically certified PRECISE 0.28 percent on canonical d1 P5/P5N
+  ladder (9 regimes, 164 seeds pooled). Branch-invariant: matches
+  both PRE and POST chirality-flip regimes.
+
+  Connected to skeleton gap via spatial-dilution factor 1/d:
+  lambda_skeleton = (1/d) * lambda_family = 7/24.
+
+closure_kind: structural
+structural_formula: "(d + N_gen) / (2 * N_gen)"
+structural_rational: "7/6"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

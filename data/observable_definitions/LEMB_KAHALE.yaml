@@ -1,0 +1,23 @@
+id: LEMB-KAHALE
+name: kahale_weight_lift
+sector: P4 Lemma B (Kahale-style weight lift)
+observable_type: weight_lift_ratio
+description: |
+  Kahale weight-lift ratio relating weighted-Laplacian to skeleton
+  spectral gap, from P4 Lemma B Step 4a:
+
+      Kahale_lift = (d - 1) * N_gen / (d + N_gen) = 9/7
+
+  Empirically certified PRECISE 0.79 percent on canonical 10-regime
+  N-ladder. Algebraic chain
+  lambda_w^vac = lambda_skel * Kahale_lift = (7/24)*(9/7) = 3/8 EXACT.
+
+closure_kind: structural
+structural_formula: "(d - 1) * N_gen / (d + N_gen)"
+structural_rational: "9/7"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1

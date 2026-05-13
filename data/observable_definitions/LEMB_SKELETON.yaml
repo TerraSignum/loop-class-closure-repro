@@ -1,0 +1,24 @@
+id: LEMB-SKELETON
+name: lambda_skeleton_gap
+sector: P4 Lemma B (skeleton normalised-Laplacian spectral gap)
+observable_type: spectral_gap
+description: |
+  Skeleton (tau=0.10) normalised-Laplacian spectral gap, from
+  P4 Lemma B Step 4a Cartesian-product synthesis:
+
+      lambda_skel = (d + N_gen) / (2 * d * N_gen) = 7/24
+
+  Equivalently: lambda_skel = (1/d) * lambda_family (spatial-dilution
+  identification supersedes the literal Cartesian-product reading).
+  Empirically certified PRECISE 0.24 percent on canonical 10-regime
+  N-ladder.
+
+closure_kind: structural
+structural_formula: "(d + N_gen) / (2 * d * N_gen)"
+structural_rational: "7/24"
+
+anchors:
+  target_value_allowed: false
+  external_target_used_in_tuple: false
+
+schema_version: tuple-compiler-v0.1
