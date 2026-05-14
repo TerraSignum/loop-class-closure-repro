@@ -850,7 +850,20 @@ The mapping
 \end{equation}
 is a function: each $(n, g, s, w, r)$ tuple maps to exactly one
 library entry, and \emph{all ten} entries are uniquely
-identified by the full tuple. The discriminating power of the
+identified by the full tuple. The ``is a function'' part is
+trivial for any distinct-key lookup table; the substantive
+content is the \emph{faithfulness} claim --- the ten library
+entries were defined \emph{physics-first} (each is a distinct
+loop topology: Yukawa-Damping, PMNS-Self-Energy, $\dots$), and
+the theorem asserts that the five-component tuple representation
+is rich enough to \emph{separate} all ten physics-motivated
+classes injectively. This could have failed and is a near
+thing: the cells $(1,0,0)$ and $(4,0,0)$ are each
+double-occupancy (L1/L2 and L3/L4 respectively), separated
+\emph{only} by a single boolean flag ($w$ or $r$). The theorem
+is therefore an injectivity/faithfulness result on the
+enumerated library, not a completeness claim about all possible
+loop topologies (see the scope statement below). The discriminating power of the
 $(n, g, s)$ sub-tuple alone depends on the convention adopted:
 \begin{itemize}
 \item \emph{Strict $(n, g, s)$ count:} six entries sit in
