@@ -27,6 +27,7 @@ Usage:
 """
 from __future__ import annotations
 
+import ast
 import json
 import re
 import sys
@@ -54,23 +55,41 @@ SYSTEM_R = {
 }
 
 
+_AST_NODE_WHITELIST = (
+    ast.Expression, ast.BinOp, ast.UnaryOp, ast.Constant, ast.Name,
+    ast.Load, ast.Add, ast.Sub, ast.Mult, ast.Div, ast.Pow,
+    ast.USub, ast.UAdd,
+)
+
+
 def _safe_eval(expr: str) -> Optional[float]:
     """Numerically evaluate a System-R rational expression.
 
-    Refuses to eval anything that isn't a sanitised arithmetic
-    expression in the known symbol set. Returns None if the
-    expression doesn't fit the safe subset.
+    Uses ast.parse to whitelist only pure-arithmetic node types
+    (BinOp / UnaryOp / Constant / Name) with the System-R symbol
+    table as the name scope. Function calls, attribute access,
+    subscripting, list/dict literals, comprehensions, etc., are
+    all rejected by the AST walk -- not just regex-filtered.
+
+    Returns the numeric value as float, or None if the expression
+    doesn't reduce to that closed AST subset.
     """
-    # Strip leading/trailing whitespace and any anchor/comment after a space-paren
     cleaned = expr.strip()
-    # Remove anchor-comment style "= value (note)" suffixes
+    # Strip anchor-comment style "= value (note)" suffixes.
     cleaned = re.split(r"\s+\(", cleaned, maxsplit=1)[0]
-    cleaned = cleaned.replace("**", "**").replace("^", "**")
-    # Only allow alnum, underscore, ./+-*()/whitespace
-    if not re.fullmatch(r"[A-Za-z0-9_\.\+\-\*/\(\)\s]+", cleaned):
-        return None
+    cleaned = cleaned.replace("^", "**")
     try:
-        return float(eval(cleaned, {"__builtins__": {}}, SYSTEM_R))
+        tree = ast.parse(cleaned, mode="eval")
+    except SyntaxError:
+        return None
+    for node in ast.walk(tree):
+        if not isinstance(node, _AST_NODE_WHITELIST):
+            return None
+        if isinstance(node, ast.Name) and node.id not in SYSTEM_R:
+            return None
+    try:
+        return float(eval(compile(tree, "<safe_eval>", "eval"),
+                          {"__builtins__": {}}, SYSTEM_R))
     except (NameError, SyntaxError, ZeroDivisionError, TypeError):
         return None
 

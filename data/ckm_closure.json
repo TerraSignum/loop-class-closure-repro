@@ -27,7 +27,7 @@
     "ratio_predicted_over_measured": 0.99,
     "residual_pct": 0.73,
     "tier": "EXACT",
-    "method": "Wolfenstein-Compound J_CP = A^2 lambda^6 eta with lambda = V_us^closure = gamma sqrt(5), A = V_cb^closure / lambda^2 = eps_sync^2 sqrt(2/N_gen) / (5 gamma^2), eta = sin(delta_CP^F02b) * R_b with delta_CP^F02b = 1.130 rad (Wilson-holonomy subdominant phi_2 EXACT 1.23%) and R_b^PDG = 0.404",
+    "method": "Wolfenstein-Compound J_CP = A^2 lambda^6 eta with lambda = V_us^canonical = alpha_xi * s_face = 9/40 (2026-05-10 supersession of legacy lambda = gamma sqrt(5) = 0.2236; both forms close J_CP at <1% but the canonical 9/40 form is the tier-EXACT V_us identification per observable_registry.json closure_form_2026_05_10), A = V_cb^canonical / lambda^2 = [alpha_xi/(2(2d+N_gen))] / (9/40)^2 = (9/220) / (81/1600), eta = sin(delta_CP^F02b) * R_b with delta_CP^F02b = 1.130 rad (Wilson-holonomy subdominant phi_2 EXACT 1.23%) and R_b^PDG = 0.404",
     "alternative_method_SYE_pipeline": {
       "method": "Bi-unitary SYE in the extended regime (alternative independent producer pipeline)",
       "method_internal_label": "SYE-Y5 P2-prime regime",
@@ -36,7 +36,8 @@
       "residual_pct": 26.0,
       "tier": "FACTOR2",
       "framing": "The SYE-pipeline producer-method is reported as an independent direction-pass; the Wolfenstein-Compound is the closure-domain verdict per Konsolidiertes Dossier MD-57."
-    }
+    },
+    "method_legacy_form": "Wolfenstein-Compound J_CP = A^2 lambda^6 eta with lambda = V_us^closure = gamma sqrt(5), A = V_cb^closure / lambda^2 = eps_sync^2 sqrt(2/N_gen) / (5 gamma^2), eta = sin(delta_CP^F02b) * R_b with delta_CP^F02b = 1.130 rad (Wilson-holonomy subdominant phi_2 EXACT 1.23%) and R_b^PDG = 0.404"
   },
   "ckm_magnitudes_closure": {
     "id": "CKM-MAGNITUDES",

@@ -428,10 +428,11 @@ exact unknown-identifier list.
   marked superseded in the registry. The Phase-5 alternative YAMLs
   encode the CURRENT canonical structural form, not the legacy.
 
-### Phase 3 closure_kind taxonomy
+### Phase 3 closure_kind taxonomy (extended in Phase 7)
 
-The audit of the 29-entry registry reveals **four** distinct closure
-mechanisms, not two:
+The audit of the 29-entry registry revealed four distinct closure
+mechanisms at Phase 3; Phase 7 added a fifth (`stability_diagnostic`)
+for the prospective registry's multi-N stability tests:
 
 | `closure_kind` | Count | Mechanism |
 |---|---:|---|
@@ -439,6 +440,7 @@ mechanisms, not two:
 | `single_loop` | 18 | Tree formula × one loop-class factor = target. |
 | `loop_compound` | 6 | Tree formula × product of two loop-class factors = target. |
 | `structural` | 2 | Direct System-R algebraic identity (no tree × loop split); loop-class library is not the closure mechanism. |
+| `stability_diagnostic` (Phase 7) | 3 | Multi-N stability scores (newton_like_pass, cosmo_compat, etc.) read deterministically from bundle JSONs; the YAML declares which fields to extract and the harness reports BASELINE_RECOVERED / PROSPECTIVE_CONFIRMED / PROSPECTIVE_FALSIFIED with SHA-256-pinned bundle provenance. PROSP-01/02/03. |
 
 Two observables fall in the `structural` class:
 - **O27 Lambda_t_cosm_tensor** = α_ξ² = 81/100 — matter-branch
