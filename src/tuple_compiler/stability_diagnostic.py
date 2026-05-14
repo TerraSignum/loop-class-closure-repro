@@ -67,13 +67,18 @@ def extract_dotted(payload: Dict[str, Any], field: str) -> Any:
     """Extract a dotted-path field from a nested JSON mapping.
 
     Raises KeyError if any intermediate key is missing -- no silent
-    None return.
+    None return. Also raises KeyError if the FINAL value is null/None:
+    a JSON null is treated as "missing" so that the verdict path routes
+    cleanly through EXTRACT_ERROR rather than crashing in downstream
+    float() / arithmetic with a vanilla TypeError (R4-N2).
     """
     cur: Any = payload
     for part in field.split("."):
         if not isinstance(cur, dict) or part not in cur:
             raise KeyError(f"field path '{field}' missing at '{part}'")
         cur = cur[part]
+    if cur is None:
+        raise KeyError(f"field path '{field}' is present but null")
     return cur
 
 

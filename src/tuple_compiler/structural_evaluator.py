@@ -75,6 +75,19 @@ def _normalise_expression(expr: str) -> str:
     if m and not re.search(r"[+\-*/^]", m.group(2)):
         s = m.group(1).strip()
     s = s.replace("^", "**")
+    # Reject consecutive binary-op typos like 'gamma + + alpha_xi' that
+    # sympy silently collapses via unary-+ semantics. We DO permit '**'
+    # (already converted from '^') and '+-' style unary ops only when
+    # the second op is a unary-minus on a parenthesised group, which is
+    # too unusual to write by accident. Strict rule: no two adjacent
+    # binary operators with only whitespace between.
+    if re.search(r"[+\-*/]\s*[+\-*/]", s.replace("**", "POW")):
+        raise StructuralEvaluationError(
+            f"Structural expression {expr!r} contains consecutive "
+            f"binary operators (e.g. '+ +', '+ -'); sympy's unary-+/- "
+            f"semantics would silently collapse these. Fix the typo "
+            f"or rewrite using explicit parentheses."
+        )
     return s
 
 
