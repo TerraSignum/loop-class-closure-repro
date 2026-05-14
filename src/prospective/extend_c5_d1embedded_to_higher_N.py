@@ -54,8 +54,6 @@ from worldformula.residual.gravity_response import (
     defect_node_density,
     radial_gravity_profile,
     backreaction_report,
-    far_field_fit,
-    far_field_power_law,
 )
 
 OUT_DIR = os.path.join(ROOT, "data", "prospective_inputs")

@@ -29,7 +29,6 @@ Output: outputs/verify_tuple_exhaustion.json
 
 from __future__ import annotations
 import json
-import sys
 from itertools import product
 from pathlib import Path
 

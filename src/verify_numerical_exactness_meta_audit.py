@@ -32,8 +32,6 @@ Output: outputs/verify_numerical_exactness_meta_audit.json
 """
 from __future__ import annotations
 import json
-import re
-import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
