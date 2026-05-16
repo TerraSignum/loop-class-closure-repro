@@ -82,11 +82,11 @@ def figure_1_lemma_tree():
         ("6", "Sub-Generation",       r"$1 \pm \gamma/(2N_{\mathrm{gen}})$",
          r"SU(2)$_L$ doublet/singlet splitting",               "#d0e0e3"),
         ("7", "EW-Mixed",             r"$1 \pm \gamma\,\varepsilon^{2}_{\mathrm{sync}}$",
-         "bosonic Lemma-1 with Goldstone vertex",              "#fff2cc"),
+         "Lemma-1 + Goldstone vertex",                          "#fff2cc"),
         ("8", "Cosmological-Density", r"$1 \pm \gamma/2$",
          "chirality restriction (matter-only)",                "#d9d2e9"),
         ("--", "Pure-Sync",            r"$1 \pm \varepsilon^{2}_{\mathrm{sync}}$",
-         "pure Goldstone-vertex bosonic class",                "#e6e6e6"),
+         "pure Goldstone-vertex bosonic",                       "#e6e6e6"),
     ]
     n_rows = len(rows_data)
     y_top = 0.87

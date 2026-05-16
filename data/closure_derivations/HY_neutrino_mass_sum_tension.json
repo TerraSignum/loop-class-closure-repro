@@ -33,18 +33,32 @@
       "verdict": "OSCILLATION_LOWER_BOUND"
     },
     {
-      "label": "REFINED post-DESI 2025: m_1 = gamma^2 * m_3 = m_3/100",
-      "m_1": 0.0005,
+      "label": "SUPERSEDED: m_1 = gamma^2 m_3 on this audit's rounded m_3 = 0.0500 eV",
+      "m_1": 0.0005000000000000001,
       "m_2": 0.008622644605919926,
       "m_3": 0.05,
       "Sum": 0.05912264460591993,
-      "rel_to_DESI_2025_strict_pct": -7.620867803250116,
-      "rel_to_oscillation_lower_pct": 0.8918849930374199,
-      "verdict": "WITHIN_DESI_2025_STRICT_AND_ABOVE_OSC_LOWER; NOTE: refined Sum 0.0591 eV is essentially the m_1->0 oscillation lower bound 0.0586 eV plus 0.5 meV; not distinguishable from m_1->0 limit at current DESI precision"
+      "rel_to_DESI_2025_pct": -7.908653261806956,
+      "rel_to_oscillation_lower_pct": 0.8778796889355246,
+      "verdict": "SUPERSEDED_ROUNDED_M3; indistinguishable from the m_1->0 oscillation lower bound at current DESI precision"
+    },
+    {
+      "label": "CURRENT: m_1 = gamma^2 m_3 with the P-UV closure m_3 = 0.0511 eV (corpus-authoritative)",
+      "m_1": 0.0005110000000000001,
+      "m_2": 0.008623289453567008,
+      "m_3": 0.0511,
+      "Sum": 0.06023428945356701,
+      "rel_to_DESI_2025_pct": -6.1771192312040295,
+      "rel_to_oscillation_lower_pct": 2.774621215726743,
+      "tier": "PRECISE",
+      "computed_by": "relational-uv-closure-repro/src/verify_neutrino_masses_m1_m2.py",
+      "verdict": "CURRENT_FRAMEWORK_PREDICTION"
     }
   ],
   "DESI_2024_upper_95pct": 0.072,
+  "DESI_2025_upper_95pct": 0.0642,
   "oscillation_lower_bound": 0.05860813568666294,
-  "verdict": "FALSIFIABLE_NEUTRINO_TENSION: existing m_1 = m_3/(d+1) closure gives Sum = 0.0732 eV, sitting 1.7% over DESI 2024 bound of 0.072 eV. The alternative closure m_1 = m_3/N_gen^2 = m_3/9 gives Sum = 0.0658 eV (within DESI bound) and uses the cleaner generation-count primitive N_gen=3 instead of (d+1)=5. The current framework prediction is right at the experimental edge; DESI 2025+ tightening will either confirm m_1 = m_3/(d+1) or force the framework to adopt m_1 = m_3/N_gen^2.",
-  "REFINED_2026_05_10": "Bundle updated to include the refined m_1 = gamma^2 * m_3 = m_3/100 closure used in P3 manuscript line 1370+ post-DESI 2025. Caveat: the refined Sum=0.0591 eV is only 0.5 meV above the oscillation lower bound; per peer review, the closure is empirically indistinguishable from m_1 -> 0 at current DESI precision."
+  "current_prediction_Sigma_m_nu_eV": 0.06023428945356701,
+  "current_prediction_tier": "PRECISE",
+  "verdict": "CURRENT_PREDICTION Sigma m_nu = 0.0602 eV (PRECISE), from the refined closure m_1 = gamma^2 m_3 with the P-UV value m_3 = 0.0511 eV; computed by relational-uv-closure-repro/src/verify_neutrino_masses_m1_m2.py and within the DESI 2025 bound 0.0642 eV at -6.2% margin. This audit's own scenarios use the rounded m_3 = 0.0500 eV: the legacy m_1 = m_3/(d+1) closure gives Sum = 0.0732 eV (DESI-2024-falsified) and the refined m_1 = gamma^2 m_3 gives Sum = 0.0591 eV (SUPERSEDED -- rounded m_3, indistinguishable from the m_1->0 oscillation lower bound at current DESI precision)."
 }
